@@ -1,0 +1,145 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:core="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core">
+ 
+	<script type="text/javascript" src="../js/formatadores.js"></script>
+	<style type="text/css">
+		.coluna1{
+			width: 15%;
+			text-align: right;
+		}
+		.coluna2{
+			width: 35%;
+		}
+		.coluna3{
+			width: 15%;
+			text-align: right;
+		}
+		.coluna4{
+			width: 35%;
+		}
+		.ui-autocomplete input {
+			width:390px;
+		}
+		
+	</style>
+	
+	<h:form id="form_alt_cli">
+		<p:growl showDetail="true" showSummary="false" id="msg_local"/>
+        <p:blockUI block="form_alt_cli" trigger="nome_usuario,salva">  
+	        #{msgs.carregando_msg}<br />  
+	        <p:graphicImage value="../img/icones/ajax-loader.gif"/>  
+	    </p:blockUI>
+		
+		<p:focus for="nome_usuario"/>
+		<p:panel header="#{msgs.campo_busca}">
+			<h:panelGrid columns="2">
+				<h:outputLabel value="#{msgs.nome_msg}" for="nome_usuario" />
+	            <p:autoComplete id="nome_usuario" maxResults="5" value="#{clienteAlteraBean.termoBusca}" size="100" style="width:300px" minQueryLength="3" queryDelay="500" 
+	            	completeMethod="#{clienteAlteraBean.buscaNomes}">
+	            	<p:ajax event="itemSelect" listener="#{clienteAlteraBean.clienteSelecionado()}" update="form_alt_cli"/>  
+				</p:autoComplete>
+			</h:panelGrid>
+		</p:panel>
+		<br/>
+		<p:panelGrid columnClasses="coluna1,coluna2,coluna3,coluna4" style="width:945px">
+			<p:row>
+				<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.nome_fantasia} * :" for="nome"/></p:column>
+				<p:column styleClass="coluna2"><p:inputText id="nome" maxlength="150" size="40" value="#{clienteAlteraBean.cliente.nomeFantasia}" label="#{msgs.nome_msg}" required="true"/></p:column>
+				
+				<p:column styleClass="coluna3"><h:outputLabel value="#{msgs.cnpj_msg} * :" for="cnpj"/></p:column>
+				<p:column styleClass="coluna4"><p:inputText id="cnpj" maxlength="18" size="40" value="#{clienteAlteraBean.cliente.cnpj}" onkeyup="formataCnpj(this);" label="#{msgs.cnpj_msg}" required="true"/></p:column>
+			</p:row>
+			
+			<p:row>
+				<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.razao_social}" for="razao_social"/></p:column>
+				<p:column styleClass="coluna2"><p:inputText id="razao_social" maxlength="150" size="40" value="#{clienteAlteraBean.cliente.razaoSocial}" label="#{msgs.razao_social}" required="false"/></p:column>
+				
+				<p:column styleClass="coluna3"><h:outputLabel value="#{msgs.homepage_msg}" for="site"/></p:column>
+				<p:column styleClass="coluna4"><p:inputText id="site" maxlength="150" size="50" value="#{clienteAlteraBean.cliente.homepage}" label="#{msgs.homepage_msg}" required="false"/></p:column>
+			</p:row>
+			
+			<p:row>
+				<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.endereco_msg} * :" for="endereco"/></p:column>
+				<p:column styleClass="coluna2"><p:inputText id="endereco" maxlength="150" size="40" value="#{clienteAlteraBean.cliente.endereco}" required="true" label="#{msgs.endereco_msg}"/></p:column>
+				
+				<p:column styleClass="coluna3"><h:outputLabel value="#{msgs.bairro_msg} * :" for="bairo"/></p:column>
+				<p:column styleClass="coluna4"><p:inputText id="bairo" maxlength="80" size="40" value="#{clienteAlteraBean.cliente.bairro}" required="true" label="#{msgs.bairro_msg}"/></p:column>
+			</p:row>
+			
+			<p:row>
+				<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.cidade_msg} * :" for="cidade"/></p:column>
+				<p:column styleClass="coluna2"><p:inputText id="cidade" maxlength="80" size="40" value="#{clienteAlteraBean.cliente.cidade}" required="true" label="#{msgs.cidade_msg}"/></p:column>
+				
+				<p:column styleClass="coluna3"><h:outputLabel value="#{msgs.estado_msg} * :" for="estado"/></p:column>
+				<p:column styleClass="coluna4">
+					<p:selectOneMenu id="estado" value="#{clienteAlteraBean.cliente.estado}" required="true" label="#{msgs.estado_msg}">
+						<f:selectItems value="#{clienteAlteraBean.estados}"/>
+					</p:selectOneMenu>
+				</p:column>
+			</p:row>
+			
+			<p:row>
+				<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.cep_msg} * :" for="cep"/></p:column>
+				<p:column styleClass="coluna2">
+					<p:inputText id="cep" size="15" value="#{clienteAlteraBean.cliente.cep}" required="true" maxlength="9" onkeyup="formataCep(this)" label="#{msgs.cep_msg}">
+						<f:validateLength minimum="9"/>
+					</p:inputText>
+				</p:column>
+	
+				<p:column styleClass="coluna3"><h:outputLabel value="#{msgs.rede_msg}" for="rede"/></p:column>
+				<p:column styleClass="coluna4"><p:inputText id="rede" size="20" value="#{clienteAlteraBean.cliente.rede}" required="false" maxlength="50" label="#{msgs.rede_msg}"/></p:column>
+			</p:row>
+			
+			<p:row>
+				<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.telefone1} * :" for="telefone1"/></p:column>
+				<p:column styleClass="coluna2">
+					<p:inputText id="telefone1" size="20" value="#{clienteAlteraBean.cliente.telefone1}" required="true" maxlength="15" onkeyup="formataTelefone(this)" label="#{msgs.telefone1}">
+						<f:validateLength minimum="14"/>
+					</p:inputText>
+				</p:column>
+				
+				<p:column styleClass="coluna3"><h:outputLabel value="#{msgs.telefone2}" for="telefone2"/></p:column>
+				<p:column styleClass="coluna4">
+					<p:inputText id="telefone2" size="20" value="#{clienteAlteraBean.cliente.telefone2}" required="false" maxlength="15" onkeyup="formataTelefone(this)" label="#{msgs.telefone2}"/>
+				</p:column>
+			</p:row>
+			
+			<p:row>
+				<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.email1} * :" for="email1"/></p:column>
+				<p:column styleClass="coluna2">
+					<p:inputText id="email1" size="50" value="#{clienteAlteraBean.cliente.email}" required="true" maxlength="120" label="#{msgs.email1}"/>
+				</p:column>
+				
+				<p:column styleClass="coluna3"><h:outputLabel value="#{msgs.email2}" for="email2"/></p:column>
+				<p:column styleClass="coluna4">
+					<p:inputText id="email2" size="50" value="#{clienteAlteraBean.cliente.email2}" required="false" maxlength="120" label="#{msgs.email2}"/>
+				</p:column>
+			</p:row>
+			
+			<p:row>
+				<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.contato_msg} * :" for="contato"/></p:column>
+				<p:column styleClass="coluna2"><p:inputText id="contato" size="50" value="#{clienteAlteraBean.cliente.contato}" required="true" maxlength="50" label="#{msgs.contato_msg}"/></p:column>
+
+				<p:column styleClass="coluna3"><h:outputLabel value="#{msgs.situacao_msg}" for="sit"/></p:column>
+				<p:column styleClass="coluna4">
+					<p:selectOneMenu id="sit" value="#{clienteAlteraBean.cliente.ativo} * :" required="true" label="#{msgs.situacao_msg}">
+						<f:selectItem itemLabel="Ativado" itemValue="true"/>
+						<f:selectItem itemLabel="Desativado" itemValue="false"/>
+					</p:selectOneMenu>
+				</p:column>
+			</p:row>
+			
+			<f:facet name="footer">
+				<p:row>
+					<p:column colspan="4">
+						<p:commandButton id="salva" action="#{clienteAlteraBean.altearCliente()}" value="#{msgs.msgs_salvar}" type="submit" update="form_alt_cli,msg_local"/>
+					</p:column>
+				</p:row>
+		    </f:facet>
+		</p:panelGrid>
+	</h:form>
+</html>

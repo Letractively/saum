@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:core="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui"
+	>
+<h:head>
+<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+<link rel="shortcut icon" href="../favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title><ui:insert name="titulo">Claro</ui:insert></title>
+<script type="text/javascript" src="../js/geral.js"></script>
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../css/menu.css" rel="stylesheet" type="text/css" />
+<link href="../css/ie.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+PrimeFaces.locales['pt'] = {
+    closeText: 'Fechar',
+    prevText: 'Anterior',
+    nextText: 'Próximo',
+    currentText: 'Começo',
+    monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+    monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun', 'Jul','Ago','Set','Out','Nov','Des'],
+    dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+    dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],
+    dayNamesMin: ['D','S','T','Q','Q','S','S'],
+    weekHeader: 'Semana',
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: '',
+    timeOnlyTitle: 'Só Horas',
+    timeText: 'Tempo',
+    hourText: 'Hora',
+    minuteText: 'Minuto',
+    secondText: 'Segundo',
+    currentText: 'Data Atual',
+    ampm: false,
+    month: 'Mês',
+    week: 'Semana',
+    day: 'Dia',
+    allDayText : 'Todo Dia'
+};
+</script>
+</h:head>
+<h:body>
+	<f:view locale="#{loginBean.locale}">
+		<h:form>
+			<p:growl id="messages_geral" showDetail="true" autoUpdate="true" life="3000" globalOnly="true"/>
+		</h:form>
+		<div id="head">
+			<div align="center">
+				<table width="990" align="center" border="0" cellpadding="0" cellspacing="0" style="margin-top: 3px">
+					<tr>
+						<td width="300"><img src="../img/icones/world.png" border="0" style="float: left" />
+							<div style="float: left; font-size: 22px; font-weight: bold; color: #0900A4; padding: 2px 0px 0px 10px; font-family: Geneva, Arial, Helvetica, sans-serif">#{msgs.nome_aplicativo}</div>
+						</td>
+						<td align="right" style="padding-right: 3px">
+							<div class="cssmenu">
+								<ul>
+									<core:if test="${loginBean.usuario.id != null}">
+										<core:if test="${loginBean.temMenuAdministrativo == true}">
+											<li class="tem_submenu">
+												<a href='#'>
+													<img src="../img/icones/group.png" border="0" style="float: left; margin-right: 4px" />
+												</a>
+												<ul style="left: -88px">
+													<core:forEach items="${loginBean.menuLateralEsquerdo}" var="menu">
+														<core:if test="${menu.menu.coluna == 3}">
+															<li><a href='#{menu.menu.url}.html'><h:outputText value="#{menu.menu.nome}" /></a></li>
+														</core:if>
+													</core:forEach>
+												</ul>
+											</li>
+										</core:if>
+										<li class="tem_submenu">
+											<a href='#'>
+												<img src="../img/icones/user_log.png" border="0" style="float: left; margin-right: 4px" /> <h:outputText value="#{loginBean.usuario.nome}" />
+											</a>
+											<ul style="left: -55px">
+												<core:forEach items="${loginBean.menuLateralEsquerdo}" var="menu">
+													<core:if test="${menu.menu.coluna == 2}">
+														<li><a href='#{menu.menu.url}.html'><h:outputText value="#{menu.menu.nome}" /></a></li>
+													</core:if>
+												</core:forEach>
+												<h:form>
+												<li><h:commandLink value="#{msgs.logout_msg}" action="#{loginBean.encerraSessao()}" /> </li>
+												</h:form>
+											</ul>
+										</li>
+										<core:choose>
+											<core:when test="${mensagemBean.qtdMensagemsNaoLidas > 0}">
+												<li>
+													<a href='mensagens.html'><img src="../img/icones/mail_b.png" border="0" style="float: left" /></a>
+												</li>
+											</core:when>
+											<core:when test="${mensagemBean.qtdMensagemsNaoLidas == 0}">
+												<li>
+													<a href='mensagens.html'><img src="../img/icones/mail.png" border="0" style="float: left" /></a>
+												</li>
+											</core:when>
+										</core:choose>
+									</core:if>
+									<li>
+										<a href='index.html'><img src="../img/icones/home.png" border="0" style="float: left" height="20"/></a>
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="pad1">&nbsp;</div>
+		<core:if test="${loginBean.usuario.id != null}">
+			<ul id="lateral-esquerda" class="conteiner-lateral-esquerda">
+				<li>
+					<span id="conteudo-links-esquerda">
+						<core:forEach items="${loginBean.menuLateralEsquerdo}" var="menu">
+							<core:if test="${menu.menu.coluna == 1}">
+								<a href="#{menu.menu.url}.html">
+						        	<div class="box">
+						        		<div class="inside-box">
+						        			<img src="../img/menu/#{menu.menu.menuId}.png" border="0" width="24" height="24"/>
+						        			<br /><h:outputText value="#{menu.menu.nome}" />
+						        		</div>
+						        	</div>
+						        </a>
+							</core:if>
+						</core:forEach>
+					</span>
+				</li>
+			</ul>
+			<script language="javascript" type="text/javascript">
+				inicializaMenu();
+				window.onresize = function() {
+					inicializaMenu();
+				};		
+			</script>
+		</core:if>
+		<div class="pad-header"><img src="ddd" height="1" width="1"/></div>
+		<table width="992" align="center" border="0" cellpadding="0" cellspacing="0" class="titulo_pagina" id="titulo_pagina">
+			<tr>
+				<td style="font-size: 17px; color: #0900A4; font-weight: bold;">
+					<ui:insert name="titulo_pagina"/>
+				</td>
+			</tr>
+		</table>
+		<table width="990" align="center" border="0" cellpadding="0" cellspacing="0" class="conteudo-principal" id="tabela_conteudo">
+			<tr>
+				<td>
+					<ui:insert name="conteudo"></ui:insert>
+				</td>
+			</tr>
+		</table>
+		<div class="pad-footer"><img src="ddd" height="1" width="1"/></div>
+		<div id="foot">
+			<div>
+				<div style="float: left; margin-left: 18px; font-size: 11px; color: #CCCCCC">#{msgs.melhor_visualizado}</div>
+				<h:form style="float: right; text-decoration: none; margin-left: 20px">
+					<h:commandLink action="#{loginBean.changeLanguagePortugues()}" style="text-decoration: none">
+						<img src="../img/icones/pt.png" border="0"/>
+					</h:commandLink>&nbsp;&nbsp;
+					<h:commandLink action="#{loginBean.changeLanguageEnglish()}" style="text-decoration: none">
+						<img src="../img/icones/en.png" border="0"/>
+					</h:commandLink>&nbsp;&nbsp;
+				</h:form>
+				<a href="http://www.meganetdf.com.br" target="_blank" style="text-decoration: none; font-size: 11px; color: #CCCCCC">&copy; Meganet - 2012</a>
+			</div>
+		</div>
+	</f:view>
+</h:body>
+</html>

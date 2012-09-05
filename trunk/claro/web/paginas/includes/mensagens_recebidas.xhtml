@@ -1,0 +1,111 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:core="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+		<h:form id="msgForm">
+            <p:blockUI block="msgForm" trigger="tabelaDeMensagens">  
+		        #{msgs.carregando_msg}<br />  
+		        <p:graphicImage value="../img/icones/ajax-loader.gif"/>  
+		    </p:blockUI>  
+
+			<p:contextMenu for="tabelaDeMensagens">
+				<p:menuitem value="#{msgs.ler_mensagem}" update="dialogoLeituraPainel,msgForm" icon="ui-icon-folder-open"
+					actionListener="#{mensagemBean.lerMensagem()}" oncomplete="dialogoLeitura.show()" />
+				<p:menuitem value="#{msgs.apagar_mensagem}" update="msgForm" icon="ui-icon-close"
+					actionListener="#{mensagemBean.apagarMensagem()}" />
+			</p:contextMenu>
+
+			<p:dataTable id="tabelaDeMensagens" var="mensag" lazy="true" value="#{mensagemBean.mensagemsTodas}" paginator="true" rows="10" 
+				emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed; height:340px" rowStyleClass="#{mensag.lida == false ? 'old' : null}"
+				selection="#{mensagemBean.mensagem}" selectionMode="single">  
+				
+				<p:columnGroup type="header">  
+					<p:row>  
+						<p:column rowspan="2" headerText="#{msgs.remetente_msg}" sortBy="#{mensag.remetente.nome}"/>  
+						<p:column rowspan="2" headerText="#{msgs.titulo_msg}" />  
+						<p:column colspan="2" headerText="#{msgs.recebidas_msg}" sortBy="#{mensag.dataLeitura}"/>  
+						<p:column colspan="2" headerText="#{msgs.lida_msg}" />  
+						<p:column rowspan="2" headerText="#{msgs.resumo_msg}" />  
+					</p:row>  
+					<p:row>  
+						<p:column headerText="#{msgs.data_msg}" />  
+						<p:column headerText="#{msgs.hora_msg}" />  
+						<p:column headerText="#{msgs.data_msg}" />  
+						<p:column headerText="#{msgs.hora_msg}" />  
+					</p:row>  
+				</p:columnGroup>  
+		        
+		        <p:column width="100">  
+   					#{mensag.remetente.nome}
+		        </p:column>
+		  
+		        <p:column width="140">
+   					#{mensag.titulo} 
+		        </p:column>
+		        
+		        <p:column sortBy="#{mensag.data}" width="60">  
+   					<h:outputText value="#{mensag.data}">
+						<f:convertDateTime pattern="dd/MM/yyyy" type="date" />
+					</h:outputText>
+		        </p:column>  
+
+		        <p:column width="60">  
+   					<h:outputText value="#{mensag.data}">
+						<f:convertDateTime pattern="HH:mm:ss" type="time" />
+					</h:outputText>
+		        </p:column>
+
+		        <p:column width="60">  
+   					<h:outputText value="#{mensag.data}">
+						<f:convertDateTime pattern="dd/MM/yyyy" type="date" />
+					</h:outputText>
+		        </p:column>  
+
+		        <p:column width="40">  
+   					<h:outputText value="#{mensag.dataLeitura}">
+						<f:convertDateTime pattern="HH:mm:ss" type="time" />
+					</h:outputText>
+		        </p:column>  
+
+		        <p:column>
+   					#{mensag.mensagemResumo} 
+		        </p:column>
+		        
+		    </p:dataTable>
+		    
+		    <p:commandButton actionListener="#{mensagemBean.apagarMensagem()}" value="#{msgs.apagar_mensagem}" update="tabelaDeMensagens" icon="ui-icon-close"/>
+		    <p:commandButton actionListener="#{mensagemBean.lerMensagem()}" oncomplete="dialogoLeitura.show()" value="#{msgs.ler_mensagem}" icon="ui-icon-search" update="dialogoLeituraPainel,tabelaDeMensagens"/>
+		    
+		    <p:dialog widgetVar="dialogoLeitura" header="#{mensagemBean.mensagem.remetente.nome}" width="400" modal="true" maximizable="true">
+		    	<p:outputPanel id="dialogoLeituraPainel" style="text-align:justfy; width:100%" layout="block">
+		    		<p:panelGrid style="width:100%; height:100%" id="painelGridLeitura">
+		    			<p:row>
+			    			<p:column width="50">#{msgs.data_msg}</p:column>
+			    			<p:column>
+			   					<h:outputText value="#{mensagemBean.mensagem.data}">
+									<f:convertDateTime pattern="dd/MM/yyyy" type="date" />
+								</h:outputText>
+			    			</p:column>
+		    			</p:row>
+		    			<p:row>
+			    			<p:column colspan="2">
+		    					<h:outputText value="#{mensagemBean.mensagem.mensagem}" escape="false"/>
+		    				</p:column>
+		    			</p:row>
+		    			<f:facet name="footer">
+		    			<p:row>
+			    			<p:column colspan="2">
+						    <p:commandButton actionListener="#{mensagemBean.apagarMensagem()}" oncomplete="dialogoLeitura.hide()" icon="ui-icon-close" value="#{msgs.apagar_mensagem}" update="tabelaDeMensagens"/>
+						    <p:commandButton actionListener="#{mensagemBean.lerMensagem()}" oncomplete="dialogoLeitura.hide()" value="#{msgs.fechar_msg}" icon="ui-icon-search" update="tabelaDeMensagens"/>
+						    </p:column>
+						    </p:row>
+					    </f:facet>
+					</p:panelGrid>
+		        </p:outputPanel>
+		    </p:dialog>  
+		    
+		</h:form>
+</html>

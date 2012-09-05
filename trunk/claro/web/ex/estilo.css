@@ -1,0 +1,178 @@
+body {
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.subTituloFicha{
+	background: DBDBDB;
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+    font-weight: bold;
+	color : #3B4D4D;
+	text-decoration : none;
+}
+.link1 {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color : #000000;
+	text-decoration : none;
+}
+.link1 {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color : #000000;
+	text-decoration : none;
+}
+
+.textoCorpo {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color : #000000;
+	text-decoration : none;
+}
+
+.link2 {
+	font-family : Arial;
+	font-size : 12px;
+	font-style : normal;
+	color : #000000;
+	text-decoration : none;
+}
+.link3 {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color : #b91a35;
+	text-decoration : none;
+}
+.link3:HOVER {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color : #b91a35;
+	text-decoration : underline;
+}
+.link4 {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color : #3B4D4D;
+	text-decoration : none;
+}
+.link4:HOVER {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color : #3B4D4D;
+	text-decoration : underline;
+}
+.link5 {  
+    font-family: Arial;
+    font-size: 11px; 
+    font-weight: bold; 
+    color: #FFFFFF; 
+    text-decoration: none
+}
+.link6 {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	font-weight: bold;
+	color : #000000;
+	text-decoration : none;
+}
+.link7 {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color : #3B4D4D;
+	text-decoration : none;
+}
+.titulo {
+	font-family : Arial;
+	font-size : 16px;
+	font-style : normal;
+	color : #000000;
+	text-decoration : none;
+}
+.titulo1 {
+	font-family : Arial;
+	font-size : 10px;
+	font-style : normal;
+	color : #000000;
+	text-decoration : none;
+}
+.titulo2 {
+	font-family : Arial;
+	font-size : 16px;
+	font-style : normal;
+	color : #b91a35;
+	text-decoration : none;
+}
+.titulo2:HOVER {
+	font-family : Arial;
+	font-size : 16px;
+	font-style : normal;
+	color : #b91a35;
+	text-decoration : none;
+}
+.textbox{
+	font-family : arial, verdana, helvetica;
+	font-size : 10; 
+	color : #000033;
+	border-color : #999999;
+	border-width : 1;
+}
+.button1{
+	font-family : arial, verdana, helvetica;
+	font-size : 10; 
+	color : #000033;
+	border-color : #999999;
+	border-width : 1;
+	background: #DBDBDB;
+}
+td.td1{
+	border-left: 1px #000000 solid;
+	border-right: 1px #000000 solid;
+	background-color: #BCC8C6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color : #000000;
+	padding: 13px;
+	text-align:right;
+}
+td.labelFicha{
+	background-color: F0F0F0;
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	font-weight: bold;
+	color : #000000;
+	text-decoration : none;
+}
+td.labelFicha1{
+	background-color: F5F5F5;
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color : #000000;
+	text-decoration : none;
+}
+.msgErro {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color : #b91a35;
+	text-decoration : none;
+}
+.msgOK {
+	font-family : Arial;
+	font-size : 11px;
+	font-style : normal;
+	color:#0000FF;
+	text-decoration : none;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:core="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+	<ui:composition template="/template/template.xhtml">
+		<ui:define name="pad">&nbsp;</ui:define>
+		<ui:define name="titulo">#{msgs.nome_aplicativo_resumido}</ui:define>
+		<ui:define name="titulo_pagina">#{msgs.index_msg}</ui:define>
+		<ui:define name="conteudo">
+			<script type="text/javascript" src="../js/formatadores.js"></script>
+			<style type="text/css">
+				.coluna1{
+					width: 80px;
+					text-align: right;
+				}
+				.coluna2{
+					text-align: left;
+				}
+				#fc-header{
+					width: 800px !important;
+				}
+				#dddddd{
+					background-color: #999999 !important;
+				}
+			</style>
+			
+			<script type="text/javascript">document.getElementById("titulo_pagina").style.display = "none";</script> 
+			<h:form id="formGeral">
+				<p:growl showDetail="true" showSummary="false" id="msg_local"/>
+			    <p:schedule value="#{agendaIncialBean.todosEventosDaAgenda}" widgetVar="myschedule" locale="#{agendaIncialBean.localeAbr}" 
+			    	aspectRatio="2" firstHour="5" maxTime="22" slotMinutes="30" timeFormat="HH:mm" axisFormat="HH:mm" allDaySlot="false"
+			    	rightHeaderTemplate="agendaWeek,basicDay" view="agendaWeek">
+			
+			        <p:ajax event="dateSelect" listener="#{agendaIncialBean.quandoSelecionarDataEmBranco}" update="eventDetails" oncomplete="eventDialog.show()" />
+			        <p:ajax event="eventSelect" listener="#{agendaIncialBean.quandoSelecionaEventoJaGravado}" update="eventDetails" oncomplete="eventDialog.show()" />
+			        <p:ajax event="eventMove" listener="#{agendaIncialBean.quandoAlterarDataDoEvento}"/>
+			        <p:ajax event="eventResize" listener="#{agendaIncialBean.quandoAlterarIntervaloDeTempoDoEvento}" />
+			
+			    </p:schedule>
+				
+			    <p:dialog widgetVar="eventDialog" id="dialogo" header="#{msgs.atendimento_msg}"
+			    	resizable="true" modal="true" maximizable="true">
+			    	
+			    	<p:outputPanel id="eventDetails" style="text-align:justfy; width:100%" layout="block">
+			    		<table width="100%" cellspacing="3" cellpadding="3" border="0">
+			    			<tr>
+			    				<td style="width: 120px; text-align: right;"><h:outputLabel for="cliente" value="#{msgs.cliente_msg} * :" /></td>
+			    				<td>
+			    					<p:selectOneMenu value="#{agendaIncialBean.cliente.id}" id="cliente" label="#{msgs.cliente_msg}" style="width:300px">
+			    						<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
+					            		<f:selectItems value="#{agendaIncialBean.clientesCombo}"/>
+								        <p:ajax event="change" update="warehouse" listener="#{agendaIncialBean.carregaWarehouse}" oncomplete="document.getElementById('formGeral:cliente_input').focus()"/>
+					            	</p:selectOneMenu>
+			    				</td>
+			    				
+			    				<td style="width: 120px; text-align: right;"><h:outputLabel for="warehouse" value="#{msgs.warehouse_msg}:"/></td>
+			    				<td>
+			    					<p:selectOneMenu value="#{agendaIncialBean.warehouse.id}" id="warehouse" label="#{msgs.cliente_msg} * :" style="width:300px">
+			    						<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
+				            			<f:selectItems value="#{agendaIncialBean.warehouseCombo}"/>
+				            		</p:selectOneMenu>
+			    				</td>
+			    			</tr>
+			    			<tr>
+			    				<td style="width: 120px; text-align: right;"><h:outputLabel for="resp" value="#{msgs.responsavel_msg} * :" /></td>
+			    				<td>
+			    					<p:selectOneMenu value="#{agendaIncialBean.usuarioResponsavel.id}" id="resp" label="#{msgs.responsavel_msg}" style="width:300px">
+					            		<f:selectItems value="#{agendaIncialBean.usuariosSistema}"/>
+					            	</p:selectOneMenu>
+			    				</td>
+			    				
+			    				<td style="width: 120px; text-align: right;"><h:outputLabel for="tp_atendimento" value="#{msgs.atendimento_msg} * :" /></td>
+			    				<td>
+			    					<p:selectOneMenu value="#{agendaIncialBean.calendario.tipoAtendimento}" id="tp_atendimento" style="width:300px">
+			    						<f:selectItems value="#{agendaIncialBean.tipoAtendimento}"/>
+			    					</p:selectOneMenu>
+					            </td>
+			    				
+			    			</tr>
+			    			<tr>
+			    				<td style="width: 120px; text-align: right;"><h:outputLabel for="data_ini" value="#{msgs.data_msg}/#{msgs.hora_msg} #{msgs.inicial_msg} * :" /></td>
+			    				<td>
+			    					<p:calendar id="data_ini" value="#{agendaIncialBean.event.startDate}" pattern="dd/MM/yyyy" maxlength="10"
+					            		locale="#{agendaIncialBean.localeAbr}" size="10" showButtonPanel="true" onkeyup="formataData(this);" label="#{msgs.data_msg} #{msgs.inicial_msg}">
+					            		<f:validateLength minimum="10"/>
+					            	</p:calendar>
+					            	<p:inputText maxlength="5" value="#{agendaIncialBean.horaEventoInicial}" id="hora_ini" onkeyup="formataHora(this)" size="4" label="#{msgs.hora_msg} #{msgs.inicial_msg}">
+					            		<f:validateLength minimum="5"/>
+					            	</p:inputText>
+					            </td>
+
+			    				<td style="width: 120px; text-align: right;"><h:outputLabel for="data_fim" value="#{msgs.data_msg}/#{msgs.hora_msg} #{msgs.final_msg} * :" /></td>
+			    				<td>
+			    					<p:calendar id="data_fim" value="#{agendaIncialBean.event.endDate}" pattern="dd/MM/yyyy" maxlength="10"
+					            		locale="#{agendaIncialBean.localeAbr}" size="10" showButtonPanel="true" onkeyup="formataData(this)" label="#{msgs.data_msg} #{msgs.final_msg}">
+					            		<f:validateLength minimum="10"/>
+					            	</p:calendar>
+					            	<p:inputText maxlength="5" value="#{agendaIncialBean.horaEventoFinal}" id="hora_fim" onkeyup="formataHora(this)" size="4" label="#{msgs.hora_msg} #{msgs.final_msg}">
+					            		<f:validateLength minimum="5"/>
+					            	</p:inputText>
+					            </td>
+			    			</tr>
+			    			<tr>
+			    				<td style="width: 120px; text-align: right;"><h:outputLabel for="contato" value="#{msgs.contato_msg} * :" /></td>
+			    				<td>
+			    					<p:inputText value="#{agendaIncialBean.calendario.contato}" label="#{msgs.contato_msg}" id="contato"/>
+					            </td>
+
+			    				<td style="width: 120px; text-align: right;"><h:outputLabel for="cancel_ag" value="#{msgs.cancelar_agendamento} * :" /></td>
+			    				<td>
+			    					<p:selectOneMenu value="#{agendaIncialBean.calendario.cancelar}" label="#{msgs.cancelar_agendamento}" id="cancel_ag" style="width:80px">
+			    						<f:selectItem itemLabel="#{msgs.nao_msg}" itemValue="false"/>
+			    						<f:selectItem itemLabel="#{msgs.sim_msg}" itemValue="true"/>
+			    					</p:selectOneMenu>
+					            </td>
+			    			</tr>
+			    			<tr>
+			    				<td style="width: 120px; text-align: right;"><h:outputLabel for="qtd" value="#{msgs.quantidade_msg} * :" /></td>
+			    				<td colspan="3"><p:inputText maxlength="6" value="#{agendaIncialBean.calendario.quantidade}" id="qtd" onkeyup="formatarNumero(this)" size="4" label="#{msgs.quantidade_msg}"/></td>
+			    			</tr>
+			    			<tr>
+			    				<td style="width: 120px; text-align: right;">#{msgs.familia_msg}:</td>
+			    				<td>
+			    					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			    						<tr>
+			    							<td width="25%"></td>
+			    							<td width="25%"></td>
+			    							<td width="25%"></td>
+			    							<td width="25%"></td>
+			    						</tr>
+			    						<tr>
+			    							<td width="25%"><p:selectBooleanCheckbox label="TC" value="#{agendaIncialBean.calendario.familiaTc}" itemLabel="&nbsp;&nbsp;TC&nbsp;&nbsp;"/></td>
+			    							<td width="25%"><p:selectBooleanCheckbox label="LB" value="#{agendaIncialBean.calendario.familiaLb}" itemLabel="&nbsp;&nbsp;LB&nbsp;&nbsp;"/></td>
+			    							<td width="25%"><p:selectBooleanCheckbox label="TM" value="#{agendaIncialBean.calendario.familiaTm}" itemLabel="&nbsp;&nbsp;TM&nbsp;&nbsp;"/></td>
+			    							<td width="25%"><p:selectBooleanCheckbox label="MP3" value="#{agendaIncialBean.calendario.familiaMp3}" itemLabel="&nbsp;&nbsp;MP3&nbsp;&nbsp;"/><BR/></td>
+			    						</tr>
+			    						<tr>
+			    							<td width="25%"><p:selectBooleanCheckbox label="AV" value="#{agendaIncialBean.calendario.familiaAv}" itemLabel="&nbsp;&nbsp;AV&nbsp;&nbsp;"/></td>
+			    							<td width="25%"><p:selectBooleanCheckbox label="EL" value="#{agendaIncialBean.calendario.familiaEl}" itemLabel="&nbsp;&nbsp;EL&nbsp;&nbsp;"/></td>
+			    							<td width="25%"><p:selectBooleanCheckbox label="CAM" value="#{agendaIncialBean.calendario.familiaCam}" itemLabel="&nbsp;&nbsp;CAM&nbsp;&nbsp;"/></td>
+			    							<td width="25%"><p:selectBooleanCheckbox label="HA" value="#{agendaIncialBean.calendario.familiaHa}" itemLabel="&nbsp;&nbsp;HA&nbsp;&nbsp;"/><BR/></td>
+			    						</tr>
+			    						<tr>
+			    							<td width="25%"><p:selectBooleanCheckbox label="INFO" value="#{agendaIncialBean.calendario.familiaInfo}" itemLabel="&nbsp;&nbsp;INFO&nbsp;&nbsp;"/></td>
+			    							<td width="25%"><p:selectBooleanCheckbox label="PC" value="#{agendaIncialBean.calendario.familiaPc}" itemLabel="&nbsp;&nbsp;PC&nbsp;&nbsp;"/></td>
+			    							<td width="25%"><p:selectBooleanCheckbox label="IT" value="#{agendaIncialBean.calendario.familiaIt}" itemLabel="&nbsp;&nbsp;IT&nbsp;&nbsp;"/></td>
+			    							<td width="25%"><p:selectBooleanCheckbox label="TF" value="#{agendaIncialBean.calendario.familiaTf}" itemLabel="&nbsp;&nbsp;TF&nbsp;&nbsp;"/><BR/></td>
+			    						</tr>
+			    						<tr>
+			    							<td width="25%"><p:selectBooleanCheckbox label="SCCR" value="#{agendaIncialBean.calendario.familiaScCr}" itemLabel="&nbsp;&nbsp;SC/CR&nbsp;&nbsp;"/></td>
+			    							<td width="25%">&nbsp;</td>
+			    							<td width="25%">&nbsp;</td>
+			    							<td width="25%">&nbsp;</td>
+			    						</tr>
+			    					</table>
+					            </td>
+					            
+					            <td style="width: 120px; text-align: right;"><h:outputLabel for="historico" value="#{msgs.historico_msg}:" /></td>
+			    				<td>
+						            <p:inputTextarea id="historico" style="width: 300px; height:120px" counter="ttt" counterTemplate="#{msgs.caracteres_restantes}" value="#{agendaIncialBean.calendario.descricao}" maxlength="2000" rows="3" autoResize="false"/><br/>
+						            <h:outputLabel id="ttt"/>
+					            </td>
+			    			</tr>
+			    			<tr>
+			    				<td colspan="2"><p:commandButton value="#{msgs.msgs_salvar}" actionListener="#{agendaIncialBean.adicionaAlteraEvento}" action="salvar" oncomplete="myschedule.update();" update="msg_local dialogo"/></td>
+			    			</tr>
+			    		</table>
+			        </p:outputPanel>
+			    </p:dialog>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</html>
