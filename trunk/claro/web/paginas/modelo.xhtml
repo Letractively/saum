@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/template/template.xhtml">
+	<ui:define name="pad">&nbsp;</ui:define>
+	<ui:define name="titulo">#{msgs.nome_aplicativo_resumido}</ui:define>
+	<ui:define name="titulo_pagina">#{msgs.index_msg}</ui:define>
+	<ui:define name="conteudo">
+		<h:form id="msgForm">
+			<style type="text/css">
+				.old {
+	                color: #FF0000 !important;
+	            }
+			</style>
+			
+			<p:growl showDetail="true" showSummary="false" id="msg_local"/>
+            <p:blockUI block="msgForm" trigger="tabelaDeModelos,marca,atv,dtv,btSalva">  
+		        #{msgs.carregando_msg}<br />  
+		        <p:graphicImage value="../img/icones/ajax-loader.gif"/>  
+		    </p:blockUI>
+		    
+			<p:focus for="marca"/>
+				<p:panelGrid style="width:984px">
+					<p:row>
+						<p:column>
+							<h:outputLabel value="#{msgs.marca_msg}" for="marca" />
+						</p:column>
+						<p:column>
+		   					<p:selectOneMenu value="#{modelosBean.idMarcaSelecionada}" id="marca" label="#{msgs.marca_msg}" style="width:300px">
+		   						<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
+			            		<f:selectItems value="#{modelosBean.marcas}"/>
+						        <p:ajax event="change" update="tabelaDeModelos" listener="#{modelosBean.buscaModelos}"/>
+			            	</p:selectOneMenu>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="#{msgs.inserir_marca}" for="marca_novo" />
+						</p:column>
+						<p:column>
+							<p:inputText id="marca_novo" label="#{msgs.inserir_marca}" value="#{modelosBean.nomeNovoModelo}"/>
+						</p:column>
+					</p:row>
+					<f:facet name="footer">
+						<p:row>
+							<p:column colspan="2">
+								<p:commandButton action="#{modelosBean.salva}" value="#{msgs.inserir_marca}" type="submit" 
+									update="msgForm msg_local" id="btSalva"/>
+							</p:column>
+						</p:row>
+				    </f:facet>
+				</p:panelGrid>
+			<br/>
+		    
+		    
+			<p:contextMenu for="tabelaDeModelos" id="ctxMenu">
+				<p:menuitem value="#{msgs.ativar_msg}" update="msgForm, msg_local" icon="ui-icon-check"
+					actionListener="#{modelosBean.ativaModelo}" id="atv"/>
+				<p:menuitem value="#{msgs.desativar_msg}" update="msgForm, msg_local" icon="ui-icon-closethick"
+					actionListener="#{modelosBean.desativaModelo}" id="dtv"/>
+			</p:contextMenu>
+
+			<p:dataTable id="tabelaDeModelos" var="mode" lazy="false" value="#{modelosBean.modelos}" paginator="true" rows="10" 
+				emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed; height:340px" rowStyleClass="#{mode.ativo == false ? 'old' : null}"
+				selection="#{modelosBean.modeloSelecionado}" selectionMode="single" rowKey="#{mode.id}">
+
+				<p:column headerText="#{msgs.codigo_msg}" style="width:60px">
+					<h:outputText value="#{mode.id}" /> 
+		        </p:column>
+				
+				<p:column headerText="#{msgs.nome_msg}">
+					<h:outputText value="#{mode.nome}"/>
+		        </p:column>
+		        
+				<p:column headerText="#{msgs.marca_msg}">
+					<h:outputText value="#{mode.aparelhoMarca.nome}" />
+		        </p:column>
+		        
+		    </p:dataTable>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

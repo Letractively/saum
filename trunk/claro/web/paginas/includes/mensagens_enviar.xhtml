@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:core="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core">
+		<style type="text/css">
+			.coluna1{
+				width: 130px;
+				text-align: right;
+			}
+		</style>
+		<h:form id="msgForm_enviar">
+			<p:blockUI block="msgForm_enviar" trigger="msgForm_enviar">  
+		        #{msgs.carregando_msg}<br />  
+		        <p:graphicImage value="../img/icones/ajax-loader.gif"/>  
+		    </p:blockUI>  
+			
+			<p:focus for="nome_usuario"/>
+			<p:growl showDetail="true" showSummary="false" id="msg_local"/>
+			<p:panel header="#{msgs.campo_busca_usuario}">
+				<h:panelGrid columns="3">
+					<h:outputLabel value="#{msgs.nome_msg}" for="nome_usuario" />
+		            <p:autoComplete id="nome_usuario" maxResults="10" value="#{mensagemEnviarBean.termoBusca}" size="100" minQueryLength="3" queryDelay="700" 
+		            	completeMethod="#{mensagemEnviarBean.buscaNomes}">
+		            	<p:ajax event="itemSelect" listener="#{mensagemEnviarBean.usuarioSelecionado}" update="msgForm_enviar"/>  
+					</p:autoComplete>
+				</h:panelGrid>
+			</p:panel>
+			<br/><br/>
+			<p:panelGrid style="width:945px">
+				<p:row>
+					<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.titulo_msg} * :" for="titulo"/></p:column>
+					<p:column><p:inputText id="titulo" maxlength="25" size="60" value="#{mensagemEnviarBean.mensagem.titulo}" label="#{msgs.titulo_msg}" required="true"/></p:column>
+				</p:row>
+				<p:row>
+					<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.nome_destinatario_msg} * :" for="nome_dest"/></p:column>
+					<p:column><p:inputText id="nome_dest" maxlength="25" size="60" value="#{mensagemEnviarBean.destinatario.nome}" readonly="true" label="#{msgs.titulo_msg}" required="true"/></p:column>
+				</p:row>
+				
+				<p:row>
+					<p:column styleClass="coluna1"><h:outputLabel value="#{msgs.text_msg} * :" for="texto"/></p:column>
+					<p:column>
+						<p:inputTextarea id="texto" style="width:400px" value="#{mensagemEnviarBean.mensagem.mensagem}" required="true" maxlength="2000" autoResize="false" counter="texto_counter" counterTemplate="#{msgs.caracteres_restantes}" rows="5" label="#{msgs.text_msg}"/>
+					</p:column>
+				</p:row>
+				
+				<p:row>
+					<p:column styleClass="coluna1"><h:outputLabel id="ddd" /></p:column>
+					<p:column><h:outputLabel id="texto_counter"/></p:column>
+				</p:row>
+				
+				<f:facet name="footer">
+					<p:row>
+						<p:column colspan="2">
+							<p:commandButton action="#{mensagemEnviarBean.enviarMensagem()}" value="#{msgs.msg_enviar_mensagem}" type="submit" update="msgForm_enviar msg_local"/>
+						</p:column>
+					</p:row>
+			    </f:facet>
+			</p:panelGrid>
+			
+			
+		</h:form>
+</html>

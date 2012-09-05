@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+	<ui:composition template="/template/template.xhtml"> 
+		<ui:define name="pad"><div class="pad-header"><img src="ddd" height="1" width="1"/></div></ui:define>
+		<ui:define name="titulo">#{msgs.nome_aplicativo_resumido}</ui:define>
+		<ui:define name="titulo_pagina">#{msgs.index_msg}</ui:define>
+		<ui:define name="conteudo">
+			<h:form id="formLogin">
+				<p:fieldset id="field_cont" style="border:0px">
+					<p:blockUI block="field_cont" trigger="bt_esqueci bt_login">  
+						#{msgs.carregando_msg}<br />  
+						<p:graphicImage value="../img/icones/ajax-loader.gif"/>  
+					</p:blockUI>  
+					<div style="margin-top: 50px; text-align: left; float: left; padding: 10px 15px 10px 10px; margin-bottom: 50px; margin-left: 30px">
+						<div style="float: left;">
+							<img src="../img/icones/phone.png" alt="telefone publicidade" style="float: left;"/>
+							<div style="float:left; width:310px;">
+								<div style="font-size: 22px; font-weight: bold; color:#000066">#{msgs.inf009}</div>
+								<br/>
+								<div style="font-size: 13px; color:#333333">#{msgs.inf010}</div>
+								<br/>
+								<div style="font-size: 13px; color:#333333; font-weight: bolder;">#{msgs.inf001}:</div>
+								<ul style="font-size:12px; color:#666666; font-weight:bold">
+								       <li>#{msgs.inf002};</li>
+								       <li>#{msgs.inf003};</li>
+								       <li>#{msgs.inf004};</li>
+								       <li>#{msgs.inf005};</li>
+								       <li>#{msgs.inf006}.</li>
+								   </ul>
+								   <br/>
+								<div style="font-size: 15px; color:#0099FF; font-weight:bold">
+									#{msgs.inf007}?&nbsp;&nbsp;<p:commandButton type="button" value="#{msgs.msgs_cadastrar}" onclick="window.location='cadastrar.html'"/>
+								</div>
+						    </div>
+						</div>
+					</div>
+					<div style="margin-top: 90px; text-align: left; width: 20px; float: left; border-left: #CCCCCC 1px solid; height: 230px">&nbsp;</div>
+					<div style="margin-top: 50px; text-align: left; width: 330px; float: left; padding: 10px 15px 10px 10px;">
+						<br/><br/><br/>
+							<div style="float:left;">
+								<div style="font-size: 20px; font-weight: bold; color:#000066">#{msgs.inf008}</div>
+								<br/>
+									<table width="320" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td align="right" width="130"><h:outputLabel value="#{msgs.msg_login} * :" for="email"/>:&nbsp;&nbsp;</td>
+											<td align="left">
+												<p:inputText label="#{msgs.msg_login}" autocomplete="off" value="#{loginBean.usuario.email}" id="email" required="true" style="width: 200px"/>
+											</td>
+										</tr>
+										<tr>
+											<td align="right"><h:outputLabel value="#{msgs.msg_senha} * :" for="senha"/>:&nbsp;&nbsp;</td>
+											<td align="left">
+												<p:password label="#{msgs.msg_senha}" autocomplete="off" value="#{loginBean.usuario.senha}" id="senha" required="true" style="width: 200px"/>
+											</td>
+										</tr>
+										<tr>
+											<td align="right">&nbsp;</td>
+											<td align="left" style="padding-top: 5px;">
+												<p:selectBooleanCheckbox id="permanecerLogado" value="#{loginBean.permanecerLogado}" label="#{msgs.permanecer_logado}" itemLabel="#{msgs.permanecer_logado}" /> 
+											</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td align="left">
+												<p:commandButton action="#{loginBean.login()}" value="#{msgs.efetuarLogin}" type="submit" style="float:left; margin-right:10px" id="bt_login"/>
+												<p:commandButton action="#{loginBean.esqueciMinhaSenha()}" value="#{msgs.esqueci_minha_senha}" type="submit" style="float:left" id="bt_esqueci"/>
+											</td>
+										</tr>
+										<tr>
+											<td align="right" colspan="2" height="20">
+												</td>
+										</tr>
+									</table>
+								<br/>
+						    </div>
+					</div>
+					<style type="text/css">
+						#titulo_pagina{
+							display: none !important;
+						}
+					</style>
+			    </p:fieldset>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</html>

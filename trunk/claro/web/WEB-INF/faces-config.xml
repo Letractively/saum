@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+    version="2.0">
+    
+	<lifecycle>
+		<phase-listener>br.com.clarotriagem.filtrosEMonitores.ControleListener</phase-listener>
+	</lifecycle>
+	<application>
+		<el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+        <resource-bundle>
+            <base-name>resources</base-name>
+            <var>msgs</var>
+        </resource-bundle>
+	    <message-bundle>
+	    	<base-name>erros</base-name>
+	    </message-bundle>    
+    </application>
+    
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>inicio</from-outcome>
+            <to-view-id>/paginas/inicio</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>index</from-outcome>
+            <to-view-id>/paginas/index</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>alterar_senha</from-outcome>
+            <to-view-id>/paginas/alterar_senha</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    
+    
+</faces-config>
