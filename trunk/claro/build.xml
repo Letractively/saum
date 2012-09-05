@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
 <project name="ICP - Triagem" default="gera.producao">
-	
+	 
 	<property environment="env"/>
 	<property name="pasta.projetos" value="O:/workSpace"/>
 	<property name="projeto.principal.nome" value="claro"/>
