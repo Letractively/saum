@@ -33,6 +33,14 @@ public class WarehouseListLazy extends LazyDataModel<Cliente> {
 		return listaClientes;
 	}
 
+	public void setRowIndex(final int rowIndex) {
+		if (rowIndex == -1 || getPageSize() == 0) {
+			super.setRowIndex(-1);
+		} else {
+			super.setRowIndex(rowIndex % getPageSize());
+		}
+	}
+
 	@Override
 	public Object getRowKey(Cliente cliente) {
 		return cliente.getId();

@@ -79,7 +79,7 @@ public class AgendaBean extends AgendaFactory {
 		cliente = calendario.getWarehouse().getCliente();
 		warehouse = calendario.getWarehouse();
 		warehouseCombo = clienteService.carregaWarehousePeloCliente(cliente.getId());
-		usuarioResponsavel = calendario.getUsuarioResponsavel();
+		usuarioResponsavel.setId(calendario.getUsuarioResponsavel().getId());
 		horaEventoInicial = sdf.format(calendario.getDataInicial());
 		horaEventoFinal = sdf.format(calendario.getDataFinal());
 

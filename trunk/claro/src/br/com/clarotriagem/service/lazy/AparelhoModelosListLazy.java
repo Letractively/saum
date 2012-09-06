@@ -57,6 +57,13 @@ public class AparelhoModelosListLazy extends LazyDataModel<AparelhoModelo> {
 		}
 	}
 
+	public void setRowIndex(final int rowIndex) {
+		if (rowIndex == -1 || getPageSize() == 0) {
+			super.setRowIndex(-1);
+		} else {
+			super.setRowIndex(rowIndex % getPageSize());
+		}
+	}
 
 	public AparelhosService getAparelhosService() {
 		return aparelhosService;

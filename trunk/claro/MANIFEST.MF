@@ -8,7 +8,7 @@ Specification-Title: Framework claro
 Specification-Version: WebObjects ${wo.version}
 Specification-Vendor: ${ant.commission.name}
 Implementation-Title: ${ant.java.package}
-Implementation-Version: ${version} build ${build.number} September 5 2
+Implementation-Version: ${version} build ${build.number} September 6 2
  012
 Implementation-Vendor: ${ant.vendor.name}
 Sealed: false

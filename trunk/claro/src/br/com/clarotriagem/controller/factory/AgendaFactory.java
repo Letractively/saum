@@ -208,8 +208,8 @@ public class AgendaFactory extends BaseBean{
 	}
 
 	public Cliente getWarehouse() {
-		if(warehouseCombo == null){
-			warehouseCombo = new TreeMap<String, Long>();
+		if(warehouse == null){
+			warehouse = new Cliente();
 		}
 		return warehouse;
 	}
