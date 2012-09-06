@@ -39,6 +39,14 @@ public class MensagemListLazy extends LazyDataModel<Mensagem> {
 		return mensagems;
 	}
 
+	public void setRowIndex(final int rowIndex) {
+		if (rowIndex == -1 || getPageSize() == 0) {
+			super.setRowIndex(-1);
+		} else {
+			super.setRowIndex(rowIndex % getPageSize());
+		}
+	}
+
 	@Override
 	public Object getRowKey(Mensagem mensagem) {
 		return mensagem.getId();

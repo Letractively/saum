@@ -107,8 +107,14 @@ public class CalendarioService extends ServiceFactory<CalendarioService>{
 
 	public void atualizaCalendario(Calendario cal) {
 		try {
+			UsuarioIdentificacao novoResponsavel = getUsuarioIdentificacaoDAO().find(cal.getUsuarioResponsavel().getId());
+			cal.setUsuarioResponsavel(novoResponsavel);
 			getCalendarioDAO().atualizaCalendario(cal);
+			
 			EnviaEmailBO.enviaEmailAlteracaoAgendamento(cal);
+			log.erro(cal.toString());
+			log.info("\n\n\n\n\n");
+			log.info(cal.toString());
 			
 			Mensagem msg = new Mensagem();
 			msg.setData(new Timestamp(System.currentTimeMillis()));

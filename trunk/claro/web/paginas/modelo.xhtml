@@ -30,7 +30,7 @@
 							<h:outputLabel value="#{msgs.marca_msg}" for="marca" />
 						</p:column>
 						<p:column>
-		   					<p:selectOneMenu value="#{modelosBean.idMarcaSelecionada}" id="marca" label="#{msgs.marca_msg}" style="width:300px">
+		   					<p:selectOneMenu value="#{modelosBean.idMarcaSelecionada}" id="marca" label="#{msgs.marca_msg}" style="width:300px" required="true">
 		   						<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
 			            		<f:selectItems value="#{modelosBean.marcas}"/>
 						        <p:ajax event="change" update="tabelaDeModelos" listener="#{modelosBean.buscaModelos}"/>
@@ -39,10 +39,10 @@
 					</p:row>
 					<p:row>
 						<p:column>
-							<h:outputLabel value="#{msgs.inserir_marca}" for="marca_novo" />
+							<h:outputLabel value="#{msgs.modelo_msg}" for="marca_novo" />
 						</p:column>
 						<p:column>
-							<p:inputText id="marca_novo" label="#{msgs.inserir_marca}" value="#{modelosBean.nomeNovoModelo}"/>
+							<p:inputText id="marca_novo" label="#{msgs.modelo_msg}" value="#{modelosBean.nomeNovoModelo}" required="true"/>
 						</p:column>
 					</p:row>
 					<f:facet name="footer">

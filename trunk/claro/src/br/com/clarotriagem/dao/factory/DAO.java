@@ -30,7 +30,7 @@ public abstract class DAO<T extends Serializable> {
 	}
 	
 	@Transactional(readOnly = true)
-	public T find(T transiente) throws Exception{
+	public T find(Long transiente) throws Exception{
 		T ret = entityManager.find(generico, transiente);
 		return ret;
 	}

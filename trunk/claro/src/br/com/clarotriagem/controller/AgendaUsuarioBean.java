@@ -13,7 +13,7 @@ import br.com.clarotriagem.service.CalendarioService;
 import br.com.clarotriagem.service.lazy.CalendarioGeralOuUsuarioNaoConcluidoListLazy;
 
 @ManagedBean
-@Scope("view")
+@Scope("session")
 @Component
 public class AgendaUsuarioBean extends AgendaFactory {
 

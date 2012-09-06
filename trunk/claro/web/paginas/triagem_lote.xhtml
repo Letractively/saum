@@ -98,7 +98,6 @@
 						selectionMode="single" editable="true" rowStyleClass="classROW">
 		        	
 			        	<p:ajax event="rowEdit" listener="#{triagemLoteBean.onEdit}" update=":formGeral:tabelaAgendas" />
-			        	<p:ajax event="rowEditCancel" listener="#{triagemLoteBean.onCancel}" update=":formGeral:tabelaAgendas" />
 
 						<f:facet name="header">#{msgs.lista_lotes_triagem}</f:facet>
 
