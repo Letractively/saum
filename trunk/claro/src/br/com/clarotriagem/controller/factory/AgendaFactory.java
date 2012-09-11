@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -20,6 +21,7 @@ import br.com.clarotriagem.entitades.Cliente;
 import br.com.clarotriagem.entitades.UsuarioIdentificacao;
 import br.com.clarotriagem.service.CalendarioService;
 import br.com.clarotriagem.utils.Erros;
+import br.com.clarotriagem.utils.enums.Familias;
 import br.com.clarotriagem.utils.enums.TipoAtendimento;
 
 public class AgendaFactory extends BaseBean{
@@ -36,6 +38,7 @@ public class AgendaFactory extends BaseBean{
 	protected UsuarioIdentificacao usuarioResponsavel;
 	protected String horaEventoInicial;
 	protected String horaEventoFinal;
+	protected List<Familias> listaFamilias;
 	
 	protected SortedMap<String, Long> clientesCombo;
 	protected SortedMap<String, Long> usuariosSistema;
@@ -67,6 +70,8 @@ public class AgendaFactory extends BaseBean{
 					calendario.setUsuarioAbriu(getUsuarioLogado());
 					calendario.setUsuarioResponsavel(usuarioResponsavel);
 					calendario.setWarehouse(warehouse);
+					calendario.setEnvioEmailAntecipado(false);
+					calendario.setEnvioEmailAtrasado(false);
 					
 					calendarioService.adicionaCalendario(calendario);
 					Calendario cal = calendarioService.getCalendarioPeloID(calendario.getId());
@@ -323,6 +328,19 @@ public class AgendaFactory extends BaseBean{
 
 	public void setTipoAtendimento(SortedMap<String, Integer> tipoAtendimento) {
 		this.tipoAtendimento = tipoAtendimento;
+	}
+
+
+	public List<Familias> getListaFamilias() {
+		if(listaFamilias == null){
+			listaFamilias = Familias.getListaFamilia();
+		}
+		return listaFamilias;
+	}
+
+
+	public void setListaFamilias(List<Familias> listaFamilias) {
+		this.listaFamilias = listaFamilias;
 	}
 
 }
