@@ -26,34 +26,34 @@
     			<tr>
     				<td style="width: 120px; text-align: right;"><h:outputLabel for="cliente" value="#{msgs.cliente_msg} * :" /></td>
     				<td>
-    					<p:selectOneMenu value="#{agendaBean.cliente.id}" id="cliente" label="#{msgs.cliente_msg}" style="width:300px">
+    					<h:selectOneMenu value="#{agendaBean.cliente.id}" id="cliente" label="#{msgs.cliente_msg}" style="width:300px">
     						<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
 		            		<f:selectItems value="#{agendaBean.clientesCombo}"/>
 					        <p:ajax event="change" update="warehouse" listener="#{agendaBean.carregaWarehouse}" oncomplete="document.getElementById('formGeral:cliente_input').focus()"/>
-		            	</p:selectOneMenu>
+		            	</h:selectOneMenu>
     				</td>
     				
     				<td style="width: 120px; text-align: right;"><h:outputLabel for="warehouse" value="#{msgs.warehouse_msg} * :"/></td>
     				<td>
-    					<p:selectOneMenu value="#{agendaBean.warehouse.id}" id="warehouse" label="#{msgs.cliente_msg}" style="width:300px">
+    					<h:selectOneMenu value="#{agendaBean.warehouse.id}" id="warehouse" label="#{msgs.cliente_msg}" style="width:300px">
     						<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
 	            			<f:selectItems value="#{agendaBean.warehouseCombo}"/>
-	            		</p:selectOneMenu>
+	            		</h:selectOneMenu>
     				</td>
     			</tr>
     			<tr>
     				<td style="width: 120px; text-align: right;"><h:outputLabel for="resp" value="#{msgs.responsavel_msg} * :" /></td>
     				<td>
-    					<p:selectOneMenu value="#{agendaBean.usuarioResponsavel.id}" id="resp" label="#{msgs.responsavel_msg}" style="width:300px">
+    					<h:selectOneMenu value="#{agendaBean.usuarioResponsavel.id}" id="resp" label="#{msgs.responsavel_msg}" style="width:300px">
 		            		<f:selectItems value="#{agendaBean.usuariosSistema}"/>
-		            	</p:selectOneMenu>
+		            	</h:selectOneMenu>
     				</td>
     				
     				<td style="width: 120px; text-align: right;"><h:outputLabel for="tp_atendimento" value="#{msgs.atendimento_msg} * :" /></td>
     				<td>
-    					<p:selectOneMenu value="#{agendaBean.calendario.tipoAtendimento}" id="tp_atendimento" style="width:300px">
+    					<h:selectOneMenu value="#{agendaBean.calendario.tipoAtendimento}" id="tp_atendimento" style="width:300px">
     						<f:selectItems value="#{agendaBean.tipoAtendimento}"/>
-    					</p:selectOneMenu>
+    					</h:selectOneMenu>
 		            </td>
     				
     			</tr>
@@ -88,10 +88,10 @@
 
     				<td style="width: 120px; text-align: right;"><h:outputLabel for="cancel_ag" value="#{msgs.cancelar_agendamento} * :" /></td>
     				<td>
-    					<p:selectOneMenu value="#{agendaBean.calendario.cancelar}" label="#{msgs.cancelar_agendamento}" id="cancel_ag" style="width:80px">
+    					<h:selectOneMenu value="#{agendaBean.calendario.cancelar}" label="#{msgs.cancelar_agendamento}" id="cancel_ag" style="width:80px">
     						<f:selectItem itemLabel="#{msgs.nao_msg}" itemValue="false"/>
     						<f:selectItem itemLabel="#{msgs.sim_msg}" itemValue="true"/>
-    					</p:selectOneMenu>
+    					</h:selectOneMenu>
 		            </td>
     			</tr>
     			<tr>
