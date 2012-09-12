@@ -49,12 +49,9 @@
 			</p:contextMenu>
 			
 			<p:dataTable id="tabelaAgendas" widgetVar="tabelaDeAgendas" var="lista" value="#{triagemLoteBean.calendarios}" paginator="true" 
-				rows="10" lazy="true" emptyMessage="#{msgs.nenhum_dado_encontrado}" selection="#{triagemLoteBean.calendario}" selectionMode="single">  
+				rows="10" lazy="true" emptyMessage="#{msgs.nenhum_dado_encontrado}" selection="#{triagemLoteBean.calendario}" 
+				selectionMode="single" paginatorPosition="top">  
 		        
-				<f:facet name="header">  
-		 			#{msgs.lista_de_agendamento}
-		        </f:facet>
-
 				<p:column style="width:16px">
 					<p:rowToggler />
 				</p:column>
@@ -95,11 +92,9 @@
 		        	<br/>
 		        	<p:dataTable id="tbConsulta" var="lsInt" value="#{lista.triagemLotes}" widgetVar="tabelaConsulta"
 						emptyMessage="#{msgs.nenhum_dado_encontrado}" rowKey="#{lista.id}" selection="#{triagemLoteBean.triagemLote}" 
-						selectionMode="single" editable="true" rowStyleClass="classROW">
+						selectionMode="single" editable="true" rowStyleClass="classROW" paginatorPosition="top">
 		        	
 			        	<p:ajax event="rowEdit" listener="#{triagemLoteBean.onEdit}" update=":formGeral:tabelaAgendas" />
-
-						<f:facet name="header">#{msgs.lista_lotes_triagem}</f:facet>
 
 						<p:column headerText="#{msgs.codigo_msg}" styleClass="coluna3">
 				 			#{lsInt.id}

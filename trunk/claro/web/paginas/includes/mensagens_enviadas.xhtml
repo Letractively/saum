@@ -17,8 +17,8 @@
 			</p:contextMenu>
 
 			<p:dataTable id="tabelaDeMensagens_enviadas" var="mensag" lazy="true" value="#{mensagemEnviadasBean.mensagemsTodas}" paginator="true" rows="10" 
-				emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed; height:340px" rowStyleClass="#{mensag.lida == false ? 'old' : null}"
-				selection="#{mensagemEnviadasBean.mensagem}" selectionMode="single">  
+				emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed" rowStyleClass="#{mensag.lida == false ? 'old' : null}"
+				selection="#{mensagemEnviadasBean.mensagem}" selectionMode="single" paginatorPosition="top">  
 				
 				<p:columnGroup type="header">  
 					<p:row>  

@@ -207,7 +207,7 @@ function DateCodeSE(campo){
 					dias = dias + 29;
 				else
 					dias = dias + 28;
-			x++
+			x++;
 		} 
 		dias = dias + dia + 6;
 		semanas = dias/7;
