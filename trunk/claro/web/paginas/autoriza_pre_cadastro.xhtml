@@ -9,104 +9,104 @@
 		<ui:define name="pad">&nbsp;</ui:define>
 		<ui:define name="titulo">#{msgs.nome_aplicativo_resumido}</ui:define>
 		<ui:define name="titulo_pagina">#{msgs.aut_pre_cadastro}</ui:define>
-		<ui:define name="conteudo">
-		<style type="text/css">
-			.old {
-                color: #FF0000 !important;
-                font-weight: bold !important;
-            }
-		</style>
-		<h:form id="msgForm">
-			<p:contextMenu for="tabelaDeUsrPre">
-				<p:menuitem value="#{msgs.autorizar_usuario}" update="dialogoLeituraPainel" icon="ui-icon-shuffle"
-					oncomplete="dialogoLeitura.show()" />
-				<p:menuitem value="#{msgs.apagar_usuario}" update="tabelaDeUsrPre" icon="ui-icon-close"
-					actionListener="#{autorizaPreCadastroBean.apagarUsuarioNaoAutorizado()}" />
-			</p:contextMenu>
-
-
-			<p:dataTable id="tabelaDeUsrPre" var="lista" value="#{autorizaPreCadastroBean.listaUsuariosNaoAutorizados}" paginatorPosition="top"
-				paginator="true" rows="10" emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed; height:330px"
-		    	rowKey="#{lista.id}" selection="#{autorizaPreCadastroBean.usuarioCadastro}" selectionMode="single">  
-		        
-		        <p:column headerText="#{msgs.nome_msg}" sortBy="#{lista.nome}">  
-   					#{lista.nome}
-		        </p:column>
-		  
-		        <p:column headerText="#{msgs.telefone_msg}">
-   					#{lista.telefone1}
-		        </p:column>
-
-		        <p:column headerText="#{msgs.celular_msg}">
-   					#{lista.telefone2}
-		        </p:column>
-		        
-		        <p:column headerText="#{msgs.endereco_msg}">
-   					#{lista.endereco}
-		        </p:column>
-		        
-		        <p:column headerText="#{msgs.msg_login}">
-   					#{lista.email}
-		        </p:column>
-		        
-		    </p:dataTable>
-		    
-            <p:blockUI block="msgForm" trigger="tabelaDeUsrPre">  
-		        #{msgs.carregando_msg}<br />  
-		        <p:graphicImage value="../img/icones/ajax-loader.gif"/>  
-		    </p:blockUI>  
-		    
-		    <p:dialog widgetVar="dialogoLeitura" header="#{autorizaPreCadastroBean.usuarioCadastro.nome}" width="400" modal="true" maximizable="true">
-		    	<p:outputPanel id="dialogoLeituraPainel" style="text-align:justfy; width:100%" layout="block">
-		    		<p:panelGrid style="width:100%; height:100%">
-		    			<p:row>
-			    			<p:column width="50">#{msgs.nome_msg}</p:column>
-			    			<p:column>
-			   					<h:outputText value="#{autorizaPreCadastroBean.usuarioCadastro.nome} #{autorizaPreCadastroBean.usuarioCadastro.sobrenome}"/>
-			    			</p:column>
-		    			</p:row>
-
-		    			<p:row>
-			    			<p:column width="50">#{msgs.telefone_msg}</p:column>
-			    			<p:column>
-			   					<h:outputText value="#{autorizaPreCadastroBean.usuarioCadastro.telefone1}"/>
-			    			</p:column>
-		    			</p:row>
-
-		    			<p:row>
-			    			<p:column width="50">#{msgs.celular_msg}</p:column>
-			    			<p:column>
-			   					<h:outputText value="#{autorizaPreCadastroBean.usuarioCadastro.telefone2}"/>
-			    			</p:column>
-		    			</p:row>
-
-		    			<p:row>
-			    			<p:column width="50">#{msgs.msg_login}</p:column>
-			    			<p:column>
-			   					<h:outputText value="#{autorizaPreCadastroBean.usuarioCadastro.email}"/>
-			    			</p:column>
-		    			</p:row>
-		    			<p:row>
-			    			<p:column width="50">#{msgs.perfil_msg}*</p:column>
-			    			<p:column>
-				   				<p:selectOneMenu id="perfil" value="#{autorizaPreCadastroBean.perfil.perfilId}" required="true">
-									<f:selectItems value="#{autorizaPreCadastroBean.perfis}"/>
-								</p:selectOneMenu>
-			    			</p:column>
-		    			</p:row>
-		    			<f:facet name="footer">
-		    			<p:row>
-			    			<p:column colspan="2">
-							    <p:commandButton actionListener="#{autorizaPreCadastroBean.autorizarUsuario()}" oncomplete="dialogoLeitura.hide()" icon="ui-icon-disk" value="#{msgs.autorizar_usuario}" update="tabelaDeUsrPre"/>
-							    <p:commandButton oncomplete="dialogoLeitura.hide()" icon="ui-icon-close" value="#{msgs.fechar_msg}" update="tabelaDeUsrPre"/>
-						    </p:column>
-						    </p:row>
-					    </f:facet>
-					</p:panelGrid>
-		        </p:outputPanel>
-		    </p:dialog>  
-		    
-		</h:form>
-		</ui:define>
+		<ui:define name="conteudo"><div id="container_conteudo_interno" style="background-color: #FFFFFF;" class="conteudo-principal">
+			<style type="text/css">
+				.old {
+	                color: #FF0000 !important;
+	                font-weight: bold !important;
+	            }
+			</style>
+			<h:form id="msgForm">
+				<p:contextMenu for="tabelaDeUsrPre">
+					<p:menuitem value="#{msgs.autorizar_usuario}" update="dialogoLeituraPainel" icon="ui-icon-shuffle"
+						oncomplete="dialogoLeitura.show()" />
+					<p:menuitem value="#{msgs.apagar_usuario}" update="tabelaDeUsrPre" icon="ui-icon-close"
+						actionListener="#{autorizaPreCadastroBean.apagarUsuarioNaoAutorizado()}" />
+				</p:contextMenu>
+	
+	
+				<p:dataTable id="tabelaDeUsrPre" var="lista" value="#{autorizaPreCadastroBean.listaUsuariosNaoAutorizados}" paginatorPosition="top"
+					paginator="true" rows="10" emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed; height:330px"
+			    	rowKey="#{lista.id}" selection="#{autorizaPreCadastroBean.usuarioCadastro}" selectionMode="single">  
+			        
+			        <p:column headerText="#{msgs.nome_msg}" sortBy="#{lista.nome}">  
+	   					#{lista.nome}
+			        </p:column>
+			  
+			        <p:column headerText="#{msgs.telefone_msg}">
+	   					#{lista.telefone1}
+			        </p:column>
+	
+			        <p:column headerText="#{msgs.celular_msg}">
+	   					#{lista.telefone2}
+			        </p:column>
+			        
+			        <p:column headerText="#{msgs.endereco_msg}">
+	   					#{lista.endereco}
+			        </p:column>
+			        
+			        <p:column headerText="#{msgs.msg_login}">
+	   					#{lista.email}
+			        </p:column>
+			        
+			    </p:dataTable>
+			    
+	            <p:blockUI block="msgForm" trigger="tabelaDeUsrPre">  
+			        #{msgs.carregando_msg}<br />  
+			        <p:graphicImage value="../img/icones/ajax-loader.gif"/>  
+			    </p:blockUI>  
+			    
+			    <p:dialog widgetVar="dialogoLeitura" header="#{autorizaPreCadastroBean.usuarioCadastro.nome}" width="400" modal="true" maximizable="true">
+			    	<p:outputPanel id="dialogoLeituraPainel" style="text-align:justfy; width:100%" layout="block">
+			    		<p:panelGrid style="width:100%; height:100%">
+			    			<p:row>
+				    			<p:column width="50">#{msgs.nome_msg}</p:column>
+				    			<p:column>
+				   					<h:outputText value="#{autorizaPreCadastroBean.usuarioCadastro.nome} #{autorizaPreCadastroBean.usuarioCadastro.sobrenome}"/>
+				    			</p:column>
+			    			</p:row>
+	
+			    			<p:row>
+				    			<p:column width="50">#{msgs.telefone_msg}</p:column>
+				    			<p:column>
+				   					<h:outputText value="#{autorizaPreCadastroBean.usuarioCadastro.telefone1}"/>
+				    			</p:column>
+			    			</p:row>
+	
+			    			<p:row>
+				    			<p:column width="50">#{msgs.celular_msg}</p:column>
+				    			<p:column>
+				   					<h:outputText value="#{autorizaPreCadastroBean.usuarioCadastro.telefone2}"/>
+				    			</p:column>
+			    			</p:row>
+	
+			    			<p:row>
+				    			<p:column width="50">#{msgs.msg_login}</p:column>
+				    			<p:column>
+				   					<h:outputText value="#{autorizaPreCadastroBean.usuarioCadastro.email}"/>
+				    			</p:column>
+			    			</p:row>
+			    			<p:row>
+				    			<p:column width="50">#{msgs.perfil_msg}*</p:column>
+				    			<p:column>
+					   				<p:selectOneMenu id="perfil" value="#{autorizaPreCadastroBean.perfil.perfilId}" required="true">
+										<f:selectItems value="#{autorizaPreCadastroBean.perfis}"/>
+									</p:selectOneMenu>
+				    			</p:column>
+			    			</p:row>
+			    			<f:facet name="footer">
+			    			<p:row>
+				    			<p:column colspan="2">
+								    <p:commandButton actionListener="#{autorizaPreCadastroBean.autorizarUsuario()}" oncomplete="dialogoLeitura.hide()" icon="ui-icon-disk" value="#{msgs.autorizar_usuario}" update="tabelaDeUsrPre"/>
+								    <p:commandButton oncomplete="dialogoLeitura.hide()" icon="ui-icon-close" value="#{msgs.fechar_msg}" update="tabelaDeUsrPre"/>
+							    </p:column>
+							    </p:row>
+						    </f:facet>
+						</p:panelGrid>
+			        </p:outputPanel>
+			    </p:dialog>  
+			    
+			</h:form>
+		</div></ui:define>
 	</ui:composition>
 </html>

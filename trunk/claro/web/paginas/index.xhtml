@@ -16,10 +16,10 @@
 						#{msgs.carregando_msg}<br />  
 						<p:graphicImage value="../img/icones/ajax-loader.gif"/>  
 					</p:blockUI>  
-					<div style="margin-top: 50px; text-align: left; float: left; padding: 10px 15px 10px 10px; margin-bottom: 50px; margin-left: 30px">
+					<div style="margin-top: 50px; text-align: left; float: left; padding: 10px 15px 10px 0px; margin-bottom: 50px; margin-left: 10px;">
 						<div style="float: left;">
-							<img src="../img/icones/phone.png" alt="telefone publicidade" style="float: left;"/>
-							<div style="float:left; width:310px;">
+							<img src="../img/icones/phone.png" alt="telefone publicidade" style="float: left; margin-left: -15px"/>
+							<div style="float:left; width:350px;">
 								<div style="font-size: 22px; font-weight: bold; color:#000066">#{msgs.inf009}</div>
 								<br/>
 								<div style="font-size: 13px; color:#333333">#{msgs.inf010}</div>
@@ -47,13 +47,13 @@
 								<br/>
 									<table width="320" align="center" border="0" cellpadding="0" cellspacing="0">
 										<tr>
-											<td align="right" width="130"><h:outputLabel value="#{msgs.msg_login} * :" for="email"/>:&nbsp;&nbsp;</td>
+											<td align="right" width="130"><h:outputLabel value="#{msgs.msg_login} *" for="email"/>:&nbsp;&nbsp;</td>
 											<td align="left">
 												<p:inputText label="#{msgs.msg_login}" autocomplete="off" value="#{loginBean.usuario.email}" id="email" required="true" style="width: 200px"/>
 											</td>
 										</tr>
 										<tr>
-											<td align="right"><h:outputLabel value="#{msgs.msg_senha} * :" for="senha"/>:&nbsp;&nbsp;</td>
+											<td align="right"><h:outputLabel value="#{msgs.msg_senha} *" for="senha"/>:&nbsp;&nbsp;</td>
 											<td align="left">
 												<p:password label="#{msgs.msg_senha}" autocomplete="off" value="#{loginBean.usuario.senha}" id="senha" required="true" style="width: 200px"/>
 											</td>
@@ -70,10 +70,6 @@
 												<p:commandButton action="#{loginBean.login()}" value="#{msgs.efetuarLogin}" type="submit" style="float:left; margin-right:10px" id="bt_login"/>
 												<p:commandButton action="#{loginBean.esqueciMinhaSenha()}" value="#{msgs.esqueci_minha_senha}" type="submit" style="float:left" id="bt_esqueci"/>
 											</td>
-										</tr>
-										<tr>
-											<td align="right" colspan="2" height="20">
-												</td>
 										</tr>
 									</table>
 								<br/>
