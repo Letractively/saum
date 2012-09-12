@@ -8,43 +8,45 @@
 <ui:composition template="/template/template.xhtml">
 	<ui:define name="pad">&nbsp;</ui:define>
 	<ui:define name="titulo">#{msgs.nome_aplicativo_resumido}</ui:define>
-	<ui:define name="titulo_pagina">#{msgs.index_msg}</ui:define>
+	<ui:define name="titulo_pagina">#{msgs.nome_pag_marcas}</ui:define>
 	<ui:define name="conteudo">
 		<h:form id="msgForm">
-			<style type="text/css">
-				.old {
-	                color: #FF0000 !important;
-	            }
-			</style>
-			
-            <p:blockUI block="msgForm" trigger="tabelaDeMarcas">  
-		        #{msgs.carregando_msg}<br />  
-		        <p:graphicImage value="../img/icones/ajax-loader.gif"/>  
-		    </p:blockUI>  
-			<p:growl showDetail="true" showSummary="false" id="msg_local"/>
-			<p:contextMenu for="tabelaDeMarcas">
-				<p:menuitem value="#{msgs.ativar_msg}" update="msgForm, msg_local" icon="ui-icon-check"
-					actionListener="#{marcasBean.ativaMarca()}"/>
-				<p:menuitem value="#{msgs.desativar_msg}" update="msgForm, msg_local" icon="ui-icon-closethick"
-					actionListener="#{marcasBean.desativaMarca()}" />
-			</p:contextMenu>
-
-			<p:dataTable id="tabelaDeMarcas" var="marca" lazy="true" value="#{marcasBean.marcas}" paginator="true" rows="10" 
-				emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed" rowStyleClass="#{marca.ativo == false ? 'old' : null}"
-				selection="#{marcasBean.marcaSelecionada}" selectionMode="single" rowKey="#{marca.id}" paginatorPosition="top">
-
-				<p:column headerText="#{msgs.codigo_msg}" style="width:60px">
-					<h:outputText value="#{marca.id}" /> 
-		        </p:column>
-				
-				<p:column headerText="#{msgs.nome_msg}" sortBy="#{marca.nome}" filterBy="#{marca.nome}" filterMatchMode="contains">
-					<h:outputText value="#{marca.nome}" />
-		        </p:column>
-		        
-				<p:column headerText="#{msgs.situacao_msg}" sortBy="#{marca.ativo}" style="width:150px">
-					<h:outputText value="#{marca.ativo == true ? msgs.ativo_msg : msgs.desativado_msg}" />
-		        </p:column>
-		    </p:dataTable>
+			<div id="container_conteudo_interno" style="background-color: #FFFFFF;" class="conteudo-principal">
+				<style type="text/css">
+					.old {
+		                color: #FF0000 !important;
+		            }
+				</style>
+				 
+	            <p:blockUI block="msgForm" trigger="tabelaDeMarcas">  
+			        #{msgs.carregando_msg}<br />  
+			        <p:graphicImage value="../img/icones/ajax-loader.gif"/>  
+			    </p:blockUI>  
+				<p:growl showDetail="true" showSummary="false" id="msg_local"/>
+				<p:contextMenu for="tabelaDeMarcas">
+					<p:menuitem value="#{msgs.ativar_msg}" update="msgForm, msg_local" icon="ui-icon-check"
+						actionListener="#{marcasBean.ativaMarca()}"/>
+					<p:menuitem value="#{msgs.desativar_msg}" update="msgForm, msg_local" icon="ui-icon-closethick"
+						actionListener="#{marcasBean.desativaMarca()}" />
+				</p:contextMenu>
+	
+				<p:dataTable id="tabelaDeMarcas" var="marca" lazy="true" value="#{marcasBean.marcas}" paginator="true" rows="10" 
+					emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed" rowStyleClass="#{marca.ativo == false ? 'old' : null}"
+					selection="#{marcasBean.marcaSelecionada}" selectionMode="single" rowKey="#{marca.id}" paginatorPosition="top">
+	
+					<p:column headerText="#{msgs.codigo_msg}" style="width:60px">
+						<h:outputText value="#{marca.id}" /> 
+			        </p:column>
+					
+					<p:column headerText="#{msgs.nome_msg}" sortBy="#{marca.nome}" filterBy="#{marca.nome}" filterMatchMode="contains">
+						<h:outputText value="#{marca.nome}" />
+			        </p:column>
+			        
+					<p:column headerText="#{msgs.situacao_msg}" sortBy="#{marca.ativo}" style="width:150px">
+						<h:outputText value="#{marca.ativo == true ? msgs.ativo_msg : msgs.desativado_msg}" />
+			        </p:column>
+			    </p:dataTable>
+		    </div>
 		</h:form>
 	</ui:define>
 </ui:composition>

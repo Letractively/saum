@@ -17,12 +17,12 @@
             }
             
 		</style>
-			<p:blockUI block="tabView" trigger="tabView">  
+			<p:blockUI block="container_conteudo_interno" trigger="container_conteudo_interno">  
 				#{msgs.carregando_msg}<br />  
 				<p:graphicImage value="../img/icones/ajax-loader.gif"/>  
 			</p:blockUI>  
 		
-			<p:tabView id="tabView" dynamic="true" cache="false" style="border:0px">
+			<p:tabView id="container_conteudo_interno" dynamic="true" cache="false">
 				<p:tab id="tba1" title="#{msgs.msg_recebidas}">
 					<ui:include src="includes/mensagens_recebidas.xhtml"/>
 				</p:tab>

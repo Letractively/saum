@@ -47,23 +47,25 @@ PrimeFaces.locales['pt'] = {
 };
 
 function configuraTamanho() {
-	var myWidth = 0, myHeight = 0;
-	if( typeof( window.innerWidth ) == 'number' ) {
-	  //Non-IE
-	  myWidth = window.innerWidth;
-	  myHeight = window.innerHeight;
-	} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-	  //IE 6+ in 'standards compliant mode'
-	  myWidth = document.documentElement.clientWidth;
-	  myHeight = document.documentElement.clientHeight;
-	} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-	  //IE 4 compatible
-	  myWidth = document.body.clientWidth;
-	  myHeight = document.body.clientHeight;
+	if(document.getElementById("container_conteudo_interno") != null){
+		var myWidth = 0, myHeight = 0;
+		if( typeof( window.innerWidth ) == 'number' ) {
+		  //Non-IE
+		  myWidth = window.innerWidth;
+		  myHeight = window.innerHeight;
+		} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+		  //IE 6+ in 'standards compliant mode'
+		  myWidth = document.documentElement.clientWidth;
+		  myHeight = document.documentElement.clientHeight;
+		} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+		  //IE 4 compatible
+		  myWidth = document.body.clientWidth;
+		  myHeight = document.body.clientHeight;
+		}
+	//  alert( 'Width = ' + myWidth );
+	//  alert( 'Height = ' + myHeight );
+		document.getElementById("container_conteudo_interno").style.minHeight = (myHeight - 150) + "px";
 	}
-//  alert( 'Width = ' + myWidth );
-//  alert( 'Height = ' + myHeight );
-	document.getElementById("container_conteudo_interno").style.minHeight = (myHeight - 150) + "px";
 }
 //]]>
 </script>
@@ -171,12 +173,10 @@ function configuraTamanho() {
 				</td>
 			</tr>
 		</table>
-		<table width="990" align="center" border="0" cellpadding="0" cellspacing="0" class="conteudo-principal" id="tabela_conteudo">
+		<table width="990" align="center" border="0" cellpadding="0" cellspacing="0" id="tabela_conteudo">
 			<tr>
 				<td>
-					<div id="container_conteudo_interno" style="background-color: #FFFFFF;">
-						<ui:insert name="conteudo"></ui:insert>
-					</div>
+					<ui:insert name="conteudo"></ui:insert>
 				</td>
 			</tr>
 		</table>

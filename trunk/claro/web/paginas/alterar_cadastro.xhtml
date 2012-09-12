@@ -10,7 +10,7 @@
 	<ui:define name="titulo">#{msgs.nome_aplicativo_resumido}</ui:define>
 	<ui:define name="titulo_pagina">#{msgs.alterar_perfil}</ui:define>
 
-	<ui:define name="conteudo">
+	<ui:define name="conteudo"><div id="container_conteudo_interno" style="background-color: #FFFFFF;" class="conteudo-principal">
 		<script type="text/javascript" src="../js/formatadores.js"></script>
 		<style type="text/css">
 			.coluna1{
@@ -105,6 +105,6 @@
 			    </f:facet>
 			</p:panelGrid>
 		</h:form>
-	</ui:define>
+	</div></ui:define>
 </ui:composition>
 </html>
