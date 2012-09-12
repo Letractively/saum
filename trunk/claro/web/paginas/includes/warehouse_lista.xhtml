@@ -28,7 +28,7 @@
 		
 		<p:dataTable id="tabelaDeTodosClientes" var="lista" value="#{warehouseListaBean.clientes}"
 			paginator="true" rows="10" emptyMessage="#{msgs.nenhum_dado_encontrado}" style="height:330px;" lazy="true"
-	    	rowStyleClass="#{lista.ativo == false ? 'desativado' : null}" 
+	    	rowStyleClass="#{lista.ativo == false ? 'desativado' : null}" paginatorPosition="top"
 	    	rowKey="#{lista.id}" selection="#{warehouseListaBean.cliente}" selectionMode="single">  
 	        
 	        <p:column headerText="#{msgs.nome_fantasia}" sortBy="#{lista.nomeFantasia}">

@@ -27,7 +27,7 @@
 				actionListener="#{clienteListaBean.ativaDesativaCliente(0)}" id="dtv"/>
 		</p:contextMenu>
 		
-		<p:dataTable id="tabelaDeTodosClientes" var="lista" value="#{clienteListaBean.clientes}"
+		<p:dataTable id="tabelaDeTodosClientes" var="lista" value="#{clienteListaBean.clientes}" paginatorPosition="top"
 			paginator="true" rows="10" emptyMessage="#{msgs.nenhum_dado_encontrado}" style="height:330px;" lazy="true"
 	    	rowStyleClass="#{lista.ativo == false ? 'desativado' : null}" 
 	    	rowKey="#{lista.id}" selection="#{clienteListaBean.cliente}" selectionMode="single">  

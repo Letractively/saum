@@ -25,7 +25,7 @@
 			</p:contextMenu>
 
 
-			<p:dataTable id="tabelaDeUsrPre" var="lista" value="#{autorizaPreCadastroBean.listaUsuariosNaoAutorizados}" 
+			<p:dataTable id="tabelaDeUsrPre" var="lista" value="#{autorizaPreCadastroBean.listaUsuariosNaoAutorizados}" paginatorPosition="top"
 				paginator="true" rows="10" emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed; height:330px"
 		    	rowKey="#{lista.id}" selection="#{autorizaPreCadastroBean.usuarioCadastro}" selectionMode="single">  
 		        

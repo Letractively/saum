@@ -7,7 +7,7 @@
 	xmlns:p="http://primefaces.org/ui"
 	>
 <h:head>
-<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
 <link rel="shortcut icon" href="../favicon.ico" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title><ui:insert name="titulo">Claro</ui:insert></title>
@@ -17,6 +17,7 @@
 <link href="../css/ie.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
+//<![CDATA[
 PrimeFaces.locales['pt'] = {
     closeText: 'Fechar',
     prevText: 'Anterior',
@@ -44,14 +45,35 @@ PrimeFaces.locales['pt'] = {
     day: 'Dia',
     allDayText : 'Todo Dia'
 };
+
+function configuraTamanho() {
+	var myWidth = 0, myHeight = 0;
+	if( typeof( window.innerWidth ) == 'number' ) {
+	  //Non-IE
+	  myWidth = window.innerWidth;
+	  myHeight = window.innerHeight;
+	} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+	  //IE 6+ in 'standards compliant mode'
+	  myWidth = document.documentElement.clientWidth;
+	  myHeight = document.documentElement.clientHeight;
+	} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+	  //IE 4 compatible
+	  myWidth = document.body.clientWidth;
+	  myHeight = document.body.clientHeight;
+	}
+//  alert( 'Width = ' + myWidth );
+//  alert( 'Height = ' + myHeight );
+	document.getElementById("container_conteudo_interno").style.minHeight = (myHeight - 150) + "px";
+}
+//]]>
 </script>
 </h:head>
-<h:body>
+<h:body onload="configuraTamanho();">
 	<f:view locale="#{loginBean.locale}">
 		<h:form>
 			<p:growl id="messages_geral" showDetail="true" autoUpdate="true" life="3000" globalOnly="true"/>
 		</h:form>
-		<div id="head">
+		<div id="head" class="title ui-widget-header ui-corner-all">
 			<div align="center">
 				<table width="990" align="center" border="0" cellpadding="0" cellspacing="0" style="margin-top: 3px">
 					<tr>
@@ -142,7 +164,7 @@ PrimeFaces.locales['pt'] = {
 			</script>
 		</core:if>
 		<div class="pad-header"><img src="ddd" height="1" width="1"/></div>
-		<table width="992" align="center" border="0" cellpadding="0" cellspacing="0" class="titulo_pagina" id="titulo_pagina">
+		<table width="992" align="center" border="0" cellpadding="0" cellspacing="0" class="title ui-widget-header ui-corner-all titulo_pagina" id="titulo_pagina">
 			<tr>
 				<td style="font-size: 17px; color: #0900A4; font-weight: bold;">
 					<ui:insert name="titulo_pagina"/>
@@ -152,14 +174,16 @@ PrimeFaces.locales['pt'] = {
 		<table width="990" align="center" border="0" cellpadding="0" cellspacing="0" class="conteudo-principal" id="tabela_conteudo">
 			<tr>
 				<td>
-					<ui:insert name="conteudo"></ui:insert>
+					<div id="container_conteudo_interno" style="background-color: #FFFFFF;">
+						<ui:insert name="conteudo"></ui:insert>
+					</div>
 				</td>
 			</tr>
 		</table>
 		<div class="pad-footer"><img src="ddd" height="1" width="1"/></div>
-		<div id="foot">
+		<div id="foot" class="title ui-widget-header ui-corner-all">
 			<div>
-				<div style="float: left; margin-left: 18px; font-size: 11px; color: #CCCCCC">#{msgs.melhor_visualizado}</div>
+				<div style="float: left; margin-left: 18px; font-size: 11px; color: #666666">#{msgs.melhor_visualizado}</div>
 				<h:form style="float: right; text-decoration: none; margin-left: 20px">
 					<h:commandLink action="#{loginBean.changeLanguagePortugues()}" style="text-decoration: none">
 						<img src="../img/icones/pt.png" border="0"/>
@@ -168,7 +192,7 @@ PrimeFaces.locales['pt'] = {
 						<img src="../img/icones/en.png" border="0"/>
 					</h:commandLink>&nbsp;&nbsp;
 				</h:form>
-				<a href="http://www.meganetdf.com.br" target="_blank" style="text-decoration: none; font-size: 11px; color: #CCCCCC">&copy; Meganet - 2012</a>
+				<a href="http://www.meganetdf.com.br" target="_blank" style="text-decoration: none; font-size: 11px; color: #666666">&copy; Meganet - 2012</a>
 			</div>
 		</div>
 	</f:view>

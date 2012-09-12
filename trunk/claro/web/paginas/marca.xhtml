@@ -30,8 +30,8 @@
 			</p:contextMenu>
 
 			<p:dataTable id="tabelaDeMarcas" var="marca" lazy="true" value="#{marcasBean.marcas}" paginator="true" rows="10" 
-				emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed; height:340px" rowStyleClass="#{marca.ativo == false ? 'old' : null}"
-				selection="#{marcasBean.marcaSelecionada}" selectionMode="single" rowKey="#{marca.id}">
+				emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed" rowStyleClass="#{marca.ativo == false ? 'old' : null}"
+				selection="#{marcasBean.marcaSelecionada}" selectionMode="single" rowKey="#{marca.id}" paginatorPosition="top">
 
 				<p:column headerText="#{msgs.codigo_msg}" style="width:60px">
 					<h:outputText value="#{marca.id}" /> 

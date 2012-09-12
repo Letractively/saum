@@ -9,11 +9,11 @@ String.prototype.lpad = function(pSize, pCharPad) {
     var ch = String(pCharPad).charAt(0);
     for (; dif>0; dif--) str = ch + str;
     return (str);
-} //String.lpad
+}; //String.lpad
 
 String.prototype.trim = function() {
     return this.replace(/^\s*/, "").replace(/\s*$/, "");
-} //String.trim
+}; //String.trim
 
 function Trim(str){return str.replace(/^\s+|\s+$/g,"");}
 
@@ -101,7 +101,7 @@ function dvCpfCnpj(pEfetivo, pIsCnpj) {
         dv = 11 - soma % 11;
         if (dv > 9) dv = 0;
         calculado += dv;
-        result += dv
+        result += dv;
     }
     return result;
 } //dvCpfCnpj
@@ -1324,7 +1324,7 @@ function isSerial(serial, tipo){
 					dias = dias + 29;
 				else
 					dias = dias + 28;
-			x++
+			x++;
 		}
 		dias = dias + dia + 6;
 		semanas = dias/7;
@@ -1847,7 +1847,7 @@ function Ajax(url,destino){
             destino.innerHTML = xmlhttp.responseText;
             extraiScript(xmlhttp.responseText);
         }
-    }
+    };
     xmlhttp.send(null);
 }
 
@@ -1880,7 +1880,7 @@ function Ajax1(url,destino){
             destino.innerHTML = xmlhttp.responseText;
             extraiScript(xmlhttp.responseText);
         }
-    }
+    };
     xmlhttp.send(null);
 }
 
@@ -1892,7 +1892,7 @@ function extraiScript(texto){
             ini = texto.indexOf('>', ini) + 1;
             var fim = texto.indexOf('</script', ini);
             codigo = texto.substring(ini,fim);
-            novo = document.createElement("script")
+            novo = document.createElement("script");
             novo.text = codigo;
             document.body.appendChild(novo);
         }

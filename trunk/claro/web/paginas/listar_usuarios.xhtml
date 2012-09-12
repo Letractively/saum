@@ -40,7 +40,7 @@
 			<p:dataTable id="tabelaDeTodosUsuarios" var="lista" value="#{listarUsuarioBean.usuarios}"
 				paginator="true" rows="10" emptyMessage="#{msgs.nenhum_dado_encontrado}" style="height:330px" lazy="true"
 		    	rowStyleClass="#{lista.ativo == false ? 'desativado' : lista.cadastroConfirmado == false ? 'nao_autorizado' : null}" 
-		    	rowKey="#{lista.id}" selection="#{listarUsuarioBean.usuarioCadastro}" selectionMode="single">  
+		    	rowKey="#{lista.id}" selection="#{listarUsuarioBean.usuarioCadastro}" selectionMode="single" paginatorPosition="top">
 		        
 		        <p:column headerText="#{msgs.nome_msg}" sortBy="#{lista.nome}">
    					#{lista.nome}

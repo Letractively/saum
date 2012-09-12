@@ -65,8 +65,8 @@
 			</p:contextMenu>
 
 			<p:dataTable id="tabelaDeModelos" var="mode" lazy="false" value="#{modelosBean.modelos}" paginator="true" rows="10" 
-				emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed; height:340px" rowStyleClass="#{mode.ativo == false ? 'old' : null}"
-				selection="#{modelosBean.modeloSelecionado}" selectionMode="single" rowKey="#{mode.id}">
+				emptyMessage="#{msgs.nenhum_dado_encontrado}" style="table-layout: fixed" rowStyleClass="#{mode.ativo == false ? 'old' : null}"
+				selection="#{modelosBean.modeloSelecionado}" selectionMode="single" rowKey="#{mode.id}" paginatorPosition="top">
 
 				<p:column headerText="#{msgs.codigo_msg}" style="width:60px">
 					<h:outputText value="#{mode.id}" /> 
