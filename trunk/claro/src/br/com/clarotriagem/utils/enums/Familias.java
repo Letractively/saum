@@ -7,7 +7,7 @@ import java.util.TreeMap;
 
 public enum Familias {
 	
-    TC("TC", "Atendimento", 0),
+    TC("TC", "Telefonia Celular", 0),
     LB("LB", "Atendimento", 2),
     TM("TM", "Atendimento", 3),
     MP3("MP3", "MP3", 4),
@@ -18,7 +18,7 @@ public enum Familias {
     INFO("INFO", "Informática", 9),
     PC("PC", "Atendimento", 10),
     IT("IT", "Atendimento", 11),
-    TF("TF", "Atendimento", 12),
+    TF("TF", "Telefonia fixa", 12),
     SCCR("SC/CR", "Atendimento", 13);
 	
     private String sigla;

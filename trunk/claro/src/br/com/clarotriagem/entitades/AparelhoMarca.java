@@ -2,6 +2,7 @@ package br.com.clarotriagem.entitades;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
 import java.util.List;
 
 
@@ -9,7 +10,7 @@ import java.util.List;
 @Table(name="aparelho_marca")
 public class AparelhoMarca implements Serializable {
 
-	private static final long serialVersionUID = 6526340784431054854L;
+	private static final long serialVersionUID = 3658977535605710138L;
 
 	@Id
 	@SequenceGenerator(name="APARELHO_MARCA_ID_GENERATOR", sequenceName="aparelho_marca_seq")
@@ -19,6 +20,9 @@ public class AparelhoMarca implements Serializable {
 
 	@Column(nullable=false)
 	private Boolean ativo;
+
+	@Column(length=20)
+	private String imei;
 
 	@Column(length=40)
 	private String nome;
@@ -32,9 +36,6 @@ public class AparelhoMarca implements Serializable {
 	@Column(name="nome_identificador3", length=60)
 	private String nomeIdentificador3;
 
-	@Column(name="nome_identificador4", length=60)
-	private String nomeIdentificador4;
-
 	@Column(name="usa_identificador1", nullable=false)
 	private Boolean usaIdentificador1;
 
@@ -43,9 +44,6 @@ public class AparelhoMarca implements Serializable {
 
 	@Column(name="usa_identificador3", nullable=false)
 	private Boolean usaIdentificador3;
-
-	@Column(name="usa_identificador4", nullable=false)
-	private Boolean usaIdentificador4;
 
 	@Column(name="usa_os1", nullable=false)
 	private Boolean usaOs1;
@@ -56,15 +54,17 @@ public class AparelhoMarca implements Serializable {
 	@Column(name="usa_os3", nullable=false)
 	private Boolean usaOs3;
 
-	@OneToMany(mappedBy="aparelhoMarca", fetch=FetchType.LAZY)
+	//bi-directional many-to-one association to AparelhoModelo
+	@OneToMany(mappedBy="aparelhoMarca")
 	private List<AparelhoModelo> aparelhoModelos;
 
+    public AparelhoMarca() {
+    }
+    
 	public AparelhoMarca(Long id) {
 		this.id = id;
 	}
-	
-    public AparelhoMarca() {
-    }
+
 
 	public Long getId() {
 		return this.id;
@@ -80,6 +80,14 @@ public class AparelhoMarca implements Serializable {
 
 	public void setAtivo(Boolean ativo) {
 		this.ativo = ativo;
+	}
+
+	public String getImei() {
+		return this.imei;
+	}
+
+	public void setImei(String imei) {
+		this.imei = imei;
 	}
 
 	public String getNome() {
@@ -114,14 +122,6 @@ public class AparelhoMarca implements Serializable {
 		this.nomeIdentificador3 = nomeIdentificador3;
 	}
 
-	public String getNomeIdentificador4() {
-		return this.nomeIdentificador4;
-	}
-
-	public void setNomeIdentificador4(String nomeIdentificador4) {
-		this.nomeIdentificador4 = nomeIdentificador4;
-	}
-
 	public Boolean getUsaIdentificador1() {
 		return this.usaIdentificador1;
 	}
@@ -144,14 +144,6 @@ public class AparelhoMarca implements Serializable {
 
 	public void setUsaIdentificador3(Boolean usaIdentificador3) {
 		this.usaIdentificador3 = usaIdentificador3;
-	}
-
-	public Boolean getUsaIdentificador4() {
-		return this.usaIdentificador4;
-	}
-
-	public void setUsaIdentificador4(Boolean usaIdentificador4) {
-		this.usaIdentificador4 = usaIdentificador4;
 	}
 
 	public Boolean getUsaOs1() {
