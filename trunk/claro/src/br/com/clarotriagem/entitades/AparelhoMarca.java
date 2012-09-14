@@ -8,7 +8,8 @@ import java.util.List;
 @Entity
 @Table(name="aparelho_marca")
 public class AparelhoMarca implements Serializable {
-	private static final long serialVersionUID = 1L;
+
+	private static final long serialVersionUID = 6526340784431054854L;
 
 	@Id
 	@SequenceGenerator(name="APARELHO_MARCA_ID_GENERATOR", sequenceName="aparelho_marca_seq")
