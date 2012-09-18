@@ -8,9 +8,82 @@
 	<ui:composition template="/template/template.xhtml">
 		<ui:define name="pad">&nbsp;</ui:define>
 		<ui:define name="titulo">#{msgs.nome_aplicativo_resumido}</ui:define>
-		<ui:define name="titulo_pagina">#{msgs.index_msg}</ui:define>
-		<ui:define name="conteudo"><div id="container_conteudo_interno" style="background-color: #FFFFFF;" class="conteudo-principal">
-			<p:button value="Teste"/>
-		</div></ui:define>
+		<ui:define name="titulo_pagina">#{msgs.nome_pag_triagem}</ui:define>
+		<ui:define name="conteudo">
+			<style type="text/css">
+				.coluna1{
+					width: 10%;
+					text-align: right;
+					font-weight: bolder;
+					background-color: #F2F2F2;
+				}
+				.coluna2{
+					width: 23%;
+				}
+				.coluna3{
+					width: 10%;
+					text-align: right;
+					font-weight: bolder;
+					background-color: #F2F2F2;
+				}
+				.coluna4{
+					width: 23%;
+				}
+				.coluna5{
+					width: 10%;
+					text-align: right;
+					font-weight: bolder;
+					background-color: #F2F2F2;
+				}
+				.coluna6{
+					width: 24%;
+				}
+			</style>		
+		<h:form id="formGeral">
+			<div id="container_conteudo_interno" style="background-color: #FFFFFF;" class="conteudo-principal">
+				<p:panel id="pnl" header="#{msgs.resumo_inf_lote}" toggleable="true" closable="false" toggleSpeed="500" closeSpeed="500" widgetVar="panel" collapsed="#{triagemBean.painelEncolhido}">
+				
+					<p:ajax event="toggle" listener="#{triagemBean.encolheuPainel}"/>
+				
+					<p:panelGrid columnClasses="coluna1,coluna2,coluna3,coluna4,coluna5,coluna6" style="width:945px">
+						<p:row>
+							<p:column styleClass="coluna1">#{msgs.cliente_msg}</p:column>
+							<p:column styleClass="coluna2"><h:outputText value="#{triagemBean.triagemLote.calendario.warehouse.cliente.nomeFantasia}" /></p:column>
+							
+							<p:column styleClass="coluna3">#{msgs.warehouse_msg}</p:column>
+							<p:column styleClass="coluna4"><h:outputText value="#{triagemBean.triagemLote.calendario.warehouse.nomeFantasia}" /></p:column>
+							
+							<p:column styleClass="coluna5">#{msgs.qtd_msg}</p:column>
+							<p:column styleClass="coluna6"><h:outputText value="#{triagemBean.quantidadeAparelhoTriado} #{msgs.de_msg} #{triagemBean.triagemLote.quantidade}" /></p:column>
+						</p:row>
+						<p:row>
+							<p:column styleClass="coluna1">#{msgs.marca_msg}</p:column>
+							<p:column styleClass="coluna2"><h:outputText value="#{triagemBean.triagemLote.aparelhoModelo.aparelhoMarca.nome}" /></p:column>
+							
+							<p:column styleClass="coluna3">#{msgs.modelo_msg}</p:column>
+							<p:column styleClass="coluna4"><h:outputText value="#{triagemBean.triagemLote.aparelhoModelo.nome}" /></p:column>
+							
+							<p:column styleClass="coluna5">#{msgs.familia_msg}</p:column>
+							<p:column styleClass="coluna6"><h:outputText value="#{triagemBean.triagemLote.calendario.descFamilias}" /></p:column>
+						</p:row>
+						<p:row>
+							<p:column styleClass="coluna1">#{msgs.responsavel_msg}</p:column>
+							<p:column styleClass="coluna2"><h:outputText value="#{triagemBean.triagemLote.calendario.usuarioResponsavel.nome}" /></p:column>
+							
+							<p:column styleClass="coluna3">#{msgs.contato_msg}</p:column>
+							<p:column styleClass="coluna4"><h:outputText value="#{triagemBean.triagemLote.calendario.contato}" /></p:column>
+							
+							<p:column styleClass="coluna5">#{msgs.codigo_lote}</p:column>
+							<p:column styleClass="coluna6"><h:outputText value="#{triagemBean.triagemLote.id}" /></p:column>
+						</p:row>
+					</p:panelGrid>
+				</p:panel>
+				<br/><br/>
+				
+				
+				
+		    </div>
+	    </h:form>
+		</ui:define>
 	</ui:composition>
 </html>

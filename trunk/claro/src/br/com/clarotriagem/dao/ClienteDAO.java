@@ -1,6 +1,5 @@
 package br.com.clarotriagem.dao;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -63,10 +62,9 @@ public class ClienteDAO extends DAO<Cliente>{
 		Query query = entityManager.createQuery(jpql);
 		
 		@SuppressWarnings("unchecked")
-		List<Object> clientes = query.getResultList();
+		List<Object[]> clientes = query.getResultList();
 		SortedMap<String, Long> ret = new TreeMap<String, Long>();
-		for (Iterator<Object> iterator = clientes.iterator(); iterator.hasNext();) {
-			Object[] c = (Object[]) iterator.next();
+		for (Object[] c :  clientes) {
 			ret.put(new String(c[0].toString()), new Long(c[1].toString()));
 		}
 		return ret;
@@ -145,10 +143,9 @@ public class ClienteDAO extends DAO<Cliente>{
 		query.setParameter("cliente", id);
 		
 		@SuppressWarnings("unchecked")
-		List<Object> clientes = query.getResultList();
+		List<Object[]> clientes = query.getResultList();
 		SortedMap<String, Long> ret = new TreeMap<String, Long>();
-		for (Iterator<Object> iterator = clientes.iterator(); iterator.hasNext();) {
-			Object[] c = (Object[]) iterator.next();
+		for (Object[] c : clientes) {
 			ret.put(new String(c[0].toString()), new Long(c[1].toString()));
 		}
 		return ret;

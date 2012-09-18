@@ -129,7 +129,6 @@ public class ControleListener implements PhaseListener {
 		}else{
 			if(isLoginPage){
 				// Se o usuário logado tentar acessar a página de login ele é redirecionado para a página inicial
-				
 				nh.handleNavigation(contexto, null, "inicio");
 			}else if(isInicialPage || isMenuPublic || isMensagemPage){
 				return;

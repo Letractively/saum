@@ -24,10 +24,12 @@ public enum Familias {
     private String sigla;
 	private String descricao;
 	private Integer cod;
+	private boolean selecionado = false;
 	
 	private static SortedMap<String, Familias> rotulosPorSigla = new TreeMap<String, Familias>();
 	private static SortedMap<Integer, Familias> rotulosPorCod = new TreeMap<Integer, Familias>();
 	private static List<Familias> listaFamilias = new ArrayList<Familias>();
+	private static SortedMap<String, Integer> mapaRotulos = new TreeMap<String, Integer>();
 
 	private Familias(String sigla, String descricao, Integer cod) {
 		this.descricao = descricao;
@@ -43,7 +45,10 @@ public enum Familias {
 			rotulosPorSigla.put(e.getSigla(), e);
 		}
 		for (Familias e : Familias.values()) {
-			listaFamilias.add(e);
+			listaFamilias.add(e); 
+		}
+		for (Familias e : Familias.values()) {
+			mapaRotulos.put(e.getSigla() + " - " + e.getDescricao(), e.getCod());
 		}
 	}
 
@@ -62,7 +67,10 @@ public enum Familias {
 	public static List<Familias> getListaFamilia() {
 		return listaFamilias;
 	}
-	
+	public static SortedMap<String, Integer> getMapaRotulos() {
+		return mapaRotulos;
+	}
+
 
 	public String getSigla() {
 		return sigla;
@@ -74,6 +82,14 @@ public enum Familias {
 	
 	public Integer getCod() {
 		return cod;
+	}
+
+	public boolean isSelecionado() {
+		return selecionado;
+	}
+
+	public void setSelecionado(boolean selecionado) {
+		this.selecionado = selecionado;
 	}
 	
 }

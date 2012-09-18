@@ -37,8 +37,6 @@
 						        <p:ajax event="change" update="tabelaDeModelos" listener="#{modelosBean.buscaModelos}"/>
 			            	</p:selectOneMenu>
 						</p:column>
-					</p:row>
-					<p:row>
 						<p:column>
 							<h:outputLabel value="#{msgs.modelo_msg}" for="marca_novo" />
 						</p:column>
@@ -46,16 +44,66 @@
 							<p:inputText id="marca_novo" label="#{msgs.modelo_msg}" value="#{modelosBean.nomeNovoModelo}"/>
 						</p:column>
 					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="#{msgs.familia_msg}" for="lst_familia" />
+						</p:column>
+						<p:column colspan="3">
+		   					<p:selectOneMenu value="#{modelosBean.codFamiliaSelecionado}" id="lst_familia" label="#{msgs.familia_msg}" style="width:300px" required="true">
+								<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
+			            		<f:selectItems value="#{modelosBean.comboFamilia}"/>
+			            	</p:selectOneMenu>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="#{msgs.tipo_serial} 1" for="tp_serial1" />
+						</p:column>
+						<p:column>
+		   					<p:selectOneMenu value="#{modelosBean.tipoSerial1}" id="tp_serial1" label="#{msgs.tipo_serial} 1" style="width:130px" required="true">
+								<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
+			            		<f:selectItems value="#{modelosBean.comboTiposSerial}"/>
+			            	</p:selectOneMenu>
+						</p:column>
+						<p:column>
+							<h:outputLabel value="#{msgs.tipo_serial} 2" for="tp_serial2" />
+						</p:column>
+						<p:column>
+		   					<p:selectOneMenu value="#{modelosBean.tipoSerial2}" id="tp_serial2" label="#{msgs.tipo_serial} 2" style="width:130px" required="true">
+								<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
+			            		<f:selectItems value="#{modelosBean.comboTiposSerial}"/>
+			            	</p:selectOneMenu>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<h:outputLabel value="#{msgs.tipo_serial} 3" for="tp_serial3" />
+						</p:column>
+						<p:column>
+		   					<p:selectOneMenu value="#{modelosBean.tipoSerial3}" id="tp_serial3" label="#{msgs.tipo_serial} 3" style="width:130px" required="true">
+								<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
+			            		<f:selectItems value="#{modelosBean.comboTiposSerial}"/>
+			            	</p:selectOneMenu>
+						</p:column>
+						<p:column>
+							<h:outputLabel value="#{msgs.tipo_serial} 4" for="tp_serial4" />
+						</p:column>
+						<p:column>
+		   					<p:selectOneMenu value="#{modelosBean.tipoSerial4}" id="tp_serial4" label="#{msgs.tipo_serial} 4" style="width:130px" required="true">
+								<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
+			            		<f:selectItems value="#{modelosBean.comboTiposSerial}"/>
+			            	</p:selectOneMenu>
+						</p:column>
+					</p:row>
 					<f:facet name="footer">
 						<p:row>
-							<p:column colspan="2">
+							<p:column colspan="4">
 								<p:commandButton action="#{modelosBean.salva}" value="#{msgs.msgs_salvar}" type="submit" update="msgForm msg_local" id="btSalva"/>
 							</p:column>
 						</p:row>
 				    </f:facet>
 				</p:panelGrid>
 				<br/>
-			    
 			    
 				<p:contextMenu for="tabelaDeModelos" id="ctxMenu">
 					<p:menuitem value="#{msgs.ativar_msg}" update="msgForm, msg_local" icon="ui-icon-check"

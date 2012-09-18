@@ -26,6 +26,7 @@ import br.com.clarotriagem.entitades.Calendario;
 import br.com.clarotriagem.service.CalendarioService;
 import br.com.clarotriagem.service.ClienteService;
 import br.com.clarotriagem.service.UsuarioService;
+import br.com.clarotriagem.utils.enums.Familias;
 
 @ManagedBean
 @Scope("view")
@@ -40,6 +41,10 @@ public class AgendaBean extends AgendaFactory {
 	private UsuarioService usuarioService;
 	@Autowired
 	private ClienteService clienteService;
+	
+	public AgendaBean(){
+		super.listaFamilias = Familias.getListaFamilia();
+	}
 	
 	public void adicionaAlteraEvento(ActionEvent actionEvent){
 		super.adicionaAlteraEventoGERAL(actionEvent, calendarioService);
@@ -82,7 +87,7 @@ public class AgendaBean extends AgendaFactory {
 		usuarioResponsavel.setId(calendario.getUsuarioResponsavel().getId());
 		horaEventoInicial = sdf.format(calendario.getDataInicial());
 		horaEventoFinal = sdf.format(calendario.getDataFinal());
-
+		recuperaFamilias();
 	}
 	public void quandoSelecionarDataEmBranco(DateSelectEvent selectEvent) {
 		resetForm();

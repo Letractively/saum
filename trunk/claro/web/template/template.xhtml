@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html"
@@ -6,72 +6,75 @@
 	xmlns:core="http://java.sun.com/jsp/jstl/core"
 	xmlns:p="http://primefaces.org/ui"
 	>
-<h:head>
-<link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
-<link rel="shortcut icon" href="../favicon.ico" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title><ui:insert name="titulo">Claro</ui:insert></title>
-<script type="text/javascript" src="../js/geral.js"></script>
-<link href="../css/layout.css" rel="stylesheet" type="text/css" />
-<link href="../css/menu.css" rel="stylesheet" type="text/css" />
-<link href="../css/ie.css" rel="stylesheet" type="text/css" />
-
-<script type="text/javascript">
-//<![CDATA[
-PrimeFaces.locales['pt'] = {
-    closeText: 'Fechar',
-    prevText: 'Anterior',
-    nextText: 'Próximo',
-    currentText: 'Começo',
-    monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-    monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun', 'Jul','Ago','Set','Out','Nov','Des'],
-    dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
-    dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],
-    dayNamesMin: ['D','S','T','Q','Q','S','S'],
-    weekHeader: 'Semana',
-    firstDay: 1,
-    isRTL: false,
-    showMonthAfterYear: false,
-    yearSuffix: '',
-    timeOnlyTitle: 'Só Horas',
-    timeText: 'Tempo',
-    hourText: 'Hora',
-    minuteText: 'Minuto',
-    secondText: 'Segundo',
-    currentText: 'Data Atual',
-    ampm: false,
-    month: 'Mês',
-    week: 'Semana',
-    day: 'Dia',
-    allDayText : 'Todo Dia'
-};
-
-function configuraTamanho() {
-	if(document.getElementById("container_conteudo_interno") != null){
-		var myWidth = 0, myHeight = 0;
-		if( typeof( window.innerWidth ) == 'number' ) {
-		  //Non-IE
-		  myWidth = window.innerWidth;
-		  myHeight = window.innerHeight;
-		} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-		  //IE 6+ in 'standards compliant mode'
-		  myWidth = document.documentElement.clientWidth;
-		  myHeight = document.documentElement.clientHeight;
-		} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-		  //IE 4 compatible
-		  myWidth = document.body.clientWidth;
-		  myHeight = document.body.clientHeight;
+<f:view locale="#{loginBean.locale}" contentType="text/html">
+	<h:head>
+		<f:facet name="first">
+		    <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+		    <title><ui:insert name="titulo">Claro</ui:insert></title>
+		</f:facet>
+	
+	<link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<script type="text/javascript" src="../js/geral.js"></script>
+	<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+	<link href="../css/menu.css" rel="stylesheet" type="text/css" />
+	<link href="../css/ie.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript">
+	//<![CDATA[
+	PrimeFaces.locales['pt'] = {
+	    closeText: 'Fechar',
+	    prevText: 'Anterior',
+	    nextText: 'Próximo',
+	    currentText: 'Começo',
+	    monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+	    monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun', 'Jul','Ago','Set','Out','Nov','Des'],
+	    dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+	    dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],
+	    dayNamesMin: ['D','S','T','Q','Q','S','S'],
+	    weekHeader: 'Semana',
+	    firstDay: 1,
+	    isRTL: false,
+	    showMonthAfterYear: false,
+	    yearSuffix: '',
+	    timeOnlyTitle: 'Só Horas',
+	    timeText: 'Tempo',
+	    hourText: 'Hora',
+	    minuteText: 'Minuto',
+	    secondText: 'Segundo',
+	    currentText: 'Data Atual',
+	    ampm: false,
+	    month: 'Mês',
+	    week: 'Semana',
+	    day: 'Dia',
+	    allDayText : 'Todo Dia'
+	};
+	
+	function configuraTamanho() {
+		if(document.getElementById("container_conteudo_interno") != null){
+			var myWidth = 0, myHeight = 0;
+			if( typeof( window.innerWidth ) == 'number' ) {
+			  //Non-IE
+			  myWidth = window.innerWidth;
+			  myHeight = window.innerHeight;
+			} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+			  //IE 6+ in 'standards compliant mode'
+			  myWidth = document.documentElement.clientWidth;
+			  myHeight = document.documentElement.clientHeight;
+			} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+			  //IE 4 compatible
+			  myWidth = document.body.clientWidth;
+			  myHeight = document.body.clientHeight;
+			}
+		//  alert( 'Width = ' + myWidth );
+		//  alert( 'Height = ' + myHeight );
+			document.getElementById("container_conteudo_interno").style.minHeight = (myHeight - 150) + "px";
 		}
-	//  alert( 'Width = ' + myWidth );
-	//  alert( 'Height = ' + myHeight );
-		document.getElementById("container_conteudo_interno").style.minHeight = (myHeight - 150) + "px";
 	}
-}
-//]]>
-</script>
-</h:head>
-<h:body onload="configuraTamanho();">
-	<f:view locale="#{loginBean.locale}">
+	//]]>
+	</script>
+	</h:head>
+	<h:body onload="configuraTamanho();">
 		<h:form>
 			<p:growl id="messages_geral" showDetail="true" autoUpdate="true" life="3000" globalOnly="true"/>
 		</h:form>
@@ -79,7 +82,7 @@ function configuraTamanho() {
 			<div align="center">
 				<table width="990" align="center" border="0" cellpadding="0" cellspacing="0" style="margin-top: 3px">
 					<tr>
-						<td width="300"><img src="../img/icones/world.png" border="0" style="float: left" />
+						<td width="430"><img src="../img/icones/world.png" border="0" style="float: left" />
 							<div style="float: left; font-size: 22px; font-weight: bold; color: #0900A4; padding: 2px 0px 0px 10px; font-family: Geneva, Arial, Helvetica, sans-serif">#{msgs.nome_aplicativo}</div>
 						</td>
 						<td align="right" style="padding-right: 3px">
@@ -195,6 +198,6 @@ function configuraTamanho() {
 				<a href="http://www.meganetdf.com.br" target="_blank" style="text-decoration: none; font-size: 11px; color: #666666">&copy; Meganet - 2012</a>
 			</div>
 		</div>
-	</f:view>
 </h:body>
+</f:view>
 </html>

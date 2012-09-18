@@ -1,16 +1,29 @@
 package br.com.clarotriagem.entitades;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 
 @Entity
 @Table(name="triagem")
 public class Triagem implements Serializable {
 
-	private static final long serialVersionUID = -2959136537562624573L;
+	private static final long serialVersionUID = -4329445065433506785L;
 
 	@Id
 	@SequenceGenerator(name="TRIAGEM_ID_GENERATOR", sequenceName="triagem_seq")
@@ -28,17 +41,50 @@ public class Triagem implements Serializable {
 
 	private Boolean doa;
 
-	@Column(name="identificador_1", length=100)
+	@Column(length=100)
 	private String identificador1;
 
-	@Column(name="identificador_2", length=100)
+	@Column(name="identificador1_nome", length=100)
+	private String identificador1Nome;
+
+	@Column(name="identificador1_utilizado", nullable=false)
+	private Boolean identificador1Utilizado;
+
+	@Column(length=100)
 	private String identificador2;
 
-	@Column(name="identificador_3", length=100)
+	@Column(name="identificador2_nome", length=100)
+	private String identificador2Nome;
+
+	@Column(name="identificador2_utilizado", nullable=false)
+	private Boolean identificador2Utilizado;
+
+	@Column(length=100)
 	private String identificador3;
 
-	@Column(name="identificador_4", length=100)
+	@Column(name="identificador3_nome", length=100)
+	private String identificador3Nome;
+
+	@Column(name="identificador3_utilizado", nullable=false)
+	private Boolean identificador3Utilizado;
+
+	@Column(length=100)
 	private String identificador4;
+
+	@Column(name="identificador4_nome", length=100)
+	private String identificador4Nome;
+
+	@Column(name="identificador4_utilizado", nullable=false)
+	private Boolean identificador4Utilizado;
+
+	@Column(length=100)
+	private String identificador5;
+
+	@Column(name="identificador5_nome", length=100)
+	private String identificador5Nome;
+
+	@Column(name="identificador5_utilizado", nullable=false)
+	private Boolean identificador5Utilizado;
 
     @Temporal( TemporalType.DATE)
 	@Column(name="nf_troca_data")
@@ -129,7 +175,8 @@ public class Triagem implements Serializable {
 	@JoinColumn(name="triador", nullable=false)
 	private UsuarioIdentificacao usuarioIdentificacao;
 
-	@OneToMany(mappedBy="triagem", fetch=FetchType.EAGER)
+	//bi-directional many-to-one association to TriagemAcessorioFalta
+	@OneToMany(mappedBy="triagem")
 	private List<TriagemAcessorioFalta> triagemAcessorioFaltas;
 
     public Triagem() {
@@ -183,12 +230,44 @@ public class Triagem implements Serializable {
 		this.identificador1 = identificador1;
 	}
 
+	public String getIdentificador1Nome() {
+		return this.identificador1Nome;
+	}
+
+	public void setIdentificador1Nome(String identificador1Nome) {
+		this.identificador1Nome = identificador1Nome;
+	}
+
+	public Boolean getIdentificador1Utilizado() {
+		return this.identificador1Utilizado;
+	}
+
+	public void setIdentificador1Utilizado(Boolean identificador1Utilizado) {
+		this.identificador1Utilizado = identificador1Utilizado;
+	}
+
 	public String getIdentificador2() {
 		return this.identificador2;
 	}
 
 	public void setIdentificador2(String identificador2) {
 		this.identificador2 = identificador2;
+	}
+
+	public String getIdentificador2Nome() {
+		return this.identificador2Nome;
+	}
+
+	public void setIdentificador2Nome(String identificador2Nome) {
+		this.identificador2Nome = identificador2Nome;
+	}
+
+	public Boolean getIdentificador2Utilizado() {
+		return this.identificador2Utilizado;
+	}
+
+	public void setIdentificador2Utilizado(Boolean identificador2Utilizado) {
+		this.identificador2Utilizado = identificador2Utilizado;
 	}
 
 	public String getIdentificador3() {
@@ -199,12 +278,68 @@ public class Triagem implements Serializable {
 		this.identificador3 = identificador3;
 	}
 
+	public String getIdentificador3Nome() {
+		return this.identificador3Nome;
+	}
+
+	public void setIdentificador3Nome(String identificador3Nome) {
+		this.identificador3Nome = identificador3Nome;
+	}
+
+	public Boolean getIdentificador3Utilizado() {
+		return this.identificador3Utilizado;
+	}
+
+	public void setIdentificador3Utilizado(Boolean identificador3Utilizado) {
+		this.identificador3Utilizado = identificador3Utilizado;
+	}
+
 	public String getIdentificador4() {
 		return this.identificador4;
 	}
 
 	public void setIdentificador4(String identificador4) {
 		this.identificador4 = identificador4;
+	}
+
+	public String getIdentificador4Nome() {
+		return this.identificador4Nome;
+	}
+
+	public void setIdentificador4Nome(String identificador4Nome) {
+		this.identificador4Nome = identificador4Nome;
+	}
+
+	public Boolean getIdentificador4Utilizado() {
+		return this.identificador4Utilizado;
+	}
+
+	public void setIdentificador4Utilizado(Boolean identificador4Utilizado) {
+		this.identificador4Utilizado = identificador4Utilizado;
+	}
+
+	public String getIdentificador5() {
+		return this.identificador5;
+	}
+
+	public void setIdentificador5(String identificador5) {
+		this.identificador5 = identificador5;
+	}
+
+	public String getIdentificador5Nome() {
+		return this.identificador5Nome;
+	}
+
+	public void setIdentificador5Nome(String identificador5Nome) {
+		this.identificador5Nome = identificador5Nome;
+	}
+
+	public Boolean getIdentificador5Utilizado() {
+		return this.identificador5Utilizado;
+	}
+
+	public void setIdentificador5Utilizado(Boolean identificador5Utilizado) {
+		this.identificador5Utilizado = identificador5Utilizado;
 	}
 
 	public Date getNfTrocaData() {
@@ -407,20 +542,20 @@ public class Triagem implements Serializable {
 		this.triagemAcessorioFaltas = triagemAcessorioFaltas;
 	}
 
-	public TriagemLote getTriagemLote() {
-		return triagemLote;
-	}
-
-	public void setTriagemLote(TriagemLote triagemLote) {
-		this.triagemLote = triagemLote;
-	}
-
 	public Integer getTempoUsoSegundos() {
 		return tempoUsoSegundos;
 	}
 
 	public void setTempoUsoSegundos(Integer tempoUsoSegundos) {
 		this.tempoUsoSegundos = tempoUsoSegundos;
+	}
+
+	public TriagemLote getTriagemLote() {
+		return triagemLote;
+	}
+
+	public void setTriagemLote(TriagemLote triagemLote) {
+		this.triagemLote = triagemLote;
 	}
 	
 }

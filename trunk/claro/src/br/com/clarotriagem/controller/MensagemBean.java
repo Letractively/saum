@@ -19,7 +19,7 @@ public class MensagemBean extends BaseBean {
 
 	private static final long serialVersionUID = 2973390361091985746L;
 
-	private final long TEMPO_BUSCA = 12000;
+	private final long TEMPO_BUSCA = 1000 * 60 * 5;
 
 	@Autowired
 	private MensagemService mensagemService;
