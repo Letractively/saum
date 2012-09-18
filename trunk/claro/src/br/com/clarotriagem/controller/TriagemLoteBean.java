@@ -11,7 +11,7 @@ import org.primefaces.model.LazyDataModel;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import br.com.clarotriagem.controller.factory.TriagemValidador;
+import br.com.clarotriagem.controller.factory.TriagemLoteValidador;
 import br.com.clarotriagem.entitades.AparelhoModelo;
 import br.com.clarotriagem.entitades.Calendario;
 import br.com.clarotriagem.entitades.TriagemLote;
@@ -20,7 +20,7 @@ import br.com.clarotriagem.service.lazy.CalendarioListLazy;
 @ManagedBean
 @Scope("view")
 @Component
-public class TriagemLoteBean extends TriagemValidador {
+public class TriagemLoteBean extends TriagemLoteValidador {
 
 	private static final long serialVersionUID = 5027471093087360454L;
 

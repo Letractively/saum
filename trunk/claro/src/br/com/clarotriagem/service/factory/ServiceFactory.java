@@ -12,6 +12,7 @@ import br.com.clarotriagem.dao.MensagemDAO;
 import br.com.clarotriagem.dao.MenuDAO;
 import br.com.clarotriagem.dao.MenuPerfilDAO;
 import br.com.clarotriagem.dao.PerfilDAO;
+import br.com.clarotriagem.dao.TriagemDAO;
 import br.com.clarotriagem.dao.TriagemLoteDAO;
 import br.com.clarotriagem.dao.UsuarioIdentificacaoDAO;
 
@@ -28,6 +29,9 @@ public class ServiceFactory<T> {
 	
 	@Autowired
 	private TriagemLoteDAO triagemLoteDAO;
+	
+	@Autowired
+	private TriagemDAO triagemDAO;
 	
 	@Autowired
 	private CalendarioDAO calendarioDAO;
@@ -147,6 +151,14 @@ public class ServiceFactory<T> {
 
 	public void setTriagemLoteDAO(TriagemLoteDAO triagemLoteDAO) {
 		this.triagemLoteDAO = triagemLoteDAO;
+	}
+
+	public TriagemDAO getTriagemDAO() {
+		return triagemDAO;
+	}
+
+	public void setTriagemDAO(TriagemDAO triagemDAO) {
+		this.triagemDAO = triagemDAO;
 	}
 	
 }

@@ -25,11 +25,23 @@ public class TriagemService extends ServiceFactory<TriagemService>{
 		}
 	}
 
-	public void salvaLote(TriagemLote triagemLoteNovo) {
+	public int salvaLote(TriagemLote triagemLoteNovo) {
 		try {
 			getTriagemLoteDAO().save(triagemLoteNovo);
+			return 0;
 		} catch (Exception e) {
 			log.erro(e);
+			return 1;
+		}
+	}
+
+	public int getQuantidadeAparelhoTriado(Long idTriagemLote) {
+		try {
+			int ret = getTriagemDAO().getQuantidadeAparelhoTriado(idTriagemLote);
+			return ret;
+		} catch (Exception e) {
+			log.erro(e);
+			return 0;
 		}
 	}
 

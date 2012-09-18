@@ -17,6 +17,8 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import br.com.clarotriagem.utils.enums.Familias;
+
 @Entity
 @Table(name="calendario")
 public class Calendario implements Serializable {
@@ -50,48 +52,12 @@ public class Calendario implements Serializable {
 	@Column(length=2147483647)
 	private String descricao;
 
-	@Column(name="familia_av", nullable=false)
-	private Boolean familiaAv;
+	@Column(length=40, name="familias")
+	private String familias;
 
 	@Column(nullable=false)
 	private Boolean concluido;
 	
-	@Column(name="familia_cam", nullable=false)
-	private Boolean familiaCam;
-
-	@Column(name="familia_el", nullable=false)
-	private Boolean familiaEl;
-
-	@Column(name="familia_ha", nullable=false)
-	private Boolean familiaHa;
-
-	@Column(name="familia_info", nullable=false)
-	private Boolean familiaInfo;
-
-	@Column(name="familia_it", nullable=false)
-	private Boolean familiaIt;
-
-	@Column(name="familia_lb", nullable=false)
-	private Boolean familiaLb;
-
-	@Column(name="familia_mp3", nullable=false)
-	private Boolean familiaMp3;
-
-	@Column(name="familia_pc", nullable=false)
-	private Boolean familiaPc;
-
-	@Column(name="familia_sc_cr", nullable=false)
-	private Boolean familiaScCr;
-
-	@Column(name="familia_tc", nullable=false)
-	private Boolean familiaTc;
-
-	@Column(name="familia_tf", nullable=false)
-	private Boolean familiaTf;
-
-	@Column(name="familia_tm", nullable=false)
-	private Boolean familiaTm;
-
 	private Integer quantidade;
 
 	@Column(name="tipo_acao")
@@ -121,6 +87,9 @@ public class Calendario implements Serializable {
 
 	@Transient
 	private int qtdLotes;
+	
+	@Transient
+	private String descFamilias;
 	
 
     public Calendario() {
@@ -172,110 +141,6 @@ public class Calendario implements Serializable {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-	}
-
-	public Boolean getFamiliaAv() {
-		return this.familiaAv;
-	}
-
-	public void setFamiliaAv(Boolean familiaAv) {
-		this.familiaAv = familiaAv;
-	}
-
-	public Boolean getFamiliaCam() {
-		return this.familiaCam;
-	}
-
-	public void setFamiliaCam(Boolean familiaCam) {
-		this.familiaCam = familiaCam;
-	}
-
-	public Boolean getFamiliaEl() {
-		return this.familiaEl;
-	}
-
-	public void setFamiliaEl(Boolean familiaEl) {
-		this.familiaEl = familiaEl;
-	}
-
-	public Boolean getFamiliaHa() {
-		return this.familiaHa;
-	}
-
-	public void setFamiliaHa(Boolean familiaHa) {
-		this.familiaHa = familiaHa;
-	}
-
-	public Boolean getFamiliaInfo() {
-		return this.familiaInfo;
-	}
-
-	public void setFamiliaInfo(Boolean familiaInfo) {
-		this.familiaInfo = familiaInfo;
-	}
-
-	public Boolean getFamiliaIt() {
-		return this.familiaIt;
-	}
-
-	public void setFamiliaIt(Boolean familiaIt) {
-		this.familiaIt = familiaIt;
-	}
-
-	public Boolean getFamiliaLb() {
-		return this.familiaLb;
-	}
-
-	public void setFamiliaLb(Boolean familiaLb) {
-		this.familiaLb = familiaLb;
-	}
-
-	public Boolean getFamiliaMp3() {
-		return this.familiaMp3;
-	}
-
-	public void setFamiliaMp3(Boolean familiaMp3) {
-		this.familiaMp3 = familiaMp3;
-	}
-
-	public Boolean getFamiliaPc() {
-		return this.familiaPc;
-	}
-
-	public void setFamiliaPc(Boolean familiaPc) {
-		this.familiaPc = familiaPc;
-	}
-
-	public Boolean getFamiliaScCr() {
-		return this.familiaScCr;
-	}
-
-	public void setFamiliaScCr(Boolean familiaScCr) {
-		this.familiaScCr = familiaScCr;
-	}
-
-	public Boolean getFamiliaTc() {
-		return this.familiaTc;
-	}
-
-	public void setFamiliaTc(Boolean familiaTc) {
-		this.familiaTc = familiaTc;
-	}
-
-	public Boolean getFamiliaTf() {
-		return this.familiaTf;
-	}
-
-	public void setFamiliaTf(Boolean familiaTf) {
-		this.familiaTf = familiaTf;
-	}
-
-	public Boolean getFamiliaTm() {
-		return this.familiaTm;
-	}
-
-	public void setFamiliaTm(Boolean familiaTm) {
-		this.familiaTm = familiaTm;
 	}
 
 	public Integer getQuantidade() {
@@ -373,6 +238,38 @@ public class Calendario implements Serializable {
 
 	public void setEnvioEmailAntecipado(Boolean envioEmailAntecipado) {
 		this.envioEmailAntecipado = envioEmailAntecipado;
+	}
+
+	public String getFamilias() {
+		return familias;
+	}
+
+	public void setFamilias(String familias) {
+		this.familias = familias;
+	}
+
+	public String getDescFamilias() {
+		descFamilias = "";
+		List<Familias> listaFamilias = Familias.getListaFamilia();
+		if(getFamilias() != null && !"".equalsIgnoreCase(getFamilias())){
+			String familiasBD = getFamilias();
+			if(familiasBD != null && !"".equalsIgnoreCase(familiasBD)){
+				String[] f = familiasBD.split(",");
+				for (int i = 0; i < f.length; i++) {
+					for(Familias fLista : listaFamilias){
+						if(!"".equalsIgnoreCase(f[i]) && fLista.getCod().intValue() == new Integer(f[i]).intValue()){
+							descFamilias += fLista.getSigla() + ", ";
+						}
+					}				
+				}
+			}
+		}
+		
+		return descFamilias.substring(0, descFamilias.length() -1);
+	}
+
+	public void setDescFamilias(String descFamilias) {
+		this.descFamilias = descFamilias;
 	}
 
 }

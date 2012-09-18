@@ -31,6 +31,11 @@
             <redirect/>
         </navigation-case>
         <navigation-case>
+            <from-outcome>triar_aparelho</from-outcome>
+            <to-view-id>/paginas/triagem</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
             <from-outcome>alterar_senha</from-outcome>
             <to-view-id>/paginas/alterar_senha</to-view-id>
             <redirect/>

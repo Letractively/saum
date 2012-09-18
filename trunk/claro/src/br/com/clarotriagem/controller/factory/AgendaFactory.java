@@ -61,6 +61,7 @@ public class AgendaFactory extends BaseBean{
 				
 				calFim.set(Calendar.HOUR_OF_DAY, Integer.parseInt(horaEventoFinal.split(":")[0]));
 				calFim.set(Calendar.MINUTE, Integer.parseInt(horaEventoFinal.split(":")[1]));
+				
 				if(event.getId() == null){
 					
 					calendario.setDataInicial(new Timestamp(calIni.getTimeInMillis()));
@@ -103,10 +104,51 @@ public class AgendaFactory extends BaseBean{
 			addErroMessage(null, getTituloApp(Erros.ERRO_CALENDARIO_GERAL), getBunde("compromisso_inserido_erro"));
 		}
 	}
-
 	
+	protected void recuperaFamilias() {
+		for(Familias fLista : listaFamilias){
+			fLista.setSelecionado(false);
+		}
+		if(calendario != null && calendario.getFamilias() != null && !"".equalsIgnoreCase(calendario.getFamilias())){
+			String familiasBD = calendario.getFamilias();
+			if(familiasBD != null && !"".equalsIgnoreCase(familiasBD)){
+				String[] f = familiasBD.split(",");
+				for (int i = 0; i < f.length; i++) {
+					for(Familias fLista : listaFamilias){
+						if(!"".equalsIgnoreCase(f[i]) && fLista.getCod().intValue() == new Integer(f[i]).intValue()){
+							fLista.setSelecionado(true);
+						}
+					}				
+				}
+			}else{
+				for(Familias fLista : listaFamilias){
+					fLista.setSelecionado(false);
+				}				
+			}
+		}
+	}
+	private boolean preencheFamilias() {
+		String strFamilias = "";
+		boolean ret = false;
+		for(Familias f : listaFamilias){
+			if(f.isSelecionado()){
+				strFamilias += f.getCod() + ",";
+				ret = true;
+			}
+		}
+		calendario.setFamilias(strFamilias);
+		return ret;
+	}
+
 	protected boolean validaForm() throws Exception{
 		boolean ret = true;
+		boolean preencheuPeloMenosUmaFamilia = preencheFamilias();
+		
+		
+		if(!preencheuPeloMenosUmaFamilia){
+			addErroMessage(null, getBunde("erro_msg"), getBunde("erro_obrigado_preencher_familia"));
+			ret = false;
+		}
 		if(event.getStartDate() == null){
 			addErroMessage(null, getBunde("erro_msg"), getBunde("erro_data_inicial"));
 			ret = false;
@@ -210,6 +252,7 @@ public class AgendaFactory extends BaseBean{
 		warehouse = new Cliente();
 		usuarioResponsavel = new UsuarioIdentificacao();
 		warehouseCombo = new TreeMap<String, Long>();
+		recuperaFamilias();
 	}
 
 	public Cliente getWarehouse() {

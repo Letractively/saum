@@ -83,7 +83,7 @@ public class Cliente implements Serializable {
 	private Boolean ativo;
 
 	//bi-directional many-to-one association to Cliente
-	@ManyToOne(fetch=FetchType.LAZY)
+	@ManyToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="id_cliente")
 	private Cliente cliente;
 	
