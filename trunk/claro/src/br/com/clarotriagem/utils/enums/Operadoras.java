@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 public enum Operadoras {
 	
-    BRT("BRT", 0),
-    CLARO("Claro", 1),
-    OI("OI", 2),
-    OPEN("OPEN", 3),
-    TELEMIG("Telemig", 4),
-    TIM("TIM", 5),
-    VIVO("Vivo", 6);
+    BRT("BRT", 1),
+    CLARO("Claro", 2),
+    OI("OI", 3),
+    OPEN("OPEN", 4),
+    TELEMIG("Telemig", 5),
+    TIM("TIM", 6),
+    VIVO("Vivo", 7);
 	
 	private String descricao;
 	private Integer cod;
