@@ -27,24 +27,18 @@ public class ModelosBean extends BaseBean {
 
 	private List<AparelhoModelo> modelos;
 	private AparelhoModelo modeloSelecionado;
+	private AparelhoModelo novoModelo;
+	private AparelhoMarca aparelhoMarcaEscolhida;
 
-	private Long idMarcaSelecionada;
-	private String nomeNovoModelo;
-	private int codFamiliaSelecionado;
-	private int tipoSerial1;
-	private int tipoSerial2;
-	private int tipoSerial3;
-	private int tipoSerial4;
-	private int tipoSerial5;
-	
 	private SortedMap<String, Long> marcas;
 	private SortedMap<String, Integer> comboFamilia;
 	private SortedMap<String, Integer> comboTiposSerial;
 
+	public void buscaModelos() {
+		getModelos();
+	}
 	public List<AparelhoModelo> getModelos() {
-		if (idMarcaSelecionada != null) {
-			modelos = aparelhosService.buscaModelosTodos(idMarcaSelecionada);
-		}
+		modelos = aparelhosService.buscaModelosTodos(getAparelhoMarcaEscolhida().getId());
 		return modelos;
 	}
 
@@ -53,10 +47,6 @@ public class ModelosBean extends BaseBean {
 			marcas = aparelhosService.getMarcasParaCombo();
 		}
 		return marcas;
-	}
-
-	public void buscaModelos() {
-		modelos = aparelhosService.buscaModelosTodos(idMarcaSelecionada);
 	}
 
 	public void ativaModelo() {
@@ -76,19 +66,67 @@ public class ModelosBean extends BaseBean {
 	}
 
 	public void salva() {
-		if (nomeNovoModelo != null && !"".equalsIgnoreCase(nomeNovoModelo.trim())) {
-			AparelhoModelo mod = new AparelhoModelo();
-			mod.setAparelhoMarca(new AparelhoMarca(idMarcaSelecionada));
-			mod.setAtivo(true);
-			mod.setNome(nomeNovoModelo);
-			aparelhosService.insereModelo(mod);
-			nomeNovoModelo = "";
+		getNovoModelo().setAparelhoMarca(aparelhoMarcaEscolhida);
+		if (validaModelo()) {
+			getNovoModelo().setAtivo(true);
+			aparelhosService.insereModelo(getNovoModelo());
+			setNovoModelo(new AparelhoModelo());
 			addInfoMessage(getBunde("inserir_modelo_sucesso"));
-		} else {
-			addErroMessage("marca_novo", getTituloApp(), getBunde("erro_inserir_modelo"));
 		}
 	}
 	
+	private boolean validaModelo() {
+		boolean ret = true;
+		if(getNovoModelo().getNome() == null || "".equalsIgnoreCase(getNovoModelo().getNome().trim())){
+			ret = false;
+			addErroMessage(null, getTituloApp(), getBunde("erro_nome_modelo"));
+		}
+		
+		if(getNovoModelo().getFamilia() == null || getNovoModelo().getFamilia().intValue() == 0){
+			ret = false;
+			addErroMessage(null, getTituloApp(), getBunde("erro_familia_modelo"));
+		}
+		
+		if(getNovoModelo().getIdentificador1() == null || getNovoModelo().getIdentificador1().intValue() == 0){
+			ret = false;
+			addErroMessage(null, getTituloApp(), getBunde("erro_minimo_serial_modelo"));
+		}
+		
+		int id1 = getNovoModelo().getIdentificador1();
+		int id2 = getNovoModelo().getIdentificador2();
+		int id3 = getNovoModelo().getIdentificador3();
+		int id4 = getNovoModelo().getIdentificador4();
+		
+		if(id1 == id2 && id2 != 0){
+			ret = false;
+			addErroMessage(null, getTituloApp(), getBunde("erro_igualdade_serial_2_modelo"));
+		}
+		if(id1 == id3 && id3 != 0){
+			ret = false;
+			addErroMessage(null, getTituloApp(), getBunde("erro_igualdade_serial_3_modelo"));
+		}
+		if(id1 == id4 && id4 != 0){
+			ret = false;
+			addErroMessage(null, getTituloApp(), getBunde("erro_igualdade_serial_4_modelo"));
+		}
+
+		if(id2 == id3 && id3 != 0){
+			ret = false;
+			addErroMessage(null, getTituloApp(), getBunde("erro_igualdade_serial_3_modelo"));
+		}
+		if(id2 == id4 && id4 != 0){
+			ret = false;
+			addErroMessage(null, getTituloApp(), getBunde("erro_igualdade_serial_4_modelo"));
+		}
+
+		if(id3 == id4 && id4 != 0){
+			ret = false;
+			addErroMessage(null, getTituloApp(), getBunde("erro_igualdade_serial_4_modelo"));
+		}
+		
+		return ret;
+	}
+
 	public SortedMap<String, Integer> getComboFamilia() {
 		if(comboFamilia == null){
 			comboFamilia = Familias.getMapaRotulos();
@@ -124,68 +162,26 @@ public class ModelosBean extends BaseBean {
 		this.modeloSelecionado = modeloSelecionado;
 	}
 
-	public Long getIdMarcaSelecionada() {
-		return idMarcaSelecionada;
+	public AparelhoModelo getNovoModelo() {
+		if(novoModelo == null){
+			novoModelo = new AparelhoModelo();
+		}
+		return novoModelo;
 	}
 
-	public void setIdMarcaSelecionada(Long idMarcaSelecionada) {
-		this.idMarcaSelecionada = idMarcaSelecionada;
+	public void setNovoModelo(AparelhoModelo novoModelo) {
+		this.novoModelo = novoModelo;
 	}
 
-	public String getNomeNovoModelo() {
-		return nomeNovoModelo;
+	public AparelhoMarca getAparelhoMarcaEscolhida() {
+		if(aparelhoMarcaEscolhida == null){
+			aparelhoMarcaEscolhida = new AparelhoMarca();
+		}
+		return aparelhoMarcaEscolhida;
 	}
 
-	public void setNomeNovoModelo(String nomeNovoModelo) {
-		this.nomeNovoModelo = nomeNovoModelo;
-	}
-
-	public int getCodFamiliaSelecionado() {
-		return codFamiliaSelecionado;
-	}
-
-	public void setCodFamiliaSelecionado(int codFamiliaSelecionado) {
-		this.codFamiliaSelecionado = codFamiliaSelecionado;
-	}
-
-	public int getTipoSerial1() {
-		return tipoSerial1;
-	}
-
-	public void setTipoSerial1(int tipoSerial1) {
-		this.tipoSerial1 = tipoSerial1;
-	}
-
-	public int getTipoSerial2() {
-		return tipoSerial2;
-	}
-
-	public void setTipoSerial2(int tipoSerial2) {
-		this.tipoSerial2 = tipoSerial2;
-	}
-
-	public int getTipoSerial3() {
-		return tipoSerial3;
-	}
-
-	public void setTipoSerial3(int tipoSerial3) {
-		this.tipoSerial3 = tipoSerial3;
-	}
-
-	public int getTipoSerial4() {
-		return tipoSerial4;
-	}
-
-	public void setTipoSerial4(int tipoSerial4) {
-		this.tipoSerial4 = tipoSerial4;
-	}
-
-	public int getTipoSerial5() {
-		return tipoSerial5;
-	}
-
-	public void setTipoSerial5(int tipoSerial5) {
-		this.tipoSerial5 = tipoSerial5;
+	public void setAparelhoMarcaEscolhida(AparelhoMarca aparelhoMarcaEscolhida) {
+		this.aparelhoMarcaEscolhida = aparelhoMarcaEscolhida;
 	}
 
 }

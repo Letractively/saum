@@ -7,7 +7,7 @@ import java.util.TreeMap;
 
 public enum Familias {
 	
-    TC("TC", "Telefonia Celular", 0),
+    TC("TC", "Telefonia Celular", 1),
     LB("LB", "Atendimento", 2),
     TM("TM", "Atendimento", 3),
     MP3("MP3", "MP3", 4),

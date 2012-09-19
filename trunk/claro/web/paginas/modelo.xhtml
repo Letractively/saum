@@ -31,7 +31,7 @@
 							<h:outputLabel value="#{msgs.marca_msg}" for="marca" />
 						</p:column>
 						<p:column>
-		   					<p:selectOneMenu value="#{modelosBean.idMarcaSelecionada}" id="marca" label="#{msgs.marca_msg}" style="width:300px" required="true">
+		   					<p:selectOneMenu value="#{modelosBean.aparelhoMarcaEscolhida.id}" id="marca" label="#{msgs.marca_msg}" style="width:300px" required="true">
 		   						<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
 			            		<f:selectItems value="#{modelosBean.marcas}"/>
 						        <p:ajax event="change" update="tabelaDeModelos" listener="#{modelosBean.buscaModelos}"/>
@@ -41,7 +41,7 @@
 							<h:outputLabel value="#{msgs.modelo_msg}" for="marca_novo" />
 						</p:column>
 						<p:column>
-							<p:inputText id="marca_novo" label="#{msgs.modelo_msg}" value="#{modelosBean.nomeNovoModelo}"/>
+							<p:inputText id="marca_novo" label="#{msgs.modelo_msg}" value="#{modelosBean.novoModelo.nome}"/>
 						</p:column>
 					</p:row>
 					<p:row>
@@ -49,7 +49,7 @@
 							<h:outputLabel value="#{msgs.familia_msg}" for="lst_familia" />
 						</p:column>
 						<p:column colspan="3">
-		   					<p:selectOneMenu value="#{modelosBean.codFamiliaSelecionado}" id="lst_familia" label="#{msgs.familia_msg}" style="width:300px" required="true">
+		   					<p:selectOneMenu value="#{modelosBean.novoModelo.familia}" id="lst_familia" label="#{msgs.familia_msg}" style="width:300px" required="false">
 								<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
 			            		<f:selectItems value="#{modelosBean.comboFamilia}"/>
 			            	</p:selectOneMenu>
@@ -60,7 +60,7 @@
 							<h:outputLabel value="#{msgs.tipo_serial} 1" for="tp_serial1" />
 						</p:column>
 						<p:column>
-		   					<p:selectOneMenu value="#{modelosBean.tipoSerial1}" id="tp_serial1" label="#{msgs.tipo_serial} 1" style="width:130px" required="true">
+		   					<p:selectOneMenu value="#{modelosBean.novoModelo.identificador1}" id="tp_serial1" label="#{msgs.tipo_serial} 1" style="width:130px" required="false">
 								<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
 			            		<f:selectItems value="#{modelosBean.comboTiposSerial}"/>
 			            	</p:selectOneMenu>
@@ -69,7 +69,7 @@
 							<h:outputLabel value="#{msgs.tipo_serial} 2" for="tp_serial2" />
 						</p:column>
 						<p:column>
-		   					<p:selectOneMenu value="#{modelosBean.tipoSerial2}" id="tp_serial2" label="#{msgs.tipo_serial} 2" style="width:130px" required="true">
+		   					<p:selectOneMenu value="#{modelosBean.novoModelo.identificador2}" id="tp_serial2" label="#{msgs.tipo_serial} 2" style="width:130px" required="false">
 								<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
 			            		<f:selectItems value="#{modelosBean.comboTiposSerial}"/>
 			            	</p:selectOneMenu>
@@ -80,7 +80,7 @@
 							<h:outputLabel value="#{msgs.tipo_serial} 3" for="tp_serial3" />
 						</p:column>
 						<p:column>
-		   					<p:selectOneMenu value="#{modelosBean.tipoSerial3}" id="tp_serial3" label="#{msgs.tipo_serial} 3" style="width:130px" required="true">
+		   					<p:selectOneMenu value="#{modelosBean.novoModelo.identificador3}" id="tp_serial3" label="#{msgs.tipo_serial} 3" style="width:130px" required="false">
 								<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
 			            		<f:selectItems value="#{modelosBean.comboTiposSerial}"/>
 			            	</p:selectOneMenu>
@@ -89,7 +89,7 @@
 							<h:outputLabel value="#{msgs.tipo_serial} 4" for="tp_serial4" />
 						</p:column>
 						<p:column>
-		   					<p:selectOneMenu value="#{modelosBean.tipoSerial4}" id="tp_serial4" label="#{msgs.tipo_serial} 4" style="width:130px" required="true">
+		   					<p:selectOneMenu value="#{modelosBean.novoModelo.identificador4}" id="tp_serial4" label="#{msgs.tipo_serial} 4" style="width:130px" required="false">
 								<f:selectItem itemLabel="#{msgs.selecione_item}" itemValue=""/>
 			            		<f:selectItems value="#{modelosBean.comboTiposSerial}"/>
 			            	</p:selectOneMenu>
@@ -126,6 +126,30 @@
 			        
 					<p:column headerText="#{msgs.marca_msg}">
 						<h:outputText value="#{mode.aparelhoMarca.nome}" />
+			        </p:column>
+			        
+					<p:column headerText="#{msgs.familia_msg}">
+						<h:outputText value="#{mode.familiaDesca.descricao}" />
+			        </p:column>
+			        
+					<p:column headerText="#{msgs.tipo_serial} 1">
+						<h:outputText value="#{mode.id1.descricao}" />
+			        </p:column>
+			        
+					<p:column headerText="#{msgs.tipo_serial} 2">
+						<h:outputText value="#{mode.id2.descricao}" />
+			        </p:column>
+			        
+					<p:column headerText="#{msgs.tipo_serial} 3">
+						<h:outputText value="#{mode.id3.descricao}" />
+			        </p:column>
+			        
+					<p:column headerText="#{msgs.tipo_serial} 4">
+						<h:outputText value="#{mode.id4.descricao}" />
+			        </p:column>
+			        
+					<p:column headerText="#{msgs.tipo_serial} 5">
+						<h:outputText value="#{mode.id5.descricao}" />
 			        </p:column>
 			        
 			    </p:dataTable>

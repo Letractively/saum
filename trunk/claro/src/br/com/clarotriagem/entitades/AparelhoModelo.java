@@ -14,6 +14,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import br.com.clarotriagem.utils.enums.Familias;
+import br.com.clarotriagem.utils.enums.TiposSerial;
 
 
 @Entity
@@ -43,7 +47,7 @@ public class AparelhoModelo implements Serializable {
 	private Integer identificador4;
 
 	private Integer identificador5;
-
+	
 	@Column(nullable=false, length=50)
 	private String nome;
 
@@ -56,6 +60,22 @@ public class AparelhoModelo implements Serializable {
 	@OneToMany(mappedBy="aparelhoModelo")
 	private List<TriagemLote> triagemLotes;
 
+	
+	
+	@Transient
+	private TiposSerial id1;
+	@Transient
+	private TiposSerial id2;
+	@Transient
+	private TiposSerial id3;
+	@Transient
+	private TiposSerial id4;
+	@Transient
+	private TiposSerial id5;
+	@Transient
+	private Familias familiaDesca;
+
+	
     public AparelhoModelo() {
     }
 
@@ -145,6 +165,67 @@ public class AparelhoModelo implements Serializable {
 
 	public void setTriagemLotes(List<TriagemLote> triagemLotes) {
 		this.triagemLotes = triagemLotes;
+	}
+
+	public TiposSerial getId1() {
+		if(identificador1 != null){
+			id1 = TiposSerial.getRotuloPorCod(identificador1);
+		}
+		return id1;
+	}
+	public void setId1(TiposSerial id1) {
+		this.id1 = id1;
+	}
+
+	public TiposSerial getId2() {
+		if(identificador2 != null){
+			id2 = TiposSerial.getRotuloPorCod(identificador2);
+		}
+		return id2;
+	}
+	public void setId2(TiposSerial id2) {
+		this.id2 = id2;
+	}
+
+	public TiposSerial getId3() {
+		if(identificador3 != null){
+			id3 = TiposSerial.getRotuloPorCod(identificador3);
+		}
+		return id3;
+	}
+	public void setId3(TiposSerial id3) {
+		this.id3 = id3;
+	}
+
+	public TiposSerial getId4() {
+		if(identificador4 != null){
+			id4 = TiposSerial.getRotuloPorCod(identificador4);
+		}
+		return id4;
+	}
+	public void setId4(TiposSerial id4) {
+		this.id4 = id4;
+	}
+
+	public TiposSerial getId5() {
+		if(identificador5 != null){
+			id5 = TiposSerial.getRotuloPorCod(identificador5);
+		}
+		return id5;
+	}
+	public void setId5(TiposSerial id5) {
+		this.id5 = id5;
+	}
+
+	public Familias getFamiliaDesca() {
+		return familiaDesca;
+	}
+
+	public void setFamiliaDesca(Familias familiaDesca) {
+		if(familia != null){
+			familiaDesca = Familias.getRotuloPorCod(familia);
+		}
+		this.familiaDesca = familiaDesca;
 	}
 	
 }
