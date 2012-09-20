@@ -3,6 +3,7 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui"
+	xmlns:core="http://java.sun.com/jsp/jstl/core"
 	xmlns:f="http://java.sun.com/jsf/core">
 	
 	<ui:composition template="/template/template.xhtml">
@@ -10,12 +11,14 @@
 		<ui:define name="titulo">#{msgs.nome_aplicativo_resumido}</ui:define>
 		<ui:define name="titulo_pagina">#{msgs.nome_pag_triagem}</ui:define>
 		<ui:define name="conteudo">
+			<script type="text/javascript" src="../js/formatadores.js"></script>
 			<style type="text/css">
 				.coluna1{
 					width: 10%;
 					text-align: right;
 					font-weight: bolder;
 					background-color: #F2F2F2;
+					white-space: nowrap;
 				}
 				.coluna2{
 					width: 23%;
@@ -25,11 +28,13 @@
 					text-align: right;
 					font-weight: bolder;
 					background-color: #F2F2F2;
+					white-space: nowrap;
 				}
 				.coluna4{
 					width: 23%;
 				}
 				.coluna5{
+					white-space: nowrap;
 					width: 10%;
 					text-align: right;
 					font-weight: bolder;
@@ -79,23 +84,160 @@
 					</p:panelGrid>
 				</p:panel>
 				<br/><br/>
-				<p:panel id="pnl" header="#{msgs.resumo_inf_lote}" toggleable="true" closable="false" toggleSpeed="500" closeSpeed="500" widgetVar="panel" collapsed="#{triagemBean.painelEncolhido}">
-					<p:panelGrid columnClasses="coluna1,coluna2,coluna3,coluna4,coluna5,coluna6" style="width:945px">
+				<p:panel id="pnl_triagem" header="#{msgs.resumo_inf_lote}" widgetVar="panel">
+					<p:panelGrid style="width:945px">
 						<p:row>
-							<p:column styleClass="coluna1">#{triagemBean.triagemLote.aparelhoModelo.id1.descricao}</p:column>
-							<p:column styleClass="coluna2"><h:outputText value="#{triagemBean.triagemLote.calendario.warehouse.cliente.nomeFantasia}" /></p:column>
+							<core:if test="${triagemBean.temTiposSerial1 == true}">
+								<p:column styleClass="coluna1"><h:outputLabel value="#{triagemBean.triagemLote.aparelhoModelo.id1.descricao}" for="ident_1"/></p:column>
+								<p:column>
+									<span style="float: left;">
+									<p:inputText id="ident_1" size="25" value="#{triagemBean.triagem.identificador1}" required="false" label="#{triagemBean.triagemLote.aparelhoModelo.id1.descricao}" onkeyup="#{triagemBean.triagemLote.aparelhoModelo.id1.onkeyup}" maxlength="#{triagemBean.triagemLote.aparelhoModelo.id1.tamanho}">
+									    <f:validator validatorId="validaTriagem" />
+    									<f:attribute name="tipoSerial" value="#{triagemBean.triagemLote.aparelhoModelo.id1.cod}" />
+    									<p:ajax update="msg_1" event="blur" /> 
+									</p:inputText>
+									</span> 
+									<span style="float: left;">
+									<p:message for="ident_1" id="msg_1" display="text" showSummary="false" showDetail="true"/>
+									</span>
+								</p:column>
+							</core:if>
 							
-							<p:column styleClass="coluna1">#{triagemBean.triagemLote.aparelhoModelo.id2.descricao}</p:column>
-							<p:column styleClass="coluna4"><h:outputText value="#{triagemBean.triagemLote.calendario.warehouse.nomeFantasia}" /></p:column>
+							<core:if test="${triagemBean.temTiposSerial2 == true}">
+								<p:column styleClass="coluna1"><h:outputLabel value="#{triagemBean.triagemLote.aparelhoModelo.id2.descricao}" for="ident_2"/></p:column>
+								<p:column>
+									<p:inputText id="ident_2" size="25" value="#{triagemBean.triagem.identificador2}" required="false" label="#{triagemBean.triagemLote.aparelhoModelo.id2.descricao}" onkeyup="#{triagemBean.triagemLote.aparelhoModelo.id2.onkeyup}" maxlength="#{triagemBean.triagemLote.aparelhoModelo.id2.tamanho}">
+									    <f:validator validatorId="validaTriagem" />
+    									<f:attribute name="tipoSerial" value="#{triagemBean.triagemLote.aparelhoModelo.id2.cod}" />
+									</p:inputText>
+								</p:column>
+							</core:if>
 							
-							<p:column styleClass="coluna1">#{triagemBean.triagemLote.aparelhoModelo.id3.descricao}</p:column>
-							<p:column styleClass="coluna6"><h:outputText value="#{triagemBean.quantidadeAparelhoTriado} #{msgs.de_msg} #{triagemBean.triagemLote.quantidade}" /></p:column>
+							<core:if test="${triagemBean.temTiposSerial3 == true}">
+								<p:column styleClass="coluna1"><h:outputLabel value="#{triagemBean.triagemLote.aparelhoModelo.id3.descricao}" for="ident_3"/></p:column>
+								<p:column>
+									<p:inputText id="ident_3" size="25" value="#{triagemBean.triagem.identificador3}" required="false" label="#{triagemBean.triagemLote.aparelhoModelo.id3.descricao}" onkeyup="#{triagemBean.triagemLote.aparelhoModelo.id3.onkeyup}" maxlength="#{triagemBean.triagemLote.aparelhoModelo.id3.tamanho}">
+									    <f:validator validatorId="validaTriagem" />
+    									<f:attribute name="tipoSerial" value="#{triagemBean.triagemLote.aparelhoModelo.id3.cod}" />
+									</p:inputText>
+								</p:column>
+							</core:if>
+							
+							<core:if test="${triagemBean.temTiposSerial4 == true}">
+								<p:column styleClass="coluna1"><h:outputLabel value="#{triagemBean.triagemLote.aparelhoModelo.id4.descricao}" for="ident_4"/></p:column>
+								<p:column>
+									<p:inputText id="ident_4" size="25" value="#{triagemBean.triagem.identificador4}" required="false" label="#{triagemBean.triagemLote.aparelhoModelo.id4.descricao}" onkeyup="#{triagemBean.triagemLote.aparelhoModelo.id4.onkeyup}" maxlength="#{triagemBean.triagemLote.aparelhoModelo.id4.tamanho}">
+									    <f:validator validatorId="validaTriagem" />
+    									<f:attribute name="tipoSerial" value="#{triagemBean.triagemLote.aparelhoModelo.id4.cod}" />
+									</p:inputText>
+								</p:column>
+							</core:if>
 						</p:row>
 					</p:panelGrid>
-				
+					<br/>
+					<!-- ############################################################################################################## -->
+					<p:panelGrid style="width:945px">
+						<p:row>
+							<p:column colspan="2" style="width:50%"><p:selectBooleanCheckbox value="#{triagemBean.triagem.autorizacaoCcc}" id="aut_ccc" itemLabel="Consta autorização CCC"/></p:column>
+							<p:column colspan="2"><p:selectBooleanCheckbox value="#{triagemBean.triagem.possuiCheckList}" id="check_list" itemLabel="Possui check list?"/></p:column>
+						</p:row>
+						
+						<p:row>
+							<p:column colspan="2"><p:selectBooleanCheckbox value="#{triagemBean.triagem.aparelhoBloqueado}" id="bloq" itemLabel="Aparelho bloqueado?"/></p:column>
+
+							<p:column styleClass="coluna1"><h:outputLabel value="Operadora" for="operadora"/></p:column>
+							<p:column>
+								<p:selectOneMenu id="operadora" value="#{triagemBean.triagem.operadora}" label="" style="width:150px">
+									<f:selectItem itemLabel="Escolha" itemValue="false"/>
+									<f:selectItems value="#{triagemBean.operadorasCombo}"/>
+								</p:selectOneMenu>
+							</p:column>
+						</p:row>
+						
+						<p:row>
+							<p:column styleClass="coluna1"><h:outputLabel value="Tempo de uso" for="tempo_uso"/></p:column>
+							<p:column>
+								<p:inputText maxlength="9" value="#{triagemBean.tempoUsoAparelho}" id="tempo_uso" onblur="verificaCampoTempo(this);" onkeyup="formataTempo(this)" size="8">
+				            		<f:validateLength minimum="9"/>
+				            	</p:inputText>
+							</p:column>
+
+							<p:column styleClass="coluna1"><h:outputLabel value="Aparência" for="aparencia"/></p:column>
+							<p:column>
+								<p:selectOneMenu id="aparencia" value="#{triagemBean.triagem.aparencia}" label="">
+									<f:selectItem itemLabel="Escolha" itemValue="false"/>
+									<f:selectItems value="#{triagemBean.tipoAparenciaAparelho}"/>
+								</p:selectOneMenu>
+							</p:column>
+						</p:row>
+						
+						<p:row>
+							<p:column styleClass="coluna1"><h:outputLabel value="Sintoma informado" for="sin_inf"/></p:column>
+							<p:column>
+								<p:selectOneMenu id="sin_inf" value="#{triagemBean.triagem.sintomaInformado}" label="">
+									<f:selectItem itemLabel="Escolha" itemValue=""/>
+									<f:selectItems value="#{triagemBean.sintomaInformado}"/>
+								</p:selectOneMenu>
+							</p:column>
+
+							<p:column styleClass="coluna1"><h:outputLabel value="Sintoma constatado" for="sin_cons"/></p:column>
+							<p:column>
+								<p:selectOneMenu id="sin_cons" value="#{triagemBean.triagem.sintomaConstatado}" label="">
+									<f:selectItem itemLabel="Escolha" itemValue=""/>
+									<f:selectItems value="#{triagemBean.sintomaConstatado}"/>
+								</p:selectOneMenu>
+							</p:column>
+						</p:row>
+					</p:panelGrid>
 				</p:panel>
 		    </div>
 	    </h:form>
 		</ui:define>
 	</ui:composition>
 </html>
+<!-- 
+
+
+  triador bigint NOT NULL,
+  triagem_lote bigint NOT NULL,
+
+
+
+
+
+  identificador1_nome character varying(100),
+  identificador2_nome character varying(100),
+  identificador3_nome character varying(100),
+  identificador4_nome character varying(100),
+  identificador5_nome character varying(100),
+  identificador1_utilizado boolean NOT NULL DEFAULT false,
+  identificador2_utilizado boolean NOT NULL DEFAULT false,
+  identificador3_utilizado boolean NOT NULL DEFAULT false,
+  identificador4_utilizado boolean NOT NULL DEFAULT false,
+  identificador5_utilizado boolean NOT NULL DEFAULT false,
+
+  nf_venda_numero bigint,
+  nf_venda_data date,
+  nf_troca_numero bigint,
+  nf_troca_data date,
+
+
+
+
+
+  doa boolean DEFAULT false,
+  os_numero_1 character varying(25),
+  os_cod_peca_1 character varying(25),
+  os_data_abertura_1 date,
+  os_data_entrega_1 date,
+  os_numero_2 character varying(25),
+  os_cod_peca_2 character varying(25),
+  os_data_abertura_2 date,
+  os_data_entrega_2 date,
+  os_numero_3 character varying(25),
+  os_cod_peca_3 character varying(25),
+  os_data_abertura_3 date,
+  os_data_entrega_3 date,
+  observacoes text,
+
+ -->

@@ -59,6 +59,29 @@ function formataHora(campo){
     v=v.replace(/(\d{2})(\d)/,"$1:$2");  
     campo.value = v;
 }
+function verificaCampoTempo(campo){
+	var v = campo.value;
+	v=v.replace(/\D/g,"");
+	if(v == ""){
+		campo.value = "000:00:00";
+	}else{
+		var tam = v.length;
+		if(tam != 7){
+			var dif = 7 - tam;
+			for ( var int = 0; int < dif; int++) {
+				v += "0";
+			}
+		}
+		v=v.replace(/(\d{3})(\d{2})(\d)/,"$1:$2:$3");
+		campo.value = v;
+	}
+}
+function formataTempo(campo){
+	var v = campo.value;
+	v=v.replace(/\D/g,"");
+	v=v.replace(/(\d{3})(\d{2})(\d)/,"$1:$2:$3");
+	campo.value = v;
+}
 function formataPercentual(campo, tammax) {
 	var vr = campo.value;
 	vr = vr.replace(/[^\d]/g, ""); // retira não digitos
