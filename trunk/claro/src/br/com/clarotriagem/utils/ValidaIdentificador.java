@@ -14,6 +14,14 @@ import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_DVD;
 import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_LG;
 import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_MDM;
 import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_MON;
+import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_NBK;
+import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_NPC;
+import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_PRT;
+import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_REF;
+import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_SWA;
+import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_VC;
+import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_WM;
+import br.com.clarotriagem.utils.validadoresSerial.ValidaSSN_YEPP;
 import br.com.clarotriagem.utils.validadoresSerial.ValidadorGeral;
 
 public class ValidaIdentificador {
@@ -25,7 +33,11 @@ public class ValidaIdentificador {
 			ValidadorGeral v = new ValidadorGeral(serial) {
 				@Override
 				public boolean valida() throws Exception {
-					return false;
+					if(serial.length() > 30){
+						return false;
+					}else{
+						return true;
+					}
 				}
 			};
 			
@@ -85,39 +97,37 @@ public class ValidaIdentificador {
 				return v.valida();
 				
 			} else if (TiposSerial.SSN_NBK.getCod().intValue() == ts.getCod().intValue()) {
-
+				v = new ValidaSSN_NBK(serial);
 				return v.valida();
 				
 			} else if (TiposSerial.SSN_NPC.getCod().intValue() == ts.getCod().intValue()) {
-
+				v = new ValidaSSN_NPC(serial);
 				return v.valida();
 				
 			} else if (TiposSerial.SSN_PRT.getCod().intValue() == ts.getCod().intValue()) {
-
+				v = new ValidaSSN_PRT(serial);
 				return v.valida();
 				
 			} else if (TiposSerial.SSN_REF.getCod().intValue() == ts.getCod().intValue()) {
-
+				v = new ValidaSSN_REF(serial);
 				return v.valida();
 				
 			} else if (TiposSerial.SSN_SWA.getCod().intValue() == ts.getCod().intValue()) {
-
+				v = new ValidaSSN_SWA(serial);
 				return v.valida();
 				
 			} else if (TiposSerial.SSN_VC.getCod().intValue() == ts.getCod().intValue()) {
-
+				v = new ValidaSSN_VC(serial);
 				return v.valida();
 				
 			} else if (TiposSerial.SSN_WM.getCod().intValue() == ts.getCod().intValue()) {
-
+				v = new ValidaSSN_WM(serial);
 				return v.valida();
 				
 			} else if (TiposSerial.SSN_YEPP.getCod().intValue() == ts.getCod().intValue()) {
-
+				v = new ValidaSSN_YEPP(serial);
 				return v.valida();
-				
 			} else {
-				
 				return v.valida();
 			}
 			return false;
