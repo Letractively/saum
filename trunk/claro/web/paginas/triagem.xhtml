@@ -46,7 +46,7 @@
 			</style>		
 		<h:form id="formGeral">
 			<div id="container_conteudo_interno" style="background-color: #FFFFFF;" class="conteudo-principal">
-				<p:panel id="pnl" header="#{msgs.resumo_inf_lote}" toggleable="true" closable="false" toggleSpeed="500" closeSpeed="500" widgetVar="panel" collapsed="#{triagemBean.painelEncolhido}">
+				<p:panel id="pnl" header="#{msgs.resumo_inf_lote}" toggleable="true" toggleSpeed="500" widgetVar="panel" collapsed="#{triagemBean.painelEncolhido}">
 				
 					<p:ajax event="toggle" listener="#{triagemBean.encolheuPainel}"/>
 				
@@ -84,7 +84,7 @@
 					</p:panelGrid>
 				</p:panel>
 				<br/><br/>
-				<p:panel id="pnl_triagem" header="#{msgs.resumo_inf_lote}" widgetVar="panel">
+				<p:panel id="pnl_triagem" header="#{msgs.formulario_triagem}" widgetVar="panelt">
 					<p:panelGrid style="width:945px">
 						<p:row>
 							<core:if test="${triagemBean.temTiposSerial1 == true}">
@@ -138,12 +138,16 @@
 					<!-- ############################################################################################################## -->
 					<p:panelGrid style="width:945px">
 						<p:row>
-							<p:column colspan="2" style="width:50%"><p:selectBooleanCheckbox value="#{triagemBean.triagem.autorizacaoCcc}" id="aut_ccc" itemLabel="Consta autorização CCC"/></p:column>
-							<p:column colspan="2"><p:selectBooleanCheckbox value="#{triagemBean.triagem.possuiCheckList}" id="check_list" itemLabel="Possui check list?"/></p:column>
+							<p:column styleClass="coluna1"><h:outputLabel value="Consta autorização CCC" for="aut_ccc"/></p:column>
+							<p:column><p:selectBooleanCheckbox value="#{triagemBean.triagem.autorizacaoCcc}" id="aut_ccc"/></p:column>
+
+							<p:column styleClass="coluna1"><h:outputLabel value="Possui check list?" for="check_list"/></p:column>
+							<p:column><p:selectBooleanCheckbox value="#{triagemBean.triagem.possuiCheckList}" id="check_list"/></p:column>
 						</p:row>
 						
 						<p:row>
-							<p:column colspan="2"><p:selectBooleanCheckbox value="#{triagemBean.triagem.aparelhoBloqueado}" id="bloq" itemLabel="Aparelho bloqueado?"/></p:column>
+							<p:column styleClass="coluna1"><h:outputLabel value="Aparelho bloqueado?" for="bloq"/></p:column>
+							<p:column><p:selectBooleanCheckbox value="#{triagemBean.triagem.aparelhoBloqueado}" id="bloq"/></p:column>
 
 							<p:column styleClass="coluna1"><h:outputLabel value="Operadora" for="operadora"/></p:column>
 							<p:column>
@@ -189,6 +193,18 @@
 							</p:column>
 						</p:row>
 					</p:panelGrid>
+					<br/>
+					<!-- ############################################################################################################## -->
+					<p:panelGrid style="width:945px">
+						<p:row>
+							<p:column styleClass="coluna1"><h:outputLabel value="Num. NF venda" for="nm_nf_venda"/></p:column>
+							<p:column><p:selectBooleanCheckbox value="#{triagemBean.triagem.autorizacaoCcc}" id="nm_nf_venda"/></p:column>
+
+							<p:column styleClass="coluna1"><h:outputLabel value="Data NF venda" for="dt_nf_venda"/></p:column>
+							<p:column><p:selectBooleanCheckbox value="#{triagemBean.triagem.possuiCheckList}" id="dt_nf_venda"/></p:column>
+						</p:row>
+					</p:panelGrid>
+
 				</p:panel>
 		    </div>
 	    </h:form>
