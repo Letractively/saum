@@ -79,9 +79,21 @@
 					</p:panelGrid>
 				</p:panel>
 				<br/><br/>
+				<p:panel id="pnl" header="#{msgs.resumo_inf_lote}" toggleable="true" closable="false" toggleSpeed="500" closeSpeed="500" widgetVar="panel" collapsed="#{triagemBean.painelEncolhido}">
+					<p:panelGrid columnClasses="coluna1,coluna2,coluna3,coluna4,coluna5,coluna6" style="width:945px">
+						<p:row>
+							<p:column styleClass="coluna1">#{triagemBean.triagemLote.aparelhoModelo.id1.descricao}</p:column>
+							<p:column styleClass="coluna2"><h:outputText value="#{triagemBean.triagemLote.calendario.warehouse.cliente.nomeFantasia}" /></p:column>
+							
+							<p:column styleClass="coluna1">#{triagemBean.triagemLote.aparelhoModelo.id2.descricao}</p:column>
+							<p:column styleClass="coluna4"><h:outputText value="#{triagemBean.triagemLote.calendario.warehouse.nomeFantasia}" /></p:column>
+							
+							<p:column styleClass="coluna1">#{triagemBean.triagemLote.aparelhoModelo.id3.descricao}</p:column>
+							<p:column styleClass="coluna6"><h:outputText value="#{triagemBean.quantidadeAparelhoTriado} #{msgs.de_msg} #{triagemBean.triagemLote.quantidade}" /></p:column>
+						</p:row>
+					</p:panelGrid>
 				
-				
-				
+				</p:panel>
 		    </div>
 	    </h:form>
 		</ui:define>

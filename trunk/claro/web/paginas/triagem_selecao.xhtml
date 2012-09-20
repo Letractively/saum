@@ -103,7 +103,7 @@
 					        </p:column>
 
 					        <p:column headerText=" ">
-								<p:commandButton title="View Detail" value="Salvar" action="#{triagemBean.loteTriagemSelecionado()}" type="submit">  
+								<p:commandButton title="Triar" value="#{msgs.triar_esse_lote}" action="#{triagemBean.loteTriagemSelecionado()}" type="submit">  
 									<f:setPropertyActionListener value="#{lsInt}" target="#{triagemBean.triagemLote}"/>  
 				                </p:commandButton>  
 					        </p:column>
