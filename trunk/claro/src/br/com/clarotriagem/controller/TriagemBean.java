@@ -42,4 +42,9 @@ public class TriagemBean extends TriagemMontaFormulario {
 		return quantidadeAparelhoTriado;
 	}
 
+	public void encolheuPainel() {
+		setPainelEncolhido(!isPainelEncolhido());
+	}
+
+
 }

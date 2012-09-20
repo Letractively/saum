@@ -9,10 +9,6 @@ import br.com.clarotriagem.entitades.Triagem;
 import br.com.clarotriagem.entitades.TriagemLote;
 import br.com.clarotriagem.service.CalendarioService;
 import br.com.clarotriagem.service.TriagemService;
-import br.com.clarotriagem.utils.enums.AparenciaAparelho;
-import br.com.clarotriagem.utils.enums.Operadoras;
-import br.com.clarotriagem.utils.enums.SintomaConstatadoAparelho;
-import br.com.clarotriagem.utils.enums.SintomaInformadoAparelho;
 
 /**
  * 
@@ -24,7 +20,7 @@ import br.com.clarotriagem.utils.enums.SintomaInformadoAparelho;
  * 
  */
 
-public class TriagemValidador extends BaseBean {
+public class TriagemBackEnd extends BaseBean {
 
 	private static final long serialVersionUID = 8982154360605463893L;
 
@@ -60,46 +56,8 @@ public class TriagemValidador extends BaseBean {
 		this.triagemLote = triagemLote;
 	}
 
-	public Triagem getTriagem() {
-		if (triagem == null) {
-			triagem = new Triagem();
-		}
-		return triagem;
-	}
-	public SortedMap<String, Integer> getOperadorasCombo() {
-		if(operadorasCombo == null){
-			operadorasCombo = Operadoras.getMapaRotulos();
-		}
-		return operadorasCombo;
-	}
-	
-	public SortedMap<String, Integer> getTipoAparenciaAparelho() {
-		if(tipoAparenciaAparelho == null){
-			tipoAparenciaAparelho = AparenciaAparelho.getMapaRotulos();
-		}
-		return tipoAparenciaAparelho;
-	}
-	public SortedMap<String, Integer> getSintomaInformado() {
-		if(sintomaInformado == null){
-			sintomaInformado = SintomaInformadoAparelho.getMapaRotulos();
-		}
-		return sintomaInformado;
-	}
-
-	public SortedMap<String, Integer> getSintomaConstatado() {
-		if(sintomaConstatado == null){
-			sintomaConstatado = SintomaConstatadoAparelho.getMapaRotulos();
-		}
-		return sintomaConstatado;
-	}
-
-
 	public void setTriagem(Triagem triagem) {
 		this.triagem = triagem;
-	}
-
-	public void encolheuPainel() {
-		setPainelEncolhido(!isPainelEncolhido());
 	}
 
 	public boolean isPainelEncolhido() {
