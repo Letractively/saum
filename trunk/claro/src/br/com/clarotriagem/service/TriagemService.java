@@ -3,6 +3,7 @@ package br.com.clarotriagem.service;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import br.com.clarotriagem.entitades.Triagem;
 import br.com.clarotriagem.entitades.TriagemLote;
 import br.com.clarotriagem.service.factory.ServiceFactory;
 import br.com.clarotriagem.utils.Logger;
@@ -22,6 +23,16 @@ public class TriagemService extends ServiceFactory<TriagemService>{
 			getTriagemLoteDAO().update(tl);
 		} catch (Exception e) {
 			log.erro(e);
+		}
+	}
+
+	public int salvaTriagem(Triagem triagem) {
+		try {
+			getTriagemDAO().save(triagem);
+			return 0;
+		} catch (Exception e) {
+			log.erro(e);
+			return 1;
 		}
 	}
 

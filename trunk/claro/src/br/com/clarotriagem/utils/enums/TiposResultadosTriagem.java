@@ -8,11 +8,13 @@ public enum TiposResultadosTriagem {
     FG("FG", "fora de garantia", 1),
     G("G", "Garantia", 2),
     DOA("DOA", "DOA", 3),
-    NAO_DOA("NAO DOA", "Não DOA", 4);
+    NAO_DOA("NAO DOA", "Não DOA", 4),
+    INVALIDO("INV", "Inválido", 5);
 	
     private String sigla;
 	private String descricao;
 	private Integer cod;
+	private String msgRetorno;
 	
 	private static SortedMap<String, TiposResultadosTriagem> rotulosPorSigla = new TreeMap<String, TiposResultadosTriagem>();
 	private static SortedMap<Integer, TiposResultadosTriagem> rotulosPorCod = new TreeMap<Integer, TiposResultadosTriagem>();
@@ -63,6 +65,14 @@ public enum TiposResultadosTriagem {
 	
 	public Integer getCod() {
 		return cod;
+	}
+
+	public String getMsgRetorno() {
+		return msgRetorno;
+	}
+
+	public void setMsgRetorno(String msgRetorno) {
+		this.msgRetorno = msgRetorno;
 	}
 
 }

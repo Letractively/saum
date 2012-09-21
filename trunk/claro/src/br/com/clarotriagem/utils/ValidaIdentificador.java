@@ -66,7 +66,7 @@ public class ValidaIdentificador {
 				
 			} else if (TiposSerial.SSN.getCod().intValue() == ts.getCod().intValue()) {
 				v = new ValidaSSN(serial);
-				v.valida();
+				return v.valida();
 				
 			} else if (TiposSerial.SSN_CAM.getCod().intValue() == ts.getCod().intValue()) {
 				v = new ValidaSSN_CAM(serial);
@@ -130,7 +130,6 @@ public class ValidaIdentificador {
 			} else {
 				return v.valida();
 			}
-			return false;
 		} catch (Exception e) {
 			log.erroSemEmail(e);
 			return false;

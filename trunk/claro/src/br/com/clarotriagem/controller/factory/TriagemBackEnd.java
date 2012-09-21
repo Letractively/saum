@@ -9,6 +9,7 @@ import br.com.clarotriagem.entitades.Triagem;
 import br.com.clarotriagem.entitades.TriagemLote;
 import br.com.clarotriagem.service.CalendarioService;
 import br.com.clarotriagem.service.TriagemService;
+import br.com.clarotriagem.utils.enums.TiposResultadosTriagem;
 
 /**
  * 
@@ -40,6 +41,7 @@ public class TriagemBackEnd extends BaseBean {
 	protected boolean temTiposSerial3;
 	protected boolean temTiposSerial4;
 	protected String tempoUsoAparelho;
+	protected TiposResultadosTriagem resultadoTriagem;
 	
 	
 	//combos
@@ -56,6 +58,13 @@ public class TriagemBackEnd extends BaseBean {
 		this.triagemLote = triagemLote;
 	}
 
+	public Triagem getTriagem() {
+		if (triagem == null) {
+			triagem = new Triagem();
+		}
+		return triagem;
+	}
+	
 	public void setTriagem(Triagem triagem) {
 		this.triagem = triagem;
 	}
@@ -114,6 +123,14 @@ public class TriagemBackEnd extends BaseBean {
 
 	public void setTempoUsoAparelho(String tempoUsoAparelho) {
 		this.tempoUsoAparelho = tempoUsoAparelho;
+	}
+
+	public TiposResultadosTriagem getResultadoTriagem() {
+		return resultadoTriagem;
+	}
+
+	public void setResultadoTriagem(TiposResultadosTriagem resultadoTriagem) {
+		this.resultadoTriagem = resultadoTriagem;
 	}
 
 }
