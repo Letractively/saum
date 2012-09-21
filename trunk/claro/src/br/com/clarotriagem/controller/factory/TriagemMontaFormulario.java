@@ -2,7 +2,6 @@ package br.com.clarotriagem.controller.factory;
 
 import java.util.SortedMap;
 
-import br.com.clarotriagem.entitades.Triagem;
 import br.com.clarotriagem.utils.enums.AparenciaAparelho;
 import br.com.clarotriagem.utils.enums.Operadoras;
 import br.com.clarotriagem.utils.enums.SintomaConstatadoAparelho;
@@ -21,12 +20,6 @@ public class TriagemMontaFormulario extends TriagemBackEnd {
 
 	private static final long serialVersionUID = -1047913497792507436L;
 
-	public Triagem getTriagem() {
-		if (triagem == null) {
-			triagem = new Triagem();
-		}
-		return triagem;
-	}
 	public SortedMap<String, Integer> getOperadorasCombo() {
 		if(operadorasCombo == null){
 			operadorasCombo = Operadoras.getMapaRotulos();

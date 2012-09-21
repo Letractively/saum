@@ -38,8 +38,9 @@ public class Triagem implements Serializable {
 
 	@Column(name="autorizacao_ccc", nullable=false)
 	private Boolean autorizacaoCcc;
-
-	private Boolean doa;
+	
+	@Column(name="doa", nullable=false)
+	private Integer doa;
 
 	@Column(length=100)
 	private String identificador1;
@@ -212,14 +213,6 @@ public class Triagem implements Serializable {
 
 	public void setAutorizacaoCcc(Boolean autorizacaoCcc) {
 		this.autorizacaoCcc = autorizacaoCcc;
-	}
-
-	public Boolean getDoa() {
-		return this.doa;
-	}
-
-	public void setDoa(Boolean doa) {
-		this.doa = doa;
 	}
 
 	public String getIdentificador1() {
@@ -556,6 +549,14 @@ public class Triagem implements Serializable {
 
 	public void setTriagemLote(TriagemLote triagemLote) {
 		this.triagemLote = triagemLote;
+	}
+
+	public Integer getDoa() {
+		return doa;
+	}
+
+	public void setDoa(Integer doa) {
+		this.doa = doa;
 	}
 	
 }

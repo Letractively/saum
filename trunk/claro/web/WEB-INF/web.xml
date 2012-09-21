@@ -50,7 +50,12 @@
 		<exception-type>javax.faces.application.ViewExpiredException</exception-type>
 		<location>/paginas/index.html</location>
 	</error-page>
-
+	<!-- 
+	<error-page>
+	        <exception-type>java.lang.Exception</exception-type>
+	        <location>/paginas/index.html</location>
+	</error-page>
+	 -->
 	<context-param>
 		<param-name>log4jRefreshInterval</param-name>
 		<param-value>5000</param-value>
