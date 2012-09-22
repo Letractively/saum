@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:core="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+	<ui:composition template="/template/template.xhtml">
+		<ui:define name="pad">&nbsp;</ui:define>
+		<ui:define name="titulo">#{msgs.nome_aplicativo_resumido}</ui:define>
+		<ui:define name="titulo_pagina">#{msgs.revisar_triagem}</ui:define>
+		<ui:define name="conteudo">
+		<h:form id="formGeral">
+			<div id="container_conteudo_interno" style="background-color: #FFFFFF;" class="conteudo-principal">
+				<p:panel id="pnl" header="#{msgs.resumo_inf_lote}" widgetVar="panel" collapsed="#{triagemBean.painelEncolhido}">
+					<p:panelGrid style="width:945px;">
+						<p:row>
+							<p:column styleClass="titulo_resp">
+								#{msgs.lote_triagem_concluido}
+							</p:column>
+						</p:row>
+						<f:facet name="footer">
+							<p:row>
+								<p:column style="text-align:right;">
+									<p:commandButton action="#{triagemBean.iniciarNovoLote()}" value="#{msgs.iniciar_novo_lote}" type="submit"/>
+								</p:column>
+							</p:row>
+					    </f:facet>
+
+					</p:panelGrid>
+				</p:panel>
+		    </div>
+	    </h:form>
+		</ui:define>
+	</ui:composition>
+</html>

@@ -1,5 +1,7 @@
 package br.com.clarotriagem.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -53,6 +55,25 @@ public class TriagemService extends ServiceFactory<TriagemService>{
 		} catch (Exception e) {
 			log.erro(e);
 			return 0;
+		}
+	}
+
+	public List<Triagem> buscaTriagemAntiga(Triagem triagem, TriagemLote triagemLote) {
+		try {
+			List<Triagem> ret = getTriagemDAO().buscaTriagemAntiga(triagem, triagemLote);
+			return ret;
+		} catch (Exception e) {
+			log.erro(e);
+			return null;
+		}
+	}
+
+	public void setTriagemLoteConcluido(TriagemLote triagemLote) {
+		try {
+			triagemLote.setConcluido(true);
+			getTriagemLoteDAO().update(triagemLote);
+		} catch (Exception e) {
+			log.erro(e);
 		}
 	}
 

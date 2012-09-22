@@ -21,7 +21,7 @@
 					white-space: nowrap;
 				}
 				.coluna2_form{
-					width: 310px;
+					width: 290px;
 					white-space: nowrap;
 				}
 				.coluna1{
@@ -73,10 +73,10 @@
 							<p:column styleClass="coluna1">#{msgs.responsavel_msg}</p:column>
 							<p:column styleClass="coluna2"><h:outputText value="#{triagemBean.triagemLote.calendario.usuarioResponsavel.nome}" /></p:column>
 							
-							<p:column styleClass="coluna3">#{msgs.contato_msg}</p:column>
+							<p:column styleClass="coluna1">#{msgs.contato_msg}</p:column>
 							<p:column styleClass="coluna4"><h:outputText value="#{triagemBean.triagemLote.calendario.contato}" /></p:column>
 							
-							<p:column styleClass="coluna5">#{msgs.codigo_lote}</p:column>
+							<p:column styleClass="coluna1">#{msgs.codigo_lote}</p:column>
 							<p:column styleClass="coluna6"><h:outputText value="#{triagemBean.triagemLote.id}" /></p:column>
 						</p:row>
 					</p:panelGrid>
@@ -188,14 +188,14 @@
 						<p:row>
 							<p:column styleClass="coluna1_form"><h:outputLabel value="#{msgs.tempo_uso}" for="tempo_uso"/></p:column>
 							<p:column styleClass="coluna2_form">
-								<p:inputText maxlength="9" required="true" value="#{triagemBean.tempoUsoAparelho}" id="tempo_uso" onblur="verificaCampoTempo(this);" onkeyup="formataTempo(this)" size="8">
+								<p:inputText maxlength="9" required="false" value="#{triagemBean.tempoUsoAparelho}" id="tempo_uso" onblur="verificaCampoTempo(this);" onkeyup="formataTempo(this)" size="8">
 				            		<f:validateLength minimum="9"/>
 				            	</p:inputText>
 							</p:column>
 
 							<p:column styleClass="coluna1_form"><h:outputLabel value="#{msgs.aparencia_msg}" for="aparencia"/></p:column>
 							<p:column>
-								<p:selectOneMenu id="aparencia" value="#{triagemBean.triagem.aparencia}" label="" style="width:260px" panelStyle="width:380px">
+								<p:selectOneMenu id="aparencia" value="#{triagemBean.triagem.aparencia}" label="" style="width:230px" panelStyle="width:380px">
 									<f:selectItem itemLabel="Escolha" itemValue="false"/>
 									<f:selectItems value="#{triagemBean.tipoAparenciaAparelho}"/>
 								</p:selectOneMenu>
@@ -205,7 +205,7 @@
 						<p:row>
 							<p:column styleClass="coluna1_form"><h:outputLabel value="#{msgs.sintoma_inf}" for="sin_inf"/></p:column>
 							<p:column styleClass="coluna2_form">
-								<p:selectOneMenu id="sin_inf" value="#{triagemBean.triagem.sintomaInformado}" label="" style="width:260px" panelStyle="width:350px">
+								<p:selectOneMenu id="sin_inf" value="#{triagemBean.triagem.sintomaInformado}" label="" style="width:230px" panelStyle="width:350px">
 									<f:selectItem itemLabel="Escolha" itemValue=""/>
 									<f:selectItems value="#{triagemBean.sintomaInformado}"/>
 								</p:selectOneMenu>
@@ -213,7 +213,7 @@
 
 							<p:column styleClass="coluna1_form"><h:outputLabel value="#{msgs.sintoma_constatado}" for="sin_cons"/></p:column>
 							<p:column>
-								<p:selectOneMenu id="sin_cons" value="#{triagemBean.triagem.sintomaConstatado}" label="" style="width:260px" panelStyle="width:350px">
+								<p:selectOneMenu id="sin_cons" value="#{triagemBean.triagem.sintomaConstatado}" label="" style="width:230px" panelStyle="width:350px">
 									<f:selectItem itemLabel="Escolha" itemValue=""/>
 									<f:selectItems value="#{triagemBean.sintomaConstatado}"/>
 								</p:selectOneMenu>
@@ -225,12 +225,12 @@
 					<p:panelGrid style="width:945px">
 						<p:row>
 							<p:column styleClass="coluna1_form"><h:outputLabel value="#{msgs.num_nf_venda}" for="nm_nf_venda"/></p:column>
-							<p:column styleClass="coluna2_form"><p:inputText id="nm_nf_venda" size="25" value="#{triagemBean.triagem.nfVendaNumero}" required="false" label="NF" onkeyup="formatarNumero(this)" maxlength="15"/></p:column>
+							<p:column styleClass="coluna2_form"><p:inputText id="nm_nf_venda" size="25" value="#{triagemBean.triagem.nfVendaNumero}" required="true" label="NF" onkeyup="formatarNumero(this)" maxlength="15"/></p:column>
 
 							<p:column styleClass="coluna1_form"><h:outputLabel value="#{msgs.data_nf_venda}" for="dt_nf_venda"/></p:column>
 							<p:column>
 								<p:calendar id="dt_nf_venda" value="#{triagemBean.triagem.nfVendaData}" pattern="dd/MM/yyyy" maxlength="10"
-				            		locale="#{agendaIncialBean.localeAbr}" size="10" showButtonPanel="true" onkeyup="formataData(this);" label="Data NF">
+				            		locale="#{agendaIncialBean.localeAbr}" required="true" size="10" showButtonPanel="true" onkeyup="formataData(this);" label="Data NF">
 				            		<f:validateLength minimum="10"/>
 				            	</p:calendar>
 							</p:column>

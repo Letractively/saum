@@ -5,7 +5,7 @@ import java.util.TreeMap;
 
 public enum TiposResultadosTriagem {
 	
-    FG("FG", "fora de garantia", 1),
+    FG("FG", "Fora de garantia", 1),
     G("G", "Garantia", 2),
     DOA("DOA", "DOA", 3),
     NAO_DOA("NAO DOA", "Não DOA", 4),

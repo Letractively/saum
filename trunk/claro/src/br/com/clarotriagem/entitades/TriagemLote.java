@@ -24,6 +24,9 @@ public class TriagemLote implements Serializable {
 	@Column(nullable=false)
 	private Integer quantidade;
 
+	@Column(nullable=false)
+	private Boolean concluido;
+	
 	//bi-directional many-to-one association to Triagem
 	@OneToMany(mappedBy="triagemLote")
 	private List<Triagem> triagems;
@@ -100,6 +103,14 @@ public class TriagemLote implements Serializable {
 
 	public void setCalendario(Calendario calendario) {
 		this.calendario = calendario;
+	}
+
+	public Boolean getConcluido() {
+		return concluido;
+	}
+
+	public void setConcluido(Boolean concluido) {
+		this.concluido = concluido;
 	}
 	
 }

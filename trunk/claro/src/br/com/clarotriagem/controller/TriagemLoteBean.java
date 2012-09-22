@@ -45,6 +45,7 @@ public class TriagemLoteBean extends TriagemLoteValidador {
 				addErroMessage(null, getBunde("erro_msg"), getBunde("modelo_nao_encontrado"));
 			}
 			triagemLoteNovo.setAparelhoModelo(am);
+			triagemLoteNovo.setConcluido(false);
 			triagemLoteNovo.setCalendario(calendario);
 			triagemLoteNovo.setCliente(calendario.getWarehouse());
 			triagemLoteNovo.setDataCriacaoLote(new Timestamp(System.currentTimeMillis()));
