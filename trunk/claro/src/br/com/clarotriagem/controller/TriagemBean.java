@@ -136,17 +136,6 @@ public class TriagemBean extends TriagemMontaFormulario {
 	public String loteTriagemSelecionado() {
 		setTriagem(new Triagem());
 		AparelhoModelo am = triagemLote.getAparelhoModelo();
-		getTriagem().setIdentificador1("353940040038861");
-		getTriagem().setIdentificador2("rsez837310b");
-		getTriagem().setAparelhoBloqueado(true);
-		getTriagem().setAutorizacaoCcc(true);
-		getTriagem().setAparencia(2);
-		getTriagem().setSintomaInformado(6);
-		getTriagem().setOperadora(3);
-		getTriagem().setSintomaConstatado(6);
-		getTriagem().setObservacoes("asdfasd fasd fasd fasd f asdf asd fa sdf asd fa sdf asd f asdf asd f asd f sd fa sdf asd fas df asd fas df asd fa sdf asd fa sdf asd fasd f asd fas dfa sd fa sdfs df asd fa sdf asd f a fs df sd fasd fa sdf asd fa sdf asd fa sdf asd fa sdf as");
-		
-		
 		setTemTiposSerial1(am.getId1() != null);
 		setTemTiposSerial2(am.getId2() != null);
 		setTemTiposSerial3(am.getId3() != null);
