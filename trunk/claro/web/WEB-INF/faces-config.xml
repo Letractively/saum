@@ -41,6 +41,16 @@
             <redirect/>
         </navigation-case>
         <navigation-case>
+            <from-outcome>triagem_concluido</from-outcome>
+            <to-view-id>/paginas/triagem_concluido</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>triagem_selecao</from-outcome>
+            <to-view-id>/paginas/triagem_selecao</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
             <from-outcome>alterar_senha</from-outcome>
             <to-view-id>/paginas/alterar_senha</to-view-id>
             <redirect/>

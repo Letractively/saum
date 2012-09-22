@@ -9,6 +9,10 @@ import br.com.clarotriagem.entitades.Triagem;
 import br.com.clarotriagem.entitades.TriagemLote;
 import br.com.clarotriagem.service.CalendarioService;
 import br.com.clarotriagem.service.TriagemService;
+import br.com.clarotriagem.utils.enums.AparenciaAparelho;
+import br.com.clarotriagem.utils.enums.Operadoras;
+import br.com.clarotriagem.utils.enums.SintomaConstatadoAparelho;
+import br.com.clarotriagem.utils.enums.SintomaInformadoAparelho;
 import br.com.clarotriagem.utils.enums.TiposResultadosTriagem;
 
 /**
@@ -49,6 +53,11 @@ public class TriagemBackEnd extends BaseBean {
 	protected SortedMap<String, Integer> tipoAparenciaAparelho;
 	protected SortedMap<String, Integer> sintomaInformado;
 	protected SortedMap<String, Integer> sintomaConstatado;
+	
+	private Operadoras operadoras;
+	private AparenciaAparelho aparenciaAparelho;
+	private SintomaInformadoAparelho sintomaInformadoAparelho;
+	private SintomaConstatadoAparelho sintomaConstatadoAparelho;
 
 	public TriagemLote getTriagemLote() {
 		return triagemLote;
@@ -131,6 +140,40 @@ public class TriagemBackEnd extends BaseBean {
 
 	public void setResultadoTriagem(TiposResultadosTriagem resultadoTriagem) {
 		this.resultadoTriagem = resultadoTriagem;
+	}
+
+	public Operadoras getOperadoras() {
+		return operadoras;
+	}
+
+	public void setOperadoras(Operadoras operadoras) {
+		this.operadoras = operadoras;
+	}
+
+	public AparenciaAparelho getAparenciaAparelho() {
+		return aparenciaAparelho;
+	}
+
+	public void setAparenciaAparelho(AparenciaAparelho aparenciaAparelho) {
+		this.aparenciaAparelho = aparenciaAparelho;
+	}
+
+	public SintomaInformadoAparelho getSintomaInformadoAparelho() {
+		return sintomaInformadoAparelho;
+	}
+
+	public void setSintomaInformadoAparelho(
+			SintomaInformadoAparelho sintomaInformadoAparelho) {
+		this.sintomaInformadoAparelho = sintomaInformadoAparelho;
+	}
+
+	public SintomaConstatadoAparelho getSintomaConstatadoAparelho() {
+		return sintomaConstatadoAparelho;
+	}
+
+	public void setSintomaConstatadoAparelho(
+			SintomaConstatadoAparelho sintomaConstatadoAparelho) {
+		this.sintomaConstatadoAparelho = sintomaConstatadoAparelho;
 	}
 
 }

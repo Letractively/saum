@@ -27,6 +27,41 @@ public class TriagemMontaFormulario extends TriagemBackEnd {
 		return operadorasCombo;
 	}
 	
+	protected void zeraForm() {
+		triagem.setIdentificador1("");
+		triagem.setIdentificador2("");
+		triagem.setIdentificador3("");
+		triagem.setIdentificador4("");
+		triagem.setIdentificador5("");
+		
+		triagem.setAparelhoBloqueado(false);
+		triagem.setAparencia(null);
+		triagem.setAutorizacaoCcc(false);
+		triagem.setDoa(null);
+		triagem.setId(null);
+		triagem.setNfTrocaData(null);
+		triagem.setNfTrocaNumero(null);
+		triagem.setNfVendaData(null);
+		triagem.setNfVendaNumero(null);
+		triagem.setObservacoes(null);
+		triagem.setOperadora(null);
+		triagem.setOsCodPeca1(null);
+		triagem.setOsCodPeca2(null);
+		triagem.setOsCodPeca3(null);
+		triagem.setOsDataAbertura1(null);
+		triagem.setOsDataAbertura2(null);
+		triagem.setOsDataAbertura3(null);
+		triagem.setOsNumero1(null);
+		triagem.setOsNumero2(null);
+		triagem.setOsNumero3(null);
+		triagem.setPossuiCheckList(false);
+		triagem.setSintomaConstatado(null);
+		triagem.setSintomaInformado(null);
+		triagem.setTempoUsoHora(null);
+		triagem.setTempoUsoMinu(null);
+		triagem.setTempoUsoSegundos(null);
+	}
+	
 	public SortedMap<String, Integer> getTipoAparenciaAparelho() {
 		if(tipoAparenciaAparelho == null){
 			tipoAparenciaAparelho = AparenciaAparelho.getMapaRotulos();
