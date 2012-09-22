@@ -12,6 +12,15 @@
 		<ui:define name="titulo_pagina">#{msgs.revisar_triagem}</ui:define>
 		<ui:define name="conteudo">
 		<h:form id="formGeral">
+			<style type="text/css">
+				.titulo_resp{
+					text-align: center;
+					font-weight: bolder;
+					background-color: #F0FFF0;
+					white-space: nowrap;
+					font-size: 16px;
+				}
+			</style>		
 			<div id="container_conteudo_interno" style="background-color: #FFFFFF;" class="conteudo-principal">
 				<p:panel id="pnl" header="#{msgs.resumo_inf_lote}" widgetVar="panel" collapsed="#{triagemBean.painelEncolhido}">
 					<p:panelGrid style="width:945px;">
