@@ -143,9 +143,9 @@ if(fb == null){
                           		  </tr>
         		                  <tr>
 								    <td><div align="right">IP conexão 1:<span class="span-ajuda" onclick="foraInterClique();" onmouseover="sobreInter(22, this);"> [?]</span></div></td>
-								    <td><input name="ip1" type="text" disabled="disabled" id="ip1" size="25" maxlength="16"/><button onclick="testarConexao('ip1')" id="bt-test1"> Testar </button></td>
+								    <td><input name="ip1" type="text" disabled="disabled" id="ip1" size="25" maxlength="50"/><button onclick="testarConexao('ip1')" id="bt-test1"> Testar </button></td>
 								    <td><div align="right">IP conexão 2:<span class="span-ajuda" onclick="foraInterClique();" onmouseover="sobreInter(23, this);"> [?]</span></div></td>
-								    <td><input name="ip2" type="text" disabled="disabled" id="ip2" size="25" maxlength="16" /><button onclick="testarConexao('ip2')" id="bt-test2"> Testar </button></td>
+								    <td><input name="ip2" type="text" disabled="disabled" id="ip2" size="25" maxlength="50" /><button onclick="testarConexao('ip2')" id="bt-test2"> Testar </button></td>
                           		  </tr>
 					  			  <tr bgcolor="#DFE8F6">
 								    <td><div align="right">Porta:</div></td>

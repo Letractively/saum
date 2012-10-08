@@ -36,10 +36,10 @@
             <column name="torre_senha" length="15" />
         </property>
         <property name="torreIpConexao" type="java.lang.String">
-            <column name="torre_ip_conexao" length="16" />
+            <column name="torre_ip_conexao" length="50" />
         </property>
         <property name="torreIpConexao2" type="java.lang.String">
-            <column name="torre_ip_conexao_2" length="16" />
+            <column name="torre_ip_conexao_2" length="50" />
         </property>
         <property name="torrePorta" type="java.lang.Integer">
             <column name="torre_porta" />
