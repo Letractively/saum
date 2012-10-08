@@ -1,0 +1,29 @@
+.bottom {
+	background:url(../img/sprite-onmouseup.png) repeat-x;
+	height:23px;
+	margin-top:3px;
+	padding-top:5px;
+	padding-right:10px;
+	font-weight:bold;
+	font-size:12px;
+	text-align:right;
+	color: #a3c8cc;
+}
+.span-bottom{
+	font-size: 8px;
+}
+.span-bottom2{
+	font-size: 8px;
+}
+.bottom2 {
+	background:url(../img/sprite-onmouseup.png) repeat-x;
+	height:23px;
+	margin-top:3px;
+	padding-top:5px;
+	padding-right:10px;
+	font-weight:bold;
+	font-size:12px;
+	text-align:right;
+	color: #a3c8cc;
+	width: 1075px;
+}

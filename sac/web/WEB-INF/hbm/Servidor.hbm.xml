@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="Servidor" table="servidor" schema="public">
+        <id name="servidorId" type="java.lang.Long">
+            <column name="servidor_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="servidorNome" type="java.lang.String">
+            <column name="servidor_nome" length="30" />
+        </property>
+        <property name="servidorDescricao" type="java.lang.String">
+            <column name="servidor_descricao" />
+        </property>
+        <property name="servidorLocal" type="java.lang.String">
+            <column name="servidor_local" length="20" />
+        </property>
+        <property name="servidorDesativado" type="java.lang.Boolean">
+            <column name="servidor_desativado"/>
+        </property>
+        <property name="servidorTorres" type="java.lang.String">
+            <column name="servidor_torres" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

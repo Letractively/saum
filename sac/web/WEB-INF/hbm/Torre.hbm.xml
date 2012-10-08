@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="Torre" table="torre" schema="public">
+        <id name="torreId" type="java.lang.Long">
+            <column name="torre_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="torreNome" type="java.lang.String">
+            <column name="torre_nome" length="30" />
+        </property>
+        <property name="torreDescricao" type="java.lang.String">
+            <column name="torre_descricao" />
+        </property>
+        <property name="torreModelo" type="java.lang.String">
+            <column name="torre_modelo" length="16" />
+        </property>
+        <property name="torreProcessador" type="java.lang.String">
+            <column name="torre_processador" length="20" />
+        </property>
+        <property name="torreMemoriaRam" type="java.lang.String">
+            <column name="torre_memoria_ram" length="20" />
+        </property>
+        <property name="torreEspacoDisco" type="java.lang.String">
+            <column name="torre_espaco_disco" length="20" />
+        </property>
+        <property name="torreLocal" type="java.lang.String">
+            <column name="torre_local" length="20" />
+        </property>
+        <property name="torreUsuario" type="java.lang.String">
+            <column name="torre_usuario" length="15" />
+        </property>
+        <property name="torreSenha" type="java.lang.String">
+            <column name="torre_senha" length="15" />
+        </property>
+        <property name="torreIpConexao" type="java.lang.String">
+            <column name="torre_ip_conexao" length="16" />
+        </property>
+        <property name="torreIpConexao2" type="java.lang.String">
+            <column name="torre_ip_conexao_2" length="16" />
+        </property>
+        <property name="torrePorta" type="java.lang.Integer">
+            <column name="torre_porta" />
+        </property>
+        <property name="torreInterfaceCliente" type="java.lang.Boolean">
+            <column name="torre_interface_cliente" />
+        </property>
+        <property name="torreNomeInterface" type="java.lang.String">
+            <column name="torre_nome_interface" length="35" />
+        </property>
+        <property name="torreDesativado" type="java.lang.Boolean">
+            <column name="torre_desativado" not-null="true" />
+        </property>
+        <property name="torreIpIntermediador" type="java.lang.String">
+            <column name="torre_ip_intermediador" length="32" />
+        </property>
+        <property name="torrePortaIntermediador" type="java.lang.Integer">
+            <column name="torre_porta_intermediador" />
+        </property>
+        <property name="torreUtilizarIntermediador" type="java.lang.Boolean">
+            <column name="torre_utilizar_intermediador" />
+        </property>
+    </class>
+</hibernate-mapping>

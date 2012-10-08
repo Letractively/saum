@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="EnderecoIp" table="endereco_ip" schema="public">
+        <id name="enderecoipId" type="java.lang.Long">
+            <column name="enderecoip_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">endereco_ip_seq</param>
+	    	</generator>
+        </id>
+        <property name="enderecoipEndereco" type="java.lang.String">
+            <column name="enderecoip_endereco" length="16" />
+        </property>
+        <many-to-one name="servidor" class="Servidor" fetch="select" lazy="false">
+            <column name="servidor_id_fk"/>
+        </many-to-one>
+        <property name="enderecoipAtivado" type="java.lang.Boolean">
+            <column name="enderecoip_ativado"/>
+        </property>
+        <property name="enderecoipMacCadastrado" type="java.lang.String">
+            <column name="enderecoip_mac_cadastrado" length="16" />
+        </property>
+        <property name="enderecoipMascaraSubrede" type="java.lang.String">
+            <column name="enderecoip_mascara_subrede" length="20" />
+        </property>
+        <property name="enderecoipGrupo" type="java.lang.String">
+            <column name="enderecoip_grupo" length="2" />
+        </property>
+    </class>
+</hibernate-mapping>

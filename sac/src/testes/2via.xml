@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Body>
+		<m:F2bSegundaViaRetorno
+			xmlns:m="http://www.f2b.com.br/soap/wsbillingsegundavia.xsd">
+			<cobranca numero="0003460081"
+				url="http://www.f2b.com.br/Billing?id=00000541587000346008154"
+				valor="50,00" vencimento="28/07/2010" />
+			<cobranca numero="0003460096"
+				url="http://www.f2b.com.br/Billing?id=00000541587000346009689"
+				valor="50,00" vencimento="28/08/2010" />
+			<sacado cpf="76983927168" email="efrenlixo@gmail.com" nome="CAIO RUBIO DE MELO" />
+			<log>OK&#13; </log>
+		</m:F2bSegundaViaRetorno>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

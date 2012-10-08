@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="LogMeganet" table="log_meganet" schema="public">
+        <id name="logId" type="java.lang.Long">
+            <column name="log_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">log_meganet_seq</param>
+	    	</generator>
+        </id>
+        <property name="usuarioIdFk" type="java.lang.Long">
+            <column name="usuario_id_fk"/>
+        </property>
+        <property name="logTipo" type="java.lang.String">
+            <column name="log_tipo" length="10" />
+        </property>
+        <property name="logDescricao" type="java.lang.String">
+            <column name="log_descricao" length="150" />
+        </property>
+        <property name="logData" type="java.sql.Timestamp">
+            <column name="log_data" length="29" />
+        </property>
+        <property name="logAcao" type="java.lang.String">
+            <column name="log_acao" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

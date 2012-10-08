@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo" auto-import="true">
+    <class name="PlanosPacotes" table="planos_pacotes" schema="public">
+        <id name="planospacotesId" type="java.lang.Long">
+            <column name="planospacotes_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">planos_pacotes_seq</param>
+	    	</generator>
+        </id>
+        <property name="planospacotesValor" type="java.lang.Double">
+            <column name="planospacotes_valor" precision="6" />
+        </property>
+        <property name="planospacotesNome" type="java.lang.String">
+            <column name="planospacotes_nome" length="20" />
+        </property>
+        <property name="planospacotesDescricao" type="java.lang.String">
+            <column name="planospacotes_descricao" length="100" />
+        </property>
+        <property name="planospacotesAtivado" type="java.lang.Boolean">
+            <column name="planospacotes_ativado"/>
+        </property>
+        <property name="planospacotesBloqueiaPgAtrasado" type="java.lang.Boolean">
+            <column name="planospacotes_bloqueia_pg_atrasado"/>
+        </property>
+        <property name="planospacotesVelocidade" type="java.lang.Integer">
+            <column name="planospacotes_velocidade"/>
+        </property>
+        <property name="planospacotesDesconto" type="java.lang.Double">
+            <column name="planospacotes_desconto" length="3" precision="2" scale="17" />
+        </property>
+        <property name="planospacotesLimiteDesconto" type="java.lang.Long">
+            <column name="planospacotes_limite_desconto"/>
+        </property>
+        <property name="planospacotesMulta" type="java.lang.Double">
+            <column name="planospacotes_multa" length="3" precision="2" scale="17" />
+        </property>
+        <property name="planospacotesJuroMes" type="java.lang.Double">
+            <column name="planospacotes_juro_mes" length="3" precision="2" scale="17" />
+        </property>
+    </class>
+</hibernate-mapping>

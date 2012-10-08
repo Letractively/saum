@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+       
+       <bean id="lerArquivoRetorno" class="br.com.meganet.threads.LerArquivoRetorno" autowire="byType"/>
+       <bean id="cortarCliente" class="br.com.meganet.threads.CortarCliente" autowire="byType"/>
+       <bean id="verificaVelocidadeMedia" class="br.com.meganet.threads.VerificaVelocidadeMedia" autowire="byType"/>
+       <bean id="verificaVelocidadeInterfaces" class="br.com.meganet.threads.VerificaVelocidadeInterfaces" autowire="byType"/>
+       <bean id="carregaMapas" class="br.com.meganet.threads.CarregaMapas" autowire="byType"/>
+       <bean id="backupServidores" class="br.com.meganet.threads.BackupServidores" autowire="byType"/>
+
+       <bean id="comandosMonitoramentoSocket" class="br.com.meganet.socketParsers.ComandosMonitoramentoSocket" autowire="byType"/>
+</beans>
