@@ -1,0 +1,202 @@
+input{
+	background: #CCE3FD;
+	border: #9B9CA2 1px solid;
+	font-size: 12px;
+	height: 17px;
+	margin: 1px;
+}
+textarea{
+	background: #CCE3FD;
+	border: #9B9CA2 1px solid;
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+select{
+	background: #CCE3FD;
+	font-size: 11px;
+	border:1px solid #9B9CA2;
+	margin: 1px;
+}
+checkbox{
+	background: #CCE3FD;
+}
+.button-fecha-mosca{
+	height:20px;
+	width:30px;
+	font-size:11px;
+	font-weight:bold;
+	margin-right:2px;
+	margin-top:2px;
+	background:url(../img/bg-bt.jpg);
+}
+button{
+	height:22px;
+	font-size:11px;
+	margin-right:2px;
+	margin-top:2px;
+	color: #000000;
+	background:url(../img/bg-bt.jpg);
+}
+button:hover{
+	height:22px;
+	font-size:11px;
+	margin-right:2px;
+	margin-top:2px;
+	color: #3E3E3E;
+	background:url(../img/bg-bt.jpg);
+}
+button:disabled{
+	height:22px;
+	font-size:11px;
+	margin-right:2px;
+	margin-top:2px;
+	color: #F0F0F0;
+	background:url(../img/bg-bt.jpg);
+}
+table.report {
+	border-collapse:collapse;
+	border:1px solid #004B97;
+	font-size: 10px;
+	width: 100%;
+}
+table.report thead th {
+	background:#004B97;
+	color:#f6f6f6;
+	padding:2px;
+	font-size: 10px;
+}
+table.report tbody td {
+	border-left:1px solid #004B97;
+	border-bottom:1px solid #004B97;
+	padding:2px;
+	vertical-align: middle;
+	font-size: 10px;
+}
+
+table.report tbody tr:hover {
+	background:#CFC;
+	font-size: 10px;
+}
+table.report a {
+	border: 0px;
+	border-collapse: collapse;
+	margin-top: 1px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration:none;
+}
+
+.tabela-links{
+	text-decoration: none;
+	border: #EEEEEE 1px solid;
+	text-align:center;
+	cursor:pointer;
+	background: #B3D9FF;
+}
+.calendario {
+	vertical-align:-3px;
+	cursor:pointer;
+}
+img {
+	border: 0px;
+}
+.numeroBoleto{
+	width: 100px;	
+}
+.clientecss{
+	text-align: left;	
+}
+.planocss{
+	width: 100px;	
+}
+.pg{
+	width: 30px;	
+}
+.texto{
+	width: 180px;	
+}
+.dtPg{
+	width: 120px;	
+}
+.data{
+	width: 140px;	
+}
+.dtPg2{
+	width: 70px;	
+}
+.telefonecss{
+	width: 85px;	
+}
+.venc{
+	width: 70px;	
+}
+.pago{
+	width: 50px;	
+}
+.numeroDemanda{
+	width: 30px;
+	text-align: center;
+}
+.cliente{
+	width: 160px;	
+}
+.aberturaDemanda{
+	width: 105px;	
+}
+.descricao{
+	width: 200px;	
+}
+th.sorted a,th.sortable a {
+	background-position: right;
+	background-repeat: no-repeat;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 10px;
+	color: red;
+}
+th.sortable a {
+	text-decoration: none;
+}
+th.sortable a:link {
+	color: #FFF;
+}
+th.sortable a:visited {
+	color: #FFF;
+}
+th.sortable a:active,a:hover {
+	color: #FFF;
+}
+th.order1 a {
+	background-image: url(../img/arrow_down.gif);
+}
+th.order2 a {
+	background-image: url(../img/arrow_up.gif);
+}
+span.pagelinks {
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	padding-botton:5px;
+}
+span.pagebanner {
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+div.exportlinks {
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	width: 100%;
+}
+div.exportlinks a {
+	text-decoration: none;
+}
+div.exportlinks span {
+	background-repeat: no-repeat;
+}

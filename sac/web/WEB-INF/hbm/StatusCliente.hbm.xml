@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="StatusCliente" table="status_cliente" schema="public">
+        <id name="statusclienteId" type="java.lang.Long">
+            <column name="statuscliente_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">status_cliente_seq</param>
+	    	</generator>
+        </id>
+        <many-to-one name="usuario" class="Usuario" fetch="select" lazy="false">
+            <column name="usuario_id_fk" />
+        </many-to-one>
+        <property name="statusclienteTxrate" type="java.lang.String">
+            <column name="statuscliente_txrate" />
+        </property>
+        <property name="statusclienteRxrate" type="java.lang.String">
+            <column name="statuscliente_rxrate" />
+        </property>
+        <property name="statusclienteTxbytes" type="java.lang.String">
+            <column name="statuscliente_txbytes" />
+        </property>
+        <property name="statusclienteRxbytes" type="java.lang.String">
+            <column name="statuscliente_rxbytes" />
+        </property>
+        <property name="statusclienteSignalstrength" type="java.lang.String">
+            <column name="statuscliente_signalstrength" length="25" />
+        </property>
+        <property name="statusclienteTxccq" type="java.lang.String">
+            <column name="statuscliente_txccq" />
+        </property>
+        <property name="statusclienteThroughput" type="java.lang.String">
+            <column name="statuscliente_throughput" />
+        </property>
+        <property name="statusclienteDatamedicao" type="java.sql.Timestamp">
+            <column name="statuscliente_datamedicao" length="29" />
+        </property>
+    </class>
+</hibernate-mapping>

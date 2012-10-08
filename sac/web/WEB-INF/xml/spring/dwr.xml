@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.directwebremoting.org/schema/spring-dwr
+       http://www.directwebremoting.org/schema/spring-dwr-2.0.xsd">
+
+	<dwr:configuration>
+		<dwr:create type="new" javascript="JDate" class="java.util.Date"/>
+		<dwr:create type="new" javascript="Integer" class="java.lang.Integer"/>
+		<dwr:create type="new" javascript="Long" class="java.lang.Long"/>
+		<dwr:create type="new" javascript="Long" class="java.lang.Object"/>
+		<dwr:convert type="bean" class="br.com.meganet.hbm.vo.*"/>
+		
+		<dwr:convert type="bean" class="org.hibernate.proxy.pojo.cglib.CGLIBLazyInitializer"/>
+	</dwr:configuration>
+	
+	<dwr:controller id="dwrController" debug="true"/>
+
+	<bean id="administracaoJS" class="br.com.meganet.dwr.AdministracaoJS" autowire="byName">
+		<dwr:remote javascript="AdministracaoJS"/>
+	</bean>
+	<bean id="usuariosPortalJS" class="br.com.meganet.dwr.UsuariosPortalJS" autowire="byName">
+		<dwr:remote javascript="UsuariosPortalJS"/>
+	</bean>
+	<bean id="contatoJS" class="br.com.meganet.dwr.ContatoJS" autowire="byName">
+		<dwr:remote javascript="ContatoJS"/>
+	</bean>
+	<bean id="contratoJS" class="br.com.meganet.dwr.ContratoJS" autowire="byName">
+		<dwr:remote javascript="ContratoJS"/>
+	</bean>
+	<bean id="utilsJS" class="br.com.meganet.dwr.UtilsJS" autowire="byName">
+		<dwr:remote javascript="UtilsJS"/>
+	</bean>
+	<bean id="boletoJS" class="br.com.meganet.dwr.BoletoJS" autowire="byName">
+		<dwr:remote javascript="BoletoJS"/>
+	</bean>
+</beans>

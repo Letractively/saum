@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo" auto-import="true">
+    <class name="Usuario" table="usuario" schema="public">
+        <id name="usuarioId" type="java.lang.Long">
+            <column name="usuario_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">usuario_seq</param>
+	    	</generator>
+        </id>
+        <property name="usuarioNome" type="java.lang.String">
+            <column name="usuario_nome" length="50"/>
+        </property>
+        <property name="usuarioSenha" type="java.lang.String">
+            <column name="usuario_senha" length="8"/>
+        </property>
+        <property name="usuarioTelefone1" type="java.lang.String">
+            <column name="usuario_telefone1" length="14" />
+        </property>
+        <property name="usuarioIdTrocaSenha" type="java.lang.String">
+            <column name="usuario_id_troca_senha" length="50" />
+        </property>
+        <property name="usuarioTelefone2" type="java.lang.String">
+            <column name="usuario_telefone2" length="14" />
+        </property>
+        <property name="usuarioComplementoEndereco" type="java.lang.String">
+            <column name="usuario_complemento_endereco" length="100" />
+        </property>
+        <property name="usuarioEmail" type="java.lang.String">
+            <column name="usuario_email" length="50" />
+        </property>
+        <property name="usuarioMenu" type="java.lang.String">
+            <column name="usuario_menu" length="80" />
+        </property>
+        <property name="usuarioEqpComodato" type="java.lang.String">
+            <column name="usuario_eqp_comodato" length="80" />
+        </property>
+        <property name="usuarioCep" type="java.lang.String">
+            <column name="usuario_cep" length="10" />
+        </property>
+        <property name="usuarioCpf" type="java.lang.String">
+            <column name="usuario_cpf" length="20" />
+        </property>
+        <property name="usuarioMac" type="java.lang.String">
+            <column name="usuario_mac" length="17" />
+        </property>
+        <property name="usuarioDtPagamento" type="java.lang.Long">
+            <column name="usuario_dt_pagamento" />
+        </property>
+        <property name="usuarioDtAtivacao" type="java.sql.Timestamp">
+            <column name="usuario_dt_ativacao" length="29"/>
+        </property>
+        <property name="usuarioUltimoEnvioEmail" type="java.sql.Timestamp">
+            <column name="usuario_ultimo_envio_email" length="29"/>
+        </property>
+        <property name="usuarioBloqueado" type="java.lang.Short">
+            <column name="usuario_bloqueado" />
+        </property>
+        <property name="usuarioImprimeBoleto" type="java.lang.Boolean">
+            <column name="usuario_imprime_boleto" />
+        </property>
+        <property name="usuarioAlteraProprioPerfil" type="java.lang.Boolean">
+            <column name="usuario_altera_proprio_perfil" />
+        </property>
+        <property name="usuarioEnviaEmailMonetario" type="java.lang.Boolean">
+            <column name="usuario_envia_email_monetario" />
+        </property>
+        <property name="usuarioPodePagarMao" type="java.lang.Boolean">
+            <column name="usuario_pode_pagar_mao" />
+        </property>
+        <property name="usuarioEnvioEmailCadastro" type="java.lang.Boolean">
+            <column name="usuario_envio_email_cadastro" />
+        </property>
+        <property name="usuarioAdministrativo" type="java.lang.Boolean">
+            <column name="usuario_administrativo" />
+        </property>
+        <property name="usuarioEndereco" type="java.lang.String">
+            <column name="usuario_endereco" length="3"/>
+        </property>
+        <property name="usuarioBairro" type="java.lang.String">
+            <column name="usuario_bairro" length="40"/>
+        </property>
+        <property name="usuarioCidade" type="java.lang.String">
+            <column name="usuario_cidade" length="3"/>
+        </property>
+        <property name="usuarioEstado" type="java.lang.String">
+            <column name="usuario_Estado" length="24"/>
+        </property>
+        
+        <set name="demandases" inverse="true">
+            <key>
+                <column name="usuario_id_fk"/>
+            </key>
+            <one-to-many class="Demandas" />
+        </set>
+        <set name="boletosGeradoses" inverse="true" lazy="false">
+            <key>
+                <column name="usuario_id_fk"/>
+            </key>
+            <one-to-many class="BoletosGerados" />
+        </set>
+        <many-to-one name="servidor" class="Servidor" fetch="select" lazy="false">
+            <column name="servidor_id_fk"/>
+        </many-to-one>
+        
+        <many-to-one name="enderecoIp" class="EnderecoIp" fetch="select" lazy="false">
+            <column name="enderecoIp_id_fk"/>
+        </many-to-one>
+        
+        <many-to-one name="contrato" class="Contrato" fetch="select" lazy="false">
+            <column name="contrato_id_fk"/>
+        </many-to-one>
+        
+        <many-to-one name="planosPacotes" class="PlanosPacotes" fetch="select" lazy="false">
+            <column name="planosPacotes_id_fk"/>
+        </many-to-one>
+        <property name="usuarioDataLimiteDesbloqueio" type="java.sql.Timestamp">
+            <column name="usuario_data_limite_desbloqueio" not-null="false" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_24-b07 (Sun Microsystems Inc.)
+Built-By: ${ant.publisher.name}
+
+Name: ${ant.java.path}
+Specification-Title: Framework sac
+Specification-Version: WebObjects ${wo.version}
+Specification-Vendor: ${ant.commission.name}
+Implementation-Title: ${ant.java.package}
+Implementation-Version: ${version} build ${build.number} October 24 20
+ 11
+Implementation-Vendor: ${ant.vendor.name}
+Sealed: false
+

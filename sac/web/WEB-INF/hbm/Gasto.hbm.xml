@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+ <class name="Gasto" schema="public" table="gasto">
+  <id name="gastoId" type="java.lang.Long">
+   <column name="gasto_id"/>
+   <generator class="sequence">
+    <param name="sequence">gasto_seq</param>
+   </generator>
+  </id>
+  <property generated="never" lazy="false" name="gastoValor" type="java.lang.String">
+   <column length="6" name="gasto_valor"/>
+  </property>
+  <property generated="never" lazy="false" name="gastoMotivo" type="java.lang.String">
+   <column length="40" name="gasto_motivo"/>
+  </property>
+  <property generated="never" lazy="false" name="gastoDescricaoMotivo" type="java.lang.String">
+   <column length="100" name="gasto_descricao_motivo"/>
+  </property>
+  <property generated="never" lazy="false" name="gastoData" type="java.sql.Timestamp">
+   <column name="gasto_data"/>
+  </property>
+  <many-to-one class="Usuario" fetch="select" name="usuario">
+   <column name="usuario_id_fk"/>
+  </many-to-one>
+ </class>
+</hibernate-mapping>
