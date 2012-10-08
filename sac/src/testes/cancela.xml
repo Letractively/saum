@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Body>
+		<m:F2bAcaoCobrancaRetorno
+			xmlns:m="http://www.f2b.com.br/soap/wsbillingaction.xsd">
+			<cliente conta="9023010447700148" email="efrenjunior@gmail.com"
+				nome="Efren Langsdorf Júnior" />
+			<acao_cobranca cancelar_cobranca="1" cancelar_multa="0"
+				dt_permitir_pagamento="" dt_registrar_pagamento="" email_tosend=""
+				numero="0003443257" permitir_pagamento="0" reenviar_email="0"
+				registrar_pagamento="0" registrar_pagamento_valor="0.0" />
+			<log>OK&#13; </log>
+		</m:F2bAcaoCobrancaRetorno>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

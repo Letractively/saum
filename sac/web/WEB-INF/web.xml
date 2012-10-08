@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="sac_2" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<distributable/>
+	
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<!--identificador-sac-a-ser-alterado--><param-value>sac-meganet</param-value>
+	</context-param>
+	
+	<display-name>SAUM - Mikrotik por Efren Jr.</display-name>
+	<listener>
+		<listener-class>org.directwebremoting.servlet.EfficientShutdownServletContextAttributeListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.directwebremoting.servlet.EfficientShutdownServletContextListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
+	
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			/WEB-INF/context.xml,
+			/WEB-INF/xml/spring/dao.xml,
+			/WEB-INF/xml/spring/bo.xml,
+			/WEB-INF/xml/spring/facade.xml,
+			/WEB-INF/xml/spring/threads.xml,
+			/WEB-INF/xml/spring/dwr.xml
+		</param-value>
+	</context-param>
+	
+	<context-param>
+         <param-name>log4jConfigLocation</param-name>
+         <param-value>/WEB-INF/log4j/log4j.properties</param-value>
+	</context-param>
+	<context-param>
+		<param-name>log4jRefreshInterval</param-name>
+		<param-value>5000</param-value>
+  	</context-param>
+  
+	<filter>
+		<filter-name>requestContextFilter</filter-name>
+		<filter-class>org.springframework.web.filter.RequestContextFilter</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>ResponseOverrideFilter</filter-name>
+		<filter-class>
+			org.displaytag.filter.ResponseOverrideFilter
+		</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ResponseOverrideFilter</filter-name>
+		<url-pattern>*.do</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>openSessionInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+	</filter>
+
+	<servlet>
+		<servlet-name>dwr-invoker</servlet-name>
+		<servlet-class>org.directwebremoting.spring.DwrSpringServlet</servlet-class>
+
+		<!-- This should NEVER be present in live -->
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<!-- Remove this unless you want to use active reverse ajax -->
+		<init-param>
+			<param-name>activeReverseAjaxEnabled</param-name>
+			<param-value>false</param-value>
+		</init-param>
+
+		<!-- By default DWR creates application scope objects when they are first used. This creates them when the app-server is started -->
+		<init-param>
+			<param-name>initApplicationScopeCreatorsAtStartup</param-name>
+			<param-value>true</param-value>
+		</init-param>
+
+		<!-- This enables full streaming mode. It's probably better to leave this out if you are running across the internet-->
+		<init-param>
+			<param-name>maxWaitAfterWrite</param-name>
+			<param-value>500</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>springDispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet>
+	  <servlet-name>boleto</servlet-name>
+	  <servlet-class>br.com.meganet.util.GeraCodigoBarraBoleto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>boleto</servlet-name>
+	  <url-pattern>/boleto</url-pattern>
+	</servlet-mapping>
+	
+	<filter-mapping>
+		<filter-name>requestContextFilter</filter-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>openSessionInViewFilter</filter-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</filter-mapping>
+
+	<servlet-mapping>
+		<servlet-name>dwr-invoker</servlet-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>springDispatcher</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!-- FACEBOOK -->
+	<listener>
+		<listener-class>br.com.meganet.facebookAPI.infra.jee.FacebookApp</listener-class>
+	</listener>
+	
+	<context-param>
+		<param-name>facebook.properties</param-name>
+		<param-value>
+			facebook.apiKey     = c1d31385aa80d7f88a6b98fb3fca50f6
+			facebook.appSecret  = 02e21b7634650e5214089f9533c79d59
+			facebook.appId      = 168924569836031
+			facebook.appCanvas  = http://apps.facebook.com/meganetdf/
+			facebook.permission = email
+		</param-value>
+	</context-param>
+	
+	<servlet>
+		<servlet-name>FrontController</servlet-name>
+		<servlet-class>br.com.meganet.facebookAPI.infra.jee.FrontControllerServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>FrontController</servlet-name>
+		<url-pattern>/auth/</url-pattern> 
+	</servlet-mapping>
+	
+</web-app>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo" auto-import="true">
+    <class name="PoolComandos" table="pool_comandos" schema="public">
+        <id name="poolcomandosId" type="java.lang.Long">
+            <column name="poolcomandos_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">pool_comandos_seq</param>
+	    	</generator>
+        </id>
+        <property name="poolcomandosComando" type="java.lang.String">
+            <column name="poolcomandos_comando" length="350" />
+        </property>
+        <property name="poolcomandosIdentificador" type="java.lang.Long">
+            <column name="poolcomandos_identificador" />
+        </property>
+        <many-to-one name="torre" class="Torre" fetch="select" lazy="false">
+            <column name="torre_id_fk"/>
+        </many-to-one>
+        <many-to-one name="servidor" class="Servidor" fetch="select" lazy="false">
+            <column name="servidor_id_fk"/>
+        </many-to-one>
+        <property name="poolcomandosTipo" type="java.lang.Long">
+            <column name="poolcomandos_tipo" />
+        </property>
+        <property name="poolcomandosOrdem" type="java.lang.Integer">
+            <column name="poolcomandos_ordem" />
+        </property>
+    </class>
+</hibernate-mapping>

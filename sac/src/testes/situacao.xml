@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Body>
+		<m:F2bSituacaoCobrancaRetorno
+			xmlns:m="http://www.f2b.com.br/soap/wsbillingstatus.xsd">
+			<cliente cod_state="DF" cod_user="54158" cod_zipcode="70258060"
+				conta="9023010447700148" electoral_donation_user="N"
+				email="contato@meganetdf.com.br" name_address="Sqs 409 Bl F Ent e"
+				name_address_complement="" name_city="Brasilia" name_city_district="Brasilia"
+				nome="Efren Langsdorf JÃºnior" num_address="203"
+				num_phone_area_code_com="" num_phone_com="" />
+			<cobranca num_document="0000003591" numero="0003458047"
+				pagamento="2010-08-13" pagamento_bloqueado="n" registro="2010-08-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-08-28">
+				<nome>FABRICIO PINHEIRO GONÃ‡ALVES</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000345804722</url>
+				<grupo>Meganet</grupo>
+				<codigo>647</codigo>
+				<cpf>95511105104</cpf>
+			</cobranca>
+			<cobranca num_document="0000003759" numero="0003466617"
+				pagamento="2010-08-17" pagamento_bloqueado="n" registro="2010-08-17"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-08-28">
+				<nome>ARMANDO COSTA DAS CHAGAS FILHO</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000346661759</url>
+				<grupo>Meganet</grupo>
+				<codigo>575</codigo>
+				<cpf>70603887880</cpf>
+			</cobranca>
+			<cobranca num_document="0000003187" numero="0003466642"
+				pagamento="2010-08-17" pagamento_bloqueado="n" registro="2010-08-17"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-08-28">
+				<nome>ANIZIO OLIVEIRA DA SILVA</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000346664248</url>
+				<grupo>Meganet</grupo>
+				<codigo>574</codigo>
+				<cpf>46229841134</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-17" num_document="0000003851"
+				numero="0003467951" pagamento="2010-08-07" pagamento_bloqueado="n"
+				registro="2010-08-17" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="40.00" vencimento="2010-08-20">
+				<nome>ARMANDO COSTA DAS CHAGAS FILHO</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000346795179</url>
+				<grupo>Meganet</grupo>
+				<codigo>575</codigo>
+				<cpf>62189581672</cpf>
+			</cobranca>
+			<cobranca num_document="0000003759" numero="0003468230"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-08-17"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-20">
+				<nome>ARMANDO COSTA DAS CHAGAS FILHO</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000346823086</url>
+				<grupo>Meganet</grupo>
+				<codigo>575</codigo>
+				<cpf>62189581672</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-18" credito="2010-08-30"
+				num_document="0000004012" numero="0003472422" pagamento="2010-08-26"
+				pagamento_bloqueado="n" registro="2010-08-18" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="T" valor="20.00" valor_pago="16.00"
+				vencimento="2010-09-20">
+				<nome>ARMANDO COSTA DAS CHAGAS FILHO</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000347242283</url>
+				<grupo>Meganet</grupo>
+				<codigo>575</codigo>
+				<cpf>63221376545</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-28" credito="2010-09-02"
+				num_document="0000003419" numero="0003499671" pagamento="2010-08-30"
+				pagamento_bloqueado="n" registro="2010-08-27" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>ADAM ALVES DE PADUA</nome>
+				<email>adampadua@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349967193</url>
+				<grupo>Meganet</grupo>
+				<codigo>682</codigo>
+				<cpf>02425802118</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-29" credito="2010-09-03"
+				num_document="0000003956" numero="0003499684" pagamento="2010-08-31"
+				pagamento_bloqueado="n" registro="2010-08-27" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>MARIA LUCIA COSTA DESA BOMFIM</nome>
+				<email>lucia18@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349968441</url>
+				<grupo>Meganet</grupo>
+				<codigo>728</codigo>
+				<cpf>22956646249</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-27" credito="2010-09-03"
+				num_document="0000003679" numero="0003499725" pagamento="2010-08-31"
+				pagamento_bloqueado="n" registro="2010-08-27" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>DALVA LOUBACH MARTINS</nome>
+				<email>adalvaverde@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349972551</url>
+				<grupo>Meganet</grupo>
+				<codigo>706</codigo>
+				<cpf>79411495753</cpf>
+			</cobranca>
+			<total numero_cobrancas="9" numero_pago_bloqueado="0"
+				numero_pago_liberado="9" valor_cobrado="420.00"
+				valor_pago_bloqueado="0.00" valor_pago_liberado="366.00" />
+			<log>OK&#13; </log>
+		</m:F2bSituacaoCobrancaRetorno>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

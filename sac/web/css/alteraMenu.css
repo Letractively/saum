@@ -1,0 +1,12 @@
+#tabela-altera-menu col.coluna-1 {
+	width:150px;
+}
+#tabela-altera-menu col.coluna-2 {
+	width:155px;
+}
+#tabela-altera-menu{
+	margin-left:8px;
+}
+.linha-tabela-alteracao-menu{
+	cursor: pointer;
+}

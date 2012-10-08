@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="Contato" table="contato" schema="public">
+        <id name="contatoId" type="java.lang.Long">
+            <column name="contato_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">contato_seq</param>
+	    	</generator>
+        </id>
+        <property name="contatoNome" type="java.lang.String">
+            <column name="contato_nome" length="50" />
+        </property>
+        <property name="contatoEmail" type="java.lang.String">
+            <column name="contato_email" length="50" />
+        </property>
+        <property name="contatoEndCr" type="java.lang.String">
+            <column name="contato_end_cr" length="80" />
+        </property>
+        <property name="contatoEndCasa" type="java.lang.String">
+            <column name="contato_end_casa" length="3" />
+        </property>
+        <property name="contatoTelefone" type="java.lang.String">
+            <column name="contato_telefone" length="13" />
+        </property>
+        <property name="contatoMensagem" type="java.lang.String">
+            <column name="contato_mensagem" />
+        </property>
+        <property name="contatoResposta" type="java.lang.String">
+            <column name="contato_resposta" />
+        </property>
+        <property name="contatoTipo" type="java.lang.String">
+            <column name="contato_tipo" length="13" />
+        </property>
+        <property name="contatoDataEnvio" type="java.sql.Timestamp">
+            <column name="contato_data_envio" length="29" />
+        </property>
+        <property name="contatoDataResposta" type="java.sql.Timestamp">
+            <column name="contato_data_resposta" length="29" />
+        </property>
+    </class>
+</hibernate-mapping>

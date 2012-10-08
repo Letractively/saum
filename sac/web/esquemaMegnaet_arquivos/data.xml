@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Visão geral" NameU="Visão geral">
+			<Layer IX="0">
+				<Name></Name>
+				<NameUniv></NameUniv>
+				<Visible>0</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name></Name>
+				<NameUniv></NameUniv>
+				<Visible>0</Visible>
+			</Layer>
+			<Layer IX="2">
+				<Name>Conector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="20" UniqueID="{A1024169-ECBF-4ED0-8DB5-16CB508AEA01}" Name="Conector dinâmico.20" NameU="Dynamic connector.20" Master="0">
+					<XForm>
+						<PinX Unit="MM">6.229955744583021</PinX>
+						<PinY Unit="MM">7.079519643288347</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="109" UniqueID="{95B836EC-6F28-4CE0-A571-740ADE4DB351}" Name="Ethernet.109" NameU="Ethernet.109" Master="8">
+					<Text>
+					</Text>
+					<XForm>
+						<PinX Unit="MM">7.480314960629923</PinX>
+						<PinY Unit="MM">4.921259842519685</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="10" Name="Department" NameU="Department">
+						<Value></Value>
+						<Label>Departamento</Label>
+					</Prop>
+					<Prop ID="5" Name="AssetNumber" NameU="AssetNumber">
+						<Value></Value>
+						<Label>Número do ativo</Label>
+					</Prop>
+					<Prop ID="6" Name="SerialNumber" NameU="SerialNumber">
+						<Value></Value>
+						<Label>Número de série</Label>
+					</Prop>
+					<Prop ID="7" Name="Location" NameU="Location">
+						<Value></Value>
+						<Label>Local</Label>
+					</Prop>
+					<Prop ID="8" Name="Building" NameU="Building">
+						<Value></Value>
+						<Label>Edifício</Label>
+					</Prop>
+					<Prop ID="9" Name="Room" NameU="Room">
+						<Value></Value>
+						<Label>Sala</Label>
+					</Prop>
+					<Prop ID="1" Name="Manufacturer" NameU="Manufacturer">
+						<Value></Value>
+						<Label>Fabricante</Label>
+					</Prop>
+					<Prop ID="2" Name="ProductNumber" NameU="ProductNumber">
+						<Value></Value>
+						<Label>Número do produto</Label>
+					</Prop>
+					<Prop ID="3" Name="PartNumber" NameU="PartNumber">
+						<Value></Value>
+						<Label>Peça Número</Label>
+					</Prop>
+					<Prop ID="4" Name="ProductDescription" NameU="ProductDescription">
+						<Value></Value>
+						<Label>Descrição do produto</Label>
+					</Prop>
+					<Prop ID="13" Name="NetworkName" NameU="NetworkName">
+						<Value></Value>
+						<Label>Nome da rede</Label>
+					</Prop>
+					<Prop ID="14" Name="IPAddress" NameU="IPAddress">
+						<Value></Value>
+						<Label>Endereço IP</Label>
+					</Prop>
+					<Prop ID="15" Name="SubnetMask" NameU="SubnetMask">
+						<Value></Value>
+						<Label>Máscara de sub-rede</Label>
+					</Prop>
+					<Prop ID="16" Name="AdminInterface" NameU="AdminInterface">
+						<Value></Value>
+						<Label>Interface administrativa</Label>
+					</Prop>
+					<Prop ID="17" Name="NumberofPorts" NameU="NumberofPorts">
+						<Value></Value>
+						<Label>Número de portas</Label>
+					</Prop>
+					<Prop ID="18" Name="MACAddress" NameU="MACAddress">
+						<Value></Value>
+						<Label>Endereço MAC</Label>
+					</Prop>
+					<Prop ID="19" Name="CommunityString" NameU="CommunityString">
+						<Value></Value>
+						<Label>Segmento de Comunidade</Label>
+					</Prop>
+					<Prop ID="20" Name="NetworkDescription" NameU="NetworkDescription">
+						<Value></Value>
+						<Label>Descrição da rede</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="1" UniqueID="{C544DC99-095C-45FE-9663-9BA87CC3D07A}" Name="Folha.1" NameU="Sheet.1">
+					<XForm>
+						<PinX Unit="MM">-1.771653543307087</PinX>
+						<PinY Unit="MM">5.314960629921261</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="63" UniqueID="{F61CC5B4-AF6A-4F02-865A-21113E5BC776}" Name="Ethernet" NameU="Ethernet" Master="8">
+					<Text>Rede</Text>
+					<XForm>
+						<PinX Unit="MM">2.042322834645667</PinX>
+						<PinY Unit="MM">6.692913385826770</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="10" Name="Department" NameU="Department">
+						<Value></Value>
+						<Label>Departamento</Label>
+					</Prop>
+					<Prop ID="5" Name="AssetNumber" NameU="AssetNumber">
+						<Value></Value>
+						<Label>Número do ativo</Label>
+					</Prop>
+					<Prop ID="6" Name="SerialNumber" NameU="SerialNumber">
+						<Value></Value>
+						<Label>Número de série</Label>
+					</Prop>
+					<Prop ID="7" Name="Location" NameU="Location">
+						<Value></Value>
+						<Label>Local</Label>
+					</Prop>
+					<Prop ID="8" Name="Building" NameU="Building">
+						<Value></Value>
+						<Label>Edifício</Label>
+					</Prop>
+					<Prop ID="9" Name="Room" NameU="Room">
+						<Value></Value>
+						<Label>Sala</Label>
+					</Prop>
+					<Prop ID="1" Name="Manufacturer" NameU="Manufacturer">
+						<Value></Value>
+						<Label>Fabricante</Label>
+					</Prop>
+					<Prop ID="2" Name="ProductNumber" NameU="ProductNumber">
+						<Value></Value>
+						<Label>Número do produto</Label>
+					</Prop>
+					<Prop ID="3" Name="PartNumber" NameU="PartNumber">
+						<Value></Value>
+						<Label>Peça Número</Label>
+					</Prop>
+					<Prop ID="4" Name="ProductDescription" NameU="ProductDescription">
+						<Value></Value>
+						<Label>Descrição do produto</Label>
+					</Prop>
+					<Prop ID="13" Name="NetworkName" NameU="NetworkName">
+						<Value></Value>
+						<Label>Nome da rede</Label>
+					</Prop>
+					<Prop ID="14" Name="IPAddress" NameU="IPAddress">
+						<Value></Value>
+						<Label>Endereço IP</Label>
+					</Prop>
+					<Prop ID="15" Name="SubnetMask" NameU="SubnetMask">
+						<Value></Value>
+						<Label>Máscara de sub-rede</Label>
+					</Prop>
+					<Prop ID="16" Name="AdminInterface" NameU="AdminInterface">
+						<Value></Value>
+						<Label>Interface administrativa</Label>
+					</Prop>
+					<Prop ID="17" Name="NumberofPorts" NameU="NumberofPorts">
+						<Value></Value>
+						<Label>Número de portas</Label>
+					</Prop>
+					<Prop ID="18" Name="MACAddress" NameU="MACAddress">
+						<Value></Value>
+						<Label>Endereço MAC</Label>
+					</Prop>
+					<Prop ID="19" Name="CommunityString" NameU="CommunityString">
+						<Value></Value>
+						<Label>Segmento de Comunidade</Label>
+					</Prop>
+					<Prop ID="20" Name="NetworkDescription" NameU="NetworkDescription">
+						<Value></Value>
+						<Label>Descrição da rede</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="2" UniqueID="{90C3FFC2-8C0D-4E26-B0E2-59AA16F611A1}" Name="Modem" NameU="Modem" Master="5">
+					<Text>Modem 3</Text>
+					<XForm>
+						<PinX Unit="MM">0.787401574803149</PinX>
+						<PinY Unit="MM">7.572602694736154</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="5" Name="Row_5" NameU="Row_5">
+						<Value Unit="STR">192.168.2.254</Value>
+						<Label>IP</Label>
+					</Prop>
+					<Prop ID="6" Name="Row_6" NameU="Row_6">
+						<Value Unit="STR">admin</Value>
+						<Label>Login</Label>
+					</Prop>
+					<Prop ID="7" Name="Row_7" NameU="Row_7">
+						<Value Unit="STR">3fr3n3lj</Value>
+						<Label>Senha</Label>
+					</Prop>
+					<Prop ID="8" Name="Row_8" NameU="Row_8">
+						<Value Unit="STR">Dinamico</Value>
+						<Label>IP Wan</Label>
+					</Prop>
+					<Prop ID="9" Name="Row_9" NameU="Row_9">
+						<Value Unit="STR">1024Kbps</Value>
+						<Label>Velocidade download</Label>
+					</Prop>
+					<Prop ID="10" Name="Row_10" NameU="Row_10">
+						<Value Unit="STR">320 Kbps</Value>
+						<Label>Velocidade upload</Label>
+					</Prop>
+					<Prop ID="11" Name="Row_11" NameU="Row_11">
+						<Value Unit="STR">Gigaset 201 A</Value>
+						<Label>Modelo</Label>
+					</Prop>
+					<Prop ID="4" Name="Manufacturer" NameU="Manufacturer">
+						<Value Unit="STR">Siemens</Value>
+						<Label>Fabricante</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="107" UniqueID="{1514EB80-422D-47E3-B683-F2474A7FEC34}" Name="Conector dinâmico" NameU="Dynamic connector" Master="0">
+					<XForm>
+						<PinX Unit="MM">5.099143628944191</PinX>
+						<PinY Unit="MM">3.595267674784409</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="110" UniqueID="{3857AC20-9010-4120-9DFD-1DC724075493}" Name="Conector dinâmico.110" NameU="Dynamic connector.110" Master="0">
+					<XForm>
+						<PinX Unit="MM">7.362204724409454</PinX>
+						<PinY Unit="MM">7.076194329025624</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="47" UniqueID="{55A6A44B-BB50-4D2B-9390-C063CEA005F1}" Name="Roteador" NameU="Router" Master="6">
+					<Text>Roteador 
+RV-082</Text>
+					<XForm>
+						<PinX Unit="MM">4.587332605322144</PinX>
+						<PinY Unit="MM">5.360892388451443</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="10" Name="Row_18" NameU="Row_18">
+						<Value Unit="STR">192.168.1.0</Value>
+						<Label>IP WAN 1</Label>
+					</Prop>
+					<Prop ID="11" Name="Row_19" NameU="Row_19">
+						<Value Unit="STR">192.168.2.0</Value>
+						<Label>IP WAN 2</Label>
+					</Prop>
+					<Prop ID="12" Name="Row_20" NameU="Row_20">
+						<Value Unit="STR">Meganet</Value>
+						<Label>Porta 1</Label>
+					</Prop>
+					<Prop ID="13" Name="Row_21" NameU="Row_21">
+						<Value Unit="STR">Meganet_PLUS</Value>
+						<Label>Porta 2</Label>
+					</Prop>
+					<Prop ID="14" Name="Row_22" NameU="Row_22">
+						<Value Unit="STR">Servidor WEB</Value>
+						<Label>Porta 3</Label>
+					</Prop>
+					<Prop ID="15" Name="Row_23" NameU="Row_23">
+						<Value Unit="STR">Livre</Value>
+						<Label>Porta 4</Label>
+					</Prop>
+					<Prop ID="16" Name="Row_24" NameU="Row_24">
+						<Value Unit="STR">Desativada</Value>
+						<Label>Porta 5</Label>
+					</Prop>
+					<Prop ID="17" Name="Row_25" NameU="Row_25">
+						<Value Unit="STR">Desativada</Value>
+						<Label>Porta 6</Label>
+					</Prop>
+					<Prop ID="18" Name="Row_26" NameU="Row_26">
+						<Value Unit="STR">Desativada</Value>
+						<Label>Porta 7</Label>
+					</Prop>
+					<Prop ID="19" Name="Row_27" NameU="Row_27">
+						<Value Unit="STR">Desativada</Value>
+						<Label>Porta 8</Label>
+					</Prop>
+					<Prop ID="20" Name="Row_28" NameU="Row_28">
+						<Value Unit="STR">admin</Value>
+						<Label>Login</Label>
+					</Prop>
+					<Prop ID="21" Name="Row_29" NameU="Row_29">
+						<Value Unit="STR">3fr3n3lj</Value>
+						<Label>Senha</Label>
+					</Prop>
+					<Prop ID="4" Name="Manufacturer" NameU="Manufacturer">
+						<Value Unit="STR">LynkSys CISCO</Value>
+						<Label>Fabricante</Label>
+					</Prop>
+					<Prop ID="5" Name="ProductDescription" NameU="ProductDescription">
+						<Value Unit="STR">Roteador RV-082</Value>
+						<Label>Descrição do produto</Label>
+					</Prop>
+					<Prop ID="6" Name="NetworkName" NameU="NetworkName">
+						<Value Unit="STR">roteador</Value>
+						<Label>Nome da rede</Label>
+					</Prop>
+					<Prop ID="7" Name="IPAddress" NameU="IPAddress">
+						<Value Unit="STR">192.168.10.254</Value>
+						<Label>Endereço IP</Label>
+					</Prop>
+					<Prop ID="8" Name="SubnetMask" NameU="SubnetMask">
+						<Value Unit="STR">255.255.255.0</Value>
+						<Label>Máscara de sub-rede</Label>
+					</Prop>
+					<Prop ID="9" Name="NumberofPorts" NameU="NumberofPorts">
+						<Value Unit="STR">8</Value>
+						<Label>Número de portas</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="67" UniqueID="{9D09684D-CB75-4926-889E-1189D0430992}" Name="Servidor Web" NameU="Web server" Master="9">
+					<Text>Meganet</Text>
+					<XForm>
+						<PinX Unit="MM">9.409448818897637</PinX>
+						<PinY Unit="MM">6.692913385826772</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="12" Name="Row_26" NameU="Row_26">
+						<Value Unit="STR">10.4.1.1</Value>
+						<Label>IP WLAN</Label>
+					</Prop>
+					<Prop ID="13" Name="Row_27" NameU="Row_27">
+						<Value Unit="STR">00:15:6D:64:B2:E2</Value>
+						<Label>MAC WLAN</Label>
+					</Prop>
+					<Prop ID="14" Name="Row_28" NameU="Row_28">
+						<Value Unit="STR">Meganet</Value>
+						<Label>SSID WLAN</Label>
+					</Prop>
+					<Prop ID="15" Name="Row_29" NameU="Row_29">
+						<Value Unit="STR">desativado</Value>
+						<Label>IP ETH 1</Label>
+					</Prop>
+					<Prop ID="16" Name="Row_30" NameU="Row_30">
+						<Value Unit="STR">00:0C:42:33:8A:B1</Value>
+						<Label>MAC ETH 1</Label>
+					</Prop>
+					<Prop ID="17" Name="Row_31" NameU="Row_31">
+						<Value Unit="STR">192.168.10.1</Value>
+						<Label>IP ETH 2</Label>
+					</Prop>
+					<Prop ID="18" Name="Row_32" NameU="Row_32">
+						<Value Unit="STR">00:0C:42:33:8A:B2</Value>
+						<Label>MAC ETH 2</Label>
+					</Prop>
+					<Prop ID="19" Name="Row_33" NameU="Row_33">
+						<Value Unit="STR">192.168.4.254</Value>
+						<Label>IP ETH 3</Label>
+					</Prop>
+					<Prop ID="20" Name="Row_34" NameU="Row_34">
+						<Value Unit="STR">00:0C:42:33:8A:B3</Value>
+						<Label>MAC ETH 3</Label>
+					</Prop>
+					<Prop ID="21" Name="Row_35" NameU="Row_35">
+						<Value Unit="STR">192.168.1.254</Value>
+						<Label>IP ETH 4</Label>
+					</Prop>
+					<Prop ID="22" Name="Row_36" NameU="Row_36">
+						<Value Unit="STR">00:0C:42:33:8A:B4</Value>
+						<Label>MAC ETH 4</Label>
+					</Prop>
+					<Prop ID="23" Name="Row_37" NameU="Row_37">
+						<Value Unit="STR">desativado</Value>
+						<Label>IP ETH 5</Label>
+					</Prop>
+					<Prop ID="24" Name="Row_38" NameU="Row_38">
+						<Value Unit="STR">00:0C:42:33:8A:B5</Value>
+						<Label>MAC ETH 5</Label>
+					</Prop>
+					<Prop ID="25" Name="Row_39" NameU="Row_39">
+						<Value Unit="STR">desativado</Value>
+						<Label>IP ETH 6</Label>
+					</Prop>
+					<Prop ID="26" Name="Row_40" NameU="Row_40">
+						<Value Unit="STR">00:0C:42:33:8A:B6</Value>
+						<Label>MAC ETH 6</Label>
+					</Prop>
+					<Prop ID="27" Name="Row_41" NameU="Row_41">
+						<Value Unit="STR">desativado</Value>
+						<Label>IP ETH 7</Label>
+					</Prop>
+					<Prop ID="28" Name="Row_42" NameU="Row_42">
+						<Value Unit="STR">00:0C:42:33:8A:B7</Value>
+						<Label>MAC ETH 7</Label>
+					</Prop>
+					<Prop ID="29" Name="Row_43" NameU="Row_43">
+						<Value Unit="STR">desativado</Value>
+						<Label>IP ETH 8</Label>
+					</Prop>
+					<Prop ID="30" Name="Row_44" NameU="Row_44">
+						<Value Unit="STR">00:0C:42:33:8A:B8</Value>
+						<Label>MAC ETH 8</Label>
+					</Prop>
+					<Prop ID="31" Name="Row_45" NameU="Row_45">
+						<Value Unit="STR">desativado</Value>
+						<Label>IP ETH 9</Label>
+					</Prop>
+					<Prop ID="32" Name="Row_46" NameU="Row_46">
+						<Value Unit="STR">00:0C:42:33:8A:B9</Value>
+						<Label>MAC ETH9</Label>
+					</Prop>
+					<Prop ID="1" Name="Manufacturer" NameU="Manufacturer">
+						<Value Unit="STR">Mikrotik</Value>
+						<Label>Fabricante</Label>
+					</Prop>
+					<Prop ID="2" Name="ProductDescription" NameU="ProductDescription">
+						<Value Unit="STR">Routerboard rb 493AH</Value>
+						<Label>Descrição do produto</Label>
+					</Prop>
+					<Prop ID="6" Name="NetworkName" NameU="NetworkName">
+						<Value Unit="STR">meganet</Value>
+						<Label>Nome da rede</Label>
+					</Prop>
+					<Prop ID="7" Name="NumberofPorts" NameU="NumberofPorts">
+						<Value Unit="STR">9</Value>
+						<Label>Número de portas</Label>
+					</Prop>
+					<Prop ID="8" Name="HardDriveSize" NameU="HardDriveSize">
+						<Value Unit="STR">60 MB</Value>
+						<Label>Capacidade do Disco Rígido</Label>
+					</Prop>
+					<Prop ID="9" Name="CPU" NameU="CPU">
+						<Value Unit="STR">680 Mhz</Value>
+						<Label>CPU</Label>
+					</Prop>
+					<Prop ID="10" Name="Memory" NameU="Memory">
+						<Value Unit="STR">124 MB</Value>
+						<Label>Memória</Label>
+					</Prop>
+					<Prop ID="11" Name="OperatingSystem" NameU="OperatingSystem">
+						<Value Unit="STR">Mikrotik router OS 3.24</Value>
+						<Label>Sistema operacional</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="112" UniqueID="{E6F7CE8D-532A-4A5F-BAB2-4B11577AD9B8}" Name="Modem.112" NameU="Modem.112" Master="5">
+					<Text>Modem 4</Text>
+					<XForm>
+						<PinX Unit="MM">0.788838438990746</PinX>
+						<PinY Unit="MM">5.925710016174986</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="5" Name="Row_5" NameU="Row_5">
+						<Value></Value>
+						<Label>IP</Label>
+					</Prop>
+					<Prop ID="6" Name="Row_6" NameU="Row_6">
+						<Value Unit="STR">root</Value>
+						<Label>Login</Label>
+					</Prop>
+					<Prop ID="7" Name="Row_7" NameU="Row_7">
+						<Value Unit="STR">3fr3n3lj</Value>
+						<Label>Senha</Label>
+					</Prop>
+					<Prop ID="8" Name="Row_8" NameU="Row_8">
+						<Value></Value>
+						<Label>IP Wan</Label>
+					</Prop>
+					<Prop ID="9" Name="Row_9" NameU="Row_9">
+						<Value Unit="STR">1024Kbps</Value>
+						<Label>Velocidade download</Label>
+					</Prop>
+					<Prop ID="10" Name="Row_10" NameU="Row_10">
+						<Value Unit="STR">320 Kbps</Value>
+						<Label>Velocidade upload</Label>
+					</Prop>
+					<Prop ID="11" Name="Row_11" NameU="Row_11">
+						<Value Unit="STR">speedstream 4200</Value>
+						<Label>Modelo</Label>
+					</Prop>
+					<Prop ID="4" Name="Manufacturer" NameU="Manufacturer">
+						<Value Unit="STR">Siemens</Value>
+						<Label>Fabricante</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="29" UniqueID="{24E08EDD-93A0-47ED-802C-AB98BB38BA62}" Name="Modem.29" NameU="Modem.29" Master="5">
+					<Text>Modem 5</Text>
+					<XForm>
+						<PinX Unit="MM">0.788838438990744</PinX>
+						<PinY Unit="MM">4.350906866568686</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="5" Name="Row_5" NameU="Row_5">
+						<Value Unit="STR">192.168.5.254</Value>
+						<Label>IP</Label>
+					</Prop>
+					<Prop ID="6" Name="Row_6" NameU="Row_6">
+						<Value Unit="STR">root</Value>
+						<Label>Login</Label>
+					</Prop>
+					<Prop ID="7" Name="Row_7" NameU="Row_7">
+						<Value Unit="STR">3fr3n3lj</Value>
+						<Label>Senha</Label>
+					</Prop>
+					<Prop ID="8" Name="Row_8" NameU="Row_8">
+						<Value Unit="STR">187.5.67.237</Value>
+						<Label>IP Wan</Label>
+					</Prop>
+					<Prop ID="9" Name="Row_9" NameU="Row_9">
+						<Value Unit="STR">2048 Kbps</Value>
+						<Label>Velocidade download</Label>
+					</Prop>
+					<Prop ID="10" Name="Row_10" NameU="Row_10">
+						<Value Unit="STR">415 Kbps</Value>
+						<Label>Velocidade upload</Label>
+					</Prop>
+					<Prop ID="11" Name="Row_11" NameU="Row_11">
+						<Value Unit="STR">speedstream 4200</Value>
+						<Label>Modelo</Label>
+					</Prop>
+					<Prop ID="4" Name="Manufacturer" NameU="Manufacturer">
+						<Value Unit="STR">Siemens</Value>
+						<Label>Fabricante</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="38" UniqueID="{BBF17406-C555-432D-9508-D4E4286D39C9}" Name="Modem.38" NameU="Modem.38" Master="5">
+					<Text>Modem 1</Text>
+					<XForm>
+						<PinX Unit="MM">5.314960629921270</PinX>
+						<PinY Unit="MM">7.572602694736154</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="5" Name="Row_5" NameU="Row_5">
+						<Value Unit="STR">192.168.4.254</Value>
+						<Label>IP</Label>
+					</Prop>
+					<Prop ID="6" Name="Row_6" NameU="Row_6">
+						<Value Unit="STR">root</Value>
+						<Label>Login</Label>
+					</Prop>
+					<Prop ID="7" Name="Row_7" NameU="Row_7">
+						<Value Unit="STR">3fr3n3lj</Value>
+						<Label>Senha</Label>
+					</Prop>
+					<Prop ID="8" Name="Row_8" NameU="Row_8">
+						<Value Unit="STR">189.74.9.170</Value>
+						<Label>IP Wan</Label>
+					</Prop>
+					<Prop ID="9" Name="Row_9" NameU="Row_9">
+						<Value Unit="STR">4092 Kbps</Value>
+						<Label>Velocidade download</Label>
+					</Prop>
+					<Prop ID="10" Name="Row_10" NameU="Row_10">
+						<Value Unit="STR">415 Kbps</Value>
+						<Label>Velocidade upload</Label>
+					</Prop>
+					<Prop ID="11" Name="Row_11" NameU="Row_11">
+						<Value Unit="STR">speedstream 4200</Value>
+						<Label>Modelo</Label>
+					</Prop>
+					<Prop ID="4" Name="Manufacturer" NameU="Manufacturer">
+						<Value Unit="STR">Siemens</Value>
+						<Label>Fabricante</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="11" UniqueID="{65499012-879A-4F4A-9953-187AEA3A0144}" Name="Modem.11" NameU="Modem.11" Master="5">
+					<Text>Modem 2</Text>
+					<XForm>
+						<PinX Unit="MM">3.050462670268405</PinX>
+						<PinY Unit="MM">7.579253323261599</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="5" Name="Row_5" NameU="Row_5">
+						<Value Unit="STR">192.168.1.254</Value>
+						<Label>IP</Label>
+					</Prop>
+					<Prop ID="6" Name="Row_6" NameU="Row_6">
+						<Value Unit="STR">root</Value>
+						<Label>Login</Label>
+					</Prop>
+					<Prop ID="7" Name="Row_7" NameU="Row_7">
+						<Value Unit="STR">3fr3n3lj</Value>
+						<Label>Senha</Label>
+					</Prop>
+					<Prop ID="8" Name="Row_8" NameU="Row_8">
+						<Value Unit="STR">189.75.96.108</Value>
+						<Label>IP Wan</Label>
+					</Prop>
+					<Prop ID="9" Name="Row_9" NameU="Row_9">
+						<Value Unit="STR">4092 Kbps</Value>
+						<Label>Velocidade download</Label>
+					</Prop>
+					<Prop ID="10" Name="Row_10" NameU="Row_10">
+						<Value Unit="STR">415 Kbps</Value>
+						<Label>Velocidade upload</Label>
+					</Prop>
+					<Prop ID="11" Name="Row_11" NameU="Row_11">
+						<Value Unit="STR">speedstream 4200</Value>
+						<Label>Modelo</Label>
+					</Prop>
+					<Prop ID="4" Name="Manufacturer" NameU="Manufacturer">
+						<Value Unit="STR">Siemens</Value>
+						<Label>Fabricante</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="21" UniqueID="{252FDCFA-D664-4DD7-8310-F42523AD85D0}" Name="Servidor de aplicativo" NameU="Application server" Master="10">
+					<Text>Servidor de aplicativo</Text>
+					<XForm>
+						<PinX Unit="MM">4.133858267716537</PinX>
+						<PinY Unit="MM">1.377952755905512</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="14" Name="Row_29" NameU="Row_29">
+						<Value Unit="STR">JBoss 5GA</Value>
+						<Label>Servidor aplicativo</Label>
+					</Prop>
+					<Prop ID="15" Name="Row_30" NameU="Row_30">
+						<Value Unit="STR">1.5.0_11</Value>
+						<Label>Maquina java</Label>
+					</Prop>
+					<Prop ID="16" Name="Row_31" NameU="Row_31">
+						<Value Unit="STR">/sac/index.do</Value>
+						<Label>contexto site</Label>
+					</Prop>
+					<Prop ID="1" Name="NetworkName" NameU="NetworkName">
+						<Value Unit="STR">Meganet</Value>
+						<Label>Nome da rede</Label>
+					</Prop>
+					<Prop ID="2" Name="IPAddress" NameU="IPAddress">
+						<Value Unit="STR">192.168.10.1</Value>
+						<Label>Endereço IP</Label>
+					</Prop>
+					<Prop ID="3" Name="SubnetMask" NameU="SubnetMask">
+						<Value Unit="STR">255.255.255.0</Value>
+						<Label>Máscara de sub-rede</Label>
+					</Prop>
+					<Prop ID="4" Name="NumberofPorts" NameU="NumberofPorts">
+						<Value Unit="STR">1</Value>
+						<Label>Número de portas</Label>
+					</Prop>
+					<Prop ID="5" Name="NetworkDescription" NameU="NetworkDescription">
+						<Value Unit="STR">Servidor do portal da rede</Value>
+						<Label>Descrição da rede</Label>
+					</Prop>
+					<Prop ID="12" Name="MACAddress" NameU="MACAddress">
+						<Value></Value>
+						<Label>Endereço MAC</Label>
+					</Prop>
+					<Prop ID="6" Name="CPU" NameU="CPU">
+						<Value Unit="STR">Celeron 2Ghz</Value>
+						<Label>CPU</Label>
+					</Prop>
+					<Prop ID="7" Name="Memory" NameU="Memory">
+						<Value Unit="STR">512MB</Value>
+						<Label>Memória</Label>
+					</Prop>
+					<Prop ID="8" Name="OperatingSystem" NameU="OperatingSystem">
+						<Value Unit="STR">Windows XP SV Pack 2</Value>
+						<Label>Sistema operacional</Label>
+					</Prop>
+					<Prop ID="13" Name="HardDriveSize" NameU="HardDriveSize">
+						<Value Unit="STR">320 GB</Value>
+						<Label>Capacidade do Disco Rígido</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="87" UniqueID="{F78D9180-7783-4A89-9111-EDF70B38A276}" Name="Servidor Web.87" NameU="Web server.87" Master="9">
+					<Text>Meganet_PLUS</Text>
+					<XForm>
+						<PinX Unit="MM">9.409448818897637</PinX>
+						<PinY Unit="MM">2.952755905511811</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="12" Name="Row_26" NameU="Row_26">
+						<Value Unit="STR">10.4.0.1</Value>
+						<Label>IP WLAN</Label>
+					</Prop>
+					<Prop ID="13" Name="Row_27" NameU="Row_27">
+						<Value Unit="STR">00:15:6D:64:B2:E2</Value>
+						<Label>MAC WLAN</Label>
+					</Prop>
+					<Prop ID="14" Name="Row_28" NameU="Row_28">
+						<Value Unit="STR">Meganet_PLUS</Value>
+						<Label>SSID WLAN</Label>
+					</Prop>
+					<Prop ID="15" Name="Row_29" NameU="Row_29">
+						<Value Unit="STR">desativado</Value>
+						<Label>IP ETH 1</Label>
+					</Prop>
+					<Prop ID="16" Name="Row_30" NameU="Row_30">
+						<Value Unit="STR">00:0C:42:29:80:C3</Value>
+						<Label>MAC ETH 1</Label>
+					</Prop>
+					<Prop ID="17" Name="Row_31" NameU="Row_31">
+						<Value Unit="STR">192.168.10.2</Value>
+						<Label>IP ETH 2</Label>
+					</Prop>
+					<Prop ID="18" Name="Row_32" NameU="Row_32">
+						<Value Unit="STR">00:0C:42:29:80:C5</Value>
+						<Label>MAC ETH 2</Label>
+					</Prop>
+					<Prop ID="19" Name="Row_33" NameU="Row_33">
+						<Value Unit="STR">192.168.5.254</Value>
+						<Label>IP ETH 3</Label>
+					</Prop>
+					<Prop ID="20" Name="Row_34" NameU="Row_34">
+						<Value Unit="STR">00:0C:42:29:80:C4</Value>
+						<Label>MAC ETH 3</Label>
+					</Prop>
+					<Prop ID="1" Name="Manufacturer" NameU="Manufacturer">
+						<Value Unit="STR">Mikrotik</Value>
+						<Label>Fabricante</Label>
+					</Prop>
+					<Prop ID="2" Name="ProductDescription" NameU="ProductDescription">
+						<Value Unit="STR">Routerboard rb 433</Value>
+						<Label>Descrição do produto</Label>
+					</Prop>
+					<Prop ID="6" Name="NetworkName" NameU="NetworkName">
+						<Value Unit="STR">meganet_PLUS</Value>
+						<Label>Nome da rede</Label>
+					</Prop>
+					<Prop ID="7" Name="NumberofPorts" NameU="NumberofPorts">
+						<Value Unit="STR">3</Value>
+						<Label>Número de portas</Label>
+					</Prop>
+					<Prop ID="8" Name="HardDriveSize" NameU="HardDriveSize">
+						<Value Unit="STR">60 MB</Value>
+						<Label>Capacidade do Disco Rígido</Label>
+					</Prop>
+					<Prop ID="9" Name="CPU" NameU="CPU">
+						<Value Unit="STR">300 Mhz</Value>
+						<Label>CPU</Label>
+					</Prop>
+					<Prop ID="10" Name="Memory" NameU="Memory">
+						<Value Unit="STR">61 MB</Value>
+						<Label>Memória</Label>
+					</Prop>
+					<Prop ID="11" Name="OperatingSystem" NameU="OperatingSystem">
+						<Value Unit="STR">Mikrotik router OS 3.6</Value>
+						<Label>Sistema operacional</Label>
+					</Prop>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="4" Name="Página-2" NameU="Page-2"></Page>
+	</Pages>
+</VisioDocument>

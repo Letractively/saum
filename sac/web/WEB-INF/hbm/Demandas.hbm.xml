@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="Demandas" table="demandas" schema="public">
+        <id name="demandasId" type="java.lang.Long">
+            <column name="demandas_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">demandas_seq</param>
+	    	</generator>
+        </id>
+        <many-to-one name="usuarioAbriu" class="Usuario" fetch="select" lazy="false">
+            <column name="usuario_id_fk_abriu" />
+        </many-to-one>
+        <many-to-one name="usuarioFechou" class="Usuario" fetch="select" lazy="false">
+            <column name="usuario_id_fk_fechou" />
+        </many-to-one>
+        <many-to-one name="usuarioResponsavel" class="Usuario" fetch="select" lazy="false">
+            <column name="usuario_id_fk_responsavel" />
+        </many-to-one>
+        <many-to-one name="usuarioSolicitante" class="Usuario" fetch="select" lazy="false">
+            <column name="usuario_id_fk" />
+        </many-to-one>
+        <property name="demandasDataPrevistaAtendimento" type="java.sql.Timestamp">
+            <column name="demandas_data_prevista_atendiemnto" length="29" />
+        </property>
+        <property name="demandasDataAbertura" type="java.sql.Timestamp">
+            <column name="demandas_data_abertura" length="29" />
+        </property>
+        <property name="demandasDataEncerramento" type="java.sql.Timestamp">
+            <column name="demandas_data_encerramento" length="29" />
+        </property>
+        <property name="demandasDescricao" type="java.lang.String">
+            <column name="demandas_descricao" />
+        </property>
+        <property name="demandasDescricaoEncerramento" type="java.lang.String">
+            <column name="demandas_descricao_encerramento" />
+        </property>
+        <property name="demandasTipoErro" type="java.lang.String">
+            <column name="demandas_tipo_erro" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,2729 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Body>
+		<m:F2bSituacaoCobrancaRetorno
+			xmlns:m="http://www.f2b.com.br/soap/wsbillingstatus.xsd">
+			<cliente cod_state="DF" cod_user="54158" cod_zipcode="70258060"
+				conta="9023010447700148" electoral_donation_user="N"
+				email="contato@meganetdf.com.br" name_address="Sqs 409 Bl F Ent e"
+				name_address_complement="" name_city="Brasilia" name_city_district="Brasilia"
+				nome="Efren Langsdorf Júnior" num_address="203"
+				num_phone_area_code_com="" num_phone_com="" />
+			<cobranca num_document="0000003591" numero="0003458047"
+				pagamento="2010-08-13" pagamento_bloqueado="n" registro="2010-08-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-08-28">
+				<nome>FABRICIO PINHEIRO GONÇALVES</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000345804722</url>
+				<grupo>Meganet</grupo>
+				<codigo>647</codigo>
+				<cpf>95511105104</cpf>
+			</cobranca>
+			<cobranca num_document="0000003759" numero="0003466617"
+				pagamento="2010-08-17" pagamento_bloqueado="n" registro="2010-08-17"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-08-28">
+				<nome>ARMANDO COSTA DAS CHAGAS FILHO</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000346661759</url>
+				<grupo>Meganet</grupo>
+				<codigo>575</codigo>
+				<cpf>70603887880</cpf>
+			</cobranca>
+			<cobranca num_document="0000003187" numero="0003466642"
+				pagamento="2010-08-17" pagamento_bloqueado="n" registro="2010-08-17"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-08-28">
+				<nome>ANIZIO OLIVEIRA DA SILVA</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000346664248</url>
+				<grupo>Meganet</grupo>
+				<codigo>574</codigo>
+				<cpf>46229841134</cpf>
+			</cobranca>
+			<cobranca num_document="0000003759" numero="0003468230"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-08-17"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-20">
+				<nome>ARMANDO COSTA DAS CHAGAS FILHO</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000346823086</url>
+				<grupo>Meganet</grupo>
+				<codigo>575</codigo>
+				<cpf>62189581672</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-18" credito="2010-08-30"
+				num_document="0000004012" numero="0003472422" pagamento="2010-08-26"
+				pagamento_bloqueado="n" registro="2010-08-18" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="T" valor="20.00" valor_pago="16.00"
+				vencimento="2010-09-20">
+				<nome>ARMANDO COSTA DAS CHAGAS FILHO</nome>
+				<email>efrenlixo@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000347242283</url>
+				<grupo>Meganet</grupo>
+				<codigo>575</codigo>
+				<cpf>63221376545</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-28" credito="2010-09-13"
+				num_document="0000003419" numero="0003499671" pagamento="2010-09-08"
+				pagamento_bloqueado="n" registro="2010-08-27" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="50.00"
+				vencimento="2010-09-08">
+				<nome>ADAM ALVES DE PADUA</nome>
+				<email>adampadua@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349967193</url>
+				<grupo>Meganet</grupo>
+				<codigo>682</codigo>
+				<cpf>02425802118</cpf>
+			</cobranca>
+			<cobranca num_document="0000003936" numero="0003499673"
+				pagamento="2010-09-08" pagamento_bloqueado="n" registro="2010-08-27"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="25.00" vencimento="2010-09-08">
+				<nome>AIRTON A ROCHA</nome>
+				<email>airton.tel@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349967371</url>
+				<grupo>Meganet</grupo>
+				<codigo>671</codigo>
+				<cpf>46239650153</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-13" num_document="0000003164"
+				numero="0003499674" pagamento="2010-09-08" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>LEONICE INES ANTONIO ORNELAS</nome>
+				<email>lucas18vidaloka@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349967460</url>
+				<grupo>Meganet</grupo>
+				<codigo>639</codigo>
+				<cpf>54028272653</cpf>
+			</cobranca>
+			<cobranca num_document="0000003948" numero="0003499675"
+				pagamento="2010-09-08" pagamento_bloqueado="n" registro="2010-08-27"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-09-08">
+				<nome>LEONARDO TEIXEIRA DE FARIAS</nome>
+				<email>leoteixeira@correioweb.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349967558</url>
+				<grupo>Meganet</grupo>
+				<codigo>609</codigo>
+				<cpf>37185837120</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-29" credito="2010-09-03"
+				num_document="0000003956" numero="0003499684" pagamento="2010-08-31"
+				pagamento_bloqueado="n" registro="2010-08-27" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>MARIA LUCIA COSTA DESA BOMFIM</nome>
+				<email>lucia18@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349968441</url>
+				<grupo>Meganet</grupo>
+				<codigo>728</codigo>
+				<cpf>22956646249</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-10" num_document="0000003374"
+				numero="0003499685" pagamento="2010-09-06" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>FERNANDO WEMERSO CASTRO CAMPOS</nome>
+				<email>fernadin_tifu@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349968539</url>
+				<grupo>Meganet</grupo>
+				<codigo>593</codigo>
+				<cpf>02846899126</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-10" num_document="0000003377"
+				numero="0003499686" pagamento="2010-09-06" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>NILSA CRISTINA DA SILVA</nome>
+				<email>nilsa.cris@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349968628</url>
+				<grupo>Meganet</grupo>
+				<codigo>675</codigo>
+				<cpf>05981492104</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-10" num_document="0000003378"
+				numero="0003499687" pagamento="2010-09-06" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>MARLENE RODRIGUES DE OLIVEIRA</nome>
+				<email>marleneraikka@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349968717</url>
+				<grupo>Meganet</grupo>
+				<codigo>673</codigo>
+				<cpf>18621180197</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-10" num_document="0000003379"
+				numero="0003499688" pagamento="2010-09-06" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>BENEDICTO OCTAVIO LISBOA</nome>
+				<email>blisboa@uol.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349968806</url>
+				<grupo>Meganet</grupo>
+				<codigo>584</codigo>
+				<cpf>07419643172</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-13" num_document="0000003380"
+				numero="0003499689" pagamento="2010-09-08" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>CARLOS COUTINHO BRITO JUNIOR</nome>
+				<email>carlo_coutinho.junior@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349968995</url>
+				<grupo>Meganet</grupo>
+				<codigo>586</codigo>
+				<cpf>11868953149</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-13" num_document="0000003385"
+				numero="0003499690" pagamento="2010-09-08" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>SIDERVAL CRUZ PIMENTEL JUNIOR</nome>
+				<email>siderval.junior@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349969066</url>
+				<grupo>Meganet</grupo>
+				<codigo>627</codigo>
+				<cpf>72385049104</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-10" num_document="0000003386"
+				numero="0003499691" pagamento="2010-09-06" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>MARTA DO NASCIMENTO</nome>
+				<email>pd.marta@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349969155</url>
+				<grupo>Meganet</grupo>
+				<codigo>655</codigo>
+				<cpf>52398013120</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-09" num_document="0000003391"
+				numero="0003499692" pagamento="2010-09-03" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>MARLUCE SOUSA NUNES</nome>
+				<email>line_baby13@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349969244</url>
+				<grupo>Meganet</grupo>
+				<codigo>617</codigo>
+				<cpf>69730431191</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-07" credito="2010-09-13"
+				num_document="0000003392" numero="0003499694" pagamento="2010-09-08"
+				pagamento_bloqueado="n" registro="2010-08-27" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>MARCIO ROBERTO DE SOUZA</nome>
+				<email>marcio.souza@eln.gov.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349969422</url>
+				<grupo>Meganet</grupo>
+				<codigo>616</codigo>
+				<cpf>00511133685</cpf>
+			</cobranca>
+			<cobranca num_document="0000003426" numero="0003499695"
+				pagamento="2010-09-08" pagamento_bloqueado="n" registro="2010-08-27"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-09-08">
+				<nome>EDINAR GONÇALVES DE SOUZA</nome>
+				<email>edna-sabrina96@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349969510</url>
+				<grupo>Meganet</grupo>
+				<codigo>592</codigo>
+				<cpf>16580175877</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-13" credito="2010-09-24"
+				num_document="0000003443" numero="0003499696" pagamento="2010-09-21"
+				pagamento_bloqueado="n" registro="2010-08-27" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="50.00"
+				vencimento="2010-09-08">
+				<nome>SONIA MARIA FERREIRA SOUSA</nome>
+				<email>sousasonya@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349969609</url>
+				<grupo>Meganet</grupo>
+				<codigo>630</codigo>
+				<cpf>80810640104</cpf>
+			</cobranca>
+			<cobranca num_document="0000003464" numero="0003499699"
+				pagamento="2010-09-08" pagamento_bloqueado="n" registro="2010-08-27"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-09-08">
+				<nome>MARIO KIOSHI NAGASHIMA</nome>
+				<email>mariokioshi@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349969976</url>
+				<grupo>Meganet</grupo>
+				<codigo>654</codigo>
+				<cpf>55694110897</cpf>
+			</cobranca>
+			<cobranca num_document="0000003471" numero="0003499701"
+				pagamento="2010-09-08" pagamento_bloqueado="n" registro="2010-08-27"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-09-08">
+				<nome>EUGENIO OLIVEIRA DA SILVA</nome>
+				<email>eugeniopantuva@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349970134</url>
+				<grupo>Meganet</grupo>
+				<codigo>591</codigo>
+				<cpf>55353924134</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-10" num_document="0000003472"
+				numero="0003499704" pagamento="2010-09-06" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>MARGARETHE APARECIDA SOEIRA</nome>
+				<email>margarethea92@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349970401</url>
+				<grupo>Meganet</grupo>
+				<codigo>611</codigo>
+				<cpf>31881769100</cpf>
+			</cobranca>
+			<cobranca num_document="0000003474" numero="0003499706"
+				pagamento="2010-09-08" pagamento_bloqueado="n" registro="2010-08-27"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-08">
+				<nome>RENATO PEREIRA DE ALMEIDA</nome>
+				<email>renatopereiradealmeida@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349970688</url>
+				<grupo>Meganet</grupo>
+				<codigo>622</codigo>
+				<cpf>00037579193</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-10" num_document="0000003477"
+				numero="0003499709" pagamento="2010-09-06" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>SUNAMI GRACAS DE FARIAS CORREIA</nome>
+				<email>sunami.c@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349970955</url>
+				<grupo>Meganet</grupo>
+				<codigo>657</codigo>
+				<cpf>37358170172</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-13" num_document="0000003544"
+				numero="0003499712" pagamento="2010-09-08" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>ANTONIO RIBEIRO DE FREITAS</nome>
+				<email>toninho.rep@ibest.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349971204</url>
+				<grupo>Meganet</grupo>
+				<codigo>578</codigo>
+				<cpf>06115390630</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-13" num_document="0000003602"
+				numero="0003499714" pagamento="2010-09-08" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="50.00" vencimento="2010-09-08">
+				<nome>ANGELICA RITA PEREIRA</nome>
+				<email>angelicar_pereira@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349971482</url>
+				<grupo>Meganet</grupo>
+				<codigo>577</codigo>
+				<cpf>01824138105</cpf>
+			</cobranca>
+			<cobranca num_document="0000003611" numero="0003499717"
+				pagamento="2010-09-08" pagamento_bloqueado="n" registro="2010-08-27"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-08">
+				<nome>HAROLDO JOSE DA CUNHA</nome>
+				<email>haroldocunha23@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349971758</url>
+				<grupo>Meganet</grupo>
+				<codigo>665</codigo>
+				<cpf>24470872172</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-10" num_document="0000003654"
+				numero="0003499721" pagamento="2010-09-06" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>ORTELINDA DE SOUZA BARBOSA</nome>
+				<email>hellenday1@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349972196</url>
+				<grupo>Meganet</grupo>
+				<codigo>620</codigo>
+				<cpf>87735610610</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-09" num_document="0000003672"
+				numero="0003499723" pagamento="2010-09-03" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>ALEXANDRE ALVES DE BARROS</nome>
+				<email>daniloalves1980@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349972374</url>
+				<grupo>Meganet</grupo>
+				<codigo>703</codigo>
+				<cpf>02154106102</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-27" credito="2010-09-03"
+				num_document="0000003679" numero="0003499725" pagamento="2010-08-31"
+				pagamento_bloqueado="n" registro="2010-08-27" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>DALVA LOUBACH MARTINS</nome>
+				<email>adalvaverde@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349972551</url>
+				<grupo>Meganet</grupo>
+				<codigo>706</codigo>
+				<cpf>79411495753</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-10" num_document="0000003685"
+				numero="0003499728" pagamento="2010-09-06" pagamento_bloqueado="n"
+				registro="2010-08-27" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>NEIVA GLORIA OLIVEIRA VITORINO</nome>
+				<email>hugovitorino18@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349972828</url>
+				<grupo>Meganet</grupo>
+				<codigo>707</codigo>
+				<cpf>21513108417</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-02" credito="2010-09-09"
+				num_document="0000003697" numero="0003499730" pagamento="2010-09-03"
+				pagamento_bloqueado="n" registro="2010-08-27" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>FRANCISCO ANDRADE RODRIGUES</nome>
+				<email>franciscoandraderodrigues@uol.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349973088</url>
+				<grupo>Meganet</grupo>
+				<codigo>595</codigo>
+				<cpf>20141866853</cpf>
+			</cobranca>
+			<cobranca num_document="0000003698" numero="0003499734"
+				pagamento="2010-09-08" pagamento_bloqueado="n" registro="2010-08-27"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-09-08">
+				<nome>ANA KARINA PEREIRA DE SOUZA</nome>
+				<email>adri.ely22@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349973444</url>
+				<grupo>Meganet</grupo>
+				<codigo>683</codigo>
+				<cpf>71321837534</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-02" credito="2010-09-13"
+				num_document="0000003702" numero="0003499737" pagamento="2010-09-08"
+				pagamento_bloqueado="n" registro="2010-08-27" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>IVONE MARIA ARAUJO SOARES</nome>
+				<email>natal.ivone01@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000349973710</url>
+				<grupo>Meganet</grupo>
+				<codigo>650</codigo>
+				<cpf>55060986691</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-06" num_document="0000003806"
+				numero="0003505482" pagamento="2010-09-20" pagamento_bloqueado="n"
+				registro="2010-08-29" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="30.00" vencimento="2010-09-08">
+				<nome>EDNEUZA DOS SANTOS</nome>
+				<email>wendel.m.s_@gthotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000350548224</url>
+				<grupo>Meganet</grupo>
+				<codigo>722</codigo>
+				<cpf>72088800182</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-06" credito="2010-09-13"
+				num_document="0000003812" numero="0003505484" pagamento="2010-09-08"
+				pagamento_bloqueado="n" registro="2010-08-29" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>ELCO DAGUIMAR DA SILVA</nome>
+				<email>garetepires@bol.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000350548402</url>
+				<grupo>Meganet</grupo>
+				<codigo>723</codigo>
+				<cpf>11995564168</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-29" credito="2010-09-10"
+				num_document="0000003892" numero="0003505486" pagamento="2010-09-06"
+				pagamento_bloqueado="n" registro="2010-08-29" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>NOELIO ALVES FERREIRA</nome>
+				<email>nafj@ig.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000350548689</url>
+				<grupo>Meganet</grupo>
+				<codigo>619</codigo>
+				<cpf>01799419177</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-06" num_document="0000003921"
+				numero="0003505488" pagamento="2010-09-08" pagamento_bloqueado="n"
+				registro="2010-08-29" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>THAYANE ALVES DOS SANTOS</nome>
+				<email>thayanealves@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000350548867</url>
+				<grupo>Meganet</grupo>
+				<codigo>724</codigo>
+				<cpf>01205899154</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-06" credito="2010-09-10"
+				num_document="0000004009" numero="0003505490" pagamento="2010-09-06"
+				pagamento_bloqueado="n" registro="2010-08-29" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>GEORGETE ALVES MAFRA VIEIRA</nome>
+				<email>glauco_a_m@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000350549027</url>
+				<grupo>Meganet</grupo>
+				<codigo>648</codigo>
+				<cpf>43558143787</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-05" credito="2010-09-13"
+				num_document="0000003767" numero="0003505492" pagamento="2010-09-08"
+				pagamento_bloqueado="n" registro="2010-08-29" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-08">
+				<nome>WELLINGTON LUIZ RIBEIRO</nome>
+				<email>18ribeiro18@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000350549205</url>
+				<grupo>Meganet</grupo>
+				<codigo>714</codigo>
+				<cpf>47686839168</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-06" num_document="0000003976"
+				numero="0003505494" pagamento="2010-09-08" pagamento_bloqueado="n"
+				registro="2010-08-29" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="40.00" vencimento="2010-09-08">
+				<nome>SANDRO PACHECO LIMA</nome>
+				<email>sandropache@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000350549483</url>
+				<grupo>Meganet</grupo>
+				<codigo>626</codigo>
+				<cpf>17874184807</cpf>
+			</cobranca>
+			<cobranca abertura="2010-08-29" credito="2010-09-13"
+				num_document="0000003998" numero="0003505496" pagamento="2010-09-08"
+				pagamento_bloqueado="n" registro="2010-08-29" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="43.33" valor_pago="35.00"
+				vencimento="2010-09-08">
+				<nome>LEONIO MATOS GOMES</nome>
+				<email>leonio.matos@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000350549660</url>
+				<grupo>Meganet</grupo>
+				<codigo>734</codigo>
+				<cpf>02816280764</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-01" credito="2010-09-23"
+				num_document="0000003729" numero="0003519101" pagamento="2010-09-20"
+				pagamento_bloqueado="n" registro="2010-09-01" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-20">
+				<nome>GUILHERME HENRIQUE CORRÊA DE OLIVEIRA</nome>
+				<email>guihco@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000351910142</url>
+				<grupo>Meganet</grupo>
+				<codigo>599</codigo>
+				<cpf>33391246120</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-01" credito="2010-10-22"
+				num_document="0000003730" numero="0003519119" pagamento="2010-10-19"
+				pagamento_bloqueado="n" registro="2010-09-01" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-10-20">
+				<nome>GUILHERME HENRIQUE CORRÊA DE OLIVEIRA</nome>
+				<email>guihco@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000351911944</url>
+				<grupo>Meganet</grupo>
+				<codigo>599</codigo>
+				<cpf>33391246120</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-01" credito="2010-11-24"
+				num_document="0000003731" numero="0003519121" pagamento="2010-11-19"
+				pagamento_bloqueado="n" registro="2010-09-01" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-11-20">
+				<nome>GUILHERME HENRIQUE CORRÊA DE OLIVEIRA</nome>
+				<email>guihco@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000351912104</url>
+				<grupo>Meganet</grupo>
+				<codigo>599</codigo>
+				<cpf>33391246120</cpf>
+			</cobranca>
+			<cobranca num_document="0000003730" numero="0003523141"
+				pagamento="2010-10-19" pagamento_bloqueado="n" registro="2010-09-02"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-10-20">
+				<nome>GUILHERME HENRIQUE CORRÊA DE OLIVEIRA</nome>
+				<email>guihco@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000352314188</url>
+				<grupo>Meganet</grupo>
+				<codigo>599</codigo>
+				<cpf>33391246120</cpf>
+			</cobranca>
+			<cobranca num_document="0000003952" numero="0003536849"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-09-20">
+				<nome>JAQUELINE DE LIMA ARAUJO</nome>
+				<email>trezedesetembro@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353684954</url>
+				<grupo>Meganet</grupo>
+				<codigo>652</codigo>
+				<cpf>00497249162</cpf>
+			</cobranca>
+			<cobranca num_document="0000003594" numero="0003536850"
+				pagamento="2010-09-28" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-09-28">
+				<nome>IZABELLA SOARES SANTOS</nome>
+				<email>bella25.bella@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353685016</url>
+				<grupo>Meganet</grupo>
+				<codigo>651</codigo>
+				<cpf>72719982172</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-22" num_document="0000003962"
+				numero="0003536851" pagamento="2010-09-17" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>SARAH PEREIRA SANTOS BRANDAO</nome>
+				<email>sarinhagat123@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353685105</url>
+				<grupo>Meganet</grupo>
+				<codigo>676</codigo>
+				<cpf>01911939173</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-23" credito="2010-09-30"
+				num_document="0000003420" numero="0003536852" pagamento="2010-09-27"
+				pagamento_bloqueado="n" registro="2010-09-06" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="50.00"
+				vencimento="2010-09-20">
+				<nome>ALEX MOTA LACERDA</nome>
+				<email>lacerda_df@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353685294</url>
+				<grupo>Meganet</grupo>
+				<codigo>681</codigo>
+				<cpf>86905791172</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-20" num_document="0000003422"
+				numero="0003536853" pagamento="2010-09-15" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>SERGIO ROBERTO BARBOSA ONORIO</nome>
+				<email>lu_crist@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353685383</url>
+				<grupo>Meganet</grupo>
+				<codigo>686</codigo>
+				<cpf>90353102172</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-21" credito="2010-09-24"
+				num_document="0000003966" numero="0003536854" pagamento="2010-09-21"
+				pagamento_bloqueado="n" registro="2010-09-06" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="50.00"
+				vencimento="2010-09-20">
+				<nome>GEOVANE VELOSO COSTA</nome>
+				<email>geovanecosta2010@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353685472</url>
+				<grupo>Meganet</grupo>
+				<codigo>730</codigo>
+				<cpf>93008490182</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-16" num_document="0000003597"
+				numero="0003536855" pagamento="2010-09-13" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>TITO DIAS BAISTA</nome>
+				<email>titodbatista@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353685560</url>
+				<grupo>Meganet</grupo>
+				<codigo>685</codigo>
+				<cpf>01786582864</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-20" num_document="0000003942"
+				numero="0003536856" pagamento="2010-09-15" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>JOSE BATISTA FILHO</nome>
+				<email>via.bat@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353685659</url>
+				<grupo>Meganet</grupo>
+				<codigo>729</codigo>
+				<cpf>22521658120</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-16" num_document="0000003423"
+				numero="0003536857" pagamento="2010-09-13" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>GIOVANI VILELA SALERNO</nome>
+				<email>giovanivilela@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353685748</url>
+				<grupo>Meganet</grupo>
+				<codigo>597</codigo>
+				<cpf>95053050104</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-16" credito="2010-09-21"
+				num_document="0000003425" numero="0003536859" pagamento="2010-09-16"
+				pagamento_bloqueado="n" registro="2010-09-06" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-20">
+				<nome>CLEUSA ROSA DE JESUS</nome>
+				<email>cleusa_rjesus@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353685926</url>
+				<grupo>Meganet</grupo>
+				<codigo>581</codigo>
+				<cpf>23905700115</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-06" num_document="0000003373"
+				numero="0003536860" pagamento="2010-09-20" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="50.00" vencimento="2010-09-20">
+				<nome>ANIZIO OLIVEIRA DA SILVA</nome>
+				<email>anizioajana@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353686097</url>
+				<grupo>Meganet</grupo>
+				<codigo>574</codigo>
+				<cpf>46229841134</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-20" num_document="0000003444"
+				numero="0003536861" pagamento="2010-09-15" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-28">
+				<nome>ELIZABETE MOREIRA DA SILVA</nome>
+				<email>betymoreira@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353686186</url>
+				<grupo>Meganet</grupo>
+				<codigo>588</codigo>
+				<cpf>01412149100</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-28" num_document="0000003445"
+				numero="0003536862" pagamento="2010-09-23" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-28">
+				<nome>IVONICE DE QUEIROZ SILVA</nome>
+				<email>nice_queiroz@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353686275</url>
+				<grupo>Meganet</grupo>
+				<codigo>602</codigo>
+				<cpf>55791476191</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-22" credito="2010-09-27"
+				num_document="0000003456" numero="0003536863" pagamento="2010-09-22"
+				pagamento_bloqueado="n" registro="2010-09-06" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="50.00"
+				vencimento="2010-09-20">
+				<nome>CRISTIANO ALVES PESSOA</nome>
+				<email>cap771@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353686364</url>
+				<grupo>Meganet</grupo>
+				<codigo>582</codigo>
+				<cpf>80338399100</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-30" num_document="0000003447"
+				numero="0003536864" pagamento="2010-09-27" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-28">
+				<nome>ROBERTO CARLOS DIAS</nome>
+				<email>roberto3444@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353686453</url>
+				<grupo>Meganet</grupo>
+				<codigo>624</codigo>
+				<cpf>35161396172</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-17" num_document="0000003452"
+				numero="0003536865" pagamento="2010-09-14" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-28">
+				<nome>MARCIO FERNANDES</nome>
+				<email>fernandes@ig.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353686541</url>
+				<grupo>Meganet</grupo>
+				<codigo>615</codigo>
+				<cpf>37280430104</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-23" num_document="0000003482"
+				numero="0003536866" pagamento="2010-09-20" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>VALTON DA SILVA</nome>
+				<email>valtonpintor34@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353686630</url>
+				<grupo>Meganet</grupo>
+				<codigo>632</codigo>
+				<cpf>64641252149</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-23" num_document="0000003505"
+				numero="0003536867" pagamento="2010-09-20" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>LUCIANA MOTA FEREIRA</nome>
+				<email>luciana_217@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353686729</url>
+				<grupo>Meganet</grupo>
+				<codigo>610</codigo>
+				<cpf>89596633104</cpf>
+			</cobranca>
+			<cobranca num_document="0000003558" numero="0003536868"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-20">
+				<nome>ELZA DAS GRAÇAS DOS SANTOS</nome>
+				<email>rhayannerayssa@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353686818</url>
+				<grupo>Meganet</grupo>
+				<codigo>670</codigo>
+				<cpf>27930750191</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-06" credito="2010-09-17"
+				num_document="0000003564" numero="0003536869" pagamento="2010-09-14"
+				pagamento_bloqueado="n" registro="2010-09-06" situacao="Paga"
+				taxa_pagamento="3.29" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-09-28">
+				<nome>MIKHAEL GEORGES HANNA</nome>
+				<email>michelnilza@terra.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353686907</url>
+				<grupo>Meganet</grupo>
+				<codigo>695</codigo>
+				<cpf>00340596104</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-17" num_document="0000003623"
+				numero="0003536870" pagamento="2010-09-14" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>DAVI CONCEIÇÃO</nome>
+				<email>david-andreus@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353687078</url>
+				<grupo>Meganet</grupo>
+				<codigo>672</codigo>
+				<cpf>02218007193</cpf>
+			</cobranca>
+			<cobranca num_document="0000003699" numero="0003536874"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-20">
+				<nome>VALDICK CALDAS BRAGA JÚNIOR</nome>
+				<email>junior_caldas@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353687434</url>
+				<grupo>Meganet</grupo>
+				<codigo>633</codigo>
+				<cpf>02716751102</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-17" num_document="0000003704"
+				numero="0003536875" pagamento="2010-09-14" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>TIAGO ARAUJO MESQUITA</nome>
+				<email>tia.guinhoaraujo@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353687522</url>
+				<grupo>Meganet</grupo>
+				<codigo>631</codigo>
+				<cpf>94090173191</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-17" num_document="0000003709"
+				numero="0003536876" pagamento="2010-09-14" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>ERALDO MENEZES NUNES</nome>
+				<email>erika_menezes01@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353687611</url>
+				<grupo>Meganet</grupo>
+				<codigo>590</codigo>
+				<cpf>13974971572</cpf>
+			</cobranca>
+			<cobranca num_document="0000003716" numero="0003536877"
+				pagamento="2010-09-28" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-28">
+				<nome>GLACIMARA TURIAL DE ALMEIDA INACIO</nome>
+				<email>hallsdance1@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353687700</url>
+				<grupo>Meganet</grupo>
+				<codigo>598</codigo>
+				<cpf>90301242100</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-17" num_document="0000003723"
+				numero="0003536878" pagamento="2010-09-14" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>VAGNER FERREIRA DE BRITO</nome>
+				<email>vagner_brito18@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353687899</url>
+				<grupo>Meganet</grupo>
+				<codigo>709</codigo>
+				<cpf>03268186181</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-20" num_document="0000003745"
+				numero="0003536879" pagamento="2010-09-15" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>PAULO MARCELO DE SOUZA E SILVA</nome>
+				<email>marcelomill@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353687988</url>
+				<grupo>Meganet</grupo>
+				<codigo>713</codigo>
+				<cpf>59902299172</cpf>
+			</cobranca>
+			<cobranca abertura="2010-10-16" num_document="0000003751"
+				numero="0003536880" pagamento="2010-09-28" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="50.00" vencimento="2010-09-28">
+				<nome>JOAO BATISTA RIOS FILHO</nome>
+				<email>joaorios26kg@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353688059</url>
+				<grupo>Meganet</grupo>
+				<codigo>712</codigo>
+				<cpf>88988350197</cpf>
+			</cobranca>
+			<cobranca num_document="0000003758" numero="0003536881"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-20">
+				<nome>DEBORAH HELENA LEMOS</nome>
+				<email>deborahlemos@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353688148</url>
+				<grupo>Meganet</grupo>
+				<codigo>645</codigo>
+				<cpf>71095934104</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-20" num_document="0000003773"
+				numero="0003536882" pagamento="2010-09-15" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>MARCO AURELIO PEREIRA DA FROTA</nome>
+				<email>sabrina15hiphop@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353688237</url>
+				<grupo>Meganet</grupo>
+				<codigo>710</codigo>
+				<cpf>35887265191</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-30" num_document="0000003779"
+				numero="0003536883" pagamento="2010-09-27" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-28">
+				<nome>ENERY ELELY DE SOUZA SILVA</nome>
+				<email>enerysilva@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353688326</url>
+				<grupo>Meganet</grupo>
+				<codigo>717</codigo>
+				<cpf>89058399168</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-01" num_document="0000003785"
+				numero="0003536884" pagamento="2010-09-28" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="50.00" vencimento="2010-09-28">
+				<nome>ANA CELIA CONCEIÇAO NEVES</nome>
+				<email>anacelianeves@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353688415</url>
+				<grupo>Meganet</grupo>
+				<codigo>718</codigo>
+				<cpf>72902779100</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-21" num_document="0000003789"
+				numero="0003536885" pagamento="2010-09-16" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>NILMA MARIA ALVES DA LUZ</nome>
+				<email>nilmamariana@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353688503</url>
+				<grupo>Meganet</grupo>
+				<codigo>692</codigo>
+				<cpf>44606044420</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-21" num_document="0000003801"
+				numero="0003536886" pagamento="2010-09-16" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-20">
+				<nome>JOSE VIEIRA DA SILVA NETO</nome>
+				<email>bocao_boca157@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353688692</url>
+				<grupo>Meganet</grupo>
+				<codigo>721</codigo>
+				<cpf>79757790320</cpf>
+			</cobranca>
+			<cobranca num_document="0000003841" numero="0003536888"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-09-20">
+				<nome>CARLOS MARLEN</nome>
+				<email>adenix_irc@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353688870</url>
+				<grupo>Meganet</grupo>
+				<codigo>585</codigo>
+				<cpf>90267052120</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-30" num_document="0000003845"
+				numero="0003536889" pagamento="2010-09-27" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-28">
+				<nome>FABRICIO PINHEIRO GONÇALVES</nome>
+				<email>gon.fabricio@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353688969</url>
+				<grupo>Meganet</grupo>
+				<codigo>647</codigo>
+				<cpf>95511105104</cpf>
+			</cobranca>
+			<cobranca num_document="0000003879" numero="0003536890"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-20">
+				<nome>ELOISIO EUSTAQUIO CAMPOS</nome>
+				<email>eeustaquio@fazenda.gov.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353689030</url>
+				<grupo>Meganet</grupo>
+				<codigo>589</codigo>
+				<cpf>23927720615</cpf>
+			</cobranca>
+			<cobranca num_document="0000003899" numero="0003536891"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-20">
+				<nome>FABIO AURELIO CAMARGO DA SILVA</nome>
+				<email>fabio7373@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353689129</url>
+				<grupo>Meganet</grupo>
+				<codigo>711</codigo>
+				<cpf>81615752153</cpf>
+			</cobranca>
+			<cobranca num_document="0000003982" numero="0003536892"
+				pagamento="2010-09-28" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-28">
+				<nome>GAN CRISTAL PRESENTES LTDA</nome>
+				<email>luizamaral50@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353689218</url>
+				<grupo>Meganet</grupo>
+				<codigo>732</codigo>
+				<cnpj>09642488000125</cnpj>
+			</cobranca>
+			<cobranca credito="2010-09-30" num_document="0000003988"
+				numero="0003536893" pagamento="2010-09-27" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-28">
+				<nome>ALCIR RODRIGUES BARROS</nome>
+				<email>alcirrb@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353689307</url>
+				<grupo>Meganet</grupo>
+				<codigo>644</codigo>
+				<cpf>85415642153</cpf>
+			</cobranca>
+			<cobranca num_document="0000004005" numero="0003536894"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-20">
+				<nome>DABY TABORGA</nome>
+				<email>dabytaborga2@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353689496</url>
+				<grupo>Meganet</grupo>
+				<codigo>646</codigo>
+				<cpf>73856304134</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-21" num_document="0000003510"
+				numero="0003536895" pagamento="2010-09-16" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-28">
+				<nome>VANILZA ROSA DOS SANTOS</nome>
+				<email>vanilzasantos@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353689584</url>
+				<grupo>Meganet</grupo>
+				<codigo>637</codigo>
+				<cpf>83482725187</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-20" num_document="0000004072"
+				numero="0003536897" pagamento="2010-09-15" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="31.67" valor_pago="25.34" vencimento="2010-09-20">
+				<nome>ELENICE VIANA DA SILVA</nome>
+				<email>maeyaradani@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000353689762</url>
+				<grupo>Meganet</grupo>
+				<codigo>741</codigo>
+				<cpf>85976741134</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-22" num_document="0000003666"
+				numero="0003540554" pagamento="2010-09-17" pagamento_bloqueado="n"
+				registro="2010-09-06" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-09-28">
+				<nome>LUIZ ANTONIO DA SILVA AMARAL</nome>
+				<email>luizamaral50@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000354055427</url>
+				<grupo>Meganet</grupo>
+				<codigo>702</codigo>
+				<cpf>86148677512</cpf>
+			</cobranca>
+			<cobranca num_document="0000003792" numero="0003540677"
+				pagamento="2010-09-20" pagamento_bloqueado="n" registro="2010-09-06"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-09-20">
+				<nome>ROBERTA RODRIGUES TORRES</nome>
+				<email>robertatorres75@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000354067744</url>
+				<grupo>Meganet</grupo>
+				<codigo>693</codigo>
+				<cpf>52317253745</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-07" num_document="0000003805"
+				numero="0003542439" pagamento="2010-10-20" pagamento_bloqueado="n"
+				registro="2010-09-07" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="10.00" vencimento="2010-10-08">
+				<nome>EDNEUZA DOS SANTOS</nome>
+				<email>wendel.m.s_@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000354243992</url>
+				<grupo>Meganet</grupo>
+				<codigo>722</codigo>
+				<cpf>72088800182</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-13" num_document="0000004062"
+				numero="0003559041" pagamento="2010-10-07" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="63.33" valor_pago="50.67" vencimento="2010-10-08">
+				<nome>FRANCIACA AILZA LEITE DA SILVA</nome>
+				<email>thaigo33@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355904132</url>
+				<grupo>Meganet</grupo>
+				<codigo>737</codigo>
+				<cpf>87490544491</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-21" credito="2010-10-13"
+				num_document="0000003957" numero="0003559042" pagamento="2010-10-07"
+				pagamento_bloqueado="n" registro="2010-09-13" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-10-08">
+				<nome>MARIA LUCIA COSTA DESA BOMFIM</nome>
+				<email>lucia18@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355904221</url>
+				<grupo>Meganet</grupo>
+				<codigo>728</codigo>
+				<cpf>22956646249</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-05" num_document="0000003461"
+				numero="0003559043" pagamento="2010-09-30" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>BENEDICTO OCTAVIO LISBOA</nome>
+				<email>blisboa@uol.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355904310</url>
+				<grupo>Meganet</grupo>
+				<codigo>584</codigo>
+				<cpf>07419643172</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-07" num_document="0000003462"
+				numero="0003559044" pagamento="2010-10-04" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>EDINAR GONÇALVES DE SOUZA</nome>
+				<email>edna-sabrina96@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355904409</url>
+				<grupo>Meganet</grupo>
+				<codigo>592</codigo>
+				<cpf>16580175877</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-08" num_document="0000003388"
+				numero="0003559045" pagamento="2010-10-05" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>LEONICE INES ANTONIO ORNELAS</nome>
+				<email>lucas18vidaloka@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355904597</url>
+				<grupo>Meganet</grupo>
+				<codigo>639</codigo>
+				<cpf>54028272653</cpf>
+			</cobranca>
+			<cobranca num_document="0000003466" numero="0003559046"
+				pagamento="2010-10-08" pagamento_bloqueado="n" registro="2010-09-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-10-08">
+				<nome>NILSA CRISTINA DA SILVA</nome>
+				<email>nilsa.cris@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355904686</url>
+				<grupo>Meganet</grupo>
+				<codigo>675</codigo>
+				<cpf>05981492104</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-11" num_document="0000003476"
+				numero="0003559047" pagamento="2010-10-06" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>MARTA DO NASCIMENTO</nome>
+				<email>pd.marta@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355904775</url>
+				<grupo>Meganet</grupo>
+				<codigo>655</codigo>
+				<cpf>52398013120</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-13" num_document="0000003490"
+				numero="0003559048" pagamento="2010-10-07" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>SONIA MARIA FERREIRA SOUSA</nome>
+				<email>sousasonya@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355904864</url>
+				<grupo>Meganet</grupo>
+				<codigo>630</codigo>
+				<cpf>80810640104</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-06" num_document="0000003548"
+				numero="0003559050" pagamento="2010-10-01" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>SUNAMI GRACAS DE FARIAS CORREIA</nome>
+				<email>sunami.c@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355905015</url>
+				<grupo>Meganet</grupo>
+				<codigo>657</codigo>
+				<cpf>37358170172</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-13" num_document="0000003508"
+				numero="0003559051" pagamento="2010-10-07" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>CARLOS COUTINHO BRITO JUNIOR</nome>
+				<email>carlo_coutinho.junior@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355905104</url>
+				<grupo>Meganet</grupo>
+				<codigo>586</codigo>
+				<cpf>11868953149</cpf>
+			</cobranca>
+			<cobranca num_document="0000003535" numero="0003559052"
+				pagamento="2010-10-08" pagamento_bloqueado="n" registro="2010-09-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-10-08">
+				<nome>EUGENIO OLIVEIRA DA SILVA</nome>
+				<email>eugeniopantuva@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355905293</url>
+				<grupo>Meganet</grupo>
+				<codigo>591</codigo>
+				<cpf>55353924134</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-07" num_document="0000003538"
+				numero="0003559053" pagamento="2010-10-04" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>MARGARETHE APARECIDA SOEIRA</nome>
+				<email>margarethea92@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355905382</url>
+				<grupo>Meganet</grupo>
+				<codigo>611</codigo>
+				<cpf>31881769100</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-07" num_document="0000003540"
+				numero="0003559054" pagamento="2010-10-04" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>FERNANDO WEMERSO CASTRO CAMPOS</nome>
+				<email>fernadin_tifu@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355905471</url>
+				<grupo>Meganet</grupo>
+				<codigo>593</codigo>
+				<cpf>02846899126</cpf>
+			</cobranca>
+			<cobranca num_document="0000003542" numero="0003559055"
+				pagamento="2010-10-08" pagamento_bloqueado="n" registro="2010-09-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-08">
+				<nome>RENATO PEREIRA DE ALMEIDA</nome>
+				<email>renatopereiradealmeida@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355905569</url>
+				<grupo>Meganet</grupo>
+				<codigo>622</codigo>
+				<cpf>00037579193</cpf>
+			</cobranca>
+			<cobranca num_document="0000003543" numero="0003559056"
+				pagamento="2010-10-08" pagamento_bloqueado="n" registro="2010-09-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-08">
+				<nome>SIDERVAL CRUZ PIMENTEL JUNIOR</nome>
+				<email>siderval.junior@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355905658</url>
+				<grupo>Meganet</grupo>
+				<codigo>627</codigo>
+				<cpf>72385049104</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-07" num_document="0000003546"
+				numero="0003559057" pagamento="2010-10-04" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>MARLUCE SOUSA NUNES</nome>
+				<email>line_baby13@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355905747</url>
+				<grupo>Meganet</grupo>
+				<codigo>617</codigo>
+				<cpf>69730431191</cpf>
+			</cobranca>
+			<cobranca abertura="2010-10-07" credito="2010-10-13"
+				num_document="0000003557" numero="0003559058" pagamento="2010-10-07"
+				pagamento_bloqueado="n" registro="2010-09-13" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-10-08">
+				<nome>MARCIO ROBERTO DE SOUZA</nome>
+				<email>marcio.souza@eln.gov.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355905836</url>
+				<grupo>Meganet</grupo>
+				<codigo>616</codigo>
+				<cpf>00511133685</cpf>
+			</cobranca>
+			<cobranca num_document="0000003610" numero="0003559059"
+				pagamento="2010-10-08" pagamento_bloqueado="n" registro="2010-09-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-08">
+				<nome>MARIO KIOSHI NAGASHIMA</nome>
+				<email>mariokioshi@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355905925</url>
+				<grupo>Meganet</grupo>
+				<codigo>654</codigo>
+				<cpf>55694110897</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-13" num_document="0000003615"
+				numero="0003559060" pagamento="2010-10-07" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>ANTONIO RIBEIRO DE FREITAS</nome>
+				<email>toninho.rep@ibest.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355906096</url>
+				<grupo>Meganet</grupo>
+				<codigo>578</codigo>
+				<cpf>06115390630</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-13" num_document="0000003673"
+				numero="0003559061" pagamento="2010-10-07" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>ALEXANDRE ALVES DE BARROS</nome>
+				<email>daniloalves1980@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355906185</url>
+				<grupo>Meganet</grupo>
+				<codigo>703</codigo>
+				<cpf>02154106102</cpf>
+			</cobranca>
+			<cobranca num_document="0000003680" numero="0003559062"
+				pagamento="2010-10-08" pagamento_bloqueado="n" registro="2010-09-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-08">
+				<nome>DALVA LOUBACH MARTINS</nome>
+				<email>adalvaverde@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355906274</url>
+				<grupo>Meganet</grupo>
+				<codigo>706</codigo>
+				<cpf>79411495753</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-13" num_document="0000003696"
+				numero="0003559063" pagamento="2010-10-07" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>MARLENE RODRIGUES DE OLIVEIRA</nome>
+				<email>marleneraikka@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355906363</url>
+				<grupo>Meganet</grupo>
+				<codigo>673</codigo>
+				<cpf>18621180197</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-14" num_document="0000003741"
+				numero="0003559064" pagamento="2010-10-08" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="50.00" vencimento="2010-10-08">
+				<nome>ANGELICA RITA PEREIRA</nome>
+				<email>angelicar_pereira@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355906452</url>
+				<grupo>Meganet</grupo>
+				<codigo>577</codigo>
+				<cpf>01824138105</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-06" num_document="0000003768"
+				numero="0003559065" pagamento="2010-10-01" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>WELLINGTON LUIZ RIBEIRO</nome>
+				<email>18ribeiro18@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355906540</url>
+				<grupo>Meganet</grupo>
+				<codigo>714</codigo>
+				<cpf>47686839168</cpf>
+			</cobranca>
+			<cobranca credito="2010-09-27" num_document="0000003813"
+				numero="0003559066" pagamento="2010-09-22" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.29"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>ELCO DAGUIMAR DA SILVA</nome>
+				<email>garetepires@bol.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355906639</url>
+				<grupo>Meganet</grupo>
+				<codigo>723</codigo>
+				<cpf>11995564168</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-13" num_document="0000003857"
+				numero="0003559067" pagamento="2010-10-07" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>FRANCISCO ANDRADE RODRIGUES</nome>
+				<email>franciscoandraderodrigues@uol.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355906728</url>
+				<grupo>Meganet</grupo>
+				<codigo>595</codigo>
+				<cpf>20141866853</cpf>
+			</cobranca>
+			<cobranca num_document="0000003876" numero="0003559068"
+				pagamento="2010-10-08" pagamento_bloqueado="n" registro="2010-09-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-10-08">
+				<nome>ANA KARINA PEREIRA DE SOUZA</nome>
+				<email>adri.ely22@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355906817</url>
+				<grupo>Meganet</grupo>
+				<codigo>683</codigo>
+				<cpf>71321837534</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-15" num_document="0000003880"
+				numero="0003559069" pagamento="2010-10-08" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>HAROLDO JOSE DA CUNHA</nome>
+				<email>haroldocunha23@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355906906</url>
+				<grupo>Meganet</grupo>
+				<codigo>665</codigo>
+				<cpf>24470872172</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-13" num_document="0000003893"
+				numero="0003559070" pagamento="2010-10-07" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>NOELIO ALVES FERREIRA</nome>
+				<email>nafj@ig.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355907077</url>
+				<grupo>Meganet</grupo>
+				<codigo>619</codigo>
+				<cpf>01799419177</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-14" num_document="0000003922"
+				numero="0003559071" pagamento="2010-10-08" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>THAYANE ALVES DOS SANTOS</nome>
+				<email>thayanealves@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355907166</url>
+				<grupo>Meganet</grupo>
+				<codigo>724</codigo>
+				<cpf>01205899154</cpf>
+			</cobranca>
+			<cobranca abertura="2010-10-03" num_document="0000003977"
+				numero="0003559072" pagamento="2010-10-08" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>SANDRO PACHECO LIMA</nome>
+				<email>sandropacheco@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355907255</url>
+				<grupo>Meganet</grupo>
+				<codigo>626</codigo>
+				<cpf>17874184807</cpf>
+			</cobranca>
+			<cobranca abertura="2010-10-07" credito="2010-10-13"
+				num_document="0000003999" numero="0003559073" pagamento="2010-10-07"
+				pagamento_bloqueado="n" registro="2010-09-13" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-10-08">
+				<nome>LEONIO MATOS GOMES</nome>
+				<email>leonio.matos@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355907344</url>
+				<grupo>Meganet</grupo>
+				<codigo>734</codigo>
+				<cpf>02816280764</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-20" num_document="0000004011"
+				numero="0003559074" pagamento="2010-10-08" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>LEONARDO TEIXEIRA DE FARIAS</nome>
+				<email>leoteixeira@correioweb.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355907433</url>
+				<grupo>Meganet</grupo>
+				<codigo>609</codigo>
+				<cpf>37185837120</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-20" credito="2010-11-24"
+				num_document="0000003864" numero="0003559075" pagamento="2010-11-19"
+				pagamento_bloqueado="n" registro="2010-09-13" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="50.00"
+				vencimento="2010-10-08">
+				<nome>IVONE MARIA ARAUJO SOARES</nome>
+				<email>natal.ivone01@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355907521</url>
+				<grupo>Meganet</grupo>
+				<codigo>650</codigo>
+				<cpf>55060986691</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-20" num_document="0000004077"
+				numero="0003559076" pagamento="2010-10-08" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="56.67" valor_pago="40.00" vencimento="2010-10-08">
+				<nome>FABRICIO DE OLIVEIRA PIMENTA</nome>
+				<email>fabricio.oliveira30@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000355907610</url>
+				<grupo>Meganet</grupo>
+				<codigo>742</codigo>
+				<cpf>84947691115</cpf>
+			</cobranca>
+			<cobranca num_document="0000003711" numero="0003560492"
+				pagamento="2010-09-28" pagamento_bloqueado="n" registro="2010-09-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-09-28">
+				<nome>GLACIMARA TURIAL DE ALMEIDA INACIO</nome>
+				<email>hallsdance1@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000356049252</url>
+				<grupo>Meganet</grupo>
+				<codigo>598</codigo>
+				<cpf>90301242100</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-20" num_document="0000003712"
+				numero="0003560494" pagamento="2010-09-28" pagamento_bloqueado="n"
+				registro="2010-09-13" situacao="Paga" taxa_pagamento="0.00"
+				tipo_pagamento="S" valor="50.00" valor_pago="50.00" vencimento="2010-09-28">
+				<nome>GLACIMARA TURIAL DE ALMEIDA INACIO</nome>
+				<email>hallsdance1@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000356049430</url>
+				<grupo>Meganet</grupo>
+				<codigo>598</codigo>
+				<cpf>90301242100</cpf>
+			</cobranca>
+			<cobranca abertura="2010-09-15" credito="2010-10-11"
+				num_document="0000003686" numero="0003563542" pagamento="2010-10-06"
+				pagamento_bloqueado="n" registro="2010-09-14" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-10-08">
+				<nome>NEIVA GLORIA OLIVEIRA VITORINO</nome>
+				<email>hugovitorino18@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000356354297</url>
+				<grupo>Meganet</grupo>
+				<codigo>707</codigo>
+				<cpf>26261776601</cpf>
+			</cobranca>
+			<cobranca num_document="0000003198" numero="0003595431"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-09-22"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-20">
+				<nome>CRISTIANO ALVES PESSOA</nome>
+				<email>cap771@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359543159</url>
+				<grupo>Meganet</grupo>
+				<codigo>582</codigo>
+				<cpf>80338399100</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-22" num_document="0000003963"
+				numero="0003598877" pagamento="2010-10-19" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>SARAH PEREIRA SANTOS BRANDAO</nome>
+				<email>sarinhagat123@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359887705</url>
+				<grupo>Meganet</grupo>
+				<codigo>676</codigo>
+				<cpf>01911939173</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-19" num_document="0000003967"
+				numero="0003598878" pagamento="2010-10-14" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>GEOVANE VELOSO COSTA</nome>
+				<email>geovanecosta2010@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359887894</url>
+				<grupo>Meganet</grupo>
+				<codigo>730</codigo>
+				<cpf>93008490182</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-19" num_document="0000003943"
+				numero="0003598879" pagamento="2010-10-14" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>JOSE BATISTA FILHO</nome>
+				<email>via.bat@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359887983</url>
+				<grupo>Meganet</grupo>
+				<codigo>729</codigo>
+				<cpf>22521658120</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-13" num_document="0000003469"
+				numero="0003598880" pagamento="2010-10-07" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>ANIZIO OLIVEIRA DA SILVA</nome>
+				<email>anizioajana@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359888054</url>
+				<grupo>Meganet</grupo>
+				<codigo>574</codigo>
+				<cpf>46229841134</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-05" num_document="0000003486"
+				numero="0003598881" pagamento="2010-09-30" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>GIOVANI VILELA SALERNO</nome>
+				<email>giovanivilela@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359888143</url>
+				<grupo>Meganet</grupo>
+				<codigo>597</codigo>
+				<cpf>95053050104</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-15" num_document="0000003487"
+				numero="0003598882" pagamento="2010-10-11" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>SERGIO ROBERTO BARBOSA ONORIO</nome>
+				<email>lu_crist@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359888232</url>
+				<grupo>Meganet</grupo>
+				<codigo>686</codigo>
+				<cpf>90353102172</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-22" num_document="0000003504"
+				numero="0003598883" pagamento="2010-10-19" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>CRISTIANO ALVES PESSOA</nome>
+				<email>cap771@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359888321</url>
+				<grupo>Meganet</grupo>
+				<codigo>582</codigo>
+				<cpf>80338399100</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-18" num_document="0000003507"
+				numero="0003598884" pagamento="2010-10-13" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>ALEX MOTA LACERDA</nome>
+				<email>lacerda_df@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359888410</url>
+				<grupo>Meganet</grupo>
+				<codigo>681</codigo>
+				<cpf>86905791172</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-25" num_document="0000003526"
+				numero="0003598885" pagamento="2010-10-20" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="50.00" vencimento="2010-10-20">
+				<nome>CLEUSA ROSA DE JESUS</nome>
+				<email>cleusa_rjesus@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359888508</url>
+				<grupo>Meganet</grupo>
+				<codigo>581</codigo>
+				<cpf>23905700115</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-22" num_document="0000003582"
+				numero="0003598886" pagamento="2010-10-19" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>VALTON DA SILVA</nome>
+				<email>valtonpintor34@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359888697</url>
+				<grupo>Meganet</grupo>
+				<codigo>632</codigo>
+				<cpf>64641252149</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-21" num_document="0000003584"
+				numero="0003598887" pagamento="2010-10-18" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>LUCIANA MOTA FEREIRA</nome>
+				<email>luciana_217@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359888786</url>
+				<grupo>Meganet</grupo>
+				<codigo>610</codigo>
+				<cpf>89596633104</cpf>
+			</cobranca>
+			<cobranca num_document="0000003587" numero="0003598888"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-09-23"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-20">
+				<nome>ELZA DAS GRAÇAS DOS SANTOS</nome>
+				<email>rhayannerayssa@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359888875</url>
+				<grupo>Meganet</grupo>
+				<codigo>670</codigo>
+				<cpf>27930750191</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-20" num_document="0000003694"
+				numero="0003598889" pagamento="2010-10-15" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>DAVI CONCEIÇÃO</nome>
+				<email>david-andreus@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359888964</url>
+				<grupo>Meganet</grupo>
+				<codigo>672</codigo>
+				<cpf>02218007193</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-13" num_document="0000003724"
+				numero="0003598890" pagamento="2010-10-07" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>VAGNER FERREIRA DE BRITO</nome>
+				<email>vagner_brito18@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359889035</url>
+				<grupo>Meganet</grupo>
+				<codigo>709</codigo>
+				<cpf>03268186181</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-20" num_document="0000003733"
+				numero="0003598891" pagamento="2010-10-15" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>ERALDO MENEZES NUNES</nome>
+				<email>erika_menezes01@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359889124</url>
+				<grupo>Meganet</grupo>
+				<codigo>590</codigo>
+				<cpf>13974971572</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-22" num_document="0000003746"
+				numero="0003598892" pagamento="2010-10-19" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>PAULO MARCELO DE SOUZA E SILVA</nome>
+				<email>marcelomill@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359889213</url>
+				<grupo>Meganet</grupo>
+				<codigo>713</codigo>
+				<cpf>59902299172</cpf>
+			</cobranca>
+			<cobranca abertura="2010-10-13" credito="2010-10-18"
+				num_document="0000003762" numero="0003598893" pagamento="2010-10-13"
+				pagamento_bloqueado="n" registro="2010-09-23" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-10-20">
+				<nome>TITO DIAS BAISTA</nome>
+				<email>titodbatista@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359889302</url>
+				<grupo>Meganet</grupo>
+				<codigo>685</codigo>
+				<cpf>01786582864</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-14" num_document="0000003774"
+				numero="0003598894" pagamento="2010-10-08" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>MARCO AURELIO PEREIRA DA FROTA</nome>
+				<email>sabrina15hiphop@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359889491</url>
+				<grupo>Meganet</grupo>
+				<codigo>710</codigo>
+				<cpf>35887265191</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-22" num_document="0000003802"
+				numero="0003598895" pagamento="2010-10-19" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>JOSE VIEIRA DA SILVA NETO</nome>
+				<email>bocao_boca157@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359889589</url>
+				<grupo>Meganet</grupo>
+				<codigo>721</codigo>
+				<cpf>79757790320</cpf>
+			</cobranca>
+			<cobranca num_document="0000003842" numero="0003598896"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-09-23"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-20">
+				<nome>CARLOS MARLEN</nome>
+				<email>adenix_irc@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359889678</url>
+				<grupo>Meganet</grupo>
+				<codigo>585</codigo>
+				<cpf>90267052120</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-14" num_document="0000003856"
+				numero="0003598897" pagamento="2010-10-08" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>TIAGO ARAUJO MESQUITA</nome>
+				<email>tia.guinhoaraujo@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359889767</url>
+				<grupo>Meganet</grupo>
+				<codigo>631</codigo>
+				<cpf>94090173191</cpf>
+			</cobranca>
+			<cobranca num_document="0000003867" numero="0003598898"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-09-23"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-10-20">
+				<nome>ROBERTA RODRIGUES TORRES</nome>
+				<email>robertatorres75@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359889856</url>
+				<grupo>Meganet</grupo>
+				<codigo>693</codigo>
+				<cpf>52317253745</cpf>
+			</cobranca>
+			<cobranca num_document="0000003873" numero="0003598899"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-09-23"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-20">
+				<nome>DEBORAH HELENA LEMOS</nome>
+				<email>deborahlemos@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359889945</url>
+				<grupo>Meganet</grupo>
+				<codigo>645</codigo>
+				<cpf>71095934104</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-22" num_document="0000003875"
+				numero="0003598900" pagamento="2010-10-19" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>NILMA MARIA ALVES DA LUZ</nome>
+				<email>nilmamariana@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359890014</url>
+				<grupo>Meganet</grupo>
+				<codigo>692</codigo>
+				<cpf>44606044420</cpf>
+			</cobranca>
+			<cobranca num_document="0000003878" numero="0003598901"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-09-23"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-20">
+				<nome>VALDICK CALDAS BRAGA JÚNIOR</nome>
+				<email>junior_caldas@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359890103</url>
+				<grupo>Meganet</grupo>
+				<codigo>633</codigo>
+				<cpf>02716751102</cpf>
+			</cobranca>
+			<cobranca num_document="0000003900" numero="0003598902"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-09-23"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="1.00" vencimento="2010-10-20">
+				<nome>FABIO AURELIO CAMARGO DA SILVA</nome>
+				<email>fabio7373@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359890292</url>
+				<grupo>Meganet</grupo>
+				<codigo>711</codigo>
+				<cpf>81615752153</cpf>
+			</cobranca>
+			<cobranca num_document="0000003985" numero="0003598903"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-09-23"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-10-20">
+				<nome>JAQUELINE DE LIMA ARAUJO</nome>
+				<email>trezedesetembro@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359890381</url>
+				<grupo>Meganet</grupo>
+				<codigo>652</codigo>
+				<cpf>00497249162</cpf>
+			</cobranca>
+			<cobranca num_document="0000004006" numero="0003598904"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-09-23"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-20">
+				<nome>DABY TABORGA</nome>
+				<email>dabytaborga2@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359890470</url>
+				<grupo>Meganet</grupo>
+				<codigo>646</codigo>
+				<cpf>73856304134</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-22" num_document="0000004073"
+				numero="0003598907" pagamento="2010-10-19" pagamento_bloqueado="n"
+				registro="2010-09-23" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-20">
+				<nome>ELENICE VIANA DA SILVA</nome>
+				<email>maeyaradani@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359890746</url>
+				<grupo>Meganet</grupo>
+				<codigo>741</codigo>
+				<cpf>85976741134</cpf>
+			</cobranca>
+			<cobranca num_document="0000003807" numero="0003598908"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-09-23"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="1.00" vencimento="2010-10-20">
+				<nome>EDNEUZA DOS SANTOS</nome>
+				<email>monteiro_vanderli@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000359890835</url>
+				<grupo>Meganet</grupo>
+				<codigo>722</codigo>
+				<cpf>72088800182</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-22" num_document="0000004140"
+				numero="0003684711" pagamento="2010-10-19" pagamento_bloqueado="n"
+				registro="2010-10-10" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="55.00" valor_pago="44.00" vencimento="2010-10-20">
+				<nome>LUIZ CESAR ROCHA</nome>
+				<email>rochayoda@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368471183</url>
+				<grupo>Meganet</grupo>
+				<codigo>749</codigo>
+				<cpf>00087623170</cpf>
+			</cobranca>
+			<cobranca num_document="0000004128" numero="0003684712"
+				pagamento="2010-10-20" pagamento_bloqueado="n" registro="2010-10-10"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-20">
+				<nome>MARCELO RODRIGUES REIS</nome>
+				<email>marceloreisveg@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368471272</url>
+				<grupo>Meganet</grupo>
+				<codigo>614</codigo>
+				<cpf>17622096830</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-25" num_document="0000003598"
+				numero="0003689677" pagamento="2010-10-20" pagamento_bloqueado="n"
+				registro="2010-10-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-28">
+				<nome>MIKHAEL GEORGES HANNA</nome>
+				<email>michelnilza@terra.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368967790</url>
+				<grupo>Meganet</grupo>
+				<codigo>695</codigo>
+				<cpf>00340596104</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-28" num_document="0000003933"
+				numero="0003689678" pagamento="2010-10-25" pagamento_bloqueado="n"
+				registro="2010-10-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-28">
+				<nome>FABRICIO PINHEIRO GONÇALVES</nome>
+				<email>gon.fabricio@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368967889</url>
+				<grupo>Meganet</grupo>
+				<codigo>647</codigo>
+				<cpf>95511105104</cpf>
+			</cobranca>
+			<cobranca abertura="2010-10-26" credito="2010-10-29"
+				num_document="0000003450" numero="0003689680" pagamento="2010-10-26"
+				pagamento_bloqueado="n" registro="2010-10-13" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-10-28">
+				<nome>ELIZABETE MOREIRA DA SILVA</nome>
+				<email>betymoreira@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368968049</url>
+				<grupo>Meganet</grupo>
+				<codigo>588</codigo>
+				<cpf>01412149100</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-29" num_document="0000003451"
+				numero="0003689681" pagamento="2010-10-26" pagamento_bloqueado="n"
+				registro="2010-10-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-28">
+				<nome>IVONICE DE QUEIROZ SILVA</nome>
+				<email>nice_queiroz@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368968138</url>
+				<grupo>Meganet</grupo>
+				<codigo>602</codigo>
+				<cpf>55791476191</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-29" num_document="0000003453"
+				numero="0003689682" pagamento="2010-10-26" pagamento_bloqueado="n"
+				registro="2010-10-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-28">
+				<nome>ROBERTO CARLOS DIAS</nome>
+				<email>roberto3444@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368968227</url>
+				<grupo>Meganet</grupo>
+				<codigo>624</codigo>
+				<cpf>35161396172</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-26" num_document="0000003489"
+				numero="0003689684" pagamento="2010-10-21" pagamento_bloqueado="n"
+				registro="2010-10-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-28">
+				<nome>MARCIO FERNANDES</nome>
+				<email>fernandes@ig.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368968405</url>
+				<grupo>Meganet</grupo>
+				<codigo>615</codigo>
+				<cpf>37280430104</cpf>
+			</cobranca>
+			<cobranca num_document="0000003667" numero="0003689685"
+				pagamento="2010-10-28" pagamento_bloqueado="n" registro="2010-10-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-28">
+				<nome>LUIZ ANTONIO DA SILVA AMARAL</nome>
+				<email>luizamaral50@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368968593</url>
+				<grupo>Meganet</grupo>
+				<codigo>702</codigo>
+				<cpf>86148677512</cpf>
+			</cobranca>
+			<cobranca num_document="0000003752" numero="0003689689"
+				pagamento="2010-10-28" pagamento_bloqueado="n" registro="2010-10-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-28">
+				<nome>JOAO BATISTA RIOS FILHO</nome>
+				<email>joaorios26kg@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368968959</url>
+				<grupo>Meganet</grupo>
+				<codigo>712</codigo>
+				<cpf>88988350197</cpf>
+			</cobranca>
+			<cobranca credito="2010-10-27" num_document="0000003755"
+				numero="0003689691" pagamento="2010-10-22" pagamento_bloqueado="n"
+				registro="2010-10-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-10-28">
+				<nome>VANILZA ROSA DOS SANTOS</nome>
+				<email>vanilzasantos@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368969119</url>
+				<grupo>Meganet</grupo>
+				<codigo>637</codigo>
+				<cpf>83482725187</cpf>
+			</cobranca>
+			<cobranca num_document="0000003780" numero="0003689692"
+				pagamento="2010-10-28" pagamento_bloqueado="n" registro="2010-10-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-28">
+				<nome>ENERY ELELY DE SOUZA SILVA</nome>
+				<email>enerysilva@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368969208</url>
+				<grupo>Meganet</grupo>
+				<codigo>717</codigo>
+				<cpf>89058399168</cpf>
+			</cobranca>
+			<cobranca num_document="0000003786" numero="0003689693"
+				pagamento="2010-10-28" pagamento_bloqueado="n" registro="2010-10-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-28">
+				<nome>ANA CELIA CONCEIÇAO NEVES</nome>
+				<email>anacelianeves@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368969397</url>
+				<grupo>Meganet</grupo>
+				<codigo>718</codigo>
+				<cpf>72902779100</cpf>
+			</cobranca>
+			<cobranca num_document="0000003818" numero="0003689694"
+				pagamento="2010-10-28" pagamento_bloqueado="n" registro="2010-10-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-28">
+				<nome>IZABELLA SOARES SANTOS</nome>
+				<email>bella25.bella@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368969486</url>
+				<grupo>Meganet</grupo>
+				<codigo>651</codigo>
+				<cpf>72719982172</cpf>
+			</cobranca>
+			<cobranca num_document="0000003983" numero="0003689695"
+				pagamento="2010-10-28" pagamento_bloqueado="n" registro="2010-10-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-10-28">
+				<nome>GAN CRISTAL PRESENTES LTDA</nome>
+				<email>luizamaral50@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368969574</url>
+				<grupo>Meganet</grupo>
+				<codigo>732</codigo>
+				<cnpj>09642488000125</cnpj>
+			</cobranca>
+			<cobranca num_document="0000003989" numero="0003689696"
+				pagamento="2010-10-28" pagamento_bloqueado="n" registro="2010-10-13"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-10-28">
+				<nome>ALCIR RODRIGUES BARROS</nome>
+				<email>alcirrb@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368969663</url>
+				<grupo>Meganet</grupo>
+				<codigo>644</codigo>
+				<cpf>85415642153</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-01" num_document="0000004164"
+				numero="0003689697" pagamento="2010-10-27" pagamento_bloqueado="n"
+				registro="2010-10-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="49.00" valor_pago="39.20" vencimento="2010-10-28">
+				<nome>ADONIA</nome>
+				<email>cenyewanderson@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000368969752</url>
+				<grupo>Meganet</grupo>
+				<codigo>750</codigo>
+				<cpf>31010598104</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-11" num_document="0000003991"
+				numero="0003723480" pagamento="2010-11-08" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>THAYANE ALVES DOS SANTOS</nome>
+				<email>thayanealves@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372348033</url>
+				<grupo>Meganet</grupo>
+				<codigo>724</codigo>
+				<cpf>01205899154</cpf>
+			</cobranca>
+			<cobranca abertura="2010-10-25" credito="2010-11-08"
+				num_document="0000003932" numero="0003723481" pagamento="2010-11-03"
+				pagamento_bloqueado="n" registro="2010-10-24" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-11-08">
+				<nome>NOELIO ALVES FERREIRA</nome>
+				<email>nafj@ig.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372348122</url>
+				<grupo>Meganet</grupo>
+				<codigo>619</codigo>
+				<cpf>01799419177</cpf>
+			</cobranca>
+			<cobranca abertura="2010-11-11" credito="2010-11-17"
+				num_document="0000003939" numero="0003723482" pagamento="2010-11-11"
+				pagamento_bloqueado="n" registro="2010-10-24" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="50.00"
+				vencimento="2010-11-08">
+				<nome>IVONE MARIA ARAUJO SOARES</nome>
+				<email>natal.ivone01@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372348211</url>
+				<grupo>Meganet</grupo>
+				<codigo>650</codigo>
+				<cpf>55060986691</cpf>
+			</cobranca>
+			<cobranca abertura="2010-10-24" credito="2010-11-05"
+				num_document="0000003958" numero="0003723483" pagamento="2010-11-01"
+				pagamento_bloqueado="n" registro="2010-10-24" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-11-08">
+				<nome>MARIA LUCIA COSTA DESA BOMFIM</nome>
+				<email>lucia18@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372348300</url>
+				<grupo>Meganet</grupo>
+				<codigo>728</codigo>
+				<cpf>22956646249</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-05" num_document="0000003555"
+				numero="0003723484" pagamento="2010-11-01" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>BENEDICTO OCTAVIO LISBOA</nome>
+				<email>blisboa@uol.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372348499</url>
+				<grupo>Meganet</grupo>
+				<codigo>584</codigo>
+				<cpf>07419643172</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-09" num_document="0000003465"
+				numero="0003723485" pagamento="2010-11-04" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>LEONICE INES ANTONIO ORNELAS</nome>
+				<email>lucas18vidaloka@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372348587</url>
+				<grupo>Meganet</grupo>
+				<codigo>639</codigo>
+				<cpf>54028272653</cpf>
+			</cobranca>
+			<cobranca num_document="0000003549" numero="0003723486"
+				pagamento="2010-11-08" pagamento_bloqueado="n" registro="2010-10-24"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-11-08">
+				<nome>NILSA CRISTINA DA SILVA</nome>
+				<email>nilsa.cris@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372348676</url>
+				<grupo>Meganet</grupo>
+				<codigo>675</codigo>
+				<cpf>05981492104</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-11" num_document="0000003539"
+				numero="0003723488" pagamento="2010-11-08" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>MARTA DO NASCIMENTO</nome>
+				<email>pd.marta@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372348854</url>
+				<grupo>Meganet</grupo>
+				<codigo>655</codigo>
+				<cpf>52398013120</cpf>
+			</cobranca>
+			<cobranca num_document="0000003550" numero="0003723489"
+				pagamento="2010-11-08" pagamento_bloqueado="n" registro="2010-10-24"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-11-08">
+				<nome>ADAM ALVES DE PADUA</nome>
+				<email>adampadua@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372348943</url>
+				<grupo>Meganet</grupo>
+				<codigo>682</codigo>
+				<cpf>02425802118</cpf>
+			</cobranca>
+			<cobranca num_document="0000003585" numero="0003723490"
+				pagamento="2010-11-08" pagamento_bloqueado="n" registro="2010-10-24"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-11-08">
+				<nome>SONIA MARIA FERREIRA SOUSA</nome>
+				<email>sousasonya@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372349014</url>
+				<grupo>Meganet</grupo>
+				<codigo>630</codigo>
+				<cpf>80810640104</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-04" num_document="0000003607"
+				numero="0003723491" pagamento="2010-10-29" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>MARGARETHE APARECIDA SOEIRA</nome>
+				<email>margarethea92@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372349103</url>
+				<grupo>Meganet</grupo>
+				<codigo>611</codigo>
+				<cpf>31881769100</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-09" num_document="0000003612"
+				numero="0003723492" pagamento="2010-11-04" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>CARLOS COUTINHO BRITO JUNIOR</nome>
+				<email>carlo_coutinho.junior@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372349292</url>
+				<grupo>Meganet</grupo>
+				<codigo>586</codigo>
+				<cpf>11868953149</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-08" num_document="0000003613"
+				numero="0003723493" pagamento="2010-11-03" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>MARCIO ROBERTO DE SOUZA</nome>
+				<email>marcio.souza@eln.gov.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372349381</url>
+				<grupo>Meganet</grupo>
+				<codigo>616</codigo>
+				<cpf>00511133685</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-08" num_document="0000003616"
+				numero="0003723494" pagamento="2010-11-03" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>EUGENIO OLIVEIRA DA SILVA</nome>
+				<email>eugeniopantuva@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372349470</url>
+				<grupo>Meganet</grupo>
+				<codigo>591</codigo>
+				<cpf>55353924134</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-11" num_document="0000003618"
+				numero="0003723495" pagamento="2010-11-08" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>MARLUCE SOUSA NUNES</nome>
+				<email>line_baby13@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372349568</url>
+				<grupo>Meganet</grupo>
+				<codigo>617</codigo>
+				<cpf>69730431191</cpf>
+			</cobranca>
+			<cobranca num_document="0000003674" numero="0003723496"
+				pagamento="2010-11-08" pagamento_bloqueado="n" registro="2010-10-24"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-11-08">
+				<nome>ALEXANDRE ALVES DE BARROS</nome>
+				<email>daniloalves1980@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372349657</url>
+				<grupo>Meganet</grupo>
+				<codigo>703</codigo>
+				<cpf>02154106102</cpf>
+			</cobranca>
+			<cobranca num_document="0000003681" numero="0003723497"
+				pagamento="2010-11-08" pagamento_bloqueado="n" registro="2010-10-24"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-11-08">
+				<nome>DALVA LOUBACH MARTINS</nome>
+				<email>adalvaverde@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372349746</url>
+				<grupo>Meganet</grupo>
+				<codigo>706</codigo>
+				<cpf>79411495753</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-11" num_document="0000003687"
+				numero="0003723498" pagamento="2010-11-08" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>NEIVA GLORIA OLIVEIRA VITORINO</nome>
+				<email>hugovitorino18@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372349835</url>
+				<grupo>Meganet</grupo>
+				<codigo>707</codigo>
+				<cpf>26261776601</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-09" num_document="0000003689"
+				numero="0003723499" pagamento="2010-11-04" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>FERNANDO WEMERSO CASTRO CAMPOS</nome>
+				<email>fernadin_tifu@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372349924</url>
+				<grupo>Meganet</grupo>
+				<codigo>593</codigo>
+				<cpf>02846899126</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-04" num_document="0000003695"
+				numero="0003723500" pagamento="2010-10-29" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>SUNAMI GRACAS DE FARIAS CORREIA</nome>
+				<email>sunami.c@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372350092</url>
+				<grupo>Meganet</grupo>
+				<codigo>657</codigo>
+				<cpf>37358170172</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-11" num_document="0000003769"
+				numero="0003723501" pagamento="2010-11-08" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>WELLINGTON LUIZ RIBEIRO</nome>
+				<email>18ribeiro18@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372350181</url>
+				<grupo>Meganet</grupo>
+				<codigo>714</codigo>
+				<cpf>47686839168</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-11" num_document="0000003797"
+				numero="0003723502" pagamento="2010-11-08" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>SIDERVAL CRUZ PIMENTEL JUNIOR</nome>
+				<email>siderval.junior@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372350270</url>
+				<grupo>Meganet</grupo>
+				<codigo>627</codigo>
+				<cpf>72385049104</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-08" num_document="0000003814"
+				numero="0003723503" pagamento="2010-11-03" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>ELCO DAGUIMAR DA SILVA</nome>
+				<email>garetepires@bol.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372350369</url>
+				<grupo>Meganet</grupo>
+				<codigo>723</codigo>
+				<cpf>11995564168</cpf>
+			</cobranca>
+			<cobranca num_document="0000003838" numero="0003723505"
+				pagamento="2010-11-08" pagamento_bloqueado="n" registro="2010-10-24"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="40.00" vencimento="2010-11-08">
+				<nome>MARIO KIOSHI NAGASHIMA</nome>
+				<email>mariokioshi@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372350546</url>
+				<grupo>Meganet</grupo>
+				<codigo>654</codigo>
+				<cpf>55694110897</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-04" num_document="0000003854"
+				numero="0003723506" pagamento="2010-10-29" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>MARLENE RODRIGUES DE OLIVEIRA</nome>
+				<email>marleneraikka@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372350635</url>
+				<grupo>Meganet</grupo>
+				<codigo>673</codigo>
+				<cpf>18621180197</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-10" num_document="0000003863"
+				numero="0003723507" pagamento="2010-11-05" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>ANTONIO RIBEIRO DE FREITAS</nome>
+				<email>toninho.rep@ibest.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372350724</url>
+				<grupo>Meganet</grupo>
+				<codigo>578</codigo>
+				<cpf>06115390630</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-09" num_document="0000004000"
+				numero="0003723510" pagamento="2010-11-04" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>LEONIO MATOS GOMES</nome>
+				<email>leonio.matos@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372351073</url>
+				<grupo>Meganet</grupo>
+				<codigo>734</codigo>
+				<cpf>02816280764</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-11" num_document="0000003997"
+				numero="0003723511" pagamento="2010-11-08" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>FRANCISCO ANDRADE RODRIGUES</nome>
+				<email>franciscoandraderodrigues@uol.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372351162</url>
+				<grupo>Meganet</grupo>
+				<codigo>595</codigo>
+				<cpf>20141866853</cpf>
+			</cobranca>
+			<cobranca num_document="0000004014" numero="0003723514"
+				pagamento="2010-11-08" pagamento_bloqueado="n" registro="2010-10-24"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-11-08">
+				<nome>ANA KARINA PEREIRA DE SOUZA</nome>
+				<email>adri.ely22@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372351439</url>
+				<grupo>Meganet</grupo>
+				<codigo>683</codigo>
+				<cpf>71321837534</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-11" num_document="0000004063"
+				numero="0003723515" pagamento="2010-11-08" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>FRANCIACA AILZA LEITE DA SILVA</nome>
+				<email>thaigo33@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372351527</url>
+				<grupo>Meganet</grupo>
+				<codigo>737</codigo>
+				<cpf>87490544491</cpf>
+			</cobranca>
+			<cobranca num_document="0000004078" numero="0003723516"
+				pagamento="2010-11-08" pagamento_bloqueado="n" registro="2010-10-24"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-11-08">
+				<nome>FABRICIO DE OLIVEIRA PIMENTA</nome>
+				<email>fabricio.oliveira30@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372351616</url>
+				<grupo>Meganet</grupo>
+				<codigo>742</codigo>
+				<cpf>84947691115</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-08" num_document="0000004110"
+				numero="0003723517" pagamento="2010-11-03" pagamento_bloqueado="n"
+				registro="2010-10-24" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-08">
+				<nome>GLAIZY IARA LOPES MELO</nome>
+				<email>alanmelo47@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372351705</url>
+				<grupo>Meganet</grupo>
+				<codigo>747</codigo>
+				<cpf>80250114100</cpf>
+			</cobranca>
+			<cobranca num_document="0000004120" numero="0003723519"
+				pagamento="2010-11-08" pagamento_bloqueado="n" registro="2010-10-24"
+				situacao="Paga" taxa_pagamento="0.00" tipo_pagamento="S" valor="50.00"
+				valor_pago="50.00" vencimento="2010-11-08">
+				<nome>AIRTON A ROCHA</nome>
+				<email>airton.tel@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000372351983</url>
+				<grupo>Meganet</grupo>
+				<codigo>671</codigo>
+				<cpf>46239650153</cpf>
+			</cobranca>
+			<cobranca abertura="2010-11-23" credito="2010-11-26"
+				num_document="0000003595" numero="0003770908" pagamento="2010-11-23"
+				pagamento_bloqueado="s" registro="2010-11-05" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="50.00"
+				vencimento="2010-11-20">
+				<nome>ALEX MOTA LACERDA</nome>
+				<email>lacerda_df@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377090880</url>
+				<grupo>Meganet</grupo>
+				<codigo>681</codigo>
+				<cpf>86905791172</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-22" num_document="0000003964"
+				numero="0003770909" pagamento="2010-11-17" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>SARAH PEREIRA SANTOS BRANDAO</nome>
+				<email>sarinhagat123@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377090979</url>
+				<grupo>Meganet</grupo>
+				<codigo>676</codigo>
+				<cpf>01911939173</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-22" num_document="0000003944"
+				numero="0003770912" pagamento="2010-11-17" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>JOSE BATISTA FILHO</nome>
+				<email>via.bat@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377091228</url>
+				<grupo>Meganet</grupo>
+				<codigo>729</codigo>
+				<cpf>22521658120</cpf>
+			</cobranca>
+			<cobranca abertura="2010-11-17" credito="2010-11-22"
+				num_document="0000003534" numero="0003770913" pagamento="2010-11-17"
+				pagamento_bloqueado="n" registro="2010-11-05" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-11-20">
+				<nome>ANIZIO OLIVEIRA DA SILVA</nome>
+				<email>anizioajana@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377091317</url>
+				<grupo>Meganet</grupo>
+				<codigo>574</codigo>
+				<cpf>46229841134</cpf>
+			</cobranca>
+			<cobranca abertura="2010-11-05" credito="2010-11-25"
+				num_document="0000003578" numero="0003770914" pagamento="2010-11-22"
+				pagamento_bloqueado="n" registro="2010-11-05" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="50.00"
+				vencimento="2010-11-20">
+				<nome>GIOVANI VILELA SALERNO</nome>
+				<email>giovanivilela@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377091406</url>
+				<grupo>Meganet</grupo>
+				<codigo>597</codigo>
+				<cpf>95053050104</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-23" num_document="0000003579"
+				numero="0003770915" pagamento="2010-11-18" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>CLEUSA ROSA DE JESUS</nome>
+				<email>cleusa_rjesus@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377091594</url>
+				<grupo>Meganet</grupo>
+				<codigo>581</codigo>
+				<cpf>23905700115</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-24" num_document="0000003583"
+				numero="0003770917" pagamento="2010-11-19" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>CRISTIANO ALVES PESSOA</nome>
+				<email>cap771@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377091772</url>
+				<grupo>Meganet</grupo>
+				<codigo>582</codigo>
+				<cpf>80338399100</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-25" num_document="0000003589"
+				numero="0003770918" pagamento="2010-11-22" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="50.00" vencimento="2010-11-20">
+				<nome>SERGIO ROBERTO BARBOSA ONORIO</nome>
+				<email>lu_crist@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377091861</url>
+				<grupo>Meganet</grupo>
+				<codigo>686</codigo>
+				<cpf>90353102172</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-23" num_document="0000003725"
+				numero="0003770919" pagamento="2010-11-18" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>VAGNER FERREIRA DE BRITO</nome>
+				<email>vagner_brito18@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377091950</url>
+				<grupo>Meganet</grupo>
+				<codigo>709</codigo>
+				<cpf>03268186181</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-25" num_document="0000003734"
+				numero="0003770920" pagamento="2010-11-22" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="50.00" vencimento="2010-11-20">
+				<nome>ERALDO MENEZES NUNES</nome>
+				<email>erika_menezes01@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377092021</url>
+				<grupo>Meganet</grupo>
+				<codigo>590</codigo>
+				<cpf>13974971572</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-23" num_document="0000003747"
+				numero="0003770922" pagamento="2010-11-18" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>PAULO MARCELO DE SOUZA E SILVA</nome>
+				<email>marcelomill@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377092209</url>
+				<grupo>Meganet</grupo>
+				<codigo>713</codigo>
+				<cpf>59902299172</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-25" num_document="0000003761"
+				numero="0003770923" pagamento="2010-11-22" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="50.00" vencimento="2010-11-20">
+				<nome>LUCIANA MOTA FEREIRA</nome>
+				<email>luciana_217@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377092398</url>
+				<grupo>Meganet</grupo>
+				<codigo>610</codigo>
+				<cpf>89596633104</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-22" num_document="0000003775"
+				numero="0003770924" pagamento="2010-11-17" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>MARCO AURELIO PEREIRA DA FROTA</nome>
+				<email>sabrina15hiphop@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377092487</url>
+				<grupo>Meganet</grupo>
+				<codigo>710</codigo>
+				<cpf>35887265191</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-24" num_document="0000003788"
+				numero="0003770925" pagamento="2010-11-19" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>VALTON DA SILVA</nome>
+				<email>valtonpintor34@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377092575</url>
+				<grupo>Meganet</grupo>
+				<codigo>632</codigo>
+				<cpf>64641252149</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-24" num_document="0000003803"
+				numero="0003770926" pagamento="2010-11-19" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>JOSE VIEIRA DA SILVA NETO</nome>
+				<email>bocao_boca157@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377092664</url>
+				<grupo>Meganet</grupo>
+				<codigo>721</codigo>
+				<cpf>79757790320</cpf>
+			</cobranca>
+			<cobranca abertura="2010-11-16" credito="2010-11-22"
+				num_document="0000003869" numero="0003770928" pagamento="2010-11-17"
+				pagamento_bloqueado="n" registro="2010-11-05" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-11-20">
+				<nome>DAVI CONCEIÇÃO</nome>
+				<email>david-andreus@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377092842</url>
+				<grupo>Meganet</grupo>
+				<codigo>672</codigo>
+				<cpf>02218007193</cpf>
+			</cobranca>
+			<cobranca abertura="2010-11-10" credito="2010-11-16"
+				num_document="0000003884" numero="0003770929" pagamento="2010-11-10"
+				pagamento_bloqueado="n" registro="2010-11-05" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="B" valor="50.00" valor_pago="40.00"
+				vencimento="2010-11-20">
+				<nome>TITO DIAS BAISTA</nome>
+				<email>titodbatista@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377092931</url>
+				<grupo>Meganet</grupo>
+				<codigo>685</codigo>
+				<cpf>01786582864</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-23" num_document="0000004010"
+				numero="0003770934" pagamento="2010-11-18" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>TIAGO ARAUJO MESQUITA</nome>
+				<email>tia.guinhoaraujo@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377093468</url>
+				<grupo>Meganet</grupo>
+				<codigo>631</codigo>
+				<cpf>94090173191</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-23" num_document="0000004029"
+				numero="0003770935" pagamento="2010-11-18" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>VALDICK CALDAS BRAGA JÚNIOR</nome>
+				<email>junior_caldas@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377093556</url>
+				<grupo>Meganet</grupo>
+				<codigo>633</codigo>
+				<cpf>02716751102</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-24" num_document="0000004032"
+				numero="0003770936" pagamento="2010-11-19" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>DEBORAH HELENA LEMOS</nome>
+				<email>deborahlemos@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377093645</url>
+				<grupo>Meganet</grupo>
+				<codigo>645</codigo>
+				<cpf>71095934104</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-23" num_document="0000004035"
+				numero="0003770938" pagamento="2010-11-18" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>NILMA MARIA ALVES DA LUZ</nome>
+				<email>nilmamariana@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377093823</url>
+				<grupo>Meganet</grupo>
+				<codigo>692</codigo>
+				<cpf>44606044420</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-23" num_document="0000004074"
+				numero="0003770939" pagamento="2010-11-18" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>ELENICE VIANA DA SILVA</nome>
+				<email>maeyaradani@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377093912</url>
+				<grupo>Meganet</grupo>
+				<codigo>741</codigo>
+				<cpf>85976741134</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-22" num_document="0000003808"
+				numero="0003770940" pagamento="2010-11-17" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>EDNEUZA DOS SANTOS</nome>
+				<email>monteiro_vanderli@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377094083</url>
+				<grupo>Meganet</grupo>
+				<codigo>722</codigo>
+				<cpf>72088800182</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-22" num_document="0000004141"
+				numero="0003770943" pagamento="2010-11-17" pagamento_bloqueado="n"
+				registro="2010-11-05" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-20">
+				<nome>LUIZ CESAR ROCHA</nome>
+				<email>rochayoda@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000377094350</url>
+				<grupo>Meganet</grupo>
+				<codigo>749</codigo>
+				<cpf>00087623170</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-25" num_document="0000003568"
+				numero="0003799415" pagamento="2010-11-22" pagamento_bloqueado="n"
+				registro="2010-11-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-28">
+				<nome>MARCIO FERNANDES</nome>
+				<email>fernandes@ig.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000379941538</url>
+				<grupo>Meganet</grupo>
+				<codigo>615</codigo>
+				<cpf>37280430104</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-29" num_document="0000003609"
+				numero="0003799416" pagamento="2010-11-24" pagamento_bloqueado="s"
+				registro="2010-11-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-28">
+				<nome>MIKHAEL GEORGES HANNA</nome>
+				<email>michelnilza@terra.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000379941627</url>
+				<grupo>Meganet</grupo>
+				<codigo>695</codigo>
+				<cpf>00340596104</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-25" num_document="0000003846"
+				numero="0003799422" pagamento="2010-11-22" pagamento_bloqueado="n"
+				registro="2010-11-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-28">
+				<nome>VANILZA ROSA DOS SANTOS</nome>
+				<email>vanilzasantos@hotmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000379942243</url>
+				<grupo>Meganet</grupo>
+				<codigo>637</codigo>
+				<cpf>83482725187</cpf>
+			</cobranca>
+			<cobranca credito="2010-11-29" num_document="0000004038"
+				numero="0003799425" pagamento="2010-11-24" pagamento_bloqueado="s"
+				registro="2010-11-13" situacao="Paga" taxa_pagamento="3.07"
+				tipo_pagamento="B" valor="50.00" valor_pago="40.00" vencimento="2010-11-28">
+				<nome>FABRICIO PINHEIRO GONÇALVES</nome>
+				<email>gon.fabricio@gmail.com</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000379942519</url>
+				<grupo>Meganet</grupo>
+				<codigo>647</codigo>
+				<cpf>95511105104</cpf>
+			</cobranca>
+			<cobranca abertura="2010-11-23" credito="2010-11-25"
+				num_document="0003829697" numero="0003829697" pagamento="2010-11-23"
+				pagamento_bloqueado="n" registro="2010-11-22" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="T" valor="40.00" valor_pago="32.00"
+				vencimento="2010-12-03">
+				<nome>ADAM ALVES DE PADUA</nome>
+				<email>l_azzuma@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000382969771</url>
+				<grupo>Meganet</grupo>
+				<codigo>682</codigo>
+				<cpf>02425802118</cpf>
+			</cobranca>
+			<cobranca abertura="2010-11-23" credito="2010-11-25"
+				num_document="0000003606" numero="0003830937" pagamento="2010-11-23"
+				pagamento_bloqueado="n" registro="2010-11-23" situacao="Paga"
+				taxa_pagamento="3.07" tipo_pagamento="T" valor="50.00" valor_pago="40.00"
+				vencimento="2010-12-08">
+				<nome>ADAM ALVES DE PADUA</nome>
+				<email>l_azzuma@yahoo.com.br</email>
+				<url>http://www.f2b.com.br/Billing?id=00000541587000383093750</url>
+				<grupo>Meganet</grupo>
+				<codigo>682</codigo>
+				<cpf>02425802118</cpf>
+			</cobranca>
+			<total numero_cobrancas="243" numero_pago_bloqueado="3"
+				numero_pago_liberado="240" valor_cobrado="12109.00"
+				valor_pago_bloqueado="130.00" valor_pago_liberado="9979.21" />
+			<log>OK&#13; </log>
+		</m:F2bSituacaoCobrancaRetorno>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

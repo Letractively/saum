@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="Avisos" table="avisos" schema="public">
+        <id name="avisosId" type="java.lang.Long">
+            <column name="avisos_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">avisos_seq</param>
+	    	</generator>
+        </id>
+        <property name="avisosAviso" type="java.lang.String">
+            <column name="avisos_aviso" />
+        </property>
+        <property name="avisosAtivo" type="java.lang.Boolean">
+            <column name="avisos_ativo" />
+        </property>
+        <property name="avisosDataExpiracao" type="java.sql.Timestamp">
+            <column name="avisos_data_expiracao" />
+        </property>
+        <property name="avisosTitulo" type="java.lang.String">
+            <column name="avisos_titulo" length="100"/>
+        </property>
+    </class>
+</hibernate-mapping>

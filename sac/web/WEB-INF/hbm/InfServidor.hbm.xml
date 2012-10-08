@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="InfServidor" table="inf_servidor" schema="public">
+        <id name="infservidorId" type="java.lang.Long">
+            <column name="infservidor_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">infservidor_seq</param>
+	    	</generator>
+        </id>
+        <property name="infservidorData" type="java.sql.Timestamp">
+            <column name="infservidor_data"/>
+        </property>
+        <many-to-one name="torre" class="Torre" fetch="select" lazy="false">
+            <column name="torre_id_fk" />
+        </many-to-one>
+        <property name="infservidorDownload" type="java.lang.Double">
+            <column name="infservidor_download" not-null="true" />
+        </property>
+        <property name="infservidorUpload" type="java.lang.Double">
+            <column name="infservidor_upload" />
+        </property>
+    </class>
+</hibernate-mapping>

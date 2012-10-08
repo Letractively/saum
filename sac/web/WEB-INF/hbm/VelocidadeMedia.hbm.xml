@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo" auto-import="true">
+    <class name="VelocidadeMedia" table="velocidade_media" schema="public">
+        <id name="velocidademediaId" type="java.lang.Long">
+            <column name="velocidademedia_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">velocidade_media_seq</param>
+	    	</generator>
+        </id>
+        <many-to-one name="usuario" class="Usuario" fetch="select">
+            <column name="usuario_id_fk" />
+        </many-to-one>
+        <property name="velocidademediaVelocidade" type="java.lang.Long">
+            <column name="velocidademedia_velocidade" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+       
+	<bean id="servidorDAO" class="br.com.meganet.hbm.DAO.ServidorDAO" autowire="byType"/>
+	<bean id="contatoDAO" class="br.com.meganet.hbm.DAO.ContatoDAO" autowire="byType"/>
+	<bean id="infBoletoDAO" class="br.com.meganet.hbm.DAO.InfBoletoDAO" autowire="byType"/>
+	<bean id="demandasDAO" class="br.com.meganet.hbm.DAO.DemandasDAO" autowire="byType"/>
+	<bean id="dominiosDAO" class="br.com.meganet.hbm.DAO.DominiosDAO" autowire="byType"/>
+	<bean id="enderecoIpDAO" class="br.com.meganet.hbm.DAO.EnderecoIpDAO" autowire="byType"/>
+	<bean id="logMeganetDAO" class="br.com.meganet.hbm.DAO.LogMeganetDAO" autowire="byType"/>
+	<bean id="menuDAO" class="br.com.meganet.hbm.DAO.MenuDAO" autowire="byType"/>
+	<bean id="planosPacotesDAO" class="br.com.meganet.hbm.DAO.PlanosPacotesDAO" autowire="byType"/>
+	<bean id="poolComandosDAO" class="br.com.meganet.hbm.DAO.PoolComandosDAO" autowire="byType"/>
+	<bean id="tipoEquipamentoDAO" class="br.com.meganet.hbm.DAO.TipoEquipamentoDAO" autowire="byType"/>
+	<bean id="torreDAO" class="br.com.meganet.hbm.DAO.TorreDAO" autowire="byType"/>
+	<bean id="usuarioDAO" class="br.com.meganet.hbm.DAO.UsuarioDAO" autowire="byType"/>
+	<bean id="boletosGeradosDAO" class="br.com.meganet.hbm.DAO.BoletosGeradosDAO" autowire="byType"/>
+	<bean id="contratoDAO" class="br.com.meganet.hbm.DAO.ContratoDAO" autowire="byType"/>
+	<bean id="velocidadeMediaDAO" class="br.com.meganet.hbm.DAO.VelocidadeMediaDAO" autowire="byType"/>
+	<bean id="statusClienteDAO" class="br.com.meganet.hbm.DAO.StatusClienteDAO" autowire="byType"/>
+	<bean id="avisosDAO" class="br.com.meganet.hbm.DAO.AvisosDAO" autowire="byType"/>
+	<bean id="mapaDAO" class="br.com.meganet.hbm.DAO.MapaDAO" autowire="byType"/>
+	<bean id="gastoDAO" class="br.com.meganet.hbm.DAO.GastoDAO" autowire="byType"/>
+	<bean id="infServidorDAO" class="br.com.meganet.hbm.DAO.InfServidorDAO" autowire="byType"/>
+</beans>

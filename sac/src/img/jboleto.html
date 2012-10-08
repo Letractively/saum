@@ -1,0 +1,400 @@
+
+<STYLE type=text/css>
+.ti {
+	FONT: 9px tahoma, Helvetica, sans-serif
+}
+
+.ct {
+	FONT: 9px tahoma;
+	COLOR: navy
+}
+
+.cn {
+	FONT: 9px Arial;
+	COLOR: black
+}
+
+.cp {
+	FONT: bold 11px tahoma;
+	COLOR: black
+}
+
+.ld {
+	FONT: bold 12px tahoma;
+	COLOR: #000000
+}
+
+.bc {
+	FONT: bold 16px tahoma;
+	COLOR: #000000
+}
+</STYLE>
+<SCRIPT language=JavaScript>
+	var da = (document.all) ? 1 : 0;
+	var pr = (window.print) ? 1 : 0;
+	var mac = (navigator.userAgent.indexOf("Mac") != -1);
+	function x86() {
+		if (pr) // NS4, IE5
+			window.print()
+		else if (da && !mac) // IE4 (Windows)
+			vbx86()
+		else
+			// outros browsers
+			alert("Desculpe seu browser não suporta esta função. Por favor utilize a barra de trabalho para imprimir a página.");
+		return false;
+	}
+	if (da && !pr && !mac)
+		with (document) {
+			writeln('<OBJECT ID="WB" WIDTH="0" HEIGHT="0" CLASSID="clsid:8856F961-340A-11D0-A96B-00C04FD705A2"></OBJECT>');
+			writeln('<' + 'SCRIPT LANGUAGE="VBScript">');
+			writeln('Sub window_onunload');
+			writeln('  On Error Resume Next');
+			writeln('  Set WB = nothing');
+			writeln('End Sub');
+			writeln('Sub vbx86');
+			writeln('  OLECMDID_PRINT = 6');
+			writeln('  OLECMDEXECOPT_DONTPROMPTUSER = 2');
+			writeln('  OLECMDEXECOPT_PROMPTUSER = 1');
+			writeln('  On Error Resume Next');
+			writeln('  WB.ExecWB OLECMDID_PRINT, OLECMDEXECOPT_DONTPROMPTUSER');
+			writeln('End Sub');
+			writeln('<' + '/SCRIPT>');
+		}
+</SCRIPT>
+<TABLE WIDTH="660" CELLSPACING=0 CELLPADDING=0 BORDER=0>
+	<TR>
+		<TD class=cp VALIGN=BOTTOM WIDTH=225>
+			<img src="&imagemBanco" width="160" height="45" />
+		</TD>
+		<TD ALIGN=RIGHT VALIGN=BOTTOM>
+			<FONT class=ld><B>RECIBO DO SACADO</B>
+			</FONT>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE WIDTH="660" BORDER=1 CELLSPACING=0 CELLPADDING=1>
+	<TR>
+		<TD COLSPAN=2>
+			<FONT class=ct>Cedente</FONT>
+			<BR>
+			<FONT class=cp>&cedente</FONT>
+		</TD>
+		<TD width=15%>
+			<FONT class=ct>Ag. / C&oacute;d. Cedente</FONT>
+		  <BR>
+			<FONT align=center class=cn>&agenciaConta</FONT>
+		</TD>
+  <TD width=15%>
+			<FONT class=ct>Nosso N&uacute;mero</FONT>
+	  <BR>
+			<FONT class=cn>&nossoNumero</FONT>
+		</TD>
+  <TD width=20% bgcolor="#CCCCCC">
+			<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=0 height="100%">
+				<TR>
+					<TD align=left>
+						<FONT class=ct>Vencimento</FONT>
+					</TD>
+				</TR>
+				<TR>
+					<TD align=center>
+						<FONT class=cp>&dtVencimento</FONT>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2>
+			<FONT class=ct>Sacado</FONT>
+			<BR>
+			<FONT class=cp>&nome</FONT>
+		</TD>
+		<TD width=15%>
+			<FONT class=ct>Data Processamento</FONT>
+			<BR>
+			<FONT align=center class=cn>&dtProcesso</FONT>
+		</TD>
+		<TD width=15%>
+			<FONT class=ct>N&uacute;mero Documento</FONT>
+			<BR>
+			<FONT class=cn>&numeroDoc</FONT>
+		</TD>
+		<TD width=20% bgcolor="#CCCCCC">
+			<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=0>
+				<TR>
+					<TD align=left>
+						<FONT class=ct>Valor do Documento</FONT>
+					</TD>
+				</TR>
+				<TR>
+					<TD align=center>
+						<FONT class=cp>&valor</FONT>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+			<FONT class=ct>CPF / CNPJ</FONT>
+			<BR>
+			<FONT class=cp>&cpfsacado</FONT>
+		</TD>
+		<TD width=15%>
+			<FONT class=ct>(-) Desc. / Abatimento</FONT>
+			<BR>
+			<FONT class=cp><br> </FONT>
+		</TD>
+		<TD width=15%>
+			<FONT class=ct>(-) Outras Dedu&ccedil;&otilde;es</FONT>
+	    <BR>
+			<FONT class=cn><br> </FONT>
+		</TD>
+<TD width=15%>
+			<FONT class=ct>(+) Mora / Multa</FONT>
+			<BR>
+			<FONT class=cn><br> </FONT>
+		</TD>
+		<TD width=20% bgcolor="#CCCCCC">
+			<FONT class=ct>(=) Valor Cobrado</FONT>
+			<BR>
+			<FONT class=cp><br> </FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5 valign=top align=left>
+			<FONT class=ct>Observa&ccedil;&otilde;es:</FONT>
+	    <br>
+			<FONT class=cp>&obsCred</FONT>
+		</TD>
+  </TR>
+</TABLE>
+<TABLE WIDTH="660" CELLSPACING=0 CELLPADDING=0 BORDER=0>
+	<TR>
+		<TD align=right>
+			<FONT class=ct>Autentica&ccedil;&atilde;o Mec&acirc;nica</FONT>
+    <BR>
+			<BR>
+			<hr
+				style="border: #999999 1px dotted; margin-bottom: 25px; margin-top: 15px">
+		</TD>
+  </TR>
+</TABLE>
+
+<TABLE WIDTH="660" BORDER=0 CELLSPACING=0 CELLPADDING=0>
+	<tr>
+		<td class=cp width=150>
+			<div align="left">
+				<img src="&imagemBanco" width="160" height="45"/>
+			</div>
+		</td>
+		<td width=3 valign="bottom">
+			<img height=22 src="barra.gif" width=2 border=0>
+		</td>
+		<td class=cpt width=58 valign="bottom">
+			<div align="center">
+				<font class="bc">&codBanco</font>
+			</div>
+		</td>
+		<td width=3 valign="bottom">
+			<img height=22 src="barra.gif" width=2 border=0>
+		</td>
+		<td class=ld align=right width=453 valign="bottom">
+			<span class='ld'><p align="right">
+					&codBarra
+			</span>
+		</td>
+	</tr>
+</TABLE>
+<TABLE WIDTH="660" BORDER=1 CELLSPACING=0 CELLPADDING=1>
+	<TR>
+		<TD COLSPAN=5>
+			<FONT class=ct>Local de Pagamento</FONT>
+			<BR>
+			<FONT class=cp>&localPgto</FONT>
+		</TD>
+		<TD width=198 bgcolor="#CCCCCC">
+			<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=0>
+				<TR>
+					<TD align=left>
+						<FONT class=ct>Vencimento</FONT>
+					</TD>
+				</TR>
+				<TR>
+					<TD align=center>
+						<FONT class=cp>&dtVencimento</FONT>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+			<FONT class=ct>Cedente</FONT>
+			<BR>
+			<FONT class=cn>&cedente</FONT>
+		</TD>
+		<TD width=198>
+			<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=0>
+				<TR>
+					<TD align=left>
+						<FONT class=ct>Ag&ecirc;ncia / C&oacute;digo Cedente</FONT>					</TD>
+			  </TR>
+				<TR>
+					<TD align=center>
+						<FONT class=cn>&agenciaConta</FONT>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD width="92" valign=top>
+			<FONT class=ct>Data Documento</FONT>
+			<BR>
+			<FONT class=cn>&dtDoc</FONT>
+		</TD>
+		<TD width="92" valign=top>
+			<FONT class=ct>N&uacute;mero Documento</FONT>
+			<BR>
+			<FONT class=cn>&numeroDoc</FONT>
+		</TD>
+		<TD width="61" valign=top>
+			<FONT class=ct>Tipo Docu.</FONT>
+			<BR>
+			<FONT class=cn>DP</FONT>
+		</TD>
+		<TD width="94" valign=top>
+			<FONT class=ct>Aceite</FONT>
+			<BR>
+			<FONT class=cn>N</FONT>
+		</TD>
+		<TD width="120" valign=top>
+			<FONT class=ct>Data Processamento</FONT>
+			<BR>
+			<FONT class=cn>&dtProcesso</FONT>
+		</TD>
+		<TD width=198>
+			<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=0>
+				<TR>
+					<TD align=left>
+						<FONT class=ct>Nosso N&uacute;mero</FONT>					</TD>
+			  </TR>
+				<TR>
+					<TD align=center>
+						<FONT class=cn>&nossoNumero</FONT>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TD valign=top>
+			<FONT class=ct>Uso Banco</FONT>
+			<BR>
+			<FONT class=cn></FONT>
+		</TD>
+		<TD valign=top>
+			<FONT class=ct>Carteira</FONT>
+			<BR>
+			<FONT class=cn>&carteira</FONT>
+		</TD>
+		<TD valign=top>
+			<FONT class=ct>Esp&eacute;cie</FONT>
+		  <BR>
+			<FONT class=cn>&moeda</FONT>
+		</TD>
+  <TD valign=top>
+			<FONT class=ct>Quantidade</FONT>
+			<BR>
+			<FONT class=cn></FONT>
+		</TD>
+		<TD valign=top>
+			<FONT class=ct>Valor</FONT>
+			<BR>
+			<FONT class=cn></FONT>
+		</TD>
+		<TD width=198 bgcolor="#CCCCCC">
+			<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=0>
+				<TR>
+					<TD align=left>
+						<FONT class=ct>Valor do Documento</FONT>
+					</TD>
+				</TR>
+				<TR>
+					<TD align=center>
+						<FONT class=cp>&valor</FONT>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+		<TH COLSPAN=5 ROWSPAN=4 valign=top align=LEFT>
+			<FONT class=ct>Instru&ccedil;&otilde;es</FONT>
+	    <BR>
+			<TABLE WIDTH="475" ALIGN=RIGHT CELLSPACING=0 CELLPADDING=0 BORDER=0>
+				<TR>
+					<TD valign=top align=left>
+						<FONT class=cn> &instrucoes </FONT>
+					</TD>
+				</TR>
+			</TABLE>
+		</TH>
+<TD WIDTH=198>
+			<FONT class=ct>(-) Desc. / Abatimento</FONT>
+			<BR>
+			<FONT class=cn></FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=198>
+			<FONT class=ct>(-) Outras Dedu&ccedil;&otilde;es</FONT>
+	    <BR>
+			<FONT class=cn></FONT>
+		</TD>
+  </TR>
+	<TR>
+		<TD WIDTH=198>
+			<FONT class=ct>(+) Mora / Multa</FONT>
+			<BR>
+			<FONT class=cn></FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=198 bgcolor="#CCCCCC">
+			<FONT class=ct>(=) Valor Cobrado</FONT>
+			<BR>
+			<FONT class=cn></FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=6 valign=top>
+			<FONT class=ct>Sacado</FONT>
+			<BR>
+			<TABLE WIDTH="640" ALIGN=RIGHT CELLSPACING=0 CELLPADDING=0 BORDER=0>
+				<TR>
+					<TD valign=top align=left>
+						<FONT class=cn>&sacado<BR> <BR> </FONT>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE WIDTH="660" CELLSPACING=0 CELLPADDING=0 BORDER=0>
+	<TR>
+		<TD class=ct align=right>
+			<div align="right">
+				Autentica&ccedil;&atilde;o Mec&acirc;nica -
+				<b class="cp">Ficha de Compensa&ccedil;&atilde;o</b>			</div>
+	  </TD>
+	</TR>
+	<TR>
+		<TD align=left>
+			<img src="&imgCodBar" />
+		</TD>
+	</TR>
+</TABLE>
+<hr style="border: #999999 1px dotted; margin-bottom: 25px; margin-top: 15px;">

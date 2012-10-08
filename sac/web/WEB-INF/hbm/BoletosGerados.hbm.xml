@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="BoletosGerados" table="boletos_gerados" schema="public">
+        <id name="boletosgeradosId" type="java.lang.Long">
+            <column name="boletosgerados_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">boletos_gerados_seq</param>
+	    	</generator>
+        </id>
+        <many-to-one name="usuario" class="Usuario" fetch="select" lazy="false">
+            <column name="usuario_id_fk" not-null="true" />
+        </many-to-one>
+        <property name="boletosgeradosValor" type="java.lang.String">
+            <column name="boletosgerados_valor" length="10" />
+        </property>
+        <property name="boletosgeradosUrlBoletoF2b" type="java.lang.String">
+            <column name="boletosgerados_url_boleto_f2b" length="250" />
+        </property>
+        <property name="boletosgeradosValorPago" type="java.lang.String">
+            <column name="boletosgerados_valor_pago" length="10" />
+        </property>
+        <property name="boletosgeradosValorCreditoDebito" type="java.lang.String">
+            <column name="boletosgerados_valor_credito_debito" length="10" />
+        </property>
+        <property name="boletosgeradosTipoEnvioF2B" type="java.lang.String">
+            <column name="boletosgerados_tipo_envio_f2b" length="1" />
+        </property>
+        <property name="boletosgeradosIdF2B" type="java.lang.Long">
+            <column name="boletosgerados_id_f2b" />
+        </property>
+        <property name="boletosgeradosResticio" type="java.lang.String">
+            <column name="boletosgerados_resticio" length="10" />
+        </property>
+        <property name="boletosgeradosMotivoResticio" type="java.lang.String">
+            <column name="boletosgerados_motivo_resticio" length="100" />
+        </property>
+        <property name="boletosgeradosMotivoCreditoDebito" type="java.lang.String">
+            <column name="boletosgerados_motivo_credito_debito" length="100" />
+        </property>
+        <property name="boletosgeradosDataPagamento" type="java.sql.Timestamp">
+            <column name="boletosgerados_data_pagamento"/>
+        </property>
+        <property name="boletosgeradosProcessamento" type="java.sql.Timestamp">
+            <column name="boletosgerados_processamento"/>
+        </property>
+        <property name="boletosgeradosDataVencimento" type="java.sql.Timestamp">
+            <column name="boletosgerados_data_vencimento"/>
+        </property>
+        <property name="boletosgeradosDataVencimentoProrrogado" type="java.sql.Timestamp">
+            <column name="boletosgerados_data_vencimento_prorrogado"/>
+        </property>
+        <property name="boletosgeradosPago" type="java.lang.Boolean">
+            <column name="boletosgerados_pago" />
+        </property>
+        <property name="boletosgeradosBoletoExtra" type="java.lang.Boolean">
+            <column name="boletosgerados_boleto_extra" />
+        </property>
+        <property name="boletosgeradosPagouEmMao" type="java.lang.Boolean">
+            <column name="boletosgerados_pagou_em_mao" />
+        </property>
+        <property name="boletosgeradosDinheiroEntregueAdministradorConta" type="java.lang.Boolean">
+            <column name="boletosgerados_dinheiro_entregue_administrador_conta"/>
+        </property>
+        
+        <property name="boletosgeradosMulta" type="java.lang.Double">
+            <column name="boletosgerados_multa" length="3" precision="2" scale="17" />
+        </property>
+        <property name="boletosgeradosJuros" type="java.lang.Double">
+            <column name="boletosgerados_juros" length="3" precision="2" scale="17" />
+        </property>
+        <property name="boletosgeradosDesconto" type="java.lang.Double">
+            <column name="boletosgerados_desconto" length="3" precision="2" scale="17" />
+        </property>
+        <property name="boletosgeradosLimiteDesconto" type="java.lang.Long">
+            <column name="boletosgerados_limite_desconto"/>
+        </property>
+        
+    </class>
+</hibernate-mapping>

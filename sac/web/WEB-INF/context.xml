@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop 
+       http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+
+    <!-- regular spring resolver -->
+    <bean id="spring.RegularCommonsMultipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="100000000" />
+        <property name="maxInMemorySize" value="100000000" />
+    </bean>
+
+    <!-- custom multi file resolver -->
+    <bean id="local.MultiCommonsMultipartResolver" class="br.com.meganet.web.upload.resolver.MultiCommonsMultipartResolver">
+        <property name="maxUploadSize" value="1000000" />
+        <property name="maxInMemorySize" value="1000000" />
+    </bean>
+
+    <!-- choose one from above and alias it to the name Spring expects -->
+    <alias name="local.MultiCommonsMultipartResolver" alias="multipartResolver" />
+
+	<!-- Hibernate Session Factory -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <!--bancodedadoscliente--><property name="url" value="jdbc:postgresql://localhost:5432/Meganet"/>
+        <!--usuariobancodedados--><property name="username" value="postgres"/>
+        <!--senhabancodedados--><property name="password" value="Sicoob!23"/>
+    </bean>
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.default_schema">public</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.format_sql">false</prop>
+				<prop key="hibernate.use_sql_comments">false</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+			</props>
+		</property>
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>WEB-INF/hbm</value>
+			</list>
+		</property>
+	</bean>
+		
+	<bean id="monitor" class="br.com.meganet.threads.Monitor">
+		<property name="lerArquivoRetorno" ref="lerArquivoRetorno"/>
+		<property name="verificaVelocidadeInterfaces" ref="verificaVelocidadeInterfaces"/>
+		<property name="carregaMapas" ref="carregaMapas"/>
+		<property name="verificaVelocidadeMedia" ref="verificaVelocidadeMedia"/>
+<!-- 		<property name="backupServidores" ref="backupServidores"/> -->
+	</bean>
+	
+	<bean id="scheduledTask" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+	    <property name="delay" value="1000" />
+	    <property name="period" value="10000" />
+	    <property name="timerTask">
+	    	<ref local="monitor" />
+	    </property>
+	</bean>
+	
+    <bean id="timerFactory" class="org.springframework.scheduling.timer.TimerFactoryBean">
+        <property name="scheduledTimerTasks">
+        	<list>
+        		<ref local="scheduledTask"/>
+        	</list>
+        </property>
+    </bean>
+
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+    <aop:config proxy-target-class="true">
+        <aop:advisor pointcut="execution(* br.com.meganet.hbm.DAO.*.*(..))" advice-ref="txAdvice"/>
+    </aop:config>
+
+    <tx:advice id="txAdvice">
+        <tx:attributes>
+            <tx:method name="salvar*"/>
+            <tx:method name="*" read-only="false"/>
+        </tx:attributes>
+    </tx:advice>
+</beans>
