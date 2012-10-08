@@ -1,0 +1,3 @@
+INSERT INTO dominios("dominios_id", "dominios_chave", "dominios_valor", "dominios_tipo", "dominios_tratamento_especial", "dominios_descricao")
+VALUES(66, 'boleto_f2b_tipo_registro_emergencia', 'e', 3, false, 'Indica como deve ser feito envio da cobranca de EMERGÊNCIA para o sacado: "e" significa apenas e-mail, "p" apenas impressa pelo correio, "b" das duas formas anteriores e "n" so e feito o registro da cobranca.')
+GO

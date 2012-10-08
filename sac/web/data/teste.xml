@@ -1,0 +1,30 @@
+<chart outCnvBaseFontColor='666666'
+caption='Interface Meganet'
+ xAxisName='Tipo'
+ yAxisName='Velocidade' numberPrefix='' showNames='1' showValues='0' plotFillAlpha='50' numVDivLines='30' showAlternateVGridColor='1' 
+ AlternateVGridColor='e1f5ff' divLineColor='FF0000' vdivLineColor='e1f5ff' baseFontColor='666666' canvasBorderThickness='1'
+  showPlotBorder='1' bgColor='CCE3FD' plotBorderThickness='1'>
+	<categories>
+		<category label='26' />
+		<category label='27' />
+		<category label='28' />
+		<category label='29' />
+		<category label='30' />
+		<category label='31' />
+	</categories>
+	<dataset seriesName='Download' color='B1D1DC' plotBorderColor='B1D1DC'>
+		<set value='1165.0' />
+		<set value='2048.0' />
+		<set value='2764.8' />
+		<set value='1507.2' />
+		<set value='1309.0' />
+	</dataset>
+	<dataset seriesName='Upload' color='C8A1D1' plotBorderColor='C8A1D1'>
+		<set value='199.8' />
+		<set value='573.5' />
+		<set value='422.6' />
+		<set value='317.3' />
+		<set value='469.7' />
+		<set value='471.7' />
+	</dataset>
+</chart>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Page-1" NameU="Page-1">
+			<Layer IX="0">
+				<Name></Name>
+				<NameUniv></NameUniv>
+				<Visible>0</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name></Name>
+				<NameUniv></NameUniv>
+				<Visible>0</Visible>
+			</Layer>
+			<Layer IX="2">
+				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="51" UniqueID="{12570917-A7D5-4E96-A5E4-657630654A6E}" Name="Radio tower" NameU="Radio tower" Master="6">
+					<XForm>
+						<PinX Unit="IN">7.545833333333331</PinX>
+						<PinY Unit="IN">5.911111111111111</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="56" UniqueID="{556ADDCE-3FE4-4E30-ABBA-440E68F60BC7}" Name="Radio tower.56" NameU="Radio tower.56" Master="6">
+					<XForm>
+						<PinX Unit="IN">2.824999999999995</PinX>
+						<PinY Unit="IN">3.744444444444447</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="61" UniqueID="{B5F40761-E0E6-4EAC-825C-D9352738733E}" Name="Ethernet" NameU="Ethernet" Master="7">
+					<XForm>
+						<PinX Unit="IN">7.270833333333329</PinX>
+						<PinY Unit="IN">3.386111111111111</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="65" UniqueID="{AE1BEED7-62FB-481F-99E1-DCC59A8FA6E6}" Name="Comm-link" NameU="Comm-link" Master="8">
+					<XForm>
+						<PinX Unit="IN">5.154999999999999</PinX>
+						<PinY Unit="IN">6.185069444444447</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Manufacturer" NameU="Manufacturer">
+						<Value></Value>
+						<Label>Manufacturer</Label>
+					</Prop>
+					<Prop ID="2" Name="ProductNumber" NameU="ProductNumber">
+						<Value></Value>
+						<Label>Product Number</Label>
+					</Prop>
+					<Prop ID="3" Name="PartNumber" NameU="PartNumber">
+						<Value></Value>
+						<Label>Part Number</Label>
+					</Prop>
+					<Prop ID="4" Name="ProductDescription" NameU="ProductDescription">
+						<Value></Value>
+						<Label>Product Description</Label>
+					</Prop>
+					<Prop ID="5" Name="AssetNumber" NameU="AssetNumber">
+						<Value></Value>
+						<Label>Asset Number</Label>
+					</Prop>
+					<Prop ID="6" Name="SerialNumber" NameU="SerialNumber">
+						<Value></Value>
+						<Label>Serial Number</Label>
+					</Prop>
+					<Prop ID="7" Name="Location" NameU="Location">
+						<Value></Value>
+						<Label>Location</Label>
+					</Prop>
+					<Prop ID="8" Name="Building" NameU="Building">
+						<Value></Value>
+						<Label>Building</Label>
+					</Prop>
+					<Prop ID="9" Name="Room" NameU="Room">
+						<Value></Value>
+						<Label>Room</Label>
+					</Prop>
+					<Prop ID="10" Name="Department" NameU="Department">
+						<Value></Value>
+						<Label>Department</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="75" UniqueID="{6C5D1C6A-54FD-4F80-8237-67DC692FB9B4}" Name="Wireless access point" NameU="Wireless access point" Master="10">
+					<XForm>
+						<PinX Unit="IN">7.520833333333332</PinX>
+						<PinY Unit="IN">7.259027777777784</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="89" UniqueID="{524F3765-8801-485B-92B6-93C8662E9716}" Name="User" NameU="User" Master="12">
+					<XForm>
+						<PinX Unit="IN">5.520833333333329</PinX>
+						<PinY Unit="IN">1.196825396825397</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="26" UniqueID="{49C2A17A-B92C-4ACA-A800-C9A5F404D2C2}" Name="PC" NameU="PC" Master="5">
+					<XForm>
+						<PinX Unit="IN">7.320833333333328</PinX>
+						<PinY Unit="IN">1.461111111111111</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="96" UniqueID="{5297B854-0CE7-49A2-8135-77463883795E}" Name="Wireless access point.96" NameU="Wireless access point.96" Master="10">
+					<XForm>
+						<PinX Unit="IN">2.789166666666666</PinX>
+						<PinY Unit="IN">5.111111111111112</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="108" UniqueID="{70BD2F94-5F39-4516-BB99-9BACE9249DF6}" Name="Dynamic connector" NameU="Dynamic connector" Master="0">
+					<XForm>
+						<PinX Unit="IN">3.032083333333333</PinX>
+						<PinY Unit="IN">3.113993348577782</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="104" UniqueID="{5A774CE1-C2F6-4357-BBE3-ACFAA78BD876}" Name="Dynamic connector.104" NameU="Dynamic connector.104" Master="0">
+					<XForm>
+						<PinX Unit="IN">2.181250000000000</PinX>
+						<PinY Unit="IN">0.808437793022227</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="105" UniqueID="{3FA035E3-E771-4D46-99B9-6DF9100C8170}" Name="Dynamic connector.105" NameU="Dynamic connector.105" Master="0">
+					<XForm>
+						<PinX Unit="IN">0.968750000000000</PinX>
+						<PinY Unit="IN">1.057500000000000</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="106" UniqueID="{E490C7E4-28A9-46B2-813C-B284F7BE580B}" Name="Dynamic connector.106" NameU="Dynamic connector.106" Master="0">
+					<XForm>
+						<PinX Unit="IN">0.850000000000000</PinX>
+						<PinY Unit="IN">2.239127617131403</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>2</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="83" UniqueID="{F8186615-2818-47C9-A47C-460020A404C5}" Name="Firewall" NameU="Firewall" Master="11">
+					<XForm>
+						<PinX Unit="IN">1.087500000000000</PinX>
+						<PinY Unit="IN">0.500000000000000</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="66" UniqueID="{BAAE0FFC-B2AF-4627-BC0F-55731829BB54}" Name="Modem" NameU="Modem" Master="9">
+					<XForm>
+						<PinX Unit="IN">0.850000000000000</PinX>
+						<PinY Unit="IN">1.615000000000000</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="1" UniqueID="{CB2BF9F2-FEB9-4452-9B39-ECCE958D9FB5}" Name="Web server" NameU="Web server" Master="4">
+					<XForm>
+						<PinX Unit="IN">3.275000000000000</PinX>
+						<PinY Unit="IN">1.200000000000000</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="107" UniqueID="{AA8B9C16-7CC8-4077-8500-602D6AEBEF9F}" Name="Legend" NameU="Legend" Master="14">
+					<Text>Equipamentos Presentes</Text>
+					<XForm>
+						<PinX Unit="IN">1.150000000000000</PinX>
+						<PinY Unit="IN">8.117502449273005</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="16" UniqueID="{A5747151-FE16-44C0-9CCC-7B2EF03E5B95}" Name="Sheet.16" NameU="Sheet.16" Master="15">
+					<XForm>
+						<PinX Unit="IN">1.000004926541632</PinX>
+						<PinY Unit="IN">3.000000000000000</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

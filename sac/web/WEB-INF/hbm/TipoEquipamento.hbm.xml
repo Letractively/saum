@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="TipoEquipamento" table="tipo_equipamento" schema="public">
+        <id name="tipoEquipamentoId" type="java.lang.Long">
+            <column name="tipo_equipamento_id" />
+	    	<generator class="sequence">
+	    		<param name="sequence">tipo_equipamento_seq</param>
+	    	</generator>
+        </id>
+        <property name="tipoEquipamentoDescricao" type="java.lang.String">
+            <column name="tipo_equipamento_descricao" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

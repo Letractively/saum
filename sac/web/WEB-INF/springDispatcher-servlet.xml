@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
+		<property name="suffix" value=".jsp"></property>        
+	</bean>
+	
+	<bean name="/json.do" class="br.com.meganet.web.JsonView"/>
+	<bean name="/adiaBoleto.do" class="br.com.meganet.web.AdiaBoletoView"/>
+	<bean name="/localizarDemanda.do" class="br.com.meganet.web.LocalizarDemandaView"/>
+	<bean name="/localizacaoClienteGoogle.do" class="br.com.meganet.web.RelatorioLocalizacaoClienteGoogleView"/>
+	<bean name="/configuracaoAvancada.do" class="br.com.meganet.web.ConfiguracaoAvancadaView"/>
+	<bean name="/trocarSenha.do" class="br.com.meganet.web.MudarSenhaView"/>
+	<bean name="/comunicado.do" class="br.com.meganet.web.ComunicadoView"/>
+	<bean name="/contato.do" class="br.com.meganet.web.ContatoView"/>
+	<bean name="/produtosWireless.do" class="br.com.meganet.web.ProdutosWirelessView"/>
+	<bean name="/visita.do" class="br.com.meganet.web.SoliciteVisitaView"/>
+	<bean name="/alteraUsuario.do" class="br.com.meganet.web.AlteraUsuarioView"/>
+	<bean name="/insereUsuario.do" class="br.com.meganet.web.InsereUsuarioView"/>
+	<bean name="/menu.do" class="br.com.meganet.web.MenuView"/>
+	<bean name="/boleto.do" class="br.com.meganet.web.BoletoView"/>
+	<bean name="/configuraBoleto.do" class="br.com.meganet.web.ConfiguraBoletoView"/>
+	<bean name="/configuraPlano.do" class="br.com.meganet.web.ConfiguraPlanoView"/>
+	<bean name="/cadastroAP.do" class="br.com.meganet.web.CadastroAPView"/>
+	<bean name="/manutencaoContrato.do" class="br.com.meganet.web.ManutencaoContratoView"/>
+	<bean name="/atendimentoUsuario.do" class="br.com.meganet.web.AtendimentoClienteView"/>
+	<bean name="/gerarDemanda.do" class="br.com.meganet.web.GerarDemandaView"/>
+	<bean name="/rendimentos.do" class="br.com.meganet.web.RendimentosView"/>
+	<bean name="/custo.do" class="br.com.meganet.web.CustoView"/>
+	<bean name="/trafegoUsuario.do" class="br.com.meganet.web.TrafegoUsuarioView"/>
+	<bean name="/relatorioDemandas.do" class="br.com.meganet.web.RelatorioDemandaView"/>
+	<bean name="/relatorioLucro.do" class="br.com.meganet.web.RelatorioLucroView"/>
+	<bean name="/relatorioSituacao.do" class="br.com.meganet.web.RelatorioSituacaoClienteView"/>
+	<bean name="/localizacaoCliente.do" class="br.com.meganet.web.RelatorioLocalizacaoClienteView"/>
+	<bean name="/relatorioLog.do" class="br.com.meganet.web.RelatorioLogView"/>
+	<bean name="/torre.do" class="br.com.meganet.web.TorreView"/>
+	<bean name="/grupotorre.do" class="br.com.meganet.web.GrupoTorreView"/>
+	<bean name="/enderecoIP.do" class="br.com.meganet.web.EnderecoIPView"/>
+	<bean name="/trefegoInterface.do" class="br.com.meganet.web.RelatorioTrafegoInterfaceView"/>
+	<bean name="/relatorioBoletoPagoEmMao.do" class="br.com.meganet.web.RelatorioBoletoPagoEmMaoView"/>
+	<bean name="/utilizacaoGrupos.do" class="br.com.meganet.web.RelatorioUtilizacaoGruposView"/>
+	<bean name="/comando.do" class="br.com.meganet.web.ComandoView"/>
+	<bean name="/comandoMonitoramento.do" class="br.com.meganet.web.ComandoMonitoramentoView"/>
+	<bean name="/properties.do" class="br.com.meganet.web.upload.controler.ConfigFileUploadController"/>
+	<bean name="/relatorioContato.do" class="br.com.meganet.web.RelatorioContatoView"/>
+	
+	<bean name="/index.do" class="br.com.meganet.web.IndexView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+		<property name="usuarioPortalFacade" ref="usuarioPortalFacade"/>
+	</bean>
+	<bean name="/genericMulti.do" class="br.com.meganet.web.upload.controler.GenericFileUploadController">
+		<property name="boletoFacade" ref="boletoFacade"/>
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/arquivoRetorno.do" class="br.com.meganet.web.TransferirArquivoRetornoView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/reimpressao.do" class="br.com.meganet.web.ReimpressaoView">
+		<property name="boletoFacade" ref="boletoFacade"/>
+	</bean>
+	<bean name="/finalizarDemanda.do" class="br.com.meganet.web.FinalizarDemandaView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/imprimeDemanda.do" class="br.com.meganet.web.ImprimeDemandaView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/responderContato.do" class="br.com.meganet.web.ResponderContatoView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/relacaoUsuarios.do" class="br.com.meganet.web.RelatorioRelacaoUsuarioView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/detalharAviso.do" class="br.com.meganet.web.DetalharAvisoView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/detalharContato.do" class="br.com.meganet.web.DetalharContatoView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/extrato.do" class="br.com.meganet.web.ExtratoMensalidadeView">
+		<property name="boletoFacade" ref="boletoFacade"/>
+	</bean>
+	<bean name="/geraBoleto.do" class="br.com.meganet.web.GeraBoletoView">
+		<property name="boletoFacade" ref="boletoFacade"/>
+		<property name="geraHTMLBoletoFacade" ref="geraHTMLBoletoFacade"/>
+	</bean>
+	<bean name="/geraBoletoUsuarioMes.do" class="br.com.meganet.web.GeraBoletoUsuarioMesView">
+		<property name="boletoFacade" ref="boletoFacade"/>
+		<property name="geraHTMLBoletoFacade" ref="geraHTMLBoletoFacade"/>
+	</bean>
+	<bean name="/geraBoletoDataPagamento.do" class="br.com.meganet.web.GeraBoletoDataPagamentoView">
+		<property name="boletoFacade" ref="boletoFacade"/>
+		<property name="geraHTMLBoletoFacade" ref="geraHTMLBoletoFacade"/>
+	</bean>
+	<bean name="/visualizaContrato.do" class="br.com.meganet.web.VisualizaContratoView">
+		<property name="contratoFacade" ref="contratoFacade"/>
+	</bean>
+	
+    
+	<bean name="/localizacarBoleto.do" class="br.com.meganet.web.LocalizarBoletoView"/>
+	
+	
+	
+	<!-- Dispatchers do FACEBOOK -->
+	
+	<bean name="/auth/fb/json.do" class="br.com.meganet.web.JsonView"/>
+	<bean name="/auth/fb/localizarDemanda.do" class="br.com.meganet.web.LocalizarDemandaView"/>
+	<bean name="/auth/fb/localizacaoClienteGoogle.do" class="br.com.meganet.web.RelatorioLocalizacaoClienteGoogleView"/>
+	<bean name="/auth/fb/configuracaoAvancada.do" class="br.com.meganet.web.ConfiguracaoAvancadaView"/>
+	<bean name="/auth/fb/trocarSenha.do" class="br.com.meganet.web.MudarSenhaView"/>
+	<bean name="/auth/fb/comunicado.do" class="br.com.meganet.web.ComunicadoView"/>
+	<bean name="/auth/fb/contato.do" class="br.com.meganet.web.ContatoView"/>
+	<bean name="/auth/fb/produtosWireless.do" class="br.com.meganet.web.ProdutosWirelessView"/>
+	<bean name="/auth/fb/visita.do" class="br.com.meganet.web.SoliciteVisitaView"/>
+	<bean name="/auth/fb/alteraUsuario.do" class="br.com.meganet.web.AlteraUsuarioView"/>
+	<bean name="/auth/fb/insereUsuario.do" class="br.com.meganet.web.InsereUsuarioView"/>
+	<bean name="/auth/fb/menu.do" class="br.com.meganet.web.MenuView"/>
+	<bean name="/auth/fb/boleto.do" class="br.com.meganet.web.BoletoView"/>
+	<bean name="/auth/fb/configuraBoleto.do" class="br.com.meganet.web.ConfiguraBoletoView"/>
+	<bean name="/auth/fb/configuraPlano.do" class="br.com.meganet.web.ConfiguraPlanoView"/>
+	<bean name="/auth/fb/cadastroAP.do" class="br.com.meganet.web.CadastroAPView"/>
+	<bean name="/auth/fb/manutencaoContrato.do" class="br.com.meganet.web.ManutencaoContratoView"/>
+	<bean name="/auth/fb/atendimentoUsuario.do" class="br.com.meganet.web.AtendimentoClienteView"/>
+	<bean name="/auth/fb/gerarDemanda.do" class="br.com.meganet.web.GerarDemandaView"/>
+	<bean name="/auth/fb/rendimentos.do" class="br.com.meganet.web.RendimentosView"/>
+	<bean name="/auth/fb/custo.do" class="br.com.meganet.web.CustoView"/>
+	<bean name="/auth/fb/trafegoUsuario.do" class="br.com.meganet.web.TrafegoUsuarioView"/>
+	<bean name="/auth/fb/relatorioDemandas.do" class="br.com.meganet.web.RelatorioDemandaView"/>
+	<bean name="/auth/fb/relatorioLucro.do" class="br.com.meganet.web.RelatorioLucroView"/>
+	<bean name="/auth/fb/relatorioSituacao.do" class="br.com.meganet.web.RelatorioSituacaoClienteView"/>
+	<bean name="/auth/fb/localizacaoCliente.do" class="br.com.meganet.web.RelatorioLocalizacaoClienteView"/>
+	<bean name="/auth/fb/relatorioLog.do" class="br.com.meganet.web.RelatorioLogView"/>
+	<bean name="/auth/fb/torre.do" class="br.com.meganet.web.TorreView"/>
+	<bean name="/auth/fb/grupotorre.do" class="br.com.meganet.web.GrupoTorreView"/>
+	<bean name="/auth/fb/enderecoIP.do" class="br.com.meganet.web.EnderecoIPView"/>
+	<bean name="/auth/fb/trefegoInterface.do" class="br.com.meganet.web.RelatorioTrafegoInterfaceView"/>
+	<bean name="/auth/fb/relatorioBoletoPagoEmMao.do" class="br.com.meganet.web.RelatorioBoletoPagoEmMaoView"/>
+	<bean name="/auth/fb/utilizacaoGrupos.do" class="br.com.meganet.web.RelatorioUtilizacaoGruposView"/>
+	<bean name="/auth/fb/comando.do" class="br.com.meganet.web.ComandoView"/>
+	<bean name="/auth/fb/comandoMonitoramento.do" class="br.com.meganet.web.ComandoMonitoramentoView"/>
+	<bean name="/auth/fb/properties.do" class="br.com.meganet.web.upload.controler.ConfigFileUploadController"/>
+	<bean name="/auth/fb/relatorioContato.do" class="br.com.meganet.web.RelatorioContatoView"/>
+	
+	<bean name="/auth/fb/index.do" class="br.com.meganet.web.IndexFBView">
+		<property name="usuarioPortalFacade" ref="usuarioPortalFacade"/>
+	</bean>
+	<bean name="/auth/fb/genericMulti.do" class="br.com.meganet.web.upload.controler.GenericFileUploadController">
+		<property name="boletoFacade" ref="boletoFacade"/>
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/auth/fb/arquivoRetorno.do" class="br.com.meganet.web.TransferirArquivoRetornoView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/auth/fb/reimpressao.do" class="br.com.meganet.web.ReimpressaoView">
+		<property name="boletoFacade" ref="boletoFacade"/>
+	</bean>
+	<bean name="/auth/fb/finalizarDemanda.do" class="br.com.meganet.web.FinalizarDemandaView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/auth/fb/imprimeDemanda.do" class="br.com.meganet.web.ImprimeDemandaView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/auth/fb/responderContato.do" class="br.com.meganet.web.ResponderContatoView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/auth/fb/relacaoUsuarios.do" class="br.com.meganet.web.RelatorioRelacaoUsuarioView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/auth/fb/detalharAviso.do" class="br.com.meganet.web.DetalharAvisoView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/auth/fb/detalharContato.do" class="br.com.meganet.web.DetalharContatoView">
+		<property name="administracaoFacade" ref="administracaoFacade"/>
+	</bean>
+	<bean name="/auth/fb/extrato.do" class="br.com.meganet.web.ExtratoMensalidadeView">
+		<property name="boletoFacade" ref="boletoFacade"/>
+	</bean>
+	<bean name="/auth/fb/geraBoleto.do" class="br.com.meganet.web.GeraBoletoView">
+		<property name="boletoFacade" ref="boletoFacade"/>
+		<property name="geraHTMLBoletoFacade" ref="geraHTMLBoletoFacade"/>
+	</bean>
+	<bean name="/auth/fb/geraBoletoUsuarioMes.do" class="br.com.meganet.web.GeraBoletoUsuarioMesView">
+		<property name="boletoFacade" ref="boletoFacade"/>
+		<property name="geraHTMLBoletoFacade" ref="geraHTMLBoletoFacade"/>
+	</bean>
+	<bean name="/auth/fb/geraBoletoDataPagamento.do" class="br.com.meganet.web.GeraBoletoDataPagamentoView">
+		<property name="boletoFacade" ref="boletoFacade"/>
+		<property name="geraHTMLBoletoFacade" ref="geraHTMLBoletoFacade"/>
+	</bean>
+	<bean name="/auth/fb/visualizaContrato.do" class="br.com.meganet.web.VisualizaContratoView">
+		<property name="contratoFacade" ref="contratoFacade"/>
+	</bean>
+    
+	<bean name="/auth/fb/localizacarBoleto.do" class="br.com.meganet.web.LocalizarBoletoView"/>
+</beans>

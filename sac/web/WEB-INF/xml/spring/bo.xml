@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+       
+	<bean id="loginBO" class="br.com.meganet.bo.LoginBO" autowire="byType"/>
+	<bean id="dominiosBO" class="br.com.meganet.bo.DominiosBO" autowire="byType"/>
+	<bean id="menuBO" class="br.com.meganet.bo.MenuBO" autowire="byType"/>
+	<bean id="contatoBO" class="br.com.meganet.bo.ContatoBO" autowire="byType"/>
+	<bean id="enderecoIpBO" class="br.com.meganet.bo.EnderecoIpBO" autowire="byType"/>
+	<bean id="tipoEquipamentoBO" class="br.com.meganet.bo.TipoEquipamentoBO" autowire="byType"/>
+	<bean id="planosBO" class="br.com.meganet.bo.PlanosBO" autowire="byType"/>
+	<bean id="torreBO" class="br.com.meganet.bo.TorreBO" autowire="byType"/>
+	<bean id="usuarioBO" class="br.com.meganet.bo.UsuarioBO" autowire="byType"/>
+	<bean id="boletoBO" class="br.com.meganet.bo.BoletoBO" autowire="byType"/>
+	<bean id="avisosBO" class="br.com.meganet.bo.AvisosBO" autowire="byType"/>
+	<bean id="poolComandosBO" class="br.com.meganet.bo.PoolComandosBO" autowire="byType"/>
+	<bean id="contratoBO" class="br.com.meganet.bo.ContratoBO" autowire="byType"/>
+	<bean id="statusClienteBO" class="br.com.meganet.bo.StatusClienteBO" autowire="byType"/>
+	<bean id="demandasBO" class="br.com.meganet.bo.DemandasBO" autowire="byType"/>
+</beans>

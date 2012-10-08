@@ -1,0 +1,7 @@
+#Sat Oct 24 23:40:49 GMT-02:00 2009
+DELEGATES_PREFERENCE=delegateValidatorListorg.eclipse.wst.wsdl.validation.internal.eclipse.WSDLDelegatingValidator\=org.eclipse.wst.wsdl.validation.internal.eclipse.Validator;org.eclipse.wst.xsd.core.internal.validation.eclipse.XSDDelegatingValidator\=org.eclipse.wst.xsd.core.internal.validation.eclipse.Validator;
+eclipse.preferences.version=1
+USER_BUILD_PREFERENCE=enabledBuildValidatorList
+USER_MANUAL_PREFERENCE=enabledManualValidatorList
+instance/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
+USER_PREFERENCE=overrideGlobalPreferencesfalse

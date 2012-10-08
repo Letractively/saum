@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="InfBoleto" table="inf_boleto" schema="public">
+        <id name="infboletoId" type="java.lang.Long">
+            <column name="infboleto_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="infboletoLocalPagamentoLn1" type="java.lang.String">
+            <column name="infboleto_local_pagamento_ln1" length="150" />
+        </property>
+        <property name="infboletoInstrucao1" type="java.lang.String">
+            <column name="infboleto_instrucao1" length="150" />
+        </property>
+        <property name="infboletoInstrucao2" type="java.lang.String">
+            <column name="infboleto_instrucao2" length="150" />
+        </property>
+        <property name="infboletoInstrucao3" type="java.lang.String">
+            <column name="infboleto_instrucao3" length="150" />
+        </property>
+        <property name="infboletoAgencia" type="java.lang.String">
+            <column name="infboleto_agencia" length="6" />
+        </property>
+        <property name="infboletoConta" type="java.lang.String">
+            <column name="infboleto_conta" length="9" />
+        </property>
+        <property name="infboletoNome" type="java.lang.String">
+            <column name="infboleto_nome" length="150" />
+        </property>
+        <property name="infboletoSen" type="java.lang.String">
+            <column name="infboleto_sen" length="40" />
+        </property>
+        <property name="infboletoUsr" type="java.lang.String">
+            <column name="infboleto_usr" length="40" />
+        </property>
+        <property name="infboletoNumeroConvenio" type="java.lang.String">
+            <column name="infboleto_numero_convenio" length="12" />
+        </property>
+        <property name="infboletoCnpj" type="java.lang.String">
+            <column name="infboleto_cnpj" length="20" />
+        </property>
+        <property name="infboletoCarteira" type="java.lang.String">
+            <column name="infboleto_carteira" length="4"/>
+        </property>
+        <property name="infboletoBanco" type="java.lang.Integer">
+            <column name="infboleto_banco" />
+        </property>
+
+        <property name="infboletoNumeroboletoPosIni" type="java.lang.Integer">
+            <column name="infboleto_numeroboleto_pos_ini" />
+        </property>
+        <property name="infboletoNumeroboletoPosFim" type="java.lang.Integer">
+            <column name="infboleto_numeroboleto_pos_fim" />
+        </property>
+        <property name="infboletoValorpagoaobancoPosIni" type="java.lang.Integer">
+            <column name="infboleto_valorpagoaobanco_pos_ini" />
+        </property>
+        <property name="infboletoValorpagoaobancoPosFim" type="java.lang.Integer">
+            <column name="infboleto_valorpagoaobanco_pos_fim" />
+        </property>
+        <property name="infboletoValorcreditadoPosIni" type="java.lang.Integer">
+            <column name="infboleto_valorcreditado_pos_ini" />
+        </property>
+        <property name="infboletoValorcreditadoPosFim" type="java.lang.Integer">
+            <column name="infboleto_valorcreditado_pos_fim" />
+        </property>
+        <property name="infboletoDatapagamentoPosIni" type="java.lang.Integer">
+            <column name="infboleto_datapagamento_pos_ini" />
+        </property>
+        <property name="infboletoDatapagamentoPosFim" type="java.lang.Integer">
+            <column name="infboleto_datapagamento_pos_fim" />
+        </property>
+        <property name="infboletoDatapagamentoMascara" type="java.lang.String">
+            <column name="infboleto_datapagamento_mascara" length="20" />
+        </property>
+
+		<property name="infboletoCodigoFornecidoAgenciaDV" type="java.lang.String">
+            <column name="infboleto_codigo_fornecido_agencia_dv" length="10" />
+        </property>
+		<property name="infboletoCodigoFornecidoAgencia" type="java.lang.String">
+            <column name="infboleto_codigo_fornecido_agencia" length="10" />
+        </property>
+		<property name="infboletoCodigoOperacao" type="java.lang.String">
+            <column name="infboleto_codigo_operacao" length="10" />
+        </property>
+		<property name="infboletoCodigoCliente" type="java.lang.String">
+            <column name="infboleto_codigo_cliente" length="11" />
+        </property>
+		
+    </class>
+</hibernate-mapping>

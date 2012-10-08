@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+       
+       <bean id="usuarioPortalFacade" class="br.com.meganet.facade.UsuarioPortalFacade" autowire="byType"/>
+       <bean id="contatoFacade" class="br.com.meganet.facade.ContatoFacade" autowire="byType"/>
+       <bean id="geraHTMLBoletoFacade" class="br.com.meganet.util.geradorBoleto.GeraHTMLBoletoFacade" autowire="byType"/>
+       <bean id="administracaoFacade" class="br.com.meganet.facade.AdministracaoFacade" autowire="byType"/>
+       <bean id="boletoFacade" class="br.com.meganet.facade.BoletoFacade" autowire="byType"/>
+       <bean id="contratoFacade" class="br.com.meganet.facade.ContratoFacade" autowire="byType"/>
+       <bean id="avisosFacade" class="br.com.meganet.facade.AvisosFacade" autowire="byType"/>
+       <bean id="usuarioSocket" class="br.com.meganet.socketParsers.UsuarioSocket" autowire="byType"/>
+       <bean id="socketRequisicao" class="br.com.meganet.socket.SocketRequisicao" autowire="byName"/>
+       <bean id="log" class="br.com.meganet.util.Logger" autowire="byType"/>
+</beans>

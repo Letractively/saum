@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="br.com.meganet.hbm.vo">
+    <class name="Mapa" table="mapa" schema="public">
+        <id name="mapaId" type="java.lang.Long">
+            <column name="usuario_id_fk" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="usuario" class="Usuario" fetch="select" lazy="false" insert="false" update="false">
+            <column name="usuario_id_fk" not-null="true" unique="true" />
+        </many-to-one>
+        <property name="mapaTop" type="java.lang.Double">
+            <column name="mapa_top" precision="17" scale="17" />
+        </property>
+        <property name="mapaLeft" type="java.lang.Double">
+            <column name="mapa_left" precision="17" scale="17" />
+        </property>
+    </class>
+</hibernate-mapping>

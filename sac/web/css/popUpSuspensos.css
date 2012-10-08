@@ -1,0 +1,31 @@
+div.dados-dialog th {
+	width:100px;
+}
+
+div.dados-dialog
+img.button-fechar {
+	position:absolute;
+	top:0px;
+	right:3px;
+	display:block;
+	width:15px;
+	height:15px;
+	cursor:pointer;
+	z-index: 99999999999;
+}
+div.dados-dialog 
+div.content {
+	padding:2px;
+}
+
+div.dados-dialog h3 {
+	background:#4EA860;
+	color:#fff;
+	padding:2px;
+	font-size:10px;
+	cursor:move;
+}
+
+div.dados-dialog li {
+	list-style-position: inside;
+}
