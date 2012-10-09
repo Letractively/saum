@@ -191,7 +191,7 @@ if(fb == null){
 					    <td>
 					    	<select name="combo-alt-data-pagamento" style="width: 155px;" id="combo-alt-data-pagamento">
 								<option value="" selected>&nbsp;</option>
-                            	<option value="8">08 de cada mês</option>
+                            	<option value="8">08 de cada ms</option>
                             	<option value="20">20 de cada mês</option>
                             	<option value="28">28 de cada mês</option>
                           	</select>
