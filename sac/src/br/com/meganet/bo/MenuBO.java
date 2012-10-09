@@ -71,7 +71,7 @@ public class MenuBO {
 
 		MenuVO mn7 = new MenuVO();
 		mn7.setSeq(7);
-		mn7.setId("Relatório");
+		mn7.setId("Relatorio");
 		Collection<SubMenuVO> colSb7 = new ArrayList<SubMenuVO>();
 
 		MenuVO mn8 = new MenuVO();
