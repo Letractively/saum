@@ -52,7 +52,7 @@ if(fb == null){
         <div id="art-page-background-glare-image"></div>
     </div>
     <div id="art-main">
-        <div class="art-sheet">
+        <div class="art-sheet"> 
             <div class="art-sheet-tl"></div>
             <div class="art-sheet-tr"></div>
             <div class="art-sheet-bl"></div>
