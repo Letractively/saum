@@ -81,5 +81,9 @@ public class JsonView implements Controller {
 	public void setAdministracaoFacade(AdministracaoFacade administracaoFacade) {
 		this.administracaoFacade = administracaoFacade;
 	}
+
+	public AdministracaoFacade getAdministracaoFacade() {
+		return administracaoFacade;
+	}
 	
 }
