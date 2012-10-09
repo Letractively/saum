@@ -32,7 +32,7 @@
         <property name="driverClassName" value="org.postgresql.Driver"/>
         <!--bancodedadoscliente--><property name="url" value="jdbc:postgresql://localhost:5432/Meganet"/>
         <!--usuariobancodedados--><property name="username" value="postgres"/>
-        <!--senhabancodedados--><property name="password" value="Sicoob!23"/>
+        <!--senhabancodedados--><property name="password" value="@3fr3n3lj"/>
     </bean>
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
