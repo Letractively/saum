@@ -1,0 +1,15 @@
+<h2>Para iniciar a configuração do SAUM, antes voce deve ter em mente qual será o ambiente utilizado:</h2>
+<ol>
+<blockquote>Se você for hospedar o sistema em um provedor web;<br>
+Se você colocará o sistema em um servidor prórpio, interno e dentro da rede de seus clientes.<br>
+</ol>
+<p>Hospedar o SAUM em um provedor WEB;</p></blockquote>
+
+> O provedor deve conter suporte a JAVA e te fornecer um conteiner web como o Tomcat, o que eu uso é excelente e o mais barato encontrado. http://www.webhost.com.br/
+> Voce precisa baixar apenas os seguintes itens:<br>
+</li></ul><ol><li>SAUM (Disponível no link de download aqui mesmo no site);<br>
+</li></ol>> 2- Esquema do banco de dados (Disponível no link de download aqui mesmo no site);<br>
+<blockquote>3- Software de geração de chaves de criptografia (Disponível no link de download aqui mesmo no site);<br>
+4- Intermediador (Disponível no link de download aqui mesmo no site);<br></blockquote>
+
+Hospedar o SAUM em um servidor prórpio, interno e dentro da rede de seus clientes;<br>
